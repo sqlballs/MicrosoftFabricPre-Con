@@ -1,6 +1,6 @@
 ![](graphics/microsoftlogo.png)
 
-# Workshop: <TODO: Enter workshop name>
+# Workshop: Microsoft Fabric Overview for the Data Professional
 
 #### <i>A Microsoft Course from the SQL Server team</i>
 
@@ -117,11 +117,11 @@ This is a modular workshop, and in each section, you'll learn concepts, technolo
 
   <tr><td style="background-color: AliceBlue; color: black;"><b>Module</b></td><td style="background-color: AliceBlue; color: black;"><b>Topics</b></td></tr>
 
-  <tr><td><a href="url" target="_blank">TODO: 01 - Module Name </a></td><td> TODO: Module Description</td></tr>
-  <tr><td style="background-color: AliceBlue; color: black;"><a href="url" target="_blank">TODO: 02 - Module 2</a> </td><td td style="background-color: AliceBlue; color: black;"> TODO: Module Description</td></tr>
-  <tr><td><a href="url" target="_blank">TODO: 03 - Module Name </a></td><td> TODO: Module Description</td></tr>
-  <tr><td style="background-color: AliceBlue; color: black;"><a href="url" target="_blank">TODO: 04 - Module 2</a> </td><td td style="background-color: AliceBlue; color: black;"> TODO: Module Description</td></tr>  <tr><td><a href="url" target="_blank">TODO: 05 - Module Name </a></td><td> TODO: Module Description</td></tr>
-  <tr><td style="background-color: AliceBlue; color: black;"><a href="url" target="_blank">TODO: 06 - Module 2</a> </td><td td style="background-color: AliceBlue; color: black;"> TODO: Module Description</td></tr>
+  <tr><td><a href="url" target="_blank">01 - Introduction and Overview </a></td><td> Introduction of the course, Basic Concepts, Services, Roles, Benchmarks. Verification of pre-requisites.</td></tr>
+  <tr><td style="background-color: AliceBlue; color: black;"><a href="url" target="_blank">02 - Workspaces, Data Governance, and Data Ingestion</a> </td><td td style="background-color: AliceBlue; color: black;"> Understanding and creating Workspaces, creating a Data Warehouse, connecting and managing, ingesting data with pipielins and data flows.</td></tr>
+  <tr><td><a href="url" target="_blank">03 - The Data Lakehouse </a></td><td> Creating a Lakehouse, Linking data, using Spark to create new data sets in the Lakehouse</td></tr>
+  <tr><td style="background-color: AliceBlue; color: black;"><a href="url" target="_blank">04 - Developer Experience</a> </td><td td style="background-color: AliceBlue; color: black;"> Using Co-Pilot, SSMS, VS Code, command-line tools, development best-practices</td></tr>  <tr><td><a href="url" target="_blank">05 - User Experience </a></td><td> Power BI, KQL, Streaming and Event Data</td></tr>
+  <tr><td style="background-color: AliceBlue; color: black;"><a href="url" target="_blank">06 - Microsoft Fabric DevOps</a> </td><td td style="background-color: AliceBlue; color: black;"> Design, Sizing, Mointoring and Management, Source Control, and EXPLAIN.</td></tr>
 
 </table>
 
