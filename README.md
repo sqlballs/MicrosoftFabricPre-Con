@@ -83,7 +83,7 @@ If you are new to these, here are a few references you can complete prior to cla
 
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/bulletlist.png"> <h3>Setup</h3>
 
-<a href="url" target="_blank">A full pre-requisites document is located here</a>. These instructions should be completed before the workshop starts, since you will not have time to cover these in class. <i>Remember to turn off any Virtual Machines from the Azure Portal when not taking the class so that you do incur charges (shutting down the machine in the VM itself is not sufficient)</i>.
+<a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md" target="_blank">A full pre-requisites document is located here</a>. These instructions should be completed before the workshop starts, since you will not have time to cover these in class. <i>Remember to turn off any Virtual Machines from the Azure Portal when not taking the class so that you do incur charges (shutting down the machine in the VM itself is not sufficient)</i>.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -117,11 +117,17 @@ This is a modular workshop, and in each section, you'll learn concepts, technolo
 
   <tr><td style="background-color: AliceBlue; color: black;"><b>Module</b></td><td style="background-color: AliceBlue; color: black;"><b>Topics</b></td></tr>
 
-  <tr><td><a href="url" target="_blank">01 - Introduction and Overview </a></td><td> Introduction of the course, Basic Concepts, Services, Roles, Benchmarks. Verification of pre-requisites.</td></tr>
-  <tr><td style="background-color: AliceBlue; color: black;"><a href="url" target="_blank">02 - Workspaces, User Security, Data Governance, and Data Integration</a> </td><td td style="background-color: AliceBlue; color: black;"> Understanding and creating Workspaces, creating a Data Warehouse, connecting and managing, ingesting data with pipielins and data flows, along with Security concepts</td></tr>
-  <tr><td><a href="url" target="_blank">03 - The Data Lakehouse </a></td><td> Creating a Lakehouse, Linking data, using Spark to create new data sets in the Lakehouse</td></tr>
-  <tr><td style="background-color: AliceBlue; color: black;"><a href="url" target="_blank">04 - The Fabric Developer Experience</a> </td><td td style="background-color: AliceBlue; color: black;"> Using Co-Pilot, SSMS, VS Code, command-line tools, development best-practices</td></tr>  <tr><td><a href="url" target="_blank">05 - The Fabric User Experience </a></td><td> Power BI, KQL, Streaming and Event Data</td></tr>
-  <tr><td style="background-color: AliceBlue; color: black;"><a href="url" target="_blank">06 - Microsoft Fabric DevOps</a> </td><td td style="background-color: AliceBlue; color: black;"> Design, Sizing, Mointoring and Management, Source Control, and EXPLAIN.</td></tr>
+  <tr><td><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/01%20-%20Introduction%20and%20Overview.md" target="_blank">01 - Introduction and Overview </a></td><td> Introduction of the course, Basic Concepts, Services, Roles, Benchmarks. Verification of pre-requisites.</td></tr>
+  
+  <tr><td style="background-color: AliceBlue; color: black;"><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/02%20-%20Workspaces%2C%20User%20Security%2C%20Data%20Governance%2C%20and%20Data%20Integration.md" target="_blank">02 - Workspaces, User Security, Data Governance, and Data Integration</a> </td><td td style="background-color: AliceBlue; color: black;"> Understanding and creating Workspaces, creating a Data Warehouse, connecting and managing, ingesting data with pipielins and data flows, along with Security concepts</td></tr>
+  
+  <tr><td><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/03%20-%20The%20Data%20Lakehouse.md" target="_blank">03 - The Data Lakehouse </a></td><td> Creating a Lakehouse, Linking data, using Spark to create new data sets in the Lakehouse</td></tr>
+  
+  <tr><td style="background-color: AliceBlue; color: black;"><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/04%20-%20The%20Fabric%20Developer%20Experience.md" target="_blank">04 - The Fabric Developer Experience</a> </td><td td style="background-color: AliceBlue; color: black;"> Using Co-Pilot, SSMS, VS Code, command-line tools, development best-practices</td></tr>  
+  
+  <tr><td><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/05%20-%20The%20Fabric%20User%20Experience.md" target="_blank">05 - The Fabric User Experience </a></td><td> Power BI, KQL, Streaming and Event Data</td></tr>
+  
+  <tr><td style="background-color: AliceBlue; color: black;"><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/06%20-%20Microsoft%20Fabric%20DevOps.md" target="_blank">06 - Microsoft Fabric DevOps</a> </td><td td style="background-color: AliceBlue; color: black;"> Design, Sizing, Mointoring and Management, Source Control, and EXPLAIN.</td></tr>
 
 </table>
 
@@ -129,7 +135,7 @@ This is a modular workshop, and in each section, you'll learn concepts, technolo
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/geopin.png"><b>Next Steps</b></p>
 
-Next, Continue to <a href="url" target="_blank"><i> Pre-Requisites</i></a>
+Next, Continue to <a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md" target="_blank"><i> Pre-Requisites</i></a>
 
 # Contributing
 

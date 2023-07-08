@@ -81,4 +81,4 @@ TODO: Enter any code typing here
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/geopin.png"><b >Next Steps</b></p>
 
-Next, Continue to <a href="url" target="_blank"><i> 01 - Module</i></a>.
+Next, Continue to <a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/01%20-%20Introduction%20and%20Overview.md" target="_blank"><i> the next Module</i></a>.
