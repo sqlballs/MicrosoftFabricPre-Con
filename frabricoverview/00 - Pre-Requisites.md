@@ -1,6 +1,6 @@
 ![](../graphics/microsoftlogo.png)
 
-# Workshop: <TODO: Enter workshop name>
+# Workshop: Microsoft Fabric Overview for the Data Professional
 
 #### <i>A Microsoft Course from the SQL Server team</i>
 
