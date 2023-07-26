@@ -77,6 +77,7 @@ TODO: Enter activity steps description with checkbox<p style="border-bottom: 1px
 The Synapse VS Code extension supports a pro-developer experience for exploring Microsoft Fabric lakehouses, and authoring Fabric notebooks and Spark job definitions. Visual Studio Code is a one of the most popular lightweight source code editors; it runs on your desktop and is available for Windows, macOS, and Linux. By installing the Synapse VS Code extension, you can author, run, and debug your notebook and Spark job definition locally in VS Code. You can also post the code to the remote Spark compute in your Fabric workspace to run or debug. The extension also allows you to browse your lakehouse data, including tables and raw files, in VS Code.
 
 **Prerequisites**
+
 The prerequisites for the Synapse VS Code extension are:
 
 - Java 1.8
@@ -137,9 +138,10 @@ Prior to installation, make sure your environment has both Python and pip instal
 **Select a cluster** 
 
 Before you perform any operations, you must select a cluster to connect to. For example, to select and connect to the cluster with the name testcluster.com, run the following command:
-> **Warning**: Do not use unsecured Service Fabric clusters in a production environment.
 
 ````sfctl cluster select --endpoint http://testcluster.com:19080````
+
+> **Warning**: Do not use unsecured Service Fabric clusters in a production environment.
 
 The cluster endpoint must be prefixed by http or https. It must include the port for the HTTP gateway. The port and address are the same as the Service Fabric Explorer URL. For clusters that are secured with a certificate, you can specify a PEM-encoded certificate. The certificate can be specified as a single file or as a cert and a key pair. If it is a self-signed certificate that is not CA signed, you can pass the ````--no-verify option```` to bypass CA verification.
 
@@ -227,9 +229,11 @@ Since a workspace can only be connected to a single branch at a time, it is reco
 - Developers using a client tool (such as VSCode, Power BI Desktop or others), don’t necessarily need a workspace. They can create branches and commit changes to that branch locally, push those to the remote repo and create a pull request to the main branch, all without a workspace. A workspace is needed only as a testing environment to check that everything works in a real-life scenario. It's up to you to decide when that should happen.
 
 **Test**
+
 This section provides guidance for working with a deployment pipelines test stage.
 
 *Simulate your production environment*
+
 It’s important to see how your change will impact the production stage. A deployment pipelines test stage allows you to simulate a real production environment for testing purposes. Alternatively, you can simulate this by connecting git to an additional workspace.
 
 Make sure that these three factors are addressed in your test environment:
@@ -241,12 +245,15 @@ Make sure that these three factors are addressed in your test environment:
 When testing, you can use the same capacity as the production stage. However, using the same capacity can make production unstable during load testing. To avoid unstable production, test using a different capacity similar in resources to the production capacity. To avoid extra costs, use a capacity where you can pay only for the testing time.
 
 *Use deployment rules with a real-life data source*
+
 If you're using the test stage to simulate real life data usage, it's recommended to separate the development and test data sources. The development database should be relatively small, and the test database should be as similar as possible to the production database. Use data source rules to switch data sources in the test stage or parameterize the connection if not working through deployment pipelines.
 
 *Check related items*
+
 Changes you make can also affect the dependent items. During testing, verify that your changes don’t affect or break the performance of existing items, which can be dependent on the updated ones. You can easily find the related items by using impact analysis.
 
 *Updating data items*
+
 Data items are items that store data. The item’s definition in git defines how the data is stored. When updating an item in the workspace, we are importing its definition into the workspace and applying it on the existing data. The operation of updating data items is the same for git and deployment pipelines.
 
 As different items have different capabilities when it comes to retaining data when changes to the definition are applied, be mindful when applying the changes. Some practices that can help you apply the changes in the safest way:
@@ -260,25 +267,31 @@ As different items have different capabilities when it comes to retaining data w
 Some changes will always be considered breaking changes. Hopefully, the preceding steps will help you track them before production. Build a plan for how to apply the changes in Prod and recover the data to get back to normal state and minimize downtime for business users.
 
 *Test your app*
+
 If you're distributing content to your customers through an app, review the app's new version before it's in production. Since each deployment pipeline stage has its own workspace, you can easily publish and update apps for development and test stages. Publishing and updating apps allows you to test the app from an end user's point of view.
 
 > **Important:** The deployment process doesn't include updating the app content or settings. To apply changes to content or settings, manually update the app in the required pipeline stage.
 
 **Production**
+
 This section provides guidance to the deployment pipelines production stage.
 
 *Manage who can deploy to production*
+
 Because deploying to production should be handled carefully, it's good practice to let only specific people manage this sensitive operation. However, you probably want all BI creators for a specific workspace to have access to the pipeline. Use production workspace permissions to manage access permissions. Other users can have a production workspace viewer role to see content in the workspace but not make changes from git or deployment pipelines.
 
 In addition, limit access to the repo or pipeline by only enabling permissions to users that are part of the content creation process.
 
 *Set rules to ensure production stage availability*
+
 Deployment rules are a powerful way to ensure the data in production is always connected and available to users. With deployment rules applied, deployments can run while you have the assurance that customers can see the relevant information without disturbance. Make sure that you set production deployment rules for data sources and parameters defined in the dataset.
 
 *Update the production app*
+
 Deployment in a pipeline updates the workspace content, but it can also update the associated app through the deployment pipelines API. It's not possible to update the app through the UI. You need to update the app manually. If you use an app for content distribution, don’t forget to update the app after deploying to production so that end users are immediately able to use the latest version.
 
 *Deploying into production using git branches*
+
 As the repo serves as the ‘single-source-of-truth’, some teams might want to deploy updates into different stages directly from git. This is possible with git integration, with a few considerations:
 
 - It’s recommended to use release branches. You will be required to continuously change the connection of workspace to the new release branches before every deployment.
@@ -286,6 +299,7 @@ As the repo serves as the ‘single-source-of-truth’, some teams might want to
 - After deploying to each stage, make sure to change all the configuration specific to that stage.
 
 *Quick fixes to content*
+
 Sometimes there are issues in production that require a quick fix. Deploying a fix without testing it first is bad practice. Therefore, always implement the fix in the development stage and push it to the rest of the deployment pipeline stages. Deploying to the development stage allows you to check that the fix works before deploying it to production. Deploying across the pipeline takes only a few minutes.
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
