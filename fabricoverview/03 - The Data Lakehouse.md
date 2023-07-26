@@ -14,7 +14,7 @@ In each module you'll get more references, which you should follow up on to lear
 
 (<a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md" target="_blank">Make sure you check out the <b>Pre-Requisites</b> page before you start</a>. You'll need all of the items loaded there before you can proceed with the workshop.)
 
-You'll cover these topics in the workshop:
+You'll cover these topics in this Module:
 
 <dl>
 
@@ -156,7 +156,7 @@ TODO: Enter activity steps description with checkbox
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
-    <li><a href="url" target="_blank">TODO: Enter courses, books, posts, whatever the student needs to extend their study</a></li>
+    <li><a href="https://blog.fabric.microsoft.com/en-us/blog/connecting-to-onelake/" target="_blank">Connecting to OneLake</a></li>
 </ul>
 
 Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/04%20-%20The%20Fabric%20Developer%20Experience.md).
