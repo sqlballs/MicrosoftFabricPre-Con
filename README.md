@@ -127,7 +127,7 @@ This is a modular workshop, and in each section, you'll learn concepts, technolo
   
   <tr><td><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/05%20-%20The%20Fabric%20User%20Experience.md" target="_blank">05 - The Fabric User Experience </a></td><td> Power BI, KQL, Streaming and Event Data</td></tr>
   
-  <tr><td style="background-color: AliceBlue; color: black;"><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/06%20-%20Microsoft%20Fabric%20DevOps.md" target="_blank">06 - Microsoft Fabric DevOps</a> </td><td td style="background-color: AliceBlue; color: black;"> Design, Sizing, Mointoring and Management, Source Control, and EXPLAIN.</td></tr>
+  <tr><td style="background-color: AliceBlue; color: black;"><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/06%20-%20Microsoft%20Fabric%20DevOps.md" target="_blank">06 - Microsoft Fabric DevOps</a> </td><td td style="background-color: AliceBlue; color: black;"> Design, Sizing, Mointoring and Management, Source Control, and the EXPLAIN command.</td></tr>
 
 </table>
 
