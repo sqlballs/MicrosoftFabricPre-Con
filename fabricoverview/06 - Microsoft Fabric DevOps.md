@@ -18,16 +18,16 @@ You'll cover these topics in this Module on Fabric DevOps:
 
 <dl>
 
-  <dt><a href="#5.1" target="_blank">5.1 - Designing and sizing a Fabric solution</a></dt>
-  <dt><a href="#5.2" target="_blank">5.2 - Source Control integration with Microsoft Fabric</a></dt>
-  <dt><a href="#5.3" target="_blank">5.3 - Monitoring and Managing a Fabric solution</a></dt>
-  <dt><a href="#5.4" target="_blank">5.4 - Understanding the EXPLAIN command</a></dt>
+  <dt><a href="#6.1" target="_blank">6.1 - Designing and sizing a Fabric solution</a></dt>
+  <dt><a href="#6.2" target="_blank">6.2 - Source Control integration with Microsoft Fabric</a></dt>
+  <dt><a href="#6.3" target="_blank">6.3 - Monitoring and Managing a Fabric solution</a></dt>
+  <dt><a href="#6.4" target="_blank">6.4 - Understanding the EXPLAIN command</a></dt>
 
 </dl>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="5.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.1 Designing and sizing a Fabric solution</h2>
+<h2 id="6.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.1 Designing and sizing a Fabric solution</h2>
 
 The first step in implementing a Microsoft Fabric solution is to thoroughly understand the business opporunities from your organization, and then understand the various solutions within the Microsoft Fabric platform, so that you can choose the proper elements, sizing and pricing for your organization. Throughout this course, you have learned more about the services and solutions within Microsoft Fabric, and in this section, you'll put that information to use to design a solution. 
 
@@ -75,7 +75,7 @@ TODO: Enter activity steps description with checkbox
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="5.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.2 Source Control integration with Microsoft Fabric</h2>
+<h2 id="6.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.2 Source Control integration with Microsoft Fabric</h2>
 
 Basic Concepts - https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-integration-process 
 Manage with git - https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git 
@@ -89,7 +89,7 @@ TODO: Activity Description and tasks
 TODO: Enter activity steps description with checkbox
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
-<h2 id="5.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.3 Monitoring and Managing a Fabric solution</h2>
+<h2 id="6.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.3 Monitoring and Managing a Fabric solution</h2>
 
 Admin Center - https://learn.microsoft.com/en-us/fabric/admin/admin-center 
 Capacity management - https://learn.microsoft.com/en-us/fabric/enterprise/pause-resume 
@@ -105,7 +105,7 @@ TODO: Activity Description and tasks
 TODO: Enter activity steps description with checkbox
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
-<h2 id="5.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.4 Understanding the EXPLAIN command</h2>
+<h2 id="6.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.4 Understanding the EXPLAIN command</h2>
 
 EXPLAIN reference - https://learn.microsoft.com/en-us/sql/t-sql/queries/explain-transact-sql?view=azure-sqldw-latest 
 
