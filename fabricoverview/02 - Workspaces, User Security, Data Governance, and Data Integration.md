@@ -29,6 +29,8 @@ You'll cover these topics in this Module:
 
 Microsoft Fabric is a platform that provides a set of tools for creating and managing data pipelines. A *Workspace* in Microsoft Fabric is an object where users collaborate on dashboards, reports, and other content1. Every Microsoft Fabric user has a personal wWrkspace called *My workspace* where they can work with their own content. 
 
+![](https://learn.microsoft.com/pt-br/fabric/onelake/media/onelake-overview/onelake-foundation-for-fabric.png)
+
 Microsoft Fabric admins can use the Create workspaces setting to designate which users in the organization can create workspaces.
 
 To create a workspace in Microsoft Fabric, you can follow these steps:
@@ -43,11 +45,11 @@ To create a workspace in Microsoft Fabric, you can follow these steps:
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity:Creating your first Workspace</b></p>
 
-TODO: Activity Description and tasks
+In this activity you will create a basic Workspace in Fabric.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-TODO: Enter activity steps description with checkbox
+- [Open this reference, and complete the steps you see there.](https://learn.microsoft.com/en-us/fabric/get-started/create-workspaces)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
