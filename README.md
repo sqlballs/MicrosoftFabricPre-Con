@@ -8,11 +8,13 @@
 
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/textbubble.png"> <h2>About this Workshop</h2>
 
-Welcome to this Microsoft solutions workshop on *<TODO: Enter workshop name>*. In this workshop, you'll learn <TODO: Describe what the students will learn>
+Welcome to this Microsoft solutions workshop on Microsoft Fabric for the Data Professional. Microsoft Fabric is an end-to-end analytics solution with full-service capabilities including data movement, data lakes, data engineering, data integration, data science, real-time analytics, and business intelligence—all backed by a shared platform providing robust data security, governance, and compliance.
 
-The focus of this workshop is to understand <TODO: Describe the workshop's primay focus in one sentence>
+In this workshop, you'll learn what the Microsoft Fabric platform is, the various services and components it contains, how to create, use and manage a deployment, from the point of view of the data professional.
 
-You'll start by <TODO: Describe what the flow of the workshop will be>, with a focus on how to extrapolate what you have learned to create other solutions for your organization.
+The focus of this workshop is to understand how to use Microsoft Fabric in a solution, focusing on the data aspects of the platform. 
+
+You'll start with an introduction to Microsoft Fabric, move on to understanding Workspaces, user security, and data governance. From there you'll learn about the Data Lakehouse, and then understand the developer and user experience of Microsoft Fabric. You'll end with a section on the DevOps of a Microsoft Fabric solution, with a focus on how to extrapolate what you have learned to create other solutions for your organization.
 
 This [github README.MD file](https://lab.github.com/githubtraining/introduction-to-github) explains how the workshop is laid out, what you will learn, and the technologies you will use in this solution. To download this Lab to your local computer, click the **Clone or Download** button you see at the top right side of this page. [More about that process is here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository). 
 
@@ -22,30 +24,16 @@ You can view all of the [courses and other workshops our team has created at thi
 
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/checkmark.png"> <h3>Learning Objectives</h3>
 
-In this workshop you'll learn:
-<br>
+In this workshop you'll cover these topics:
 
-- <TODO: Bullet-point on learning obective>
-- <TODO: Bullet-point on learning obective>
-- <TODO: Bullet-point on learning obective>
+- Introduction and Overview:	Introduction of the course, Basic Concepts, Services, Roles, Benchmarks. Verification of pre-requisites
+- Workspaces, User Security, Data Governance, and Data Integration	Understanding and creating Workspaces, creating a Data Warehouse, connecting and managing, ingesting data with pipielines and data flows, along with Security concepts
+- The Data Lakehouse:	Creating a Lakehouse, Linking data, using Spark to create new data sets in the Lakehouse
+- The Fabric Developer Experience:	Using Co-Pilot, SSMS, VS Code, command-line tools, development best-practices
+- The Fabric User Experience:	Power BI, KQL, Streaming and Event Data
+- Microsoft Fabric DevOps: Design, Sizing, Mointoring and Management, Source Control, and the EXPLAIN command.
 
-<TODO: Enter the text you use when you submit the description for this course to a presentation, or advertising>
-
-The goal of this workshop is to train <TODO: Describe who you would train for this and why>.
-
-The concepts and skills taught in this workshop form the starting points for:
-
-    <TODO: Job Description and level of person who is the primary that should attend and the reason>.
-    For instance: Solution Architects and Developers, to understand how to put together an end to end solution.
-    <TODO: Job Description and level of person who is the secondary that should attend and the reason>.
-    <TODO: Job Description and level of person who is the third-level of who might want to attend and the reason>.
-
-<p style="border-bottom: 1px solid lightgrey;"></p>
-<img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/building1.png"> <h2>Business Applications of this Workshop</h2>
-
-Businesses require <TODO: Describe the reason the student's business or organization would be interested in the information. Be detailed about the solutions it addresses> 
-
-Some industry examples of <TODO: Workshop Topic> are <TODO: Enter Sectors and use briefly>, to name just a few.
+The goal of this workshop is to train the data professional to get an overview on how to determine when to implement a Microsoft Fabric solution, how to design the solution, implement it, use it, and manage, monitor and maintain it.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -57,8 +45,10 @@ The solution includes the following technologies - although you are not limited 
 
   <tr><th style="background-color: #1b20a1; color: white;">Technology</th> <th style="background-color: #1b20a1; color: white;">Description</th></tr>
 
-  <tr><td><i>TODO: Technology name not owned by Microsoft that you will cover</i></td><td>TODO: Reason the student needs to learn it</td></tr>
-  <tr><td>TODO: Technology name owned by Microsoft that you will cover</td><td>TODO: Reason the student needs to learn it</td></tr>
+  <tr><td>Microsoft OneLake</td><td>Serves as the foundation storage layer for all other services, and as a Data Lake.</td></tr>
+  <tr><td>Microsoft Azure Data Factory</td><td>A fully scheduled cloud service for data pipelines.</td></tr>
+  <tr><td>Microsoft Synapse</td><td>The primary Data Lake, Data Warehouse, Data Science, and Data Analytics distributed processing system for the platform.</td></tr>
+  <tr><td>Microsoft Power BI</td><td>Closest-to-user interface for data analysis.</td></tr>
 
 </table>
 
@@ -68,18 +58,17 @@ The solution includes the following technologies - although you are not limited 
 
 You'll need a local system that you are able to install software on. The workshop demonstrations use Microsoft Windows as an operating system and all examples use Windows for the workshop. Optionally, you can use a Microsoft Azure Virtual Machine (VM) to install the software on and work with the solution.
 
-You must have a Microsoft Azure account with the ability to create assets.
+- You must have a Microsoft Azure account with the ability to create assets.
+- You will need a laptop to work through the examples, access the workshop materials, and take notes.
 
-This workshop expects that you understand <TODO: Enter a brief solution for what a student should know before taking the workshop>.
+This workshop expects that you understand data architectures, working with large data sets, data security, data analysis, and data pipelines.
 
 If you are new to these, here are a few references you can complete prior to class:
 
-<TODO: Enter some pre-work courses or books or whatever that the student could use to prep>
--  [Reference Name](https://url)
--  [Reference Name](https://url)
--  [Reference Name](https://url)
--  [Reference Name](https://url)
-
+-  [Big Data Architectures](https://learn.microsoft.com/en-us/azure/architecture/data-guide/big-data/)
+-  [Pipelines](https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/pipeline-orchestration-data-movement)
+-  [Data Security](https://learn.microsoft.com/en-us/azure/architecture/data-guide/scenarios/securing-data-solutions)
+-  [Data Analysis](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/analytics-start-here)
 
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/bulletlist.png"> <h3>Setup</h3>
 
@@ -87,25 +76,9 @@ If you are new to these, here are a few references you can complete prior to cla
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/education1.png"> <h2>Workshop Details</h2>
-
-This workshop uses <TODO: enter main technologies used to solve the sceanrio>, with a focus on <TODO: architecture and implementation, development and use, etc>.
-
-<table style="tr:nth-child(even) {background-color: #f2f2f2;}; text-align: left; display: table; border-collapse: collapse; border-spacing: 5px; border-color: gray;">
-
-  <tr><td style="background-color: Cornsilk; color: black; padding: 5px 5px;">Primary Audience:</td><td style="background-color: Cornsilk; color: black; padding: 5px 5px;">TODO: Enter the technical people who will take the workshop> tasked with TODO: Enter what they are tasked to do</td></tr>
-  <tr><td>Secondary Audience:</td><td> TODO: Secondary Audience</td></tr>
-  <tr><td style="background-color: Cornsilk; color: black; padding: 5px 5px;">Level: </td><td style="background-color: Cornsilk; color: black; padding: 5px 5px0;"> TODO: 100, 200, 300, 400 </td></tr>
-  <tr><td>Type:</td><td>TODO: In-Person, On-Line, or from github</td></tr>
-  <tr><td style="background-color: Cornsilk; color: black; padding: 5px 5px;">Length: </td><td style="background-color: Cornsilk; color: black; padding: 5px 5px;">TODO: Number of hours</td></tr>
-
-</table>
-
-<p style="border-bottom: 1px solid lightgrey;"></p>
-
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/pinmap.png"> <h2>Related Workshops</h2>
 
- - [TODO: Enter any other workshops that help in this area](url)
+ - [You can find a full Learning Path on Microsoft Fabric from Microsoft Learn at this reference](https://learn.microsoft.com/en-us/training/paths/get-started-fabric/?WT.mc_id=DP-MVP-5004032)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
