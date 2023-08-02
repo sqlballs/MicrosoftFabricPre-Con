@@ -53,25 +53,28 @@ In a large organization, a BI solution architecture can consist of:
 5. BI semantic models
 6. Reports
 
-The design of such a complex structure requires an engineering mindset, though it can be one of the most creative and rewarding IT architecture efforts.
+The design of such a complex structure requires an engineering mindset, though it can be one of the most creative and rewarding IT architecture efforts. [You can find a comprehensive general guide for creating a Data Architecture here.](https://learn.microsoft.com/en-us/azure/architecture/data-guide/)
 
-[You can find a comprehensive general guide for creating a Data Architecture here.](https://learn.microsoft.com/en-us/azure/architecture/data-guide/)
+There are a few decisions to make as you bring your solution design. 
 
-One of your first steps is to enable Microsoft Fabric for your Tenant. [You can find the process for that here.](https://learn.microsoft.com/en-us/fabric/admin/fabric-switch)
+- One of your first steps is to enable Microsoft Fabric for your Tenant. [You can find the process for that here.](https://learn.microsoft.com/en-us/fabric/admin/fabric-switch)
+- Next, you need to understand the licensing model for using the solution. [You can find more information on that here.](https://learn.microsoft.com/en-us/fabric/enterprise/licenses)
+- You can then review the [Microsoft Fabric decision guide: data warehouse or lakehouse at this reference](https://learn.microsoft.com/en-us/fabric/get-started/decision-guide-warehouse-lakehouse)
+- After reviewing that material, you can check the [Microsoft Fabric decision guide: copy activity, dataflow, or Spark at this referenece](https://learn.microsoft.com/en-us/fabric/get-started/decision-guide-pipeline-dataflow-spark)
 
-Next, you need to understand the licensing model for using the solution. [You can find more information on that here.](https://learn.microsoft.com/en-us/fabric/enterprise/licenses)
 
-Microsoft Fabric decision guide: data warehouse or lakehouse - https://learn.microsoft.com/en-us/fabric/get-started/decision-guide-warehouse-lakehouse
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Locate and Create a Design Decision Document for a real-world Analytics solution</b></p>
 
-Microsoft Fabric decision guide: copy activity, dataflow, or Spark - https://learn.microsoft.com/en-us/fabric/get-started/decision-guide-pipeline-dataflow-spark
+In this activity, you will determine a real-world opportunity at your organization for an Advanced Analytics solution, and create a design document you can use as a template for when you return to work. 
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
-
-TODO: Activity Description and tasks
+> You may work on this Activity individually or as a team with someone from your organization.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-TODO: Enter activity steps description with checkbox
+- Open any document or note-taking implement you like
+- Create a "solution statement" for Advanced Analytics that your organization, explaining the opportunity and the benefits of creating a solution.
+- Using the references above or others that you find by a web search, create a document that has the primary elements you need to decide with their factors. For instance, you can [find some interesting decision vectors at this reference](https://www.cdw.com/content/cdw/en/articles/dataanalytics/how-the-modern-data-platform-fuels-success.html). You may also [craft a prompt at Bing Chat](https://www.bing.com/search?q=Bing+AI&showconv=1) or another GPT to create a starting point. 
+- Be ready to discuss your decision guide in class.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
