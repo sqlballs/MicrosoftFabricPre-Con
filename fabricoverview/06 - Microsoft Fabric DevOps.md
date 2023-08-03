@@ -80,18 +80,49 @@ In this activity, you will determine a real-world opportunity at your organizati
 
 <h2 id="6.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.2 Source Control integration with Microsoft Fabric</h2>
 
-Basic Concepts - https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-integration-process 
-Manage with git - https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git 
+The primary integration method for working with Microsoft Fabric in a Source Control system is the git program. If you are new to git, [there is a free course you can take here - ensure you understand the material there before continuing](https://learn.microsoft.com/en-us/training/modules/intro-to-git/) since this section will assume knowledge from that course. 
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
+When you begin work on a project, you can version the solution at the  workspace level. This way, you can keep track of what you have done and undo any changes if you need to. You can also see what other people working on the same project have done in the same workspace. Using git provides the following advantages:
 
-TODO: Activity Description and tasks
+- Backup and version your work
+- Revert to previous stages
+- Collaborate with others or work alone using Git branches
 
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+To begin working with git and Microsoft Fabric, there are a few pre-requisites. Before you start, you will need to set up:
 
-TODO: Enter activity steps description with checkbox
+- An active Azure account registered to the same user that is using the Fabric workspace
+- Access to an existing repository
+- A Power BI Premium license. Your Power BI premium license still works for all Power BI features
+- A Fabric capacity is required to use all supported Fabric items
+- Your organization’s administrator has to [enable the Fabric switch](https://learn.microsoft.com/en-us/fabric/admin/fabric-switch)
+
+With all that set up, you need to ensure the permissions are correct for the DevOps team. You can find a complete [definition of the permissions you need for each DevOps task at this reference](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-integration-process#permissions). 
+
+After you complete those steps, you will connect a workspace to an *Azure repo*.  This is done in the Power BI tenant where you can find the workspace you want to enable, and then set the options for the repo, organization, and branches you want to enable. You can [find that process at this reference](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git#connect-a-workspace-to-an-azure-repo).
+
+Next, you can start committing changes to git. 
+
+Once your changes are made, you can update the workspace from git. To commit your changes to the git branch, follow these steps:
+
+- Go to the workspace.
+- Select the Source control icon. This icon shows the number of uncommitted changes. 
+- Select the Changes tab of the Source control pane. A list appears with all the items you changed, and an icon indicating if the item is *new*, *modified*, *conflict*, or *deleted*.
+- Select the items you want to commit. To select all items, check the top box.
+- Add a comment in the box. If you don't add a comment, a default message is added automatically.
+- Select Commit.
+
+After the changes are committed, the items that were committed are removed from the list, and the workspace will point to the new commit that it's synced to. Then when the commit is completed successfully, the status of the selected items changes from *Uncommitted* to *Synced*.
+
+If you are done with the repo and you no longer wish to track it with git, you can disconnect a workspace from git. You'll need to have *admin* permissions to do that, but the process is simple: 
+
+- In the Workspace settings, Select *Git integration*
+- Select *Disconnect workspace*
+- Select *Disconnect again* to confirm
+
+There are some considerations to keep in mind when working with git and Microsoft Fabric. Open this reference to see [the latest updates that you need to keep in mind](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git#considerations-and-limitations).
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
+
 <h2 id="6.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.3 Monitoring and Managing a Fabric solution</h2>
 
 Admin Center - https://learn.microsoft.com/en-us/fabric/admin/admin-center 
