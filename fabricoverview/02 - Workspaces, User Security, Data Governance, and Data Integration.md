@@ -27,7 +27,7 @@ You'll cover these topics in this Module:
 
 <h2 id="01"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.1 Understanding and creating Workspaces</h2>
 
-Microsoft Fabric is a platform that provides a set of tools for creating and managing data pipelines. A *Workspace* in Microsoft Fabric is an object where users collaborate on dashboards, reports, and other content1. Every Microsoft Fabric user has a personal wWrkspace called *My workspace* where they can work with their own content. 
+Microsoft Fabric is a comprehensive platform that offers a variety of tools designed for the creation and administration of data pipelines. Within Microsoft Fabric, a Workspace serves as a fundamental element, facilitating collaboration among users on different projects, including dashboards, reports, and various other content1. Each individual using Microsoft Fabric is allocated a personal workspace called My workspace, providing them with a dedicated area to work on their own content and projects.
 
 ![](https://learn.microsoft.com/pt-br/fabric/onelake/media/onelake-overview/onelake-foundation-for-fabric.png)
 
