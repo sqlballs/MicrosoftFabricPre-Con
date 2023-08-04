@@ -125,18 +125,44 @@ There are some considerations to keep in mind when working with git and Microsof
 
 <h2 id="6.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.3 Monitoring and Managing a Fabric solution</h2>
 
-Admin Center - https://learn.microsoft.com/en-us/fabric/admin/admin-center 
-Capacity management - https://learn.microsoft.com/en-us/fabric/enterprise/pause-resume 
-Using the Monitoring Hub - https://learn.microsoft.com/en-us/fabric/admin/monitoring-hub 
-Using the Metrics app - https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app 
+Managing a Microsoft Fabric solution involves multiple tools, processes, and procedures. Since there are multiple products involved, you'll often take an "outside-in" approach, where you start the administration and monitoring at the outermost level and drill in to the specifc area of focus. this outside in approach should involve getting as many components under one view as possible. The Microsoft Fabric platform has various tools and features to help you administer the solution from as broad a perspective as possible, and you may also augment these views with administration processes and tools of your own. 
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
+<h3>Administration</h3>
 
-TODO: Activity Description and tasks
+- Command line tools
+- Graphical tools
+- Automated tools
+
+<h4>Configuration Management</h4>
+
+<h4>Accounts and Security</h4>
+
+<h4>Capactiy Management</h4>
+
+
+<h3>Monitoring</h3>
+
+
+<h4>Spot Indicators</h4>
+
+<h4>Historical Indicators</h4>
+
+Logs and Auditing
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Review the Monitoring and Management Tools for Microsoft Fabric</b></p>
+
+In this Activity you will navigate the primary interfaces for monitoring and managing your solution. You can augment this activity with a discussion of your current monitoring and management tools and processes, and how you can integrate these into your process.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-TODO: Enter activity steps description with checkbox
+Open each of the following tools and navigate the various actions and properties they provide. If you do not have a full deployment yet, you can open the document pages from the links for each tool. 
+
+- [Admin Center](https://learn.microsoft.com/en-us/fabric/admin/admin-center) 
+- [Capacity management](https://learn.microsoft.com/en-us/fabric/enterprise/pause-resume)
+- [Using the Monitoring Hub](https://learn.microsoft.com/en-us/fabric/admin/monitoring-hub) 
+- [Using the Metrics app](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app)
+
+> If you only reviewed the documentation in this Activity, ensure you bookmark each of these references and then perform the Activity in full once you do have your deployment. 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 <h2 id="6.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.4 Understanding the EXPLAIN command</h2>
