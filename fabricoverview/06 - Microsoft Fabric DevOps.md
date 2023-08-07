@@ -128,26 +128,30 @@ There are some considerations to keep in mind when working with git and Microsof
 Managing a Microsoft Fabric solution involves multiple tools, processes, and procedures. Since there are multiple products involved, you'll often take an "outside-in" approach, where you start the administration and monitoring at the outermost level and drill in to the specifc area of focus. this outside in approach should involve getting as many components under one view as possible. The Microsoft Fabric platform has various tools and features to help you administer the solution from as broad a perspective as possible, and you may also augment these views with administration processes and tools of your own. 
 
 <h3>Administration</h3>
+Your primary tasks in administration are in recovery, capacity management, object security, and user management, along with Governance and Compliance. Most of these are at done at the *workspace* level, although there are individual management tools that deal with other aspects of the solution. These interfaces include: 
 
-- Command line tools
-- Graphical tools
-- Automated tools
-
-<h4>Configuration Management</h4>
-
-<h4>Accounts and Security</h4>
-
-<h4>Capactiy Management</h4>
-
+- [Microsoft Fabric admin portal](https://learn.microsoft.com/en-us/fabric/admin/admin-center): Acquire and work with capacities, Ensure quality of service, Manage workspaces, Publish visuals, Verify codes used to embed Microsoft Fabric in other applications, Troubleshoot data access and other issues
+- [Microsoft 365 admin portal](https://admin.microsoft.com/): Manage users and groups, Purchase and assign licenses, Block users from accessing Microsoft Fabric
+- [Microsoft 365 Security & Microsoft Purview compliance portal](https://admin.microsoft.com/): Review and manage auditing, Data classification and tracking, Data loss prevention policies, Microsoft Purview Data Lifecycle Management
+- [Azure Active Directory in the Azure portal](https://aad.portal.azure.com/): Configure conditional access to Microsoft Fabric resources
+- [PowerShell cmdlets](https://learn.microsoft.com/en-us/powershell/power-bi/overview): Manage workspaces and other aspects of Microsoft Fabric using scripts
+- [Administrative APIs and SDK](https://learn.microsoft.com/en-us/power-bi/developer/visuals/create-r-based-power-bi-desktop): Build custom admin tools.
 
 <h3>Monitoring</h3>
+Depending on your solution, you'll develop a custom set of monitoring tools, processes and techniques that give you the most insight into the status, trends, issues and alerts for your deployment. It's best to start with an "outside-in" approach for these monitoring elements, since that will help you narrow down any actions you need to take quickly. You can use the tools provided within the system for this approach, but you will likely need to combine some of them with other tools and perhaps integrate your monitoring into your organization's current tool set. 
 
+The first tool you can use for your monitoring is the *Monitoring Hub*. The Monitoring hub enables users to monitor various Microsoft Fabric activities, such as dataset refresh and Spark Job runs and many others, from a central location. 
 
-<h4>Spot Indicators</h4>
+![Monitoring Hub Panel](https://learn.microsoft.com/en-us/fabric/admin/media/monitoring-hub/admin-monitoring-hub-02.png)
 
-<h4>Historical Indicators</h4>
+The first seven columns in the list of items are shared across all Monitoring hub views. The columns after the first seven are specific to the viewing context, such as Power BI. When you select an item from the list, Monitoring hub displays detailed information about that item.
 
-Logs and Auditing
+When you hover over an item's name, any available quick actions for the item type are displayed, such as stop, start, re-run, or other quick actions. You can also open a detail pane for the item itself when you hover, for example, View run history for datasets that are in Monitoring hub, to display their refresh activities.
+
+Another important concept in monitoring your solution is to understand how each component uses its own internal logging system or transmits that information to the Microsoft Azure Logging system. [This reference provides a guide to the various ingestion mechanisms for Azure Logs](https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/platform-logs-overview). 
+
+To analyze the logs, you have several options. Log analysis is based on the Azure Data Explorer, and uses the Kusto Query Language (KQL) to navigate, along with a graphical Interface. [You can learn more about analyzing logs at this reference](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-query-overview).
+
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Review the Monitoring and Management Tools for Microsoft Fabric</b></p>
 
@@ -164,7 +168,16 @@ Open each of the following tools and navigate the various actions and properties
 
 > If you only reviewed the documentation in this Activity, ensure you bookmark each of these references and then perform the Activity in full once you do have your deployment. 
 
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Optional Activity: Learn basic Log Navigation</b></p>
+
+In this Activity you will navigate the primary interfaces for navigting the Azure Log Monitoring system. 
+
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+
+- [Open this reference and follow the steps you see there](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/tutorials/learn-common-operators?pivots=azuremonitor) 
+
 <p style="border-bottom: 1px solid lightgrey;"></p>
+
 <h2 id="6.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.4 Understanding the EXPLAIN command</h2>
 
 EXPLAIN reference - https://learn.microsoft.com/en-us/sql/t-sql/queries/explain-transact-sql?view=azure-sqldw-latest 
