@@ -30,21 +30,30 @@ You'll cover these topics in this Module on the Developer Experience:
 
 <h2 id="4.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.1 Using Co-Pilot</h2>
 
-Using Copilot in Power BI leverages the power of large language models into Power BI at every layer to help users get more done and create more value from their data. Using Copilot, you can simply describe the visuals and insights you’re looking for, and Copilot will do the rest.  
+Power BI integrates large language models with Copilot, a feature that enables users to create value from their data using natural language. Copilot can generate visuals and insights based on the user’s description, without any manual input.
 
-Users can create and tailor reports in seconds, generate and edit DAX calculations, create narrative summaries, and ask questions about their data, all in conversational language. With the ability to easily tailor the tone, scope, and style of narratives and add them seamlessly within reports, Power BI can also deliver data insights even more impactfully through easy-to-understand text summaries.
+Copilot also allows users to quickly and easily create and customize reports, write and edit DAX formulas, produce narrative summaries, and query their data in a conversational way. Users can adjust the tone, scope, and style of the narratives and embed them in their reports for more effective communication of data insights through clear and concise text.
 
 <a href="https://www.microsoft.com/en-us/videoplayer/embed/RW13t3E">Click here for a demo of the Fabric CoPilot</a>
 
 Microsoft has released *quick measure* suggestions for DAX capability that helps analysts quickly create the code they need. 
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Integrating Co-pilot with Power BI </b></p>
 
-TODO: Activity Description and tasks
+TODO: In this activity, you will follow the instructions to demonstrate how Copilot integrates with Power BI.
+
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
 TODO: Enter activity steps description with checkbox
+* Log in to Power BI using your Microsoft account. You can use the web version or the desktop app.
+Open or create a report that you want to work on. Make sure you have connected to your data sources and imported the data you need.
+* Click on the Copilot tab on the right side of the screen. You will see a text box where you can type your natural language queries or commands.
+* Type what you want Copilot to do for you, such as creating a visual, generating a summary, writing a DAX formula, or asking a question about your data. For example, you can type “show me a bar chart of sales by product category” or “what is the average profit margin for each region?”.
+* Press Enter or click on the Run button. Copilot will analyze your input and your data, and generate the best possible output for you. You will see the output in the Copilot pane, and you can also drag and drop it to your report canvas.
+* You can refine or modify the output by typing more commands or questions in the Copilot text box. For example, you can type “sort by descending order” or “add a title”. You can also use the formatting options in the Power BI toolbar to customize the output further.
+* Repeat steps 4 to 6 until you are satisfied with your report. You can also switch to other tabs in Power BI, such as Data, Model, or Visualizations, and use Copilot there as well.
+Save and share your report with others.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
