@@ -46,20 +46,25 @@ TODO: In this activity, you will follow the instructions to demonstrate how Copi
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
 TODO: Enter activity steps description with checkbox
-* Log in to Power BI using your Microsoft account. You can use the web version or the desktop app.
+- [ ] Log in to Power BI using your Microsoft account. You can use the web version or the desktop app.
 Open or create a report that you want to work on. Make sure you have connected to your data sources and imported the data you need.
-* Click on the Copilot tab on the right side of the screen. You will see a text box where you can type your natural language queries or commands.
-* Type what you want Copilot to do for you, such as creating a visual, generating a summary, writing a DAX formula, or asking a question about your data. For example, you can type “show me a bar chart of sales by product category” or “what is the average profit margin for each region?”.
-* Press Enter or click on the Run button. Copilot will analyze your input and your data, and generate the best possible output for you. You will see the output in the Copilot pane, and you can also drag and drop it to your report canvas.
-* You can refine or modify the output by typing more commands or questions in the Copilot text box. For example, you can type “sort by descending order” or “add a title”. You can also use the formatting options in the Power BI toolbar to customize the output further.
-* Repeat steps 4 to 6 until you are satisfied with your report. You can also switch to other tabs in Power BI, such as Data, Model, or Visualizations, and use Copilot there as well.
+
+- [ ] Click on the Copilot tab on the right side of the screen. You will see a text box where you can type your natural language queries or commands.
+
+- [ ] Type what you want Copilot to do for you, such as creating a visual, generating a summary, writing a DAX formula, or asking a question about your data. For example, you can type “show me a bar chart of sales by product category” or “what is the average profit margin for each region?”.
+
+- [ ] Press Enter or click on the Run button. Copilot will analyze your input and your data, and generate the best possible output for you. You will see the output in the Copilot pane, and you can also drag and drop it to your report canvas.
+
+- [ ] You can refine or modify the output by typing more commands or questions in the Copilot text box. For example, you can type “sort by descending order” or “add a title”. You can also use the formatting options in the Power BI toolbar to customize the output further.
+
+- [ ] Repeat steps 4 to 6 until you are satisfied with your report. You can also switch to other tabs in Power BI, such as Data, Model, or Visualizations, and use Copilot there as well.
 Save and share your report with others.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <h2 id="4.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.2 Using SQL Server Management Studio</h2>
 
-You can use  to SQL Server Management Studio (SSMS) to start at the Microsoft Fabric workspace and connect to a warehouse. First, you'll need your connection string. Navigate to your workspace, select the Warehouse, and select More options. Select Copy SQL connection string to copy the connection string to your clipboard.
+The following paragraph describes how to use SQL Server Management Studio (SSMS) to connect to a warehouse from the Microsoft Fabric workspace. First, you need to obtain your connection string, which is a sequence of characters that specifies how to connect to the warehouse. To do this, go to your workspace, select the Warehouse, and click on More options. Then, choose Copy SQL connection string and paste it somewhere convenient. Next, you need to launch SSMS and enter the connection string in the Connect to Server dialog box. Click on Connect to establish the connection. After that, you can query and manage your warehouse data using SSMS. This is a simple and efficient way to access your warehouse data from the Microsoft Fabric workspace.
 
 ![Connection String](https://learn.microsoft.com/en-us/fabric/data-warehouse/media/connectivity/warehouse-copy-sql-connection-string.png#lightbox)
 
@@ -75,11 +80,21 @@ When connecting via SSMS (or Azure Data Studio), you see both a SQL Endpoint and
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
 
-TODO: Activity Description and tasks
+TODO: Connecting to your Fabric Workspace using SSMS.  
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-TODO: Enter activity steps description with checkbox
+TODO: Follow step by step instructions to connect SSMS to Farbic Workspace
+
+- [ ] First, you need to obtain your connection string from the Fabric workspace. This is a sequence of characters that specifies how to connect to your warehouse or SQL endpoint. To do this, go to your workspace, select the Warehouse, and click on More options. Then, choose Copy SQL connection string and paste it somewhere convenient.
+
+- [ ] Next, you need to launch SSMS and enter the connection string in the Connect to Server dialog box. Select Azure Active Directory - Password as the authentication type and enter your company email address. Do not enter your password. Click on Connect to authenticate via your company’s authentication process.
+
+- [ ] Once the connection is established, you can see the connected warehouse or SQL endpoint from the workspace and its respective tables and views in the Object Explorer. You can query and manage your data using T-SQL commands.
+
+- [ ] To write queries using T-SQL, you can use the SQL query editor in SSMS. This provides support for IntelliSense, code completion, syntax highlighting, client-side parsing, and validation. You can run Data Definition Language (DDL), Data Manipulation Language (DML) and Data Control Language (DCL) statements.
+
+- [ ] To view the query results, you can select Run to execute the query. The Results preview is displayed in the Results section. You can also save the query results as a view or a table, download them as an Excel file, or visualize them using Power BI.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
