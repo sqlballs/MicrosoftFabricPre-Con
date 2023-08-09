@@ -46,75 +46,21 @@ Workspaces reside within capacities and are used as containers for Microsoft Fab
 
 Microsoft Fabric admins can use the Create workspaces setting to designate which users in the organization can create workspaces.
 
-To create a workspace in Microsoft Fabric, you can follow these steps:
+To create a Microsoft Fabric workspace, you need to:
 
-Select Workspaces > New workspace. The Create a workspace pane opens.
-
-![image](https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/8f4a0a14-ee0b-49e3-a146-320a0b302460)
-
-
-The Create a workspace pane opens.
-
-![image](https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/1c2fa5f8-0c24-4e39-8ed7-c0b153aa30a9)
-
-
-      Give the workspace a unique name (mandatory).      
-      Provide a description of the workspace (optional).      
-      Assign the workspace to a domain (optional).
-
-If you are a domain contributor for the workspace, you can associate the workspace to a domain, or you can change an existing association. For information about domains, see Domains in Fabric.
-
-When done, either continue to the advanced settings, or select Apply.
-
-#### <i>Advanced settings</i>
-Expand Advanced and you see advanced setting options:
-
-#### <i>Contact list</i>
-Contact list is a place where you can put the names of people as contacts for information about the workspace. Accordingly, people in this contact list receive system email notifications for workspace level changes.
-
-By default, the first workspace admin who created the workspace is the contact. You can add other users or groups according to your needs. Enter the name in the input box directly, it helps you to automatically search and match users or groups in your org.
-
-![image](https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/fba0f80f-4075-41c2-bb5a-12e81b6b956a)
-
-
-#### <i>License mode</i>
-Different license mode provides different sets of feature for your workspace. After the creation, you can still change the workspace license type in workspace settings, but some migration effort is needed.
-
- Note
-
-Currently, if you want to downgrade the workspace license type from Premium capacity to Pro (Shared capacity), you must first remove any non-Power BI Fabric items that the workspace contains. Only after you remove such items will you be allowed to downgrade the capacity. For more information, see Moving data around.
-
-#### <i>Default storage format</i>
-Power BI datasets can store data in a highly compressed in-memory cache for optimized query performance, enabling fast user interactivity. With Premium capacities, large datasets beyond the default limit can be enabled with the Large dataset storage format setting. When enabled, dataset size is limited by the Premium capacity size or the maximum size set by the administrator. Learn more about large dataset storage format.
-
-#### <i>Template apps</i>
-Power BI template apps are developed for sharing outside your organization. If you check this option, a special type of workspace (template app workspace) is created. It's not possible to revert it back to a normal workspace after creation.
-
-#### <i>Dataflow storage (preview)</i>
-Data used with Power BI is stored in internal storage provided by Power BI by default. With the integration of dataflows and Azure Data Lake Storage Gen 2 (ADLS Gen2), you can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. Learn more about dataflows in Azure Data Lake Storage Gen2 accounts.
-
-#### <i>Give users access to your workspace</i>
-Now that you've created the workspace, you'll want to add other users to roles in the workspace, so you can collaborate with them. See these articles for more information:
-
-Give users access to a workspace
-Roles in workspaces
-Pin workspaces
-Quickly access your favorite workspaces by pinning them to the top of the workspace flyout list.
-
-Open the workspace flyout from the nav pane and hover over the workspace you want to pin. Select the Pin to top icon.
-
-![image](https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/c2e62404-6d28-436e-a99e-55276306085a)
-
-
-The workspace is added in the Pinned list.
-
-![image](https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/0941e200-8d17-4972-af71-6509e05d4101)
-
-
-To unpin a workspace, select the unpin button. The workspace is unpinned.
-
-![image](https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/dd1ad59d-0e2d-4e8f-9713-bda6a4be2a9f)
-
+        Sign in to Power BI.
+        
+        Select Workspaces > New workspace.
+        
+        Fill out the Create a workspace form by giving the workspace a unique name (mandatory), providing a description of the workspace (optional), and assigning the workspace to a domain (optional).
+        
+        Expand the Advanced section.
+        
+        Choose Fabric capacity or Trial in the License mode section.
+        
+        Choose a premium capacity you have access to.
+        
+        Select Apply. The workspace is created and opened.
 <br>
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity:Creating your first Workspace</b></p>
