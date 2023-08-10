@@ -180,22 +180,23 @@ In this Activity you will navigate the primary interfaces for navigting the Azur
 
 <h2 id="6.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.4 Understanding the EXPLAIN command</h2>
 
-EXPLAIN reference - https://learn.microsoft.com/en-us/sql/t-sql/queries/explain-transact-sql?view=azure-sqldw-latest 
+Monitoring occurs at the physical or hardware level, the platform level, and the service level. However, one of the most important aspects of performance is in the code that runs on the system. The code might be external to the system, making calls in, or server-side. For the server-side Transact-SQL code that runs, and important keyword to understand is the EXPLAIN keyword. 
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
+The EXPLAIN T-SQL command returns the query plan for an Azure Synapse Analytics SQL statement without running the statement. You can use EXPLAIN to preview the operations that require data movement and to view the estimated costs of the query operations. 
 
-TODO: Activity Description and tasks
+> Note: EXPLAIN WITH RECOMMENDATIONS applies to Azure Synapse Analytics.
 
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+EXPLAIN can be applied to optimizable queries only, which are queries that can be improved or modified based on the results of an EXPLAIN command. The supported EXPLAIN commands are provided in the previous section. Attempting to use EXPLAIN with an unsupported query type will either return an error or echo the query. It's important to remember that EXPLAIN is not supported in a user transaction.
 
-TODO: Enter activity steps description with checkbox
+[You can learn much more about EXPLAIN, with examples, at this reference](https://learn.microsoft.com/en-us/sql/t-sql/queries/explain-transact-sql?view=azure-sqldw-latest)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
-
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
     <li><a href="https://learn.microsoft.com/en-us/fabric/admin/" target="_blank">Microsoft Fabric Administrator Portal</a></li>
+  <li><a href="[https://learn.microsoft.com/en-us/fabric/admin/](https://www.kevinrchant.com/2023/08/09/prepare-azure-devops-for-microsoft-fabric-git-integration/)" target="_blank">Kevin Chant's tutorial on git integration with Fabric</a></li>
+  
 </ul>
 
 Congratulations! You have completed this workshop on *Microsoft Fabric for the Data Professional*. You now have the tools, assets, and processes you need to extrapolate this information into other applications.
