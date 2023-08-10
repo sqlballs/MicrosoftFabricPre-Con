@@ -27,20 +27,40 @@ You'll cover these topics in this Module:
 
 <h2 id="01"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.1 Understanding and creating Workspaces</h2>
 
-Microsoft Fabric is a platform that provides a set of tools for creating and managing data pipelines. A *Workspace* in Microsoft Fabric is an object where users collaborate on dashboards, reports, and other content1. Every Microsoft Fabric user has a personal wWrkspace called *My workspace* where they can work with their own content. 
+Microsoft Fabric is a comprehensive platform that offers a variety of tools designed for the creation and administration of data pipelines. Within Microsoft Fabric, a Workspace serves as a fundamental element, facilitating collaboration among users on different projects, including dashboards, reports, and various other content1. Each individual using Microsoft Fabric is allocated a personal workspace called My workspace, providing them with a dedicated area to work on their own content and projects.
 
 ![](https://learn.microsoft.com/pt-br/fabric/onelake/media/onelake-overview/onelake-foundation-for-fabric.png)
 
+#### <i>Microsoft Fabric components</i>
+
+This section describes tenants, capacities, and workspaces, which are the main building blocks of a Microsoft Fabric subscription.
+
+#### <i>Tenant</i>
+The foundation of a Microsoft Fabric subscription is the tenant. Each tenant is tied to a specific Domain Name System (DNS). Your tenant is created when you buy a capacity, and after it's created, you can add more capacities. Usually, an organization has one tenant. In such cases, the tenant is synonymous with the organization. Some companies may want to have several tenants, each with their own capacities.
+
+#### <i>Capacity</i>
+A Microsoft Fabric capacity resides on a tenant. Each capacity that sits under a specific tenant is a distinct pool of resources allocated to Microsoft Fabric. The size of the capacity determines the amount of computation power your organization gets. Before you purchase Microsoft Fabric, review the capacity and SKUs section, to establish which capacity is right for your organization.
+
+#### <i>Workspace</i>
+Workspaces reside within capacities and are used as containers for Microsoft Fabric items. Each Microsoft Fabric user has a personal workspace known as My Workspace. More workspaces can be created to enable collaboration. By default, workspaces are created in your organization's shared capacity. When your organization has other capacities, workspaces - including My Workspaces - can be assigned to any capacity in your organization.
+
 Microsoft Fabric admins can use the Create workspaces setting to designate which users in the organization can create workspaces.
 
-To create a workspace in Microsoft Fabric, you can follow these steps:
+To create a Microsoft Fabric workspace, you need to:
 
-- Select *Workspaces > New workspace*
-- The *Create a workspace* pane opens. Give the workspace a unique name (mandatory).
-- Provide a description of the workspace (optional).
-- Assign the workspace to a domain (optional).
-- When done, either continue to the advanced settings, or select *Apply*.
-
+        Sign in to Power BI.
+        
+        Select Workspaces > New workspace.
+        
+        Fill out the Create a workspace form by giving the workspace a unique name (mandatory), providing a description of the workspace (optional), and assigning the workspace to a domain (optional).
+        
+        Expand the Advanced section.
+        
+        Choose Fabric capacity or Trial in the License mode section.
+        
+        Choose a premium capacity you have access to.
+        
+        Select Apply. The workspace is created and opened.
 <br>
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity:Creating your first Workspace</b></p>
