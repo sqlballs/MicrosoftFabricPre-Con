@@ -8,7 +8,7 @@
 
 <img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png"> <h2>06 - Microsoft Fabric DevOps</h2>
 
-In this workshop you'll cover using The Microsoft Fabric Platform to implement a complete Analytics solution using the Microsoft Fabric platform.
+In this workshop you'll cover using The Microsoft Fabric Platform to implement a complete Analytics solution.
 
 In each module you'll get more references, which you should follow up on to learn more. Also watch for links within the text - click on each one to explore that topic.
 
@@ -80,52 +80,123 @@ In this activity, you will determine a real-world opportunity at your organizati
 
 <h2 id="6.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.2 Source Control integration with Microsoft Fabric</h2>
 
-Basic Concepts - https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-integration-process 
-Manage with git - https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git 
+The primary integration method for working with Microsoft Fabric in a Source Control system is the git program. If you are new to git, [there is a free course you can take here - ensure you understand the material there before continuing](https://learn.microsoft.com/en-us/training/modules/intro-to-git/) since this section will assume knowledge from that course. 
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
+When you begin work on a project, you can version the solution at the  workspace level. This way, you can keep track of what you have done and undo any changes if you need to. You can also see what other people working on the same project have done in the same workspace. Using git provides the following advantages:
 
-TODO: Activity Description and tasks
+- Backup and version your work
+- Revert to previous stages
+- Collaborate with others or work alone using Git branches
 
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+To begin working with git and Microsoft Fabric, there are a few pre-requisites. Before you start, you will need to set up:
 
-TODO: Enter activity steps description with checkbox
+- An active Azure account registered to the same user that is using the Fabric workspace
+- Access to an existing repository
+- A Power BI Premium license. Your Power BI premium license still works for all Power BI features
+- A Fabric capacity is required to use all supported Fabric items
+- Your organization’s administrator has to [enable the Fabric switch](https://learn.microsoft.com/en-us/fabric/admin/fabric-switch)
+
+With all that set up, you need to ensure the permissions are correct for the DevOps team. You can find a complete [definition of the permissions you need for each DevOps task at this reference](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-integration-process#permissions). 
+
+After you complete those steps, you will connect a workspace to an *Azure repo*.  This is done in the Power BI tenant where you can find the workspace you want to enable, and then set the options for the repo, organization, and branches you want to enable. You can [find that process at this reference](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git#connect-a-workspace-to-an-azure-repo).
+
+Next, you can start committing changes to git. 
+
+Once your changes are made, you can update the workspace from git. To commit your changes to the git branch, follow these steps:
+
+- Go to the workspace.
+- Select the Source control icon. This icon shows the number of uncommitted changes. 
+- Select the Changes tab of the Source control pane. A list appears with all the items you changed, and an icon indicating if the item is *new*, *modified*, *conflict*, or *deleted*.
+- Select the items you want to commit. To select all items, check the top box.
+- Add a comment in the box. If you don't add a comment, a default message is added automatically.
+- Select Commit.
+
+After the changes are committed, the items that were committed are removed from the list, and the workspace will point to the new commit that it's synced to. Then when the commit is completed successfully, the status of the selected items changes from *Uncommitted* to *Synced*.
+
+If you are done with the repo and you no longer wish to track it with git, you can disconnect a workspace from git. You'll need to have *admin* permissions to do that, but the process is simple: 
+
+- In the Workspace settings, Select *Git integration*
+- Select *Disconnect workspace*
+- Select *Disconnect again* to confirm
+
+There are some considerations to keep in mind when working with git and Microsoft Fabric. Open this reference to see [the latest updates that you need to keep in mind](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git#considerations-and-limitations).
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
+
 <h2 id="6.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.3 Monitoring and Managing a Fabric solution</h2>
 
-Admin Center - https://learn.microsoft.com/en-us/fabric/admin/admin-center 
-Capacity management - https://learn.microsoft.com/en-us/fabric/enterprise/pause-resume 
-Using the Monitoring Hub - https://learn.microsoft.com/en-us/fabric/admin/monitoring-hub 
-Using the Metrics app - https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app 
+Managing a Microsoft Fabric solution involves multiple tools, processes, and procedures. Since there are multiple products involved, you'll often take an "outside-in" approach, where you start the administration and monitoring at the outermost level and drill in to the specifc area of focus. this outside in approach should involve getting as many components under one view as possible. The Microsoft Fabric platform has various tools and features to help you administer the solution from as broad a perspective as possible, and you may also augment these views with administration processes and tools of your own. 
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
+<h3>Administration</h3>
+Your primary tasks in administration are in recovery, capacity management, object security, and user management, along with Governance and Compliance. Most of these are at done at the *workspace* level, although there are individual management tools that deal with other aspects of the solution. These interfaces include: 
 
-TODO: Activity Description and tasks
+- [Microsoft Fabric admin portal](https://learn.microsoft.com/en-us/fabric/admin/admin-center): Acquire and work with capacities, Ensure quality of service, Manage workspaces, Publish visuals, Verify codes used to embed Microsoft Fabric in other applications, Troubleshoot data access and other issues
+- [Microsoft 365 admin portal](https://admin.microsoft.com/): Manage users and groups, Purchase and assign licenses, Block users from accessing Microsoft Fabric
+- [Microsoft 365 Security & Microsoft Purview compliance portal](https://admin.microsoft.com/): Review and manage auditing, Data classification and tracking, Data loss prevention policies, Microsoft Purview Data Lifecycle Management
+- [Azure Active Directory in the Azure portal](https://aad.portal.azure.com/): Configure conditional access to Microsoft Fabric resources
+- [PowerShell cmdlets](https://learn.microsoft.com/en-us/powershell/power-bi/overview): Manage workspaces and other aspects of Microsoft Fabric using scripts
+- [Administrative APIs and SDK](https://learn.microsoft.com/en-us/power-bi/developer/visuals/create-r-based-power-bi-desktop): Build custom admin tools.
+
+<h3>Monitoring</h3>
+Depending on your solution, you'll develop a custom set of monitoring tools, processes and techniques that give you the most insight into the status, trends, issues and alerts for your deployment. It's best to start with an "outside-in" approach for these monitoring elements, since that will help you narrow down any actions you need to take quickly. You can use the tools provided within the system for this approach, but you will likely need to combine some of them with other tools and perhaps integrate your monitoring into your organization's current tool set. 
+
+The first tool you can use for your monitoring is the *Monitoring Hub*. The Monitoring hub enables users to monitor various Microsoft Fabric activities, such as dataset refresh and Spark Job runs and many others, from a central location. 
+
+![Monitoring Hub Panel](https://learn.microsoft.com/en-us/fabric/admin/media/monitoring-hub/admin-monitoring-hub-02.png)
+
+The first seven columns in the list of items are shared across all Monitoring hub views. The columns after the first seven are specific to the viewing context, such as Power BI. When you select an item from the list, Monitoring hub displays detailed information about that item.
+
+When you hover over an item's name, any available quick actions for the item type are displayed, such as stop, start, re-run, or other quick actions. You can also open a detail pane for the item itself when you hover, for example, View run history for datasets that are in Monitoring hub, to display their refresh activities.
+
+Another important concept in monitoring your solution is to understand how each component uses its own internal logging system or transmits that information to the Microsoft Azure Logging system. [This reference provides a guide to the various ingestion mechanisms for Azure Logs](https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/platform-logs-overview). 
+
+To analyze the logs, you have several options. Log analysis is based on the Azure Data Explorer, and uses the Kusto Query Language (KQL) to navigate, along with a graphical Interface. [You can learn more about analyzing logs at this reference](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-query-overview).
+
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Review the Monitoring and Management Tools for Microsoft Fabric</b></p>
+
+In this Activity you will navigate the primary interfaces for monitoring and managing your solution. You can augment this activity with a discussion of your current monitoring and management tools and processes, and how you can integrate these into your process.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-TODO: Enter activity steps description with checkbox
+Open each of the following tools and navigate the various actions and properties they provide. If you do not have a full deployment yet, you can open the document pages from the links for each tool. 
+
+- [Admin Center](https://learn.microsoft.com/en-us/fabric/admin/admin-center) 
+- [Capacity management](https://learn.microsoft.com/en-us/fabric/enterprise/pause-resume)
+- [Using the Monitoring Hub](https://learn.microsoft.com/en-us/fabric/admin/monitoring-hub) 
+- [Using the Metrics app](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app)
+
+> If you only reviewed the documentation in this Activity, ensure you bookmark each of these references and then perform the Activity in full once you do have your deployment. 
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Optional Activity: Learn basic Log Navigation</b></p>
+
+In this Activity you will navigate the primary interfaces for navigting the Azure Log Monitoring system. 
+
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+
+- [Open this reference and follow the steps you see there](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/tutorials/learn-common-operators?pivots=azuremonitor) 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
+
 <h2 id="6.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.4 Understanding the EXPLAIN command</h2>
 
-EXPLAIN reference - https://learn.microsoft.com/en-us/sql/t-sql/queries/explain-transact-sql?view=azure-sqldw-latest 
+Monitoring occurs at the physical or hardware level, the platform level, and the service level. However, one of the most important aspects of performance is in the code that runs on the system. The code might be external to the system, making calls in, or server-side. For the server-side Transact-SQL code that runs, and important keyword to understand is the EXPLAIN keyword. 
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
+The EXPLAIN T-SQL command returns the query plan for an Azure Synapse Analytics SQL statement without running the statement. You can use EXPLAIN to preview the operations that require data movement and to view the estimated costs of the query operations. 
 
-TODO: Activity Description and tasks
+> Note: EXPLAIN WITH RECOMMENDATIONS applies to Azure Synapse Analytics.
 
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+EXPLAIN can be applied to optimizable queries only, which are queries that can be improved or modified based on the results of an EXPLAIN command. The supported EXPLAIN commands are provided in the previous section. Attempting to use EXPLAIN with an unsupported query type will either return an error or echo the query. It's important to remember that EXPLAIN is not supported in a user transaction.
 
-TODO: Enter activity steps description with checkbox
+[You can learn much more about EXPLAIN, with examples, at this reference](https://learn.microsoft.com/en-us/sql/t-sql/queries/explain-transact-sql?view=azure-sqldw-latest)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
-
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
     <li><a href="https://learn.microsoft.com/en-us/fabric/admin/" target="_blank">Microsoft Fabric Administrator Portal</a></li>
+  <li><a href="[https://learn.microsoft.com/en-us/fabric/admin/](https://www.kevinrchant.com/2023/08/09/prepare-azure-devops-for-microsoft-fabric-git-integration/)" target="_blank">Kevin Chant's tutorial on git integration with Fabric</a></li>
+  
 </ul>
 
 Congratulations! You have completed this workshop on *Microsoft Fabric for the Data Professional*. You now have the tools, assets, and processes you need to extrapolate this information into other applications.
