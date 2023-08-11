@@ -46,7 +46,7 @@ TODO: In this activity, you will follow the instructions to demonstrate how Copi
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
 TODO: Enter activity steps description with checkbox
-- [ ] Log in to Power BI using your Microsoft account. You can use the web version or the desktop app.
+- [ ] Log in to Power BI using your Microsoft account. You can use the web version ~~or the desktop app~~.
 Open or create a report that you want to work on. Make sure you have connected to your data sources and imported the data you need.
 
 - [ ] Click on the Copilot tab on the right side of the screen. You will see a text box where you can type your natural language queries or commands.
@@ -58,23 +58,34 @@ Open or create a report that you want to work on. Make sure you have connected t
 - [ ] You can refine or modify the output by typing more commands or questions in the Copilot text box. For example, you can type “sort by descending order” or “add a title”. You can also use the formatting options in the Power BI toolbar to customize the output further.
 
 - [ ] Repeat steps 4 to 6 until you are satisfied with your report. You can also switch to other tabs in Power BI, such as Data, Model, or Visualizations, and use Copilot there as well.
+
 Save and share your report with others.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <h2 id="4.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.2 Using SQL Server Management Studio</h2>
 
-The following paragraph describes how to use SQL Server Management Studio (SSMS) to connect to a warehouse from the Microsoft Fabric workspace. First, you need to obtain your connection string, which is a sequence of characters that specifies how to connect to the warehouse. To do this, go to your workspace, select the Warehouse, and click on More options. Then, choose Copy SQL connection string and paste it somewhere convenient. Next, you need to launch SSMS and enter the connection string in the Connect to Server dialog box. Click on Connect to establish the connection. After that, you can query and manage your warehouse data using SSMS. This is a simple and efficient way to access your warehouse data from the Microsoft Fabric workspace.
+SSMS (SQL Server Management Studio) is a graphical tool that allows you to manage and query data from SQL Server databases. Fabric is a cloud-based data platform that enables you to create and manage data warehouses and lakehouses. A lakehouse is a hybrid of a data warehouse and a data lake, which combines the best features of both. SSMS can connect to Fabric lakehouse SQL endpoints, which are interfaces that allow you to run SQL queries on the data stored in Fabric.
+
+The following paragraphs describe how to use SQL Server Management Studio (SSMS) to connect to a warehouse from the Microsoft Fabric workspace.
+
+ First, you need to obtain your connection string, which is a sequence of characters that specifies how to connect to the warehouse. To do this, go to your workspace, select the Warehouse, and click on More options. Then, choose Copy SQL connection string and paste it somewhere convenient.
 
 ![Connection String](https://learn.microsoft.com/en-us/fabric/data-warehouse/media/connectivity/warehouse-copy-sql-connection-string.png#lightbox)
 
-When you open SSMS, the Connect to Server window appears. If already open, you can connect manually by selecting Object Explorer > Connect > Database Engine.
+Next, you need to launch SSMS and enter the connection string in the Connect to Server dialog box. Click on Connect to establish the connection. After that, you can query and manage your warehouse data using SSMS. This is a simple and efficient way to access your warehouse data from the Microsoft Fabric workspace.
 
-![SSMS](https://learn.microsoft.com/en-us/fabric/data-warehouse/media/connectivity/connect-server-window.png#lightbox)
+![SSMS](https://learn.microsoft.com/en-us/fabric/data-warehouse/media/connectivity/object-explorer-connect-menu.png#lightbox)
+
+In the Connect to Server dialog box, paste the SQL connection string from the Fabric user interface into the Server name box. The connection string should look something like this: fabric://<fabric-name>.sql.<region>.azure.com:1433/<database-name>.
 
 Once the Connect to Server window is open, paste the connection string copied from the previous section of this article into the Server name box. Select Connect and proceed with the appropriate credentials for authentication. Remember that only Azure Active Directory - MFA authentication is supported.
 
+![SSMS](https://learn.microsoft.com/en-us/fabric/data-warehouse/media/connectivity/connect-server-window.png#lightbox)
+
 Once that  connection is established, Object Explorer displays the connected warehouse from the workspace and its respective tables and views, all of which are ready to be queried.
+
+![SSMS](https://learn.microsoft.com/en-us/fabric/data-warehouse/media/connectivity/object-explorer-example.png#lightbox)
 
 When connecting via SSMS (or Azure Data Studio), you see both a SQL Endpoint and Warehouse listed as warehouses, and it's difficult to differentiate between the two item types and their functionality. For this reason, we strongly encourage you to adopt a naming convention that allows you to easily distinguish between the two item types when you work in tools outside of the Microsoft Fabric portal experience.
 
@@ -95,6 +106,7 @@ TODO: Follow step by step instructions to connect SSMS to Farbic Workspace
 - [ ] To write queries using T-SQL, you can use the SQL query editor in SSMS. This provides support for IntelliSense, code completion, syntax highlighting, client-side parsing, and validation. You can run Data Definition Language (DDL), Data Manipulation Language (DML) and Data Control Language (DCL) statements.
 
 - [ ] To view the query results, you can select Run to execute the query. The Results preview is displayed in the Results section. You can also save the query results as a view or a table, download them as an Excel file, or visualize them using Power BI.
+
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
