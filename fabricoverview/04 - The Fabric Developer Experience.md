@@ -112,7 +112,11 @@ TODO: Follow step by step instructions to connect SSMS to Farbic Workspace
 
 <h2 id="4.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.3 Using Visual Studio Code</h2>
 
-The Synapse VS Code extension supports a pro-developer experience for exploring Microsoft Fabric lakehouses, and authoring Fabric notebooks and Spark job definitions. Visual Studio Code is a one of the most popular lightweight source code editors; it runs on your desktop and is available for Windows, macOS, and Linux. By installing the Synapse VS Code extension, you can author, run, and debug your notebook and Spark job definition locally in VS Code. You can also post the code to the remote Spark compute in your Fabric workspace to run or debug. The extension also allows you to browse your lakehouse data, including tables and raw files, in VS Code.
+Using Visual Studio Code with Microsoft Fabric is a great way to develop and deploy applications for the cloud. Visual Studio Code is a free, open source, and cross-platform code editor that supports multiple languages and runtimes, such as C#, Java, Python, and .NET. Microsoft Fabric is an all-in-one analytics solution for enterprises that covers everything from data movement to data science, real-time analytics, and business intelligence. It offers a comprehensive suite of services, including data lake, data engineering, and data integration, all in one place.
+
+The Synapse VS Code extension enables a seamless and productive developer experience for exploring Microsoft Fabric lakehouses, and creating Fabric notebooks and Spark job definitions
+
+Visual Studio Code is a widely used and lightweight source code editor that runs on your desktop and supports Windows, macOS, and Linux platforms. With the Synapse VS Code extension, you can create, execute, and debug your notebook and Spark job definition locally in VS Code. You can also submit the code to the remote Spark compute in your Fabric workspace for running or debugging. Moreover, the extension enables you to browse your lakehouse data, including tables and raw files, in VS Code.
 
 **Prerequisites**
 
@@ -124,22 +128,24 @@ The prerequisites for the Synapse VS Code extension are:
 
 After you have installed the required software, you must update the operating system properties to referene the new packages.
 
-*Windows*
+**Windows**
 
-- Add JAVA_HOME to the environment variables and point it to the directory where java 1.8 is installed.
-- Add both %JAVA_HOME%/bin and the condabin subfolder of the Conda installation to the system path directory.
+1. Add JAVA_HOME to the environment variables and point it to the directory where java 1.8 is installed.
 
-*macOS*
+2. Add both %JAVA_HOME%/bin and the condabin subfolder of the Conda installation to the system path directory.
+
+**macOS**
 Run the conda.sh in the terminal:
 
-- Open the terminal window, change the directory to the folder where conda is installed, then change to the subdirectory etc/profile.d. The subdirectory should contain a file named conda.sh.
-- Execute source conda.sh.
-- In the same terminal window, run sudo conda init.
-- Type in Java --version. The version should be Java 1.8.
+1. Open the terminal window, change the directory to the folder where conda is installed, then change to the subdirectory etc/profile.d. The subdirectory should contain a file named conda.sh.
+2. Execute source conda.sh.
+3. In the same terminal window, run sudo conda init.
+4. Type in Java --version. The version should be Java 1.8.
 
-No you can install the extension and prepare your environment. In VS Code, search for Synapse VS Code in the VS Code extension marketplace and install the extension. (The extension is still under preview, so you need to select the prerelease version to install.)
+**Install the extension and prepare your environment**
 
-After the extension installation is complete, restart VS Code. The icon for the extension is listed at the VS Code activity bar.
+1. In VS Code, search for Synapse VS Code in the VS Code extension marketplace and install the extension. (The extension is still under preview, so you need to select the prerelease version to install.)
+2. After the extension installation is complete, restart VS Code. The icon for the extension is listed at the VS Code activity bar.
 
 **Setting a local working directory**
 
