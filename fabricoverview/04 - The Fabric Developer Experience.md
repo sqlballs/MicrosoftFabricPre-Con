@@ -89,6 +89,7 @@ Once that  connection is established, Object Explorer displays the connected war
 
 When connecting via SSMS (or Azure Data Studio), you see both a SQL Endpoint and Warehouse listed as warehouses, and it's difficult to differentiate between the two item types and their functionality. For this reason, we strongly encourage you to adopt a naming convention that allows you to easily distinguish between the two item types when you work in tools outside of the Microsoft Fabric portal experience.
 
+
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
 
 TODO: Connecting to your Fabric Workspace using SSMS.  
@@ -112,7 +113,11 @@ TODO: Follow step by step instructions to connect SSMS to Farbic Workspace
 
 <h2 id="4.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.3 Using Visual Studio Code</h2>
 
-The Synapse VS Code extension supports a pro-developer experience for exploring Microsoft Fabric lakehouses, and authoring Fabric notebooks and Spark job definitions. Visual Studio Code is a one of the most popular lightweight source code editors; it runs on your desktop and is available for Windows, macOS, and Linux. By installing the Synapse VS Code extension, you can author, run, and debug your notebook and Spark job definition locally in VS Code. You can also post the code to the remote Spark compute in your Fabric workspace to run or debug. The extension also allows you to browse your lakehouse data, including tables and raw files, in VS Code.
+Using Visual Studio Code with Microsoft Fabric is a great way to develop and deploy applications for the cloud. Visual Studio Code is a free, open source, and cross-platform code editor that supports multiple languages and runtimes, such as C#, Java, Python, and .NET. Microsoft Fabric is an all-in-one analytics solution for enterprises that covers everything from data movement to data science, real-time analytics, and business intelligence. It offers a comprehensive suite of services, including data lake, data engineering, and data integration, all in one place.
+
+The Synapse VS Code extension enables a seamless and productive developer experience for exploring Microsoft Fabric lakehouses, and creating Fabric notebooks and Spark job definitions
+
+Visual Studio Code is a widely used and lightweight source code editor that runs on your desktop and supports Windows, macOS, and Linux platforms. With the Synapse VS Code extension, you can create, execute, and debug your notebook and Spark job definition locally in VS Code. You can also submit the code to the remote Spark compute in your Fabric workspace for running or debugging. Moreover, the extension enables you to browse your lakehouse data, including tables and raw files, in VS Code.
 
 **Prerequisites**
 
@@ -124,22 +129,24 @@ The prerequisites for the Synapse VS Code extension are:
 
 After you have installed the required software, you must update the operating system properties to referene the new packages.
 
-*Windows*
+**Windows**
 
-- Add JAVA_HOME to the environment variables and point it to the directory where java 1.8 is installed.
-- Add both %JAVA_HOME%/bin and the condabin subfolder of the Conda installation to the system path directory.
+1. Add JAVA_HOME to the environment variables and point it to the directory where java 1.8 is installed.
 
-*macOS*
+2. Add both %JAVA_HOME%/bin and the condabin subfolder of the Conda installation to the system path directory.
+
+**macOS**
 Run the conda.sh in the terminal:
 
-- Open the terminal window, change the directory to the folder where conda is installed, then change to the subdirectory etc/profile.d. The subdirectory should contain a file named conda.sh.
-- Execute source conda.sh.
-- In the same terminal window, run sudo conda init.
-- Type in Java --version. The version should be Java 1.8.
+1. Open the terminal window, change the directory to the folder where conda is installed, then change to the subdirectory etc/profile.d. The subdirectory should contain a file named conda.sh.
+2. Execute source conda.sh.
+3. In the same terminal window, run sudo conda init.
+4. Type in Java --version. The version should be Java 1.8.
 
-No you can install the extension and prepare your environment. In VS Code, search for Synapse VS Code in the VS Code extension marketplace and install the extension. (The extension is still under preview, so you need to select the prerelease version to install.)
+**Install the extension and prepare your environment**
 
-After the extension installation is complete, restart VS Code. The icon for the extension is listed at the VS Code activity bar.
+1. In VS Code, search for Synapse VS Code in the VS Code extension marketplace and install the extension. (The extension is still under preview, so you need to select the prerelease version to install.)
+2. After the extension installation is complete, restart VS Code. The icon for the extension is listed at the VS Code activity bar.
 
 **Setting a local working directory**
 
@@ -155,11 +162,45 @@ To edit a notebook, you must have a local copy of the notebook content. The loca
 
 To select a Fabric workspace, you must have a workspace created. If you don't have one, you can create one in the Fabric portal. Once you have a workspace, choose it by selecting the Select Workspace option. A list appears of all workspaces that you have access to; select the one you want from the list.
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
+**Considerations and limitations**
+- SQL Authentication is not supported.
+- Multiple Active Result Sets (MARS) is unsupported for Microsoft Fabric Warehouse. MARS is disabled by default, however if MultipleActiveResultSets is included in the connection string, it should be removed or set to false.
+- On connection to a warehouse, you may receive an error that "The token size exceeded the maximum allowed payload size". This may be due to having a large number of warehouses within the workspace or being a member of a large number of Azure AD groups. For most users, the error typically would not occur until approaching beyond 80 warehouses in the workspace. In event of this error, work with the Workspace admin to clean up unused Warehouses and retry the connection, or contact support if the problem persists.
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Connect to Microsoft Fabric using Visual Studio Code</b></p>
 
 TODO: Activity Description and tasks
 
+
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+
+**Install the extension and prepare your environment**
+- [] Search for Synapse VS Code in the VS Code extension marketplace and install the extension. (The extension is still under preview, so you need to select the prerelease version to install.)
+- [] After the extension installation is complete, restart VS Code. The icon for the extension is listed at the VS Code activity bar.
+
+**Local working directory** <br>
+
+To edit a notebook, you must have a local copy of the notebook content. The local working directory of the extension serves as the local root folder for all downloaded notebooks, even notebooks from different workspaces. By invoking the command Synapse:Set Local Work Folder, you can specify a folder as the local working directory for the extension.
+
+To validate the setup, open the extension settings and check the details there:
+![vscode](https://learn.microsoft.com/en-us/fabric/data-engineering/media/vscode/local-working-dir.png)
+
+
+**Sign in and out of your account** <br>
+1. From the VS Code command palette, enter the Synapse:Sign in command to sign in to the extension. A separate browser sign-in page appears.
+2. Enter your username and password.
+3. After you successfully sign in, your username will be displayed in the VS Code status bar to indicate that you're signed in.
+To validate the setup, open the extension settings and check the details there:
+![vscodestatus](https://learn.microsoft.com/en-us/fabric/data-engineering/media/vscode/signin-status.png)
+4. To sign out of the extension, enter the command Synapse: Sign off.
+
+**Choose a workspace to work with**<br>
+To select a Fabric workspace, you must have a workspace created. If you don't have one, you can create one in the Fabric portal. For more information, see Create a workspace.
+
+Once you have a workspace, choose it by selecting the Select Workspace option. A list appears of all workspaces that you have access to; select the one you want from the list.
+![vscodews](https://learn.microsoft.com/en-us/fabric/data-engineering/media/vscode/select-workspace.png)
+
+
 
 - [Click this reference, and follow all steps you see there](https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-with-vs-code)
 
