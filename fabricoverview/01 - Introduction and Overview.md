@@ -19,10 +19,11 @@ You'll cover these topics in this Module:
 
   <dt><a href="#1.1" target="_blank">1.1 - Introduction of the course</a><dt>
   <dt><a href="#1.2" target="_blank">1.2 - Basic Concepts in Microsoft Fabric</a><dt>
-  <dt><a href="#1.3" target="_blank">1.3 - Microsoft Fabric Services</a><dt>
-  <dt><a href="#1.4" target="_blank">1.4 - Microsoft Fabric Roles</a><dt>
-  <dt><a href="#1.5" target="_blank">1.5 - Understanding Microsoft Fabric Benchmarks</a><dt>
-  <dt><a href="#1.6" target="_blank">1.6 - Verification of pre-requisites for the Activities</a><dt>
+  <dt><a href="#1.3" target="_blank">1.3 - 1.3 OneLake & Microsoft Fabric Architecture</a><dt>
+  <dt><a href="#1.4" target="_blank">1.4 - Microsoft Fabric Services</a><dt>
+  <dt><a href="#1.5" target="_blank">1.5 - Microsoft Fabric Roles</a><dt>
+  <dt><a href="#1.6" target="_blank">1.6 - Understanding Microsoft Fabric Benchmarks</a><dt>
+  <dt><a href="#1.7" target="_blank">1.7 - Verification of pre-requisites for the Activities</a><dt>
 
 </dl>
 
@@ -30,9 +31,29 @@ You'll cover these topics in this Module:
 
 <h2 id="1.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.1 Introduction of the Course</h2>
 
-Microsoft Fabric is an all-in-one analytics solution for enterprises that covers everything from data movement to data science, Real-Time Analytics, and business intelligence. It offers a comprehensive suite of services, including data lake, data engineering, data integration, data science, data warehouse, real-time analytics, and Power BI. It is built on a foundation of Software as a Service (SaaS), which simplifies, integrates, and secures the analytics needs of organizations. Microsoft Fabric is in preview and brings together new and existing components from Power BI, Azure Synapse, and Azure Data Factory into a single integrated environment. These components are then presented in various customized user experiences, such as Data Engineering, Data Factory, Data Science, Data Warehouse, Real-Time Analytics, and Power BI. Fabric also provides a unified data lake that allows users to retain, access, and share data across different experiences and clouds. Users can also create their own workspaces and lakehouses within OneLake, the data lake, and mount existing PaaS storage accounts into OneLake with the Shortcut feature. This way, users can enjoy a highly integrated, end-to-end, and easy-to-use product that is designed to turn large and complex data repositories into actionable workloads and analytics.
+Imagine you have a lot of data from different sources and you want to use it to make better decisions for your business. You need a tool that can help you collect, store, process, analyze, and visualize your data in one place. You also want a tool that is easy to use, secure, and flexible. That’s what Microsoft Fabric is all about.
 
-In this Course, you will TODO
+<p>
+
+Microsoft Fabric is a new solution that lets you do everything with your data, from moving it to making sense of it. It has different services that you can use for different purposes.
+<p>
+
+
+Microsoft Fabric is based on cloud technology, which means you don’t have to worry about setting up or managing any infrastructure. It also integrates and secures your data across different experiences and clouds, so you can work with it seamlessly. Microsoft Fabric is currently in preview, which means it is still being developed and improved. It combines new and existing features from Power BI, Azure Synapse, and Azure Data Factory into one environment. You can use these features through different user interfaces, depending on what you want to do with your data.
+<p>
+One of the best things about Microsoft Fabric is OneLake, the OneDrive of the Data world. OneLake is not just a storage place for your data, but also a logical layer that organizes and governs your data. 
+<p>
+You can create your own workspaces and lakehouses within OneLake, which are like folders or projects for your data. You can also use the Shortcut feature to access data from other workspaces or tenants, or from other cloud services like Azure Storage. This way, you can have one copy of your data for consistent and reliable insights.
+<p>
+Microsoft Fabric is designed to help you turn your large and complex data into actionable workloads and analytics. It is a powerful and easy-to-use tool that can help you grow your business and achieve your goals.
+
+In this Course, you will understand:
+- the basic concepts, services, roles, and benchmarks of Microsoft Fabric
+- how to create and manage workspaces, data warehouses, and data integration pipelines and data flows
+- how to Secure and govern your data with distributed ownership and collaboration
+- how to different analytical engines can be used to run T-SQL, Python, or KQL queries in order to load, transform, query, and visualize your data
+- how to use various developer tools, such as Co-Pilot, SSMS, VS Code, and command-line tools, to develop and test your data applications
+- how Microsoft Fabric integrates with DevOps
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -73,7 +94,41 @@ In this exercise, you will review the exercise we will use throughout the course
 
 <h2 id="1.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.3 OneLake & Microsoft Fabric Architecture</h2>
 
-Organizations are faced with multiple challenges in bringing together all data from their environment for actionable intelligence. There are many data professionals involved across the organization working with various data sources, tools, and processes. Microsoft Fabric brings together all these experiences into a unified platform to offer the most comprehensive big data analytics platform in the industry. 
+![OneLake Diagram](https://learn.microsoft.com/en-us/fabric/onelake/media/onelake-overview/onelake-foundation-for-fabric.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Microsoft Fabric enables organizations and individuals to turn large and complex data repositories into actionable workloads and analytics, and is an implementation of a *[data mesh](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/what-is-data-mesh)* architecture. It provides various systems with associated tools and aspects to the data professionals in their day-to-day work:
 
