@@ -89,6 +89,7 @@ Once that  connection is established, Object Explorer displays the connected war
 
 When connecting via SSMS (or Azure Data Studio), you see both a SQL Endpoint and Warehouse listed as warehouses, and it's difficult to differentiate between the two item types and their functionality. For this reason, we strongly encourage you to adopt a naming convention that allows you to easily distinguish between the two item types when you work in tools outside of the Microsoft Fabric portal experience.
 
+
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
 
 TODO: Connecting to your Fabric Workspace using SSMS.  
@@ -161,11 +162,45 @@ To edit a notebook, you must have a local copy of the notebook content. The loca
 
 To select a Fabric workspace, you must have a workspace created. If you don't have one, you can create one in the Fabric portal. Once you have a workspace, choose it by selecting the Select Workspace option. A list appears of all workspaces that you have access to; select the one you want from the list.
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
+**Considerations and limitations**
+- SQL Authentication is not supported.
+- Multiple Active Result Sets (MARS) is unsupported for Microsoft Fabric Warehouse. MARS is disabled by default, however if MultipleActiveResultSets is included in the connection string, it should be removed or set to false.
+- On connection to a warehouse, you may receive an error that "The token size exceeded the maximum allowed payload size". This may be due to having a large number of warehouses within the workspace or being a member of a large number of Azure AD groups. For most users, the error typically would not occur until approaching beyond 80 warehouses in the workspace. In event of this error, work with the Workspace admin to clean up unused Warehouses and retry the connection, or contact support if the problem persists.
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Connect to Microsoft Fabric using Visual Studio Code</b></p>
 
 TODO: Activity Description and tasks
 
+
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+
+**Install the extension and prepare your environment**
+- [] Search for Synapse VS Code in the VS Code extension marketplace and install the extension. (The extension is still under preview, so you need to select the prerelease version to install.)
+- [] After the extension installation is complete, restart VS Code. The icon for the extension is listed at the VS Code activity bar.
+
+**Local working directory** <br>
+
+To edit a notebook, you must have a local copy of the notebook content. The local working directory of the extension serves as the local root folder for all downloaded notebooks, even notebooks from different workspaces. By invoking the command Synapse:Set Local Work Folder, you can specify a folder as the local working directory for the extension.
+
+To validate the setup, open the extension settings and check the details there:
+![vscode](https://learn.microsoft.com/en-us/fabric/data-engineering/media/vscode/local-working-dir.png)
+
+
+**Sign in and out of your account** <br>
+1. From the VS Code command palette, enter the Synapse:Sign in command to sign in to the extension. A separate browser sign-in page appears.
+2. Enter your username and password.
+3. After you successfully sign in, your username will be displayed in the VS Code status bar to indicate that you're signed in.
+To validate the setup, open the extension settings and check the details there:
+![vscodestatus](https://learn.microsoft.com/en-us/fabric/data-engineering/media/vscode/signin-status.png)
+4. To sign out of the extension, enter the command Synapse: Sign off.
+
+**Choose a workspace to work with**<br>
+To select a Fabric workspace, you must have a workspace created. If you don't have one, you can create one in the Fabric portal. For more information, see Create a workspace.
+
+Once you have a workspace, choose it by selecting the Select Workspace option. A list appears of all workspaces that you have access to; select the one you want from the list.
+![vscodews](https://learn.microsoft.com/en-us/fabric/data-engineering/media/vscode/select-workspace.png)
+
+
 
 - [Click this reference, and follow all steps you see there](https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-with-vs-code)
 
