@@ -30,36 +30,24 @@ You'll cover these topics in this Module on the Developer Experience:
 
 <h2 id="4.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.1 Using Co-Pilot</h2>
 
-Power BI integrates large language models with Copilot, a feature that enables users to create value from their data using natural language. Copilot can generate visuals and insights based on the user’s description, without any manual input.
+Copilot is a new feature in Power BI that harnesses the power of large language models to help users create value from their data using natural language. Users can simply describe their desired visuals and insights, and Copilot will generate them automatically, without requiring any manual input.
 
-Copilot also allows users to quickly and easily create and customize reports, write and edit DAX formulas, produce narrative summaries, and query their data in a conversational way. Users can adjust the tone, scope, and style of the narratives and embed them in their reports for more effective communication of data insights through clear and concise text.
+Copilot also enables users to easily and quickly create and customize reports, write and edit DAX formulas, produce narrative summaries, and query their data in a conversational way. Users can tailor the tone, scope, and style of the narratives and integrate them into their reports for more effective data communication through clear and concise text.
 
-<a href="https://www.microsoft.com/en-us/videoplayer/embed/RW13t3E">Click here for a demo of the Fabric CoPilot</a>
+![Connection String](https://powerbiblogscdn.azureedge.net/wp-content/uploads/2023/05/AZ_Trident-PBi-D365-Blog-Hero-1200x628.png")
+
 
 Microsoft has released *quick measure* suggestions for DAX capability that helps analysts quickly create the code they need. 
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Integrating Co-pilot with Power BI </b></p>
 
-TODO: In this activity, you will follow the instructions to demonstrate how Copilot integrates with Power BI.
+TODO: Select the link below to see the how Microsoft has integrated Copilot into Power BI.
 
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
 TODO: Enter activity steps description with checkbox
-- [ ] Log in to Power BI using your Microsoft account. You can use the web version ~~or the desktop app~~.
-Open or create a report that you want to work on. Make sure you have connected to your data sources and imported the data you need.
-
-- [ ] Click on the Copilot tab on the right side of the screen. You will see a text box where you can type your natural language queries or commands.
-
-- [ ] Type what you want Copilot to do for you, such as creating a visual, generating a summary, writing a DAX formula, or asking a question about your data. For example, you can type “show me a bar chart of sales by product category” or “what is the average profit margin for each region?”.
-
-- [ ] Press Enter or click on the Run button. Copilot will analyze your input and your data, and generate the best possible output for you. You will see the output in the Copilot pane, and you can also drag and drop it to your report canvas.
-
-- [ ] You can refine or modify the output by typing more commands or questions in the Copilot text box. For example, you can type “sort by descending order” or “add a title”. You can also use the formatting options in the Power BI toolbar to customize the output further.
-
-- [ ] Repeat steps 4 to 6 until you are satisfied with your report. You can also switch to other tabs in Power BI, such as Data, Model, or Visualizations, and use Copilot there as well.
-
-Save and share your report with others.
+- [ ] <a href="https://www.microsoft.com/en-us/videoplayer/embed/RW13t3E">Click here for a demo of the Fabric CoPilot</a>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -71,11 +59,11 @@ The following paragraphs describe how to use SQL Server Management Studio (SSMS)
 
  First, you need to obtain your connection string, which is a sequence of characters that specifies how to connect to the warehouse. To do this, go to your workspace, select the Warehouse, and click on More options. Then, choose Copy SQL connection string and paste it somewhere convenient.
 
-![Connection String](https://learn.microsoft.com/en-us/fabric/data-warehouse/media/connectivity/warehouse-copy-sql-connection-string.png#lightbox)
+[//]: #(https://learn.microsoft.com/en-us/fabric/data-warehouse/media/connectivity/warehouse-copy-sql-connection-string.png#lightbox)
 
 Next, you need to launch SSMS and enter the connection string in the Connect to Server dialog box. Click on Connect to establish the connection. After that, you can query and manage your warehouse data using SSMS. This is a simple and efficient way to access your warehouse data from the Microsoft Fabric workspace.
 
-![SSMS](https://learn.microsoft.com/en-us/fabric/data-warehouse/media/connectivity/object-explorer-connect-menu.png#lightbox)
+[//]: #(https://learn.microsoft.com/en-us/fabric/data-warehouse/media/connectivity/object-explorer-connect-menu.png#lightbox)
 
 In the Connect to Server dialog box, paste the SQL connection string from the Fabric user interface into the Server name box. The connection string should look something like this: fabric://<fabric-name>.sql.<region>.azure.com:1433/<database-name>.
 
@@ -96,18 +84,14 @@ TODO: Connecting to your Fabric Workspace using SSMS.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-TODO: Follow step by step instructions to connect SSMS to Farbic Workspace
+TODO: Follow instructions in the TODO link provided to connect SSMS to Farbic Workspace with SSMS. 
+- [ ] <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/connectivity">Click here for a demo on how to connect to Microsoft Fabric with SSMS.</a>
 
-- [ ] First, you need to obtain your connection string from the Fabric workspace. This is a sequence of characters that specifies how to connect to your warehouse or SQL endpoint. To do this, go to your workspace, select the Warehouse, and click on More options. Then, choose Copy SQL connection string and paste it somewhere convenient.
-
-- [ ] Next, you need to launch SSMS and enter the connection string in the Connect to Server dialog box. Select Azure Active Directory - Password as the authentication type and enter your company email address. Do not enter your password. Click on Connect to authenticate via your company’s authentication process.
-
-- [ ] Once the connection is established, you can see the connected warehouse or SQL endpoint from the workspace and its respective tables and views in the Object Explorer. You can query and manage your data using T-SQL commands.
-
-- [ ] To write queries using T-SQL, you can use the SQL query editor in SSMS. This provides support for IntelliSense, code completion, syntax highlighting, client-side parsing, and validation. You can run Data Definition Language (DDL), Data Manipulation Language (DML) and Data Control Language (DCL) statements.
-
-- [ ] To view the query results, you can select Run to execute the query. The Results preview is displayed in the Results section. You can also save the query results as a view or a table, download them as an Excel file, or visualize them using Power BI.
-
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
+<ul>
+    <li><a> href="https://www.youtube.com/@Tales-from-the-Field" target="_blank"Insert Brands TFTF Video Here on ways to connect</a></li>
+  
+</ul>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -156,6 +140,7 @@ To edit a notebook, you must have a local copy of the notebook content. The loca
 - From the VS Code command palette, enter the Synapse:Sign in command to sign in to the extension. A separate browser sign-in page appears.
 - Enter your username and password.
 - After you successfully sign in, your username will be displayed in the VS Code status bar to indicate that you're signed in.
+![vscsignin](https://learn.microsoft.com/en-us/fabric/data-engineering/media/vscode/signin-status.png)
 - To sign out of the extension, enter the command Synapse: Sign off.
 
 **Choose a workspace to work with**
@@ -169,40 +154,21 @@ To select a Fabric workspace, you must have a workspace created. If you don't ha
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Connect to Microsoft Fabric using Visual Studio Code</b></p>
 
-TODO: Activity Description and tasks
+TODO:  Follow instructions in the TODO link provided for Visual Studio Code connection overview.
+- [ ] <a href="https://learn.microsoft.com/en-us/fabric/data-engineering/setup-vs-code-extension">What is the Synapse Visual Studio Code extension.</a>
+
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
+<ul>
+    <li><a> href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-with-vs-code" target="_blank"Microsoft Fabric notebook experience in VS Code</a></li>
+    <li><a> href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-resource-with-vs-code" target="_blank"Microsoft Fabric notebook resource in VS Code</a></li>
+    <li><a> href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-sjd-with-vs-code" target="_blank"Spark job definition experience in VS Code</a></li>
+    <li><a> href="https://learn.microsoft.com/en-us/fabric/data-engineering/explore-lakehouse-with-vs-code" target="_blank"Explore Microsoft Fabric lakehouses in VS Code</a></li>
+
+</ul>
+
+<p style="border-bottom: 1px solid lightgrey;"></p>
 
 
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
-
-**Install the extension and prepare your environment**
-- [] Search for Synapse VS Code in the VS Code extension marketplace and install the extension. (The extension is still under preview, so you need to select the prerelease version to install.)
-- [] After the extension installation is complete, restart VS Code. The icon for the extension is listed at the VS Code activity bar.
-
-**Local working directory** <br>
-
-To edit a notebook, you must have a local copy of the notebook content. The local working directory of the extension serves as the local root folder for all downloaded notebooks, even notebooks from different workspaces. By invoking the command Synapse:Set Local Work Folder, you can specify a folder as the local working directory for the extension.
-
-To validate the setup, open the extension settings and check the details there:
-![vscode](https://learn.microsoft.com/en-us/fabric/data-engineering/media/vscode/local-working-dir.png)
-
-
-**Sign in and out of your account** <br>
-1. From the VS Code command palette, enter the Synapse:Sign in command to sign in to the extension. A separate browser sign-in page appears.
-2. Enter your username and password.
-3. After you successfully sign in, your username will be displayed in the VS Code status bar to indicate that you're signed in.
-To validate the setup, open the extension settings and check the details there:
-![vscodestatus](https://learn.microsoft.com/en-us/fabric/data-engineering/media/vscode/signin-status.png)
-4. To sign out of the extension, enter the command Synapse: Sign off.
-
-**Choose a workspace to work with**<br>
-To select a Fabric workspace, you must have a workspace created. If you don't have one, you can create one in the Fabric portal. For more information, see Create a workspace.
-
-Once you have a workspace, choose it by selecting the Select Workspace option. A list appears of all workspaces that you have access to; select the one you want from the list.
-![vscodews](https://learn.microsoft.com/en-us/fabric/data-engineering/media/vscode/select-workspace.png)
-
-
-
-- [Click this reference, and follow all steps you see there](https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-with-vs-code)
 
 <h2 id="4.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.4 Using Command Line Tools</h2>
 
