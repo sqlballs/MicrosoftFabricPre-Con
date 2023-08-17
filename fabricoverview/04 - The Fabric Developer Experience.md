@@ -89,8 +89,7 @@ TODO: Follow instructions in the TODO link provided to connect SSMS to Farbic Wo
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
-    <li><a> href="https://www.youtube.com/@Tales-from-the-Field" target="_blank"Insert Brands TFTF Video Here on ways to connect</a></li>
-  
+    <li><a href="https://www.youtube.com/@Tales-from-the-Field" target="_blank"> "Insert Brads TFTF Video Here on ways to connect"</a></li>
 </ul>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
@@ -146,7 +145,7 @@ To edit a notebook, you must have a local copy of the notebook content. The loca
 **Choose a workspace to work with**
 
 To select a Fabric workspace, you must have a workspace created. If you don't have one, you can create one in the Fabric portal. Once you have a workspace, choose it by selecting the Select Workspace option. A list appears of all workspaces that you have access to; select the one you want from the list.
-
+ 
 **Considerations and limitations**
 - SQL Authentication is not supported.
 - Multiple Active Result Sets (MARS) is unsupported for Microsoft Fabric Warehouse. MARS is disabled by default, however if MultipleActiveResultSets is included in the connection string, it should be removed or set to false.
@@ -159,10 +158,10 @@ TODO:  Follow instructions in the TODO link provided for Visual Studio Code conn
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
-    <li><a> href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-with-vs-code" target="_blank"Microsoft Fabric notebook experience in VS Code</a></li>
-    <li><a> href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-resource-with-vs-code" target="_blank"Microsoft Fabric notebook resource in VS Code</a></li>
-    <li><a> href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-sjd-with-vs-code" target="_blank"Spark job definition experience in VS Code</a></li>
-    <li><a> href="https://learn.microsoft.com/en-us/fabric/data-engineering/explore-lakehouse-with-vs-code" target="_blank"Explore Microsoft Fabric lakehouses in VS Code</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-with-vs-code" target="_blank">"Microsoft Fabric notebook experience in VS Code"</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-resource-with-vs-code" target="_blank">"Microsoft Fabric notebook resource in VS Code</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-sjd-with-vs-code" target="_blank">"Spark job definition experience in VS Code</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/explore-lakehouse-with-vs-code" target="_blank">"Explore Microsoft Fabric lakehouses in VS Code</a></li>
 
 </ul>
 
@@ -170,66 +169,23 @@ TODO:  Follow instructions in the TODO link provided for Visual Studio Code conn
 
 
 
-<h2 id="4.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.4 Using Command Line Tools</h2>
+<h2 id="4.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.4 Connecting with Power BI</h2>
 
-There are two CLI utilities used to interact with Service Fabric. Azure CLI is used to manage Azure resources, such as an Azure-hosted Service Fabric cluster. Service Fabric CLI is used to directly connect to the Service Fabric cluster (regardless of where it's hosted) and manage the cluster, applications, and services.
+Power BI natively and fully supports a Warehouse or Lakehouse SQL Endpoint as a data source, eliminating the need for the SQL Connection string. The Data Hub provides direct access to all of the warehouses that you have permissions for.
 
-The Azure Service Fabric command-line interface (CLI) is a command-line utility for interacting with and managing Service Fabric entities. The Service Fabric CLI can be used with either Windows or Linux clusters. The Service Fabric CLI runs on any platform where Python is supported. 
+![pbimf](https://learn.microsoft.com/en-us/power-bi/fundamentals/media/fabric-get-started/configure-connection.png)
 
-**Prerequisites**
 
-Prior to installation, make sure your environment has both Python and pip installed. The CLI supports Python versions 2.7 and 3.6+, with Python 3.x recommended.
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Fabric for Power BI users</b></p>
 
-**Select a cluster** 
-
-Before you perform any operations, you must select a cluster to connect to. For example, to select and connect to the cluster with the name testcluster.com, run the following command:
-
-````sfctl cluster select --endpoint http://testcluster.com:19080````
-
-> **Warning**: Do not use unsecured Service Fabric clusters in a production environment.
-
-The cluster endpoint must be prefixed by http or https. It must include the port for the HTTP gateway. The port and address are the same as the Service Fabric Explorer URL. For clusters that are secured with a certificate, you can specify a PEM-encoded certificate. The certificate can be specified as a single file or as a cert and a key pair. If it is a self-signed certificate that is not CA signed, you can pass the ````--no-verify option```` to bypass CA verification.
-
-````sfctl cluster select --endpoint https://testsecurecluster.com:19080 --pem ./client.pem --no-verify````
-
-**Basic operations** 
-
-Cluster connection information persists across multiple Service Fabric CLI sessions. After you select a Service Fabric cluster, you can run any Service Fabric command on the cluster. For example, to get the Service Fabric cluster health state, use the following command:
-
-````sfctl cluster health````
-
-The command results in the following output:
-
-````
-{
-  "aggregatedHealthState": "Ok",
-  "applicationHealthStates": [
-    {
-      "aggregatedHealthState": "Ok",
-      "name": "fabric:/System"
-    }
-  ],
-  "healthEvents": [],
-  "nodeHealthStates": [
-    {
-      "aggregatedHealthState": "Ok",
-      "id": {
-        "id": "66aa824a642124089ee474b398d06a57"
-      },
-      "name": "_Test_0"
-    }
-  ],
-  "unhealthyEvaluations": []
-}
-````
-
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
-
-TODO: Activity Description and tasks
+TODO: In this tutorial, you learn how to use Dataflows Gen2 and Pipelines to ingest data into a Lakehouse and create a dimensional model.
+ You also learn how to generate a beautiful report automatically to display the latest sales figures from start to finish in just 45 minutes.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-TODO: Enter activity steps description with checkbox<p style="border-bottom: 1px solid lightgrey;"></p>
+TODO: Follow instructions in the TODO link to learn how to connect Power BI to Microsoft Fabric.<p style="border-bottom: 1px solid lightgrey;"></p>
+
+- [ ] <a href="https://learn.microsoft.com/en-us/power-bi/fundamentals/fabric-get-started">Connecting to Microsoft Fabric with Power BI.</a>
 
 <h2 id="4.5"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.5 Development Best Practices</h2>
 
