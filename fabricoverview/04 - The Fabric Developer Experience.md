@@ -145,7 +145,7 @@ To edit a notebook, you must have a local copy of the notebook content. The loca
 **Choose a workspace to work with**
 
 To select a Fabric workspace, you must have a workspace created. If you don't have one, you can create one in the Fabric portal. Once you have a workspace, choose it by selecting the Select Workspace option. A list appears of all workspaces that you have access to; select the one you want from the list.
-
+ 
 **Considerations and limitations**
 - SQL Authentication is not supported.
 - Multiple Active Result Sets (MARS) is unsupported for Microsoft Fabric Warehouse. MARS is disabled by default, however if MultipleActiveResultSets is included in the connection string, it should be removed or set to false.
