@@ -189,132 +189,56 @@ TODO: Follow instructions in the TODO link to learn how to connect Power BI to M
 
 <h2 id="4.5"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.5 Development Best Practices</h2>
 
-Apart from standard developer best-practices, there are some additional considerations for the Microsoft Fabric developer. You can use this section as a template, and add or alter best practices as you learn more and as your organization's requirements dictate. This is not an exhaustive list, so the exercise that follows will explore more suggestions in a team setting. 
+The itenteion of the module is to provide oractical guidance for data & analytics creators who are managing their content throughout its lifecycle in Microsoft Fabric. The article focuses on the use of git integration for source control and deployment pipelines as a release tool. For a general guidance on Enterprise content publishing, Enterprise content publishing.
 
-**Back up your work into a git repository**
+## Your should conside 4 best practices when deploying within your Microsoft Fabric Tenant: ##
+* Content preparation - Prepare your content for lifecycle management.
+* Development - Learn about the best ways of creating content in the deployment pipelines development stage.
+* Test - Understand how to use a deployment pipelines test stage to test your environment.x
+* Production - Utilize a deployment pipelines production stage to make your content available for consumption.
 
-With git integration, any developer can back up their work by committing it into git. To do this properly in Fabric, here are some basic rules:
+### Content Preparation ###
+* Separate development between teams
+* Plan your permission model
+* Connect different stages to different databases
+* Use parameters for configurations that will change between stages 
 
-- Make sure you have an isolated environment to work in, so others don’t override your work before it gets committed. This means working in a Desktop tool (such as VSCode, Power BI Desktop or others), or in a separate workspace that other users can’t access.
-- Commit to a branch that you created and no other developer is using. If you’re using a workspace as an authoring environment, read about working with branches.
-- Commit together changes that must be deployed together. This advice applies for a single item, or multiple items that are related to the same change. Committing all related changes together can help you later when deploying to other stages, creating pull requests, or reverting changes back.
-- Big commits might hit a max commit size limit. Be mindful of the number of items you commit together, or the general size of an item. For example, reports can grow large when adding large images. It’s bad practice to store large-size items in source control systems, even if it works. Consider ways to reduce the size of your items if they have lots of static resources, like images.
+### Development ###
+* Back up your work into a git repository
+* Rolling back changes
+* Working with a ‘private’ workspace
+* Use Client tools to edit your work
+* Managing workspaces and branches
 
-**Rolling back changes**
+### Test ###
+* Simulate your production environment
+* Use deployment rules with a real-life data source
+* Check related items
+* Updating data items 
+* Test your app
 
-After backing up your work, there might be cases where you want to revert to a previous version and restore it in the workspace. There are a few options for this:
+### Production ###
+* Manage who can deploy to production
+* Update the production app
+* Deploying into production using git branches
+* Quick fixes to content
 
-- Undo button: The Undo operation is an easy and fast way to revert the immediate changes you made, as long as they are not committed yet. You can also undo each item separately. Read more about the undo operation.
-- Reverting to older commits: There’s no direct way to go back to a previous commit in the UI. The best option is to promote an older commit to be the HEAD using git revert or git reset. Doing this will show that there’s an update in the source control pane, and you can update the workspace with that new commit.
 
-As data isn’t stored in git, consider that reverting a data item to an older version might break the existing data and could possible require you to drop the data or the operation might fail. Check this in advance before reverting changes back.
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Do a deeper review of items discuss in module 4.5</b></p>
 
-**Working with a private workspace**
-
-When you want to work in isolation, use a separate workspace as an isolated environment. Read more about this in working with branches. For an optimal workflow for you and the team, consider the following:
-
-- Setting up the workspace: Before you start, make sure you can create a new workspace (if you don’t already have one), that you can assign it to a Fabric capacity, and that you have access to data to work in your workspace.
-- Creating a new branch: Create a new branch from the main branch, so you’ll have the most up-to-date version of your content. Also make sure you connect to the correct folder in the branch, so you can pull the right content into the workspace.
-- Small, frequent changes: It's a git best practice to make small incremental changes that are easy to merge and less likely to get into conflicts. If that’s not possible, make sure to update your branch from main so you can resolve conflicts on your own first.
-- Configuration changes: If necessary, change the configurations in your workspace to help you work more productively. Some changes can include connection between items, or to different data sources or changes to parameters on a given item. Just remember that anything you commit will be part of the commit and can accidentally be merged into the main branch.
-
-**Use Client tools to edit your work**
-
-For items and tools that support it, it might be easier to work with client tools for authoring, such as Power BI Desktop for datasets and reports, VSCode for Notebooks etc. These tools can be your local development environment. After you complete your work, push the changes into the remote repo, and sync the workspace to upload the changes. Just make sure you are working with the supported structure of the item you are authoring. If you’re not sure, first clone a repo with content already synced to a workspace, then start authoring from there, where the structure is already in place.
-
-**Managing workspaces and branches**
-
-Since a workspace can only be connected to a single branch at a time, it is recommended to treat this as a 1:1 mapping. However, to reduce the amount of workspace it entails, consider these options:
-
-- If a developer set up a private workspace with all required configurations, they can continue to use that workspace for any future branch they create. When a sprint is over, your changes are merged and you are starting a fresh new task, just switch the connection to a new branch on the same workspace. You can also do this if you suddenly need to fix a bug in the middle of a sprint. Think of it as a working directory on the web.
-- Developers using a client tool (such as VSCode, Power BI Desktop or others), don’t necessarily need a workspace. They can create branches and commit changes to that branch locally, push those to the remote repo and create a pull request to the main branch, all without a workspace. A workspace is needed only as a testing environment to check that everything works in a real-life scenario. It's up to you to decide when that should happen.
-
-**Test**
-
-This section provides guidance for working with a deployment pipelines test stage.
-
-*Simulate your production environment*
-
-It’s important to see how your change will impact the production stage. A deployment pipelines test stage allows you to simulate a real production environment for testing purposes. Alternatively, you can simulate this by connecting git to an additional workspace.
-
-Make sure that these three factors are addressed in your test environment:
-
-- Data volume
-- Usage volume
-- A similar capacity as in production
-
-When testing, you can use the same capacity as the production stage. However, using the same capacity can make production unstable during load testing. To avoid unstable production, test using a different capacity similar in resources to the production capacity. To avoid extra costs, use a capacity where you can pay only for the testing time.
-
-*Use deployment rules with a real-life data source*
-
-If you're using the test stage to simulate real life data usage, it's recommended to separate the development and test data sources. The development database should be relatively small, and the test database should be as similar as possible to the production database. Use data source rules to switch data sources in the test stage or parameterize the connection if not working through deployment pipelines.
-
-*Check related items*
-
-Changes you make can also affect the dependent items. During testing, verify that your changes don’t affect or break the performance of existing items, which can be dependent on the updated ones. You can easily find the related items by using impact analysis.
-
-*Updating data items*
-
-Data items are items that store data. The item’s definition in git defines how the data is stored. When updating an item in the workspace, we are importing its definition into the workspace and applying it on the existing data. The operation of updating data items is the same for git and deployment pipelines.
-
-As different items have different capabilities when it comes to retaining data when changes to the definition are applied, be mindful when applying the changes. Some practices that can help you apply the changes in the safest way:
-
-- Know in advance what the changes are and what their impact might be on the existing data. Use commit messages to describe the changes made.
-- Upload the changes first to a dev or test environment, to see how that item handles the change with test data.
-- If everything goes well, it’s recommended to also check it on a staging environment, with real-life data (or as close to it as possible), to minimize the unexpected behaviors in production.
-- Consider the best timing when updating the Prod environment to minimize the damage that any errors might cause to your business users who consume the data.
-- After deployment, post-deployment tests in Prod to verify that everything is working as expected.
-
-Some changes will always be considered breaking changes. Hopefully, the preceding steps will help you track them before production. Build a plan for how to apply the changes in Prod and recover the data to get back to normal state and minimize downtime for business users.
-
-*Test your app*
-
-If you're distributing content to your customers through an app, review the app's new version before it's in production. Since each deployment pipeline stage has its own workspace, you can easily publish and update apps for development and test stages. Publishing and updating apps allows you to test the app from an end user's point of view.
-
-> **Important:** The deployment process doesn't include updating the app content or settings. To apply changes to content or settings, manually update the app in the required pipeline stage.
-
-**Production**
-
-This section provides guidance to the deployment pipelines production stage.
-
-*Manage who can deploy to production*
-
-Because deploying to production should be handled carefully, it's good practice to let only specific people manage this sensitive operation. However, you probably want all BI creators for a specific workspace to have access to the pipeline. Use production workspace permissions to manage access permissions. Other users can have a production workspace viewer role to see content in the workspace but not make changes from git or deployment pipelines.
-
-In addition, limit access to the repo or pipeline by only enabling permissions to users that are part of the content creation process.
-
-*Set rules to ensure production stage availability*
-
-Deployment rules are a powerful way to ensure the data in production is always connected and available to users. With deployment rules applied, deployments can run while you have the assurance that customers can see the relevant information without disturbance. Make sure that you set production deployment rules for data sources and parameters defined in the dataset.
-
-*Update the production app*
-
-Deployment in a pipeline updates the workspace content, but it can also update the associated app through the deployment pipelines API. It's not possible to update the app through the UI. You need to update the app manually. If you use an app for content distribution, don’t forget to update the app after deploying to production so that end users are immediately able to use the latest version.
-
-*Deploying into production using git branches*
-
-As the repo serves as the ‘single-source-of-truth’, some teams might want to deploy updates into different stages directly from git. This is possible with git integration, with a few considerations:
-
-- It’s recommended to use release branches. You will be required to continuously change the connection of workspace to the new release branches before every deployment.
-- If your build or release pipeline requires you to change the source code, or run scripts in a build environment before deployment to the workspace, then connecting the workspace to git won't help you.
-- After deploying to each stage, make sure to change all the configuration specific to that stage.
-
-*Quick fixes to content*
-
-Sometimes there are issues in production that require a quick fix. Deploying a fix without testing it first is bad practice. Therefore, always implement the fix in the development stage and push it to the rest of the deployment pipeline stages. Deploying to the development stage allows you to check that the fix works before deploying it to production. Deploying across the pipeline takes only a few minutes.
-
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
-
-Team discussion of further best practices.
+For more detail on the items discussed within Development Best Practices read through the link provided in the TODO.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
 TODO: Enter activity steps description with checkbox
 <p style="border-bottom: 1px solid lightgrey;"></p>
+- [ ] <a href="https://learn.microsoft.com/en-us/fabric/cicd/best-practices-cicd">Lifecycle management best practices</a>
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
-    <li><a href="https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-develop-csharp-applications-with-vs-code" target="_blank">Develop C# Service Fabric applications with Visual Studio Code</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/cicd/cicd-tutorial" target="_blank">End to end lifecycle management tutorial</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git" target="_blank">Get started with git integration</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/cicd/deployment-pipelines/get-started-with-deployment-pipelines" target="_blank">Get started with deployment pipelines</a></li>
 </ul>
 
 Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/05%20-%20The%20Fabric%20User%20Experience.md).
