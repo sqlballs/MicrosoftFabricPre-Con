@@ -71,7 +71,7 @@ To create a Microsoft Fabric workspace, you need to:
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-- [Open this reference, and complete the steps you see there.](https://learn.microsoft.com/en-us/fabric/get-started/create-workspaces)
+- [How to create a Workspace.](https://learn.microsoft.com/en-us/fabric/get-started/create-workspaces)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -103,7 +103,7 @@ To manage your Workspace, you can follow these steps:
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Create a Workspace</b></p>
 
-TODO:-[Create a workspace](https://learn.microsoft.com/en-us/fabric/get-started/create-workspaces)
+  TODO:-[How to give user access to users](https://learn.microsoft.com/en-us/fabric/get-started/give-access-workspaces)
 
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
