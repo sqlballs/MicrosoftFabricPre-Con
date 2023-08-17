@@ -145,7 +145,10 @@ Add a configuration-driven copy activity together with your low-code dataflow re
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Create a Data Flow and a Data Pipeline</b></p>
 
-TODO: Activity Description and tasks
+TODO: [Use Data Pipeline](https://learn.microsoft.com/en-us/fabric/data-factory/templates)
+
+[Use Dataflow in a Pipeline](https://learn.microsoft.com/en-us/fabric/data-factory/tutorial-dataflows-gen2-pipeline-activity)
+
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
