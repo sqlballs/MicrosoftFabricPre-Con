@@ -44,6 +44,13 @@ A Microsoft Fabric capacity resides on a tenant. Each capacity that sits under a
 #### <i>Workspace</i>
 Workspaces reside within capacities and are used as containers for Microsoft Fabric items. Each Microsoft Fabric user has a personal workspace known as My Workspace. More workspaces can be created to enable collaboration. By default, workspaces are created in your organization's shared capacity. When your organization has other capacities, workspaces - including My Workspaces - can be assigned to any capacity in your organization.
 
+
+<br>
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity:Creating your first Workspace</b></p>
+
+In this activity you will create a basic Workspace in Fabric.
+
 Microsoft Fabric admins can use the Create workspaces setting to designate which users in the organization can create workspaces.
 
 To create a Microsoft Fabric workspace, you need to:
@@ -61,11 +68,6 @@ To create a Microsoft Fabric workspace, you need to:
         Choose a premium capacity you have access to.
         
         Select Apply. The workspace is created and opened.
-<br>
-
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity:Creating your first Workspace</b></p>
-
-In this activity you will create a basic Workspace in Fabric.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
