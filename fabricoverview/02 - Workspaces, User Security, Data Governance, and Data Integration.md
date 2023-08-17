@@ -103,7 +103,7 @@ To manage your Workspace, you can follow these steps:
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Create a Workspace</b></p>
 
-TODO:-[Create a workspace]([https://learn.microsoft.com/en-us/fabric/get-started/create-workspaces](https://learn.microsoft.com/en-us/fabric/get-started/create-workspaces)
+TODO:-[Create a workspace](https://learn.microsoft.com/en-us/fabric/get-started/create-workspaces)
 
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
