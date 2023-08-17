@@ -101,14 +101,15 @@ To manage your Workspace, you can follow these steps:
 
 <br>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Create a Workspace</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Access to Workspace/b></p>
 
   TODO:-[How to give user access to users](https://learn.microsoft.com/en-us/fabric/get-started/give-access-workspaces)
 
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-TODO: Enter activity steps description with checkbox
+TODO: [Understand Roles in Workspaces](https://learn.microsoft.com/en-us/fabric/get-started/roles-workspaces)      
+             [Manage a workspace with GIT](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
