@@ -30,36 +30,24 @@ You'll cover these topics in this Module on the Developer Experience:
 
 <h2 id="4.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.1 Using Co-Pilot</h2>
 
-Power BI integrates large language models with Copilot, a feature that enables users to create value from their data using natural language. Copilot can generate visuals and insights based on the user’s description, without any manual input.
+Copilot is a new feature in Power BI that harnesses the power of large language models to help users create value from their data using natural language. Users can simply describe their desired visuals and insights, and Copilot will generate them automatically, without requiring any manual input.
 
-Copilot also allows users to quickly and easily create and customize reports, write and edit DAX formulas, produce narrative summaries, and query their data in a conversational way. Users can adjust the tone, scope, and style of the narratives and embed them in their reports for more effective communication of data insights through clear and concise text.
+Copilot also enables users to easily and quickly create and customize reports, write and edit DAX formulas, produce narrative summaries, and query their data in a conversational way. Users can tailor the tone, scope, and style of the narratives and integrate them into their reports for more effective data communication through clear and concise text.
 
-<a href="https://www.microsoft.com/en-us/videoplayer/embed/RW13t3E">Click here for a demo of the Fabric CoPilot</a>
+![Connection String](https://powerbiblogscdn.azureedge.net/wp-content/uploads/2023/05/AZ_Trident-PBi-D365-Blog-Hero-1200x628.png")
+
 
 Microsoft has released *quick measure* suggestions for DAX capability that helps analysts quickly create the code they need. 
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Integrating Co-pilot with Power BI </b></p>
 
-TODO: In this activity, you will follow the instructions to demonstrate how Copilot integrates with Power BI.
+TODO: Select the link below to see the how Microsoft has integrated Copilot into Power BI.
 
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
 TODO: Enter activity steps description with checkbox
-- [ ] Log in to Power BI using your Microsoft account. You can use the web version ~~or the desktop app~~.
-Open or create a report that you want to work on. Make sure you have connected to your data sources and imported the data you need.
-
-- [ ] Click on the Copilot tab on the right side of the screen. You will see a text box where you can type your natural language queries or commands.
-
-- [ ] Type what you want Copilot to do for you, such as creating a visual, generating a summary, writing a DAX formula, or asking a question about your data. For example, you can type “show me a bar chart of sales by product category” or “what is the average profit margin for each region?”.
-
-- [ ] Press Enter or click on the Run button. Copilot will analyze your input and your data, and generate the best possible output for you. You will see the output in the Copilot pane, and you can also drag and drop it to your report canvas.
-
-- [ ] You can refine or modify the output by typing more commands or questions in the Copilot text box. For example, you can type “sort by descending order” or “add a title”. You can also use the formatting options in the Power BI toolbar to customize the output further.
-
-- [ ] Repeat steps 4 to 6 until you are satisfied with your report. You can also switch to other tabs in Power BI, such as Data, Model, or Visualizations, and use Copilot there as well.
-
-Save and share your report with others.
+- [ ] <a href="https://www.microsoft.com/en-us/videoplayer/embed/RW13t3E">Click here for a demo of the Fabric CoPilot</a>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -71,11 +59,11 @@ The following paragraphs describe how to use SQL Server Management Studio (SSMS)
 
  First, you need to obtain your connection string, which is a sequence of characters that specifies how to connect to the warehouse. To do this, go to your workspace, select the Warehouse, and click on More options. Then, choose Copy SQL connection string and paste it somewhere convenient.
 
-![Connection String](https://learn.microsoft.com/en-us/fabric/data-warehouse/media/connectivity/warehouse-copy-sql-connection-string.png#lightbox)
+[//]: #(https://learn.microsoft.com/en-us/fabric/data-warehouse/media/connectivity/warehouse-copy-sql-connection-string.png#lightbox)
 
 Next, you need to launch SSMS and enter the connection string in the Connect to Server dialog box. Click on Connect to establish the connection. After that, you can query and manage your warehouse data using SSMS. This is a simple and efficient way to access your warehouse data from the Microsoft Fabric workspace.
 
-![SSMS](https://learn.microsoft.com/en-us/fabric/data-warehouse/media/connectivity/object-explorer-connect-menu.png#lightbox)
+[//]: #(https://learn.microsoft.com/en-us/fabric/data-warehouse/media/connectivity/object-explorer-connect-menu.png#lightbox)
 
 In the Connect to Server dialog box, paste the SQL connection string from the Fabric user interface into the Server name box. The connection string should look something like this: fabric://<fabric-name>.sql.<region>.azure.com:1433/<database-name>.
 
@@ -96,18 +84,13 @@ TODO: Connecting to your Fabric Workspace using SSMS.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-TODO: Follow step by step instructions to connect SSMS to Farbic Workspace
+TODO: Follow instructions in the TODO link provided to connect SSMS to Farbic Workspace with SSMS. 
+- [ ] <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/connectivity">Click here for a demo on how to connect to Microsoft Fabric with SSMS.</a>
 
-- [ ] First, you need to obtain your connection string from the Fabric workspace. This is a sequence of characters that specifies how to connect to your warehouse or SQL endpoint. To do this, go to your workspace, select the Warehouse, and click on More options. Then, choose Copy SQL connection string and paste it somewhere convenient.
-
-- [ ] Next, you need to launch SSMS and enter the connection string in the Connect to Server dialog box. Select Azure Active Directory - Password as the authentication type and enter your company email address. Do not enter your password. Click on Connect to authenticate via your company’s authentication process.
-
-- [ ] Once the connection is established, you can see the connected warehouse or SQL endpoint from the workspace and its respective tables and views in the Object Explorer. You can query and manage your data using T-SQL commands.
-
-- [ ] To write queries using T-SQL, you can use the SQL query editor in SSMS. This provides support for IntelliSense, code completion, syntax highlighting, client-side parsing, and validation. You can run Data Definition Language (DDL), Data Manipulation Language (DML) and Data Control Language (DCL) statements.
-
-- [ ] To view the query results, you can select Run to execute the query. The Results preview is displayed in the Results section. You can also save the query results as a view or a table, download them as an Excel file, or visualize them using Power BI.
-
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
+<ul>
+    <li><a href="https://www.youtube.com/@Tales-from-the-Field" target="_blank"> "Insert Brads TFTF Video Here on ways to connect"</a></li>
+</ul>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -156,12 +139,13 @@ To edit a notebook, you must have a local copy of the notebook content. The loca
 - From the VS Code command palette, enter the Synapse:Sign in command to sign in to the extension. A separate browser sign-in page appears.
 - Enter your username and password.
 - After you successfully sign in, your username will be displayed in the VS Code status bar to indicate that you're signed in.
+![vscsignin](https://learn.microsoft.com/en-us/fabric/data-engineering/media/vscode/signin-status.png)
 - To sign out of the extension, enter the command Synapse: Sign off.
 
 **Choose a workspace to work with**
 
 To select a Fabric workspace, you must have a workspace created. If you don't have one, you can create one in the Fabric portal. Once you have a workspace, choose it by selecting the Select Workspace option. A list appears of all workspaces that you have access to; select the one you want from the list.
-
+ 
 **Considerations and limitations**
 - SQL Authentication is not supported.
 - Multiple Active Result Sets (MARS) is unsupported for Microsoft Fabric Warehouse. MARS is disabled by default, however if MultipleActiveResultSets is included in the connection string, it should be removed or set to false.
@@ -169,230 +153,92 @@ To select a Fabric workspace, you must have a workspace created. If you don't ha
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Connect to Microsoft Fabric using Visual Studio Code</b></p>
 
-TODO: Activity Description and tasks
+TODO:  Follow instructions in the TODO link provided for Visual Studio Code connection overview.
+- [ ] <a href="https://learn.microsoft.com/en-us/fabric/data-engineering/setup-vs-code-extension">What is the Synapse Visual Studio Code extension.</a>
 
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
+<ul>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-with-vs-code" target="_blank">"Microsoft Fabric notebook experience in VS Code"</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-resource-with-vs-code" target="_blank">"Microsoft Fabric notebook resource in VS Code</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-sjd-with-vs-code" target="_blank">"Spark job definition experience in VS Code</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/explore-lakehouse-with-vs-code" target="_blank">"Explore Microsoft Fabric lakehouses in VS Code</a></li>
 
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+</ul>
 
-**Install the extension and prepare your environment**
-- [] Search for Synapse VS Code in the VS Code extension marketplace and install the extension. (The extension is still under preview, so you need to select the prerelease version to install.)
-- [] After the extension installation is complete, restart VS Code. The icon for the extension is listed at the VS Code activity bar.
-
-**Local working directory** <br>
-
-To edit a notebook, you must have a local copy of the notebook content. The local working directory of the extension serves as the local root folder for all downloaded notebooks, even notebooks from different workspaces. By invoking the command Synapse:Set Local Work Folder, you can specify a folder as the local working directory for the extension.
-
-To validate the setup, open the extension settings and check the details there:
-![vscode](https://learn.microsoft.com/en-us/fabric/data-engineering/media/vscode/local-working-dir.png)
-
-
-**Sign in and out of your account** <br>
-1. From the VS Code command palette, enter the Synapse:Sign in command to sign in to the extension. A separate browser sign-in page appears.
-2. Enter your username and password.
-3. After you successfully sign in, your username will be displayed in the VS Code status bar to indicate that you're signed in.
-To validate the setup, open the extension settings and check the details there:
-![vscodestatus](https://learn.microsoft.com/en-us/fabric/data-engineering/media/vscode/signin-status.png)
-4. To sign out of the extension, enter the command Synapse: Sign off.
-
-**Choose a workspace to work with**<br>
-To select a Fabric workspace, you must have a workspace created. If you don't have one, you can create one in the Fabric portal. For more information, see Create a workspace.
-
-Once you have a workspace, choose it by selecting the Select Workspace option. A list appears of all workspaces that you have access to; select the one you want from the list.
-![vscodews](https://learn.microsoft.com/en-us/fabric/data-engineering/media/vscode/select-workspace.png)
+<p style="border-bottom: 1px solid lightgrey;"></p>
 
 
 
-- [Click this reference, and follow all steps you see there](https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-with-vs-code)
+<h2 id="4.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.4 Connecting with Power BI</h2>
 
-<h2 id="4.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.4 Using Command Line Tools</h2>
+Power BI natively and fully supports a Warehouse or Lakehouse SQL Endpoint as a data source, eliminating the need for the SQL Connection string. The Data Hub provides direct access to all of the warehouses that you have permissions for.
 
-There are two CLI utilities used to interact with Service Fabric. Azure CLI is used to manage Azure resources, such as an Azure-hosted Service Fabric cluster. Service Fabric CLI is used to directly connect to the Service Fabric cluster (regardless of where it's hosted) and manage the cluster, applications, and services.
+![pbimf](https://learn.microsoft.com/en-us/power-bi/fundamentals/media/fabric-get-started/configure-connection.png)
 
-The Azure Service Fabric command-line interface (CLI) is a command-line utility for interacting with and managing Service Fabric entities. The Service Fabric CLI can be used with either Windows or Linux clusters. The Service Fabric CLI runs on any platform where Python is supported. 
 
-**Prerequisites**
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Fabric for Power BI users</b></p>
 
-Prior to installation, make sure your environment has both Python and pip installed. The CLI supports Python versions 2.7 and 3.6+, with Python 3.x recommended.
-
-**Select a cluster** 
-
-Before you perform any operations, you must select a cluster to connect to. For example, to select and connect to the cluster with the name testcluster.com, run the following command:
-
-````sfctl cluster select --endpoint http://testcluster.com:19080````
-
-> **Warning**: Do not use unsecured Service Fabric clusters in a production environment.
-
-The cluster endpoint must be prefixed by http or https. It must include the port for the HTTP gateway. The port and address are the same as the Service Fabric Explorer URL. For clusters that are secured with a certificate, you can specify a PEM-encoded certificate. The certificate can be specified as a single file or as a cert and a key pair. If it is a self-signed certificate that is not CA signed, you can pass the ````--no-verify option```` to bypass CA verification.
-
-````sfctl cluster select --endpoint https://testsecurecluster.com:19080 --pem ./client.pem --no-verify````
-
-**Basic operations** 
-
-Cluster connection information persists across multiple Service Fabric CLI sessions. After you select a Service Fabric cluster, you can run any Service Fabric command on the cluster. For example, to get the Service Fabric cluster health state, use the following command:
-
-````sfctl cluster health````
-
-The command results in the following output:
-
-````
-{
-  "aggregatedHealthState": "Ok",
-  "applicationHealthStates": [
-    {
-      "aggregatedHealthState": "Ok",
-      "name": "fabric:/System"
-    }
-  ],
-  "healthEvents": [],
-  "nodeHealthStates": [
-    {
-      "aggregatedHealthState": "Ok",
-      "id": {
-        "id": "66aa824a642124089ee474b398d06a57"
-      },
-      "name": "_Test_0"
-    }
-  ],
-  "unhealthyEvaluations": []
-}
-````
-
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
-
-TODO: Activity Description and tasks
+TODO: In this tutorial, you learn how to use Dataflows Gen2 and Pipelines to ingest data into a Lakehouse and create a dimensional model.
+ You also learn how to generate a beautiful report automatically to display the latest sales figures from start to finish in just 45 minutes.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-TODO: Enter activity steps description with checkbox<p style="border-bottom: 1px solid lightgrey;"></p>
+TODO: Follow instructions in the TODO link to learn how to connect Power BI to Microsoft Fabric.<p style="border-bottom: 1px solid lightgrey;"></p>
+
+- [ ] <a href="https://learn.microsoft.com/en-us/power-bi/fundamentals/fabric-get-started">Connecting to Microsoft Fabric with Power BI.</a>
 
 <h2 id="4.5"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.5 Development Best Practices</h2>
 
-Apart from standard developer best-practices, there are some additional considerations for the Microsoft Fabric developer. You can use this section as a template, and add or alter best practices as you learn more and as your organization's requirements dictate. This is not an exhaustive list, so the exercise that follows will explore more suggestions in a team setting. 
+The itenteion of the module is to provide oractical guidance for data & analytics creators who are managing their content throughout its lifecycle in Microsoft Fabric. The article focuses on the use of git integration for source control and deployment pipelines as a release tool. For a general guidance on Enterprise content publishing, Enterprise content publishing.
 
-**Back up your work into a git repository**
+## Your should conside 4 best practices when deploying within your Microsoft Fabric Tenant: ##
+* Content preparation - Prepare your content for lifecycle management.
+* Development - Learn about the best ways of creating content in the deployment pipelines development stage.
+* Test - Understand how to use a deployment pipelines test stage to test your environment.x
+* Production - Utilize a deployment pipelines production stage to make your content available for consumption.
 
-With git integration, any developer can back up their work by committing it into git. To do this properly in Fabric, here are some basic rules:
+### Content Preparation ###
+* Separate development between teams
+* Plan your permission model
+* Connect different stages to different databases
+* Use parameters for configurations that will change between stages 
 
-- Make sure you have an isolated environment to work in, so others don’t override your work before it gets committed. This means working in a Desktop tool (such as VSCode, Power BI Desktop or others), or in a separate workspace that other users can’t access.
-- Commit to a branch that you created and no other developer is using. If you’re using a workspace as an authoring environment, read about working with branches.
-- Commit together changes that must be deployed together. This advice applies for a single item, or multiple items that are related to the same change. Committing all related changes together can help you later when deploying to other stages, creating pull requests, or reverting changes back.
-- Big commits might hit a max commit size limit. Be mindful of the number of items you commit together, or the general size of an item. For example, reports can grow large when adding large images. It’s bad practice to store large-size items in source control systems, even if it works. Consider ways to reduce the size of your items if they have lots of static resources, like images.
+### Development ###
+* Back up your work into a git repository
+* Rolling back changes
+* Working with a ‘private’ workspace
+* Use Client tools to edit your work
+* Managing workspaces and branches
 
-**Rolling back changes**
+### Test ###
+* Simulate your production environment
+* Use deployment rules with a real-life data source
+* Check related items
+* Updating data items 
+* Test your app
 
-After backing up your work, there might be cases where you want to revert to a previous version and restore it in the workspace. There are a few options for this:
+### Production ###
+* Manage who can deploy to production
+* Update the production app
+* Deploying into production using git branches
+* Quick fixes to content
 
-- Undo button: The Undo operation is an easy and fast way to revert the immediate changes you made, as long as they are not committed yet. You can also undo each item separately. Read more about the undo operation.
-- Reverting to older commits: There’s no direct way to go back to a previous commit in the UI. The best option is to promote an older commit to be the HEAD using git revert or git reset. Doing this will show that there’s an update in the source control pane, and you can update the workspace with that new commit.
 
-As data isn’t stored in git, consider that reverting a data item to an older version might break the existing data and could possible require you to drop the data or the operation might fail. Check this in advance before reverting changes back.
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Do a deeper review of items discuss in module 4.5</b></p>
 
-**Working with a private workspace**
-
-When you want to work in isolation, use a separate workspace as an isolated environment. Read more about this in working with branches. For an optimal workflow for you and the team, consider the following:
-
-- Setting up the workspace: Before you start, make sure you can create a new workspace (if you don’t already have one), that you can assign it to a Fabric capacity, and that you have access to data to work in your workspace.
-- Creating a new branch: Create a new branch from the main branch, so you’ll have the most up-to-date version of your content. Also make sure you connect to the correct folder in the branch, so you can pull the right content into the workspace.
-- Small, frequent changes: It's a git best practice to make small incremental changes that are easy to merge and less likely to get into conflicts. If that’s not possible, make sure to update your branch from main so you can resolve conflicts on your own first.
-- Configuration changes: If necessary, change the configurations in your workspace to help you work more productively. Some changes can include connection between items, or to different data sources or changes to parameters on a given item. Just remember that anything you commit will be part of the commit and can accidentally be merged into the main branch.
-
-**Use Client tools to edit your work**
-
-For items and tools that support it, it might be easier to work with client tools for authoring, such as Power BI Desktop for datasets and reports, VSCode for Notebooks etc. These tools can be your local development environment. After you complete your work, push the changes into the remote repo, and sync the workspace to upload the changes. Just make sure you are working with the supported structure of the item you are authoring. If you’re not sure, first clone a repo with content already synced to a workspace, then start authoring from there, where the structure is already in place.
-
-**Managing workspaces and branches**
-
-Since a workspace can only be connected to a single branch at a time, it is recommended to treat this as a 1:1 mapping. However, to reduce the amount of workspace it entails, consider these options:
-
-- If a developer set up a private workspace with all required configurations, they can continue to use that workspace for any future branch they create. When a sprint is over, your changes are merged and you are starting a fresh new task, just switch the connection to a new branch on the same workspace. You can also do this if you suddenly need to fix a bug in the middle of a sprint. Think of it as a working directory on the web.
-- Developers using a client tool (such as VSCode, Power BI Desktop or others), don’t necessarily need a workspace. They can create branches and commit changes to that branch locally, push those to the remote repo and create a pull request to the main branch, all without a workspace. A workspace is needed only as a testing environment to check that everything works in a real-life scenario. It's up to you to decide when that should happen.
-
-**Test**
-
-This section provides guidance for working with a deployment pipelines test stage.
-
-*Simulate your production environment*
-
-It’s important to see how your change will impact the production stage. A deployment pipelines test stage allows you to simulate a real production environment for testing purposes. Alternatively, you can simulate this by connecting git to an additional workspace.
-
-Make sure that these three factors are addressed in your test environment:
-
-- Data volume
-- Usage volume
-- A similar capacity as in production
-
-When testing, you can use the same capacity as the production stage. However, using the same capacity can make production unstable during load testing. To avoid unstable production, test using a different capacity similar in resources to the production capacity. To avoid extra costs, use a capacity where you can pay only for the testing time.
-
-*Use deployment rules with a real-life data source*
-
-If you're using the test stage to simulate real life data usage, it's recommended to separate the development and test data sources. The development database should be relatively small, and the test database should be as similar as possible to the production database. Use data source rules to switch data sources in the test stage or parameterize the connection if not working through deployment pipelines.
-
-*Check related items*
-
-Changes you make can also affect the dependent items. During testing, verify that your changes don’t affect or break the performance of existing items, which can be dependent on the updated ones. You can easily find the related items by using impact analysis.
-
-*Updating data items*
-
-Data items are items that store data. The item’s definition in git defines how the data is stored. When updating an item in the workspace, we are importing its definition into the workspace and applying it on the existing data. The operation of updating data items is the same for git and deployment pipelines.
-
-As different items have different capabilities when it comes to retaining data when changes to the definition are applied, be mindful when applying the changes. Some practices that can help you apply the changes in the safest way:
-
-- Know in advance what the changes are and what their impact might be on the existing data. Use commit messages to describe the changes made.
-- Upload the changes first to a dev or test environment, to see how that item handles the change with test data.
-- If everything goes well, it’s recommended to also check it on a staging environment, with real-life data (or as close to it as possible), to minimize the unexpected behaviors in production.
-- Consider the best timing when updating the Prod environment to minimize the damage that any errors might cause to your business users who consume the data.
-- After deployment, post-deployment tests in Prod to verify that everything is working as expected.
-
-Some changes will always be considered breaking changes. Hopefully, the preceding steps will help you track them before production. Build a plan for how to apply the changes in Prod and recover the data to get back to normal state and minimize downtime for business users.
-
-*Test your app*
-
-If you're distributing content to your customers through an app, review the app's new version before it's in production. Since each deployment pipeline stage has its own workspace, you can easily publish and update apps for development and test stages. Publishing and updating apps allows you to test the app from an end user's point of view.
-
-> **Important:** The deployment process doesn't include updating the app content or settings. To apply changes to content or settings, manually update the app in the required pipeline stage.
-
-**Production**
-
-This section provides guidance to the deployment pipelines production stage.
-
-*Manage who can deploy to production*
-
-Because deploying to production should be handled carefully, it's good practice to let only specific people manage this sensitive operation. However, you probably want all BI creators for a specific workspace to have access to the pipeline. Use production workspace permissions to manage access permissions. Other users can have a production workspace viewer role to see content in the workspace but not make changes from git or deployment pipelines.
-
-In addition, limit access to the repo or pipeline by only enabling permissions to users that are part of the content creation process.
-
-*Set rules to ensure production stage availability*
-
-Deployment rules are a powerful way to ensure the data in production is always connected and available to users. With deployment rules applied, deployments can run while you have the assurance that customers can see the relevant information without disturbance. Make sure that you set production deployment rules for data sources and parameters defined in the dataset.
-
-*Update the production app*
-
-Deployment in a pipeline updates the workspace content, but it can also update the associated app through the deployment pipelines API. It's not possible to update the app through the UI. You need to update the app manually. If you use an app for content distribution, don’t forget to update the app after deploying to production so that end users are immediately able to use the latest version.
-
-*Deploying into production using git branches*
-
-As the repo serves as the ‘single-source-of-truth’, some teams might want to deploy updates into different stages directly from git. This is possible with git integration, with a few considerations:
-
-- It’s recommended to use release branches. You will be required to continuously change the connection of workspace to the new release branches before every deployment.
-- If your build or release pipeline requires you to change the source code, or run scripts in a build environment before deployment to the workspace, then connecting the workspace to git won't help you.
-- After deploying to each stage, make sure to change all the configuration specific to that stage.
-
-*Quick fixes to content*
-
-Sometimes there are issues in production that require a quick fix. Deploying a fix without testing it first is bad practice. Therefore, always implement the fix in the development stage and push it to the rest of the deployment pipeline stages. Deploying to the development stage allows you to check that the fix works before deploying it to production. Deploying across the pipeline takes only a few minutes.
-
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
-
-Team discussion of further best practices.
+For more detail on the items discussed within Development Best Practices read through the link provided in the TODO.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
 TODO: Enter activity steps description with checkbox
 <p style="border-bottom: 1px solid lightgrey;"></p>
+- [ ] <a href="https://learn.microsoft.com/en-us/fabric/cicd/best-practices-cicd">Lifecycle management best practices</a>
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
-    <li><a href="https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-develop-csharp-applications-with-vs-code" target="_blank">Develop C# Service Fabric applications with Visual Studio Code</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/cicd/cicd-tutorial" target="_blank">End to end lifecycle management tutorial</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git" target="_blank">Get started with git integration</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/cicd/deployment-pipelines/get-started-with-deployment-pipelines" target="_blank">Get started with deployment pipelines</a></li>
 </ul>
 
 Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/05%20-%20The%20Fabric%20User%20Experience.md).
