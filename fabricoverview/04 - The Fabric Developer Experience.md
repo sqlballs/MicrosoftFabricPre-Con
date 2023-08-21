@@ -21,7 +21,7 @@ You'll cover these topics in this Module on the Developer Experience:
   <dt><a href="#4.1" target="_blank">4.1 - Using Co-Pilot</a></dt>
   <dt><a href="#4.2" target="_blank">4.2 - Using SQL Server Management Studio</a></dt>
   <dt><a href="#4.3" target="_blank">4.3 - Using Visual Studio Code</a></dt>
-  <dt><a href="#4.4" target="_blank">4.4 - Using Command Line Tools</a></dt>
+  <dt><a href="#4.4" target="_blank">4.4 - Using Power BI</a></dt>
   <dt><a href="#4.5" target="_blank">4.5 - Development Best Practices</a></dt>
 
 </dl>
@@ -169,7 +169,7 @@ TODO:  Follow instructions in the TODO link provided for Visual Studio Code conn
 
 
 
-<h2 id="4.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.4 Connecting with Power BI</h2>
+<h2 id="4.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.4 Using Power BI</h2>
 
 Power BI natively and fully supports a Warehouse or Lakehouse SQL Endpoint as a data source, eliminating the need for the SQL Connection string. The Data Hub provides direct access to all of the warehouses that you have permissions for.
 
