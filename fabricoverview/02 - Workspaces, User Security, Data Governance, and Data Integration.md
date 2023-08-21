@@ -44,6 +44,13 @@ A Microsoft Fabric capacity resides on a tenant. Each capacity that sits under a
 #### <i>Workspace</i>
 Workspaces reside within capacities and are used as containers for Microsoft Fabric items. Each Microsoft Fabric user has a personal workspace known as My Workspace. More workspaces can be created to enable collaboration. By default, workspaces are created in your organization's shared capacity. When your organization has other capacities, workspaces - including My Workspaces - can be assigned to any capacity in your organization.
 
+
+<br>
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity:Creating your first Workspace</b></p>
+
+In this activity you will create a basic Workspace in Fabric.
+
 Microsoft Fabric admins can use the Create workspaces setting to designate which users in the organization can create workspaces.
 
 To create a Microsoft Fabric workspace, you need to:
@@ -61,15 +68,10 @@ To create a Microsoft Fabric workspace, you need to:
         Choose a premium capacity you have access to.
         
         Select Apply. The workspace is created and opened.
-<br>
-
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity:Creating your first Workspace</b></p>
-
-In this activity you will create a basic Workspace in Fabric.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-- [Open this reference, and complete the steps you see there.](https://learn.microsoft.com/en-us/fabric/get-started/create-workspaces)
+- [How to create a Workspace.](https://learn.microsoft.com/en-us/fabric/get-started/create-workspaces)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -80,7 +82,7 @@ To work with your Microsoft Fabric Workspace, you need to connect to it.
 
 ![Fabric Workspace view](https://learn.microsoft.com/en-us/fabric/get-started/media/workspaces/fabric-workspace-page.png#lightbox)
 
-To connect to a Microsoft Fabric Workspace, you can follow these steps1:
+Workspaces are places to collaborate with colleagues to create collections of items such as lakehouses, warehouses, and reports.To connect to a Microsoft Fabric Workspace, you can follow these steps1:
 
 - Go to *Manage gateways* to create connection.
 - From the page header in *Data Integration service*, select *Settings > Manage connections and gateways*.
@@ -99,13 +101,15 @@ To manage your Workspace, you can follow these steps:
 
 <br>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Create a Workspace</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Access to Workspace/b></p>
 
-TODO: Activity Description and tasks
+  TODO:-[How to give user access to users](https://learn.microsoft.com/en-us/fabric/get-started/give-access-workspaces)
+
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-TODO: Enter activity steps description with checkbox
+TODO: [Understand Roles in Workspaces](https://learn.microsoft.com/en-us/fabric/get-started/roles-workspaces)      
+             [Manage a workspace with GIT](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -141,7 +145,10 @@ Add a configuration-driven copy activity together with your low-code dataflow re
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Create a Data Flow and a Data Pipeline</b></p>
 
-TODO: Activity Description and tasks
+TODO: [Use Data Pipeline](https://learn.microsoft.com/en-us/fabric/data-factory/templates)
+
+[Use Dataflow in a Pipeline](https://learn.microsoft.com/en-us/fabric/data-factory/tutorial-dataflows-gen2-pipeline-activity)
+
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
