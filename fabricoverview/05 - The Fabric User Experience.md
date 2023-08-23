@@ -19,8 +19,9 @@ You'll cover these topics in this Module on the User Experience:
 <dl>
 
   <dt><a href="#5.1" target="_blank">5.1 - Working with Fabric using Power BI</a></dt>
-  <dt><a href="#5.2" target="_blank">5.2 - Working with Fabric and the Kusto Query Language (KQL)</a></dt>
-  <dt><a href="#5.3" target="_blank">5.3 - Working with Fabric and Streaming / Event Data</a></dt>
+  <dt><a href="#5.2" target="_blank">5.2 - Working with Fabric and Streaming / Event Data</a></dt>
+  <dt><a href="#5.3" target="_blank">5.3 - Working with Fabric and the Kusto Query Language (KQL)</a></dt>
+
   
 </dl>
 
@@ -28,19 +29,21 @@ You'll cover these topics in this Module on the User Experience:
 
 <h2 id="5.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.1 Working with Fabric using Power BI</h2>
 
+![](https://learn.microsoft.com/en-us/fabric/get-started/media/microsoft-fabric-overview/saas-foundation.png)
+
 Working with Power BI and Microsoft Fabric uses the features and functionality already present in Power BI. Power BI Premium customers can simply turn on the Fabric tenant setting in the admin portal. With Fabric’s unified capacity model, Power BI Premium capacity can be utilized by any of the new workloads. Read this documentation for more information on Fabric’s single capacity model. Power BI Pro customers can access this functionality through capacity trials. There are also several Power BI Premium only features designed to transform how you analyze and visualize your data.
 
 As you saw in a previous Module, Copilot in Power BI leverages the power of large language models into Power BI at every layer to help users get more done and create more value from their data. Using Copilot, you can simply describe the visuals and insights you’re looking for, and Copilot will do the rest. Users can create and tailor reports in seconds, generate and edit DAX calculations, create narrative summaries, and ask questions about their data, all in conversational language. With the ability to easily tailor the tone, scope, and style of narratives and add them seamlessly within reports, Power BI can also deliver data insights even more impactfully through easy-to-understand text summaries. Microsoft has also released the quick measure suggestions for DAX capability that helps analysts quickly create the code they need. 
 
-**Unified data foundation with OneLake and Direct Lake mode**
+### Unified data foundation with OneLake and Direct Lake mode
+
+![](https://learn.microsoft.com/en-us/fabric/onelake/media/onelake-overview/onelake-foundation-for-fabric.png#lightbox)
 
 Power BI is standardizing on open data formats by adopting Delta Lake and Parquet as its native storage format to help you avoid vendor lock-in and reduce data duplication and management. Direct Lake mode unlocks incredible performance directly against OneLake, with no data movement. Combining this with the ability for the other analytical engines to read and write data directly in the lake, Fabric will reshape how business users consume big data. Power BI datasets in Direct Lake mode enjoy query performance on a par with import mode, with the real-time nature of DirectQuery. And the data never leaves the lake, so there is no need to manage refreshes.
 
 To try Direct Lake from your Lakehouse or Warehouse in Fabric, click on New Power BI Dataset, select the tables you want to include, and click Confirm. Open the data model to create measures and relationships as you would for any other Power BI dataset. Lastly, click new report and create beautiful Power BI reports. Note the integrated experience from data in the lake through to report creation without leaving the browser or performing a refresh.
 
-**Enterprise-grade collaboration with Git integration for Power BI datasets and reports**
-
-We are also enabling more seamless collaboration with your development team on Power BI content with Git integration. You can now easily connect your workspace to Azure DevOps repositories to track changes, revert to previous versions, and merge updates from multiple team members into a single source of truth that will be synced into the workspace with a single click.
+### PowerBI Desktop Developer Mode
 
 As a developer, you can use this integration to:
 
@@ -51,19 +54,73 @@ As a developer, you can use this integration to:
 - Enable code reviews, automated testing, and automated build to validate the integrity of a deployment.
 - Users can leverage Git integration and deployment pipelines for an end-to-end application lifecycle management of their work by developing through Git integration and deploying their Power BI content across dev, test, and production workspaces. Developers can use the user interface (UI) experience or automate the process through other tools, such as Azure Pipelines.
 
+#### PowerBI Projects
+
+##### Dataset and Report Project Files 
+
+##### Enterprise-grade collaboration with Git integration for Power BI datasets and reports
+
+We are also enabling more seamless collaboration with your development team on Power BI content with Git integration. You can now easily connect your workspace to Azure DevOps repositories to track changes, revert to previous versions, and merge updates from multiple team members into a single source of truth that will be synced into the workspace with a single click.
+
 [Review this video to learn more about Power BI and Fabric](https://youtu.be/fvuL8Nk_gxU)
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: PowerBI Desktop Projects and Git Integration</b></p>
 
-TODO: Activity Description and tasks
+In this activity, you will walk through creating a PowerBI Project and connecting it to a GitHub repo
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-- [Open this reference and follow all the steps you see there](https://learn.microsoft.com/en-us/power-bi/fundamentals/fabric-get-started)
+- [Open this reference about PowerBI Projects and complete the outlined steps](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-overview)
+- [Open this reference and read it to understand the project dataset folder layout](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-dataset)
+- [Open this reference and read it to understand the project report folder layout](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-dataset)
+
+Pick only one of the following steps for the last tutorial, depending on what system you prefer to use for source control
+- [Open this tutorial and walk through the steps to integrate a PowerBI project folder with Git](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-git)
+- [Open this tutorial and walk through the steps to setup Azure Dev Ops integration](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-azdo)
+</br>
+</br>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="5.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.2 Working with Fabric and the Kusto Query Language (KQL)</h2>
+
+<h2 id="5.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.2 Working with Fabric and Streaming / Event Data</h2>
+
+</br>
+
+![](https://learn.microsoft.com/en-us/fabric/real-time-analytics/media/real-time-analytics-overview/schematic-architecture.png)
+
+The *Event streams* feature in Microsoft Fabric is a centralized place in the Fabric platform to capture, transform, and route real-time events to various destinations with a no-code experience. It's part of the Real-time analytics experience. The Eventstream item you create in the portal is an instance of Fabric event streams (also called an *eventstream*). You add event data sources, routing destinations, and the event processor when the transformation is needed, to the eventstream.
+
+Everything in Fabric event streams is designed for event data. Capturing, transforming, and routing event data are the essential capabilities of Fabric event streams. It has a scalable infrastructure that the Fabric platform manages on behalf of you.
+
+The event streams feature provides you with various source connectors to fetch the event data from diverse sources, such as Sample data and Azure Event Hubs. It also offers Custom App, the connection endpoint that enables you to develop your own applications to push event data into your eventstreams.
+
+A Drag-and-drop experience gives you an intuitive and easy way to create your event data processing, transforming, and routing logic without writing any code. An end-to-end data flow diagram in an eventstream can provide you with a comprehensive understanding of the data flow and organization.
+
+The Fabric event streams feature supports sending data to diverse destinations, such as Lakehouse, KQL database, and Custom App. You can have multiple destinations in an eventstream that can be attached simultaneously to receive event data from your eventstreams without interfering with each other.
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Real-Time Analytics Introduction and Tutorial</b></p>
+
+This tutorial is based on sample streaming data called New York Yellow Taxi trip data. The dataset contains trip records of New York's yellow taxis, with fields capturing pick-up and drop-off dates/times, pick-up and drop-off locations, trip distances, itemized fares, rate types, payment types, and driver-reported passenger counts. This data doesn't contain latitude and longitude data, which will be loaded from a blob container and joined together with the streaming data in a later step.
+
+You'll use the streaming and query capabilities of Real-Time Analytics to answer key questions about the trip statistics, taxi demand in the boroughs of New York and related insights, and build Power BI reports.
+
+
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+
+- [Tutorial - Introduction](https://learn.microsoft.com/en-us/fabric/real-time-analytics/tutorial-introduction)
+- [Create resources](https://learn.microsoft.com/en-us/fabric/real-time-analytics/tutorial-1-resources)
+- [Get data with Eventstream](https://learn.microsoft.com/en-us/fabric/real-time-analytics/tutorial-2-event-streams)
+- [Get historical data](https://learn.microsoft.com/en-us/fabric/real-time-analytics/tutorial-3-get-historical-data)
+
+<p style="border-bottom: 1px solid lightgrey;"></p>
+
+<h2 id="5.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.3 Working with Fabric and the Kusto Query Language (KQL)</h2>
+
+</br>
+
+![](https://learn.microsoft.com/en-us/fabric/real-time-analytics/media/real-time-analytics-overview/product-view.png#lightbox)
+
 
 Real-Time Analytics deals with working on data as it occurs, as quickly as possible to the source generation of the data. If any one of these questions describes your data needs, Real-Time Analytics is the right solution for you:
 
@@ -87,41 +144,31 @@ The KQL Queryset is the item used to run queries, view, and customize query resu
 
 The KQL Queryset uses the Kusto Query language for creating queries, and also supports many SQL functions. For more information about the query language, see [Kusto Query Language overview](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/index?context=/fabric/context/context).
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Create and Query a KQL Database</b></p>
+</br>
 
-TODO: Activity Description and tasks
+In Real-Time Analytics, you interact with your data in the context of databases. A single workspace can hold multiple databases, and each database can hold multiple tables.
+</br>
 
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+The KQL Queryset is the item used to run queries, view, and customize query results on data from a KQL database. Each tab in the KQL queryset can be associated with a different KQL database, and lets your save queries for later use or share with others to collaborate on data exploration. You can also change the KQL database associated with any tab, allowing you to run the same query on data in different states.The KQL Queryset uses the Kusto Query language for creating queries, and also supports many SQL functions. 
 
-- [Open this reference and follow the steps you see there](https://learn.microsoft.com/en-us/fabric/real-time-analytics/tutorial-introduction)
-
-<p style="border-bottom: 1px solid lightgrey;"></p>
-
-<h2 id="5.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.3 Working with Fabric and Streaming / Event Data</h2>
-
-The *Event streams* feature in Microsoft Fabric is a centralized place in the Fabric platform to capture, transform, and route real-time events to various destinations with a no-code experience. It's part of the Real-time analytics experience. The Eventstream item you create in the portal is an instance of Fabric event streams (also called an *eventstream*). You add event data sources, routing destinations, and the event processor when the transformation is needed, to the eventstream.
-
-Everything in Fabric event streams is designed for event data. Capturing, transforming, and routing event data are the essential capabilities of Fabric event streams. It has a scalable infrastructure that the Fabric platform manages on behalf of you.
-
-The event streams feature provides you with various source connectors to fetch the event data from diverse sources, such as Sample data and Azure Event Hubs. It also offers Custom App, the connection endpoint that enables you to develop your own applications to push event data into your eventstreams.
-
-A Drag-and-drop experience gives you an intuitive and easy way to create your event data processing, transforming, and routing logic without writing any code. An end-to-end data flow diagram in an eventstream can provide you with a comprehensive understanding of the data flow and organization.
-
-The Fabric event streams feature supports sending data to diverse destinations, such as Lakehouse, KQL database, and Custom App. You can have multiple destinations in an eventstream that can be attached simultaneously to receive event data from your eventstreams without interfering with each other.
-
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
-
-TODO: Activity Description and tasks
+In this activity, you will learn how to query your data using Kusto Query Language in a KQL queryset.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-- [Open this reference and follow the steps you see there](https://learn.microsoft.com/en-us/fabric/real-time-analytics/event-streams/create-manage-an-eventstream)
+- [Explore data with KQL and SQL](https://learn.microsoft.com/en-us/fabric/real-time-analytics/tutorial-4-explore)
+- [Use advanced KQL queries](https://learn.microsoft.com/en-us/fabric/real-time-analytics/tutorial-5-advanced-kql-query)
+- [Build a Power BI report](https://learn.microsoft.com/en-us/fabric/real-time-analytics/tutorial-6-build-report)
+- [Clean up resources](https://learn.microsoft.com/en-us/fabric/real-time-analytics/tutorial-7-clean-up-resources)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
-    <li><a href="https://www.myonlinetraininghub.com/category/power-query" target="_blank">Power Query Hub by Mynda Treacy</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/?context=/fabric/context/context-rta&pivots=fabric" target="_blank">Kusto Query Overview</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-overview" target="_blank">PowerBI Desktop Projects</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/real-time-analytics/realtime-analytics-compare" target="_blank"> Comparing Real-Time Analytics and Azure Data Explorer</a></li>
+
 </ul>
 
-Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/06%20-%20Microsoft%20Fabric%20DevOps.md.
+Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/06%20-%20Microsoft%20Fabric%20DevOps.md).
