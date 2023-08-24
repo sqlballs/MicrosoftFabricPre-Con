@@ -177,8 +177,28 @@ For more information about the Microsoft Fabric Capacity app see the following d
 
 <h2 id="1.7"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.7 - Verification of pre-requisites for the Activities</h2>
 
-TODO
+In order to complete any exercises required in this class you should have followed the [Pre-Requisites](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md) outlined in the Read.me file. 
 
+Validate that you have a Microsoft Fabric Enabled Workspace:
+- Navigate to [Power BI.com](https://www.powerbi.com)
+- Click on Workspaces
+- Navigate to your Microsoft Fabric enabled workspace
+- Click +New
+- Click Show all
+- Ask an Instructor to validate that you have a Microsoft Fabric Enabled Workspace
+
+<p>
+If have a Power BI License, a Microsoft Fabric Capacity, but have not created a workspace:
+
+- Navigate to [Lakehouse tutorial: Create a Fabric workspace](https://learn.microsoft.com/en-us/fabric/data-engineering/tutorial-lakehouse-get-started)
+- Navigate to your Microsoft Fabric enabled workspace
+- Click +New
+- Click Show all
+- Ask an Instructor to validate that you have a Microsoft Fabric Enabled Workspace
+
+<p>
+
+If you cannot complete these steps open and follow the  [Pre-Requisites](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md).
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
