@@ -218,11 +218,13 @@ Business Continuity and Disaster Recovery (BCDR) is supported in Fabric for for 
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
 
-TODO: Activity Description and tasks
+TODO: [Configure Conditional Access in MS Fabric](https://learn.microsoft.com/en-us/fabric/security/security-conditional-access#configure-conditional-access-for-fabric)
+
+[Enable Customer Lockbox in MS Fabric](https://learn.microsoft.com/en-us/fabric/security/security-lockbox)
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-TODO: Enter activity steps description with checkbox
+TODO: [How to Use service tags with Power BI](https://learn.microsoft.com/en-us/power-bi/enterprise/service-premium-service-tags)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
