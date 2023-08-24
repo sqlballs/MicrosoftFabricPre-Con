@@ -8,25 +8,36 @@
 
 <img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png"> <h2>00 Pre-Requisites</h2>
 
-The "<TODO: Enter workshop name>" workshop is taught using the following components, which you will install and configure in the sections that follow. 
+The "Microsoft Fabric Overview for the Data Professional" workshop is taught using the following components, which you will install and configure in the sections that follow. 
 
-*(Note: TODO: Any notes you want.)*
+*IN ORDER TO DO ANY EXERCISES YOU MUST HAVE A POWER BI LICENSE FIRST AND A MICROSOFT FABRIC ENABLED WORKSPACE SECOND.  We will review these steps below.*
 
-For this workshop, you will use Microsoft Windows as the base workstation, altough Apple and Linux operating systems can be used in production. You can <a href="https://developer.microsoft.com/en-us/windows/downloads/virtual-machines" target="_blank">download a Windows 10 Workstation Image for VirtualBox, Hyper-V, VMWare, or Parallels for free here</a>. 
+For this workshop, you will be required to execute workloads utilizing Microsoft Fabric.  In order to do this you must first sign up for a Power BI license.  If you do not have a Power BI license you can sign up for one for free.
+
+You will also require a Microsoft Fabric Capacity or a Free trial Microsoft Fabic Capacity.  Your Power BI Tenent must have Fabric Capacity enabled in order to create a Microsoft Fabric Workspace.
+
+</a>. 
 
 The other requirements are:
 
-- **Microsoft Azure**: This workshop uses the Microsoft Azure platform to host the Kubernetes cluster (using the Azure Kubernetes Service), and optionally you can deploy a system there to act as a workstation. You can use a free Azure account, an MSDN Account, your own account, or potentially one provided for you, as long as you can create about $100.00 (U.S.) worth of assets.
-- **TODO: Other Requirements** - <TODO: Whatever else they need>.
+- **A Power BI License** - You must have a Power BI License in order to utilize Microsoft Fabric.
+- **A Microsoft Fabric Capacity** - This could be a free trial or a provisioned Azure Capacity.
+- **A Computer with an Internet Browser** - To participate in the activities in this Workshop you must have a computer and an internet browser.
+- **A Working Internet Connection** - Microsoft Fabric is a SaaS, Software as a Service, platform hosted on the Internet.  You must have internet connectivity to access Microsoft Fabric.
+- **Microsoft Azure, Maybe**: This is only required if you do not have a free trial Microsoft Fabric Capacity.  This workshop uses the Microsoft Fabric which  platform to host the Microsoft Fabric Capacity, and optionally you can deploy a Microsoft Fabric Capacity. You can use a free Azure account, an MSDN Account, your own account, or potentially one provided for you, as long as you can create about $200.00 (U.S.) worth of assets. 
 
 
 *Note that all following activities must be completed prior to class - there will not be time to perform these operations during the workshop.*
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity 1: Set up a Microsoft Azure Account</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity 1-3: Set up Power BI License, Microsoft Fabric Capacity, Validate you have a computer, and Internet</b></p>
+
+Open this link in a seperate tab or window and follow all of the instructions, [How to Set Up A Microsoft Fabric (Preview) trial](https://learn.microsoft.com/en-us/fabric/get-started/fabric-trial)
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity 4: If needed, Set up a Microsoft Azure Account</b></p>
 
 You have multiple options for setting up Microsoft Azure account to complete this workshop. You can use a free account, a Microsoft Developer Network (MSDN) account, a personal or corporate account, or in some cases a pass may be provided by the instructor. (Note: for most classes, the MSDN account is best)
 
-**Unless you are explicitly told you will be provided an account by the instructor in the invitation to this workshop, you must have your Microsoft Azure account and Data Science Virutal Machine set up before you arrive at class.**
+
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/checkbox.png"><b>Option 1 - Free Account</b></p>
 
@@ -34,7 +45,7 @@ The free account gives you twelve months of time, and a limited amount of resour
 
 - [Open this resource, and click the "Start Free" button you see there](https://azure.microsoft.com/en-us/free/)
 
-**NOTE: You can only use the Free subscription once, and it expires in 12 months. Set up your account and create the DSVM per the instructions below, but ensure that you turn off the VM in the Portal to ensure that you do no exceed the cost limits on this account. You will turn it off and on in the classroom per the instructor's directions.**
+**NOTE: You can only use the Free subscription once, and it expires in 12 months. Delete your Fabric Capacity After the end of the Class if you had to provision one from an Azure Account.**
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/checkbox.png"><b>Option 2 - Microsoft Developer Network Account (MSDN) Account</b></p>
 
@@ -44,41 +55,6 @@ The best way to take this workshop is to use your [Microsoft Developer Network (
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/checkbox.png"><b>Option 3 - Use Your Own Account</b></p>
 
-You can also use your own account or one provided to you by your organization, but you must be able to create a resource group and create, start, and manage a Data Science Virtual Machine (DSVM) and an Azure AKS cluster. 
+You can also use your own account or one provided to you by your organization, but you must be able to create a resource group and create and manage a Data Microsoft Fabric Capacity and attach it to your Power BI Workspace. 
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/checkbox.png"><b>Option 4 - Use an account provided by your instructor</b></p>
 
-Your workshop invitation may have instructed you that they will provide a Microsoft Azure account for you to use. If so, you will receive instructions that it will be provided.
-
-**Unless you received explicit instructions in your workshop invitations, you much create either a free, MSDN or Personal account. You must have an account prior to the workshop.**
-
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity 2: TODO: Any other things they need to do</b></p>
-<br>
-
-<TODO: Explain whatever esle they need to do.>
-
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity 2: TODO: Step within Activity.</b></p>
-<br>
-
-The instructions that follow are <TODO: any data you want here>
-
-<br>
-
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/checkbox.png">TODO: Sub-step<p>
-
-First, ensure all of your updates are current. You can use the following commands to do that in an Administrator-level PowerShell session:
-
-<pre>
-
-TODO: Enter any code typing here
-
-</pre>
-
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
-<ul>
-    <li><a href="url" target="_blank">Official Documentation for this section</a></li>
-</ul>
-
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/geopin.png"><b >Next Steps</b></p>
-
-Next, Continue to <a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/01%20-%20Introduction%20and%20Overview.md" target="_blank"><i> the next Module</i></a>.

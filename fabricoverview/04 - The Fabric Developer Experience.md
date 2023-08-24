@@ -39,15 +39,14 @@ Copilot also enables users to easily and quickly create and customize reports, w
 
 Microsoft has released *quick measure* suggestions for DAX capability that helps analysts quickly create the code they need. 
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Integrating Co-pilot with Power BI </b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png">
+<b>Activity: Learn more about how Copilot works with Power BI </b></p>
 
-TODO: Select the link below to see the how Microsoft has integrated Copilot into Power BI.
-
+To learn more about how Copilot works with Power BI, please select the link below. This link will take you to a video demonstration of Copilot in action, as well as a tutorial on how to get started with Copilot & Power BI. 
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-TODO: Enter activity steps description with checkbox
-- [ ] <a href="https://www.microsoft.com/en-us/videoplayer/embed/RW13t3E">Click here for a demo of the Fabric CoPilot</a>
+- [Open the following reference in another tab](https://www.microsoft.com/en-us/videoplayer/embed/RW13t3E), to watch video demonstration of Copilot and Power BI in action. 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -78,18 +77,17 @@ Once that  connection is established, Object Explorer displays the connected war
 When connecting via SSMS (or Azure Data Studio), you see both a SQL Endpoint and Warehouse listed as warehouses, and it's difficult to differentiate between the two item types and their functionality. For this reason, we strongly encourage you to adopt a naming convention that allows you to easily distinguish between the two item types when you work in tools outside of the Microsoft Fabric portal experience.
 
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
-
-TODO: Connecting to your Fabric Workspace using SSMS.  
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Connecting to your Fabric Workspace using SSMS.</b></p>
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-TODO: Follow instructions in the TODO link provided to connect SSMS to Farbic Workspace with SSMS. 
-- [ ] <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/connectivity">Click here for a demo on how to connect to Microsoft Fabric with SSMS.</a>
+To learn how to connect SSMS to Microsoft Fabric, please select the link below. This link will take you to a tutorial that explains how to retrieve the SQL connection string from your Microsoft Fabric workspace, and how to use it to establish a connection in SSMS. You will also see how to explore and query the data objects in your Microsoft Fabric environment using SSMS.
+
+- <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/connectivity">Click here for a demo on how to connect to Microsoft Fabric with SSMS.</a>
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
-    <li><a href="https://www.youtube.com/@Tales-from-the-Field" target="_blank"> "Insert Brads TFTF Video Here on ways to connect"</a></li>
+    <li><a href="https://youtu.be/iDLTj-tCLdY?si=tv0t9MO7ptx0W_Ud" target="_blank"> Connect to Microsoft Fabric with 5 Tools</a></li>
 </ul>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
@@ -151,11 +149,14 @@ To select a Fabric workspace, you must have a workspace created. If you don't ha
 - Multiple Active Result Sets (MARS) is unsupported for Microsoft Fabric Warehouse. MARS is disabled by default, however if MultipleActiveResultSets is included in the connection string, it should be removed or set to false.
 - On connection to a warehouse, you may receive an error that "The token size exceeded the maximum allowed payload size". This may be due to having a large number of warehouses within the workspace or being a member of a large number of Azure AD groups. For most users, the error typically would not occur until approaching beyond 80 warehouses in the workspace. In event of this error, work with the Workspace admin to clean up unused Warehouses and retry the connection, or contact support if the problem persists.
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Connect to Microsoft Fabric using Visual Studio Code</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Connect to Microsoft Fabric using Visual Studio Code</b></p>
 
-TODO:  Follow instructions in the TODO link provided for Visual Studio Code connection overview.
-- [ ] <a href="https://learn.microsoft.com/en-us/fabric/data-engineering/setup-vs-code-extension">What is the Synapse Visual Studio Code extension.</a>
+To learn how to connect VS Code to Microsoft Fabric, please select the link below.
 
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+- <a href="https://learn.microsoft.com/en-us/fabric/data-engineering/setup-vs-code-extension">What is the Synapse Visual Studio Code extension.</a>
+
+<b></b>
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
     <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-with-vs-code" target="_blank">"Microsoft Fabric notebook experience in VS Code"</a></li>
@@ -176,16 +177,15 @@ Power BI natively and fully supports a Warehouse or Lakehouse SQL Endpoint as a 
 ![pbimf](https://learn.microsoft.com/en-us/power-bi/fundamentals/media/fabric-get-started/configure-connection.png)
 
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Fabric for Power BI users</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Connect to Fabric with Power BI users</b></p>
 
-TODO: In this tutorial, you learn how to use Dataflows Gen2 and Pipelines to ingest data into a Lakehouse and create a dimensional model.
- You also learn how to generate a beautiful report automatically to display the latest sales figures from start to finish in just 45 minutes.
+In this tutorial, you learn how to use Dataflows Gen2 and Pipelines to ingest data into a Lakehouse and create a dimensional model. You also learn how to generate a beautiful report automatically to display the latest sales figures from start to finish in just 45 minutes.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-TODO: Follow instructions in the TODO link to learn how to connect Power BI to Microsoft Fabric.<p style="border-bottom: 1px solid lightgrey;"></p>
+Select the link below for a tutorial on getting started with Power BI in Fabric. 
 
-- [ ] <a href="https://learn.microsoft.com/en-us/power-bi/fundamentals/fabric-get-started">Connecting to Microsoft Fabric with Power BI.</a>
+- <a href="https://learn.microsoft.com/en-us/power-bi/fundamentals/fabric-get-started">Connecting to Microsoft Fabric with Power BI.</a>
 
 <h2 id="4.5"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.5 Development Best Practices</h2>
 
@@ -224,15 +224,13 @@ The itenteion of the module is to provide oractical guidance for data & analytic
 * Quick fixes to content
 
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Do a deeper review of items discuss in module 4.5</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Do a deeper review of items discussed within the Development Best Practices module</b></p>
 
-For more detail on the items discussed within Development Best Practices read through the link provided in the TODO.
+For more detail on the items discussed within Development Best Practices module read through the link provided.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-TODO: Enter activity steps description with checkbox
-<p style="border-bottom: 1px solid lightgrey;"></p>
-- [ ] <a href="https://learn.microsoft.com/en-us/fabric/cicd/best-practices-cicd">Lifecycle management best practices</a>
+- [Open the following reference in another tab](https://learn.microsoft.com/en-us/fabric/cicd/best-practices-cicd), to learn more about Microsoft Fabric Best Practice. 
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
