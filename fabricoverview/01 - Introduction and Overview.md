@@ -86,7 +86,7 @@ In this exercise, you will review the exercise we will use throughout the course
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-- [Open the following reference in another tab](https://learn.microsoft.com/en-us/fabric/data-engineering/tutorial-lakehouse-introduction), and read over the steps you see there. We will refer back to this exercise throughout the course. 
+- [Open the following reference in another tab](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-introduction), and read over the steps you see there. We will refer back to this exercise throughout the course. 
 
 <p>
 On your own time or if there is time in the class here is a video that introduces you to Microsoft Fabric and shows the results of the tutorial we will be refering to in the class:
