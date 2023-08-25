@@ -67,7 +67,7 @@ Microsoft Fabric enables organizations and individuals to turn large and complex
 
 - *Data Pipelines* - *Fabric Data Factory* combines the simplicity of *Power Query* with the scale and power of [Azure Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/introduction). You can use more than 200 native connectors to connect to data sources on-premises and in the cloud.
 
-- *Data Science* - Various tools for Data Science in Mmicrosoft Fabric enables you to build, deploy, and operationalize machine learning models. It integrates with [Azure Machine Learning](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2) to provide built-in experiment creation, tracking and model registry. Data scientists can enrich organizational data with predictions and allow business analysts to integrate those predictions into their BI reports. Microsoft Fabric allows you to work from descriptive to predictive insights. 
+- *Data Science* - Various tools for Data Science in Microsoft Fabric enables you to build, deploy, and operationalize machine learning models. It integrates with [Azure Machine Learning](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2) to provide built-in experiment creation, tracking and model registry. Data scientists can enrich organizational data with predictions and allow business analysts to integrate those predictions into their BI reports. Microsoft Fabric allows you to work from descriptive to predictive insights. 
 
 - *Data Warehouse* - Microsoft Fabric provides a [Data Warehouse using SQL](https://learn.microsoft.com/en-us/azure/architecture/data-guide/relational-data/data-warehousing), with high performance and scale. It fully separates compute from storage, enabling independent scaling of both the components. Additionally, it natively stores data in the open Delta Lake format. 
 
@@ -86,10 +86,10 @@ In this exercise, you will review the exercise we will use throughout the course
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-- [Open the following reference in another tab](https://learn.microsoft.com/en-us/fabric/data-engineering/tutorial-lakehouse-introduction), and read over the steps you see there. We will refer back to this exercise throughout the course. 
+- [Open the following reference in another tab](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-introduction), and read over the steps you see there. We will refer back to this exercise throughout the course. 
 
 <p>
-On your own time or if there is time in the class here is a video that introduces you to Microsoft Fabric and shows the results of the tutorial we will be refering to in the class:
+On your own time or if there is time in the class here is a video that introduces you to Microsoft Fabric and shows the results of the tutorial we will be referring to in the class:
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/TSTeoeCNh7c/0.jpg)](https://www.youtube.com/watch?v=TSTeoeCNh7c)
 <p style="border-bottom: 1px solid lightgrey;"></p>

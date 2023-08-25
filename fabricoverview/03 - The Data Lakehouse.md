@@ -65,23 +65,29 @@ A data engineer can interact with the lakehouse and the data within the lakehous
 
 <br>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Create a Lakehouse</b></p>
 
-TODO: Activity Description and tasks
+In this activity we will be following with the Data warehouse tutorial introduction
 
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>
 
-TODO: Enter activity steps description with checkbox
+- Open the following reference in another tab, [Tutorial: Analyze data with a notebook](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-analyze-data-notebook)
+
+- Follow Steps 1 - 3
+
+</b></p>
+
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <h2 id="3.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.2 - Linking data</h2>
 
+<img  src="https://learn.microsoft.com/en-us/fabric/data-warehouse/media/tutorial-analyze-data-notebook/lakehouse-load-data-new-shortcut.png#lightbox">
 In Microsoft Fabric, there are a few ways you can get data into a lakehouse:
 
 - File upload from local computer.
 - Run a copy tool in pipelines.
-- Set up a dataflow.
+- Set up a dataflow or dataflow Gen2.
 - Apache Spark libraries in notebook code
 
 You will see examples of many of these processes throughout the course. You can also use a link of sorts to data - called a *shortcut*.
@@ -96,67 +102,65 @@ To create a shortcut, open *Lakehouse Explorer* and select where to place the sh
 
 Shortcuts to Microsoft Fabric internal sources will use the calling user identity. External shortcuts will use connectivity details, including security details specified when the shortcut is created.
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Create a shortcut</b></p>
 
-TODO: Activity Description and tasks
+In this activity we will be following with the Data warehouse tutorial introduction
 
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>
 
-TODO: Enter activity steps description with checkbox
+- Open the following reference in another tab, [Tutorial: Analyze data with a notebook](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-analyze-data-notebook)
+
+- Follow Steps 4 - 9
+
+</b></p>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <h2 id="3.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.3 - Using Spark to create new data sets in the Lakehouse</h2>
 
-Microsoft Fabric Data Engineering and Data Science experiences operate on a fully managed Spark compute platform. This platform is designed to deliver unparalleled speed and efficiency. With starter pools, you can expect rapid Spark session initialization, typically within 5 to 10 seconds, and no need for manual setup. Furthermore, you also get the flexibility to customize Spark pools according to the specific data engineering and data science requirements. The platform enables an optimized and tailored analytics experience.
+<img  src="https://learn.microsoft.com/en-us/fabric/data-warehouse/media/tutorial-analyze-data-notebook/drop-dim-customer-notebook.png#lightbox">
 
-**Starter pools**
 
-Starter pools are a fast and easy way to use Spark on the Microsoft Fabric platform within seconds. You can use Spark sessions right away, instead of waiting for Spark to set up the nodes for you, which helps you do more with data and get insights quicker.
+Microsoft Fabric Data Engineering and Data Science experiences operate on a fully managed Spark compute platform. This platform is designed to deliver unparalleled speed and efficiency. With starter pools, you can expect rapid Spark session initialization, typically within 5 to 10 seconds, and no need for manual setup. 
 
-Starter pools have Spark clusters that are always on and ready for your requests. They use medium nodes that dynamically scale up based on your Spark job needs.
-
-Starter pools also have default settings that let you install libraries quickly without slowing down the session start time. However, if you want to use extra custom Spark properties or libraries from your workspace or capacity settings, it may take longer for Spark to get the nodes for you. When it comes to billing and capacity consumption, you are charged for the capacity consumption when you start executing your notebook or spark job definition. You are not charged for the time the clusters are idle in the pool.
-
-**Spark pools**
-
-A Spark pool is a way of telling Spark what kind of resources you need for your data analysis tasks. You can give your Spark pool a name, and choose how many and how large the nodes (the machines that do the work) are. You can also tell Spark how to adjust the number of nodes depending on how much work you have. Creating a Spark pool is free; you only pay when you run a Spark job on the pool, and then Spark sets up the nodes for you.
-
-If you don't use your Spark pool for 2 minutes after your session expires, your spark pool will be deallocated. This default session expiration time period is set to 20 minutes, and you can change it if you want. If you're a workspace admin, you can also create custom Spark pools for your workspace, and make them the default option for other users. This way, you can save time and avoid setting up a new Spark pool every time you run a notebook or a Spark job. Custom Spark pools take about three minutes to start, because Spark has to get the nodes from Azure.
-
-You can even create Single Node Spark Pools, by setting the min number of nodes to 1, in which case the driver and executor would run in a single node which comes with restorable HA and is suited for small workloads.
-
-The size and number of nodes you can have in your custom Spark pool depends on your Microsoft Fabric capacity. Capacity is a measure of how much computing power you can use in Azure. One way to think of it is that two Spark VCores (a unit of computing power for Spark) equals one capacity unit. For example, a Fabric capacity SKU F64 has 64 capacity units, which is equivalent to 128 Spark VCores. You can use these Spark VCores to create nodes of different sizes for your custom Spark pool, as long as the total number of Spark VCores doesn't exceed 128.
-
-**Spark Nodes**
-
-An Apache Spark pool instance consists of one head node and worker nodes, could start a minimum of one node in a Spark instance. The head node runs extra management services such as Livy, Yarn Resource Manager, Zookeeper, and the Spark driver. All nodes run services such as Node Agent and Yarn Node Manager. All worker nodes run the Spark Executor service.
 
 **Load Data with Spark**
 
 In this section you'll see how to read/write data into your lakehouse with a notebook.Spark API and Pandas API are supported to achieve this goal.
 
+*Load data with a Juypter Notebook*
+
+It is so incredibly easy to load data into a notebook using Microsoft Fabric.  Any table in your Lakehouse can easily be added to a new or existing notebook by simply clicking on the table, selecting Load Data, and then selecting Spark.  This will add a PySpark command to your notebook loading the top 1000 rows into a data frame and displaying them.
+
 *Load data with an Apache Spark API*
+
 In the code cell of the notebook, you can read data from the source and load it into Files, Tables, or both sections of your lakehouse.
 
 To specify the location to read from, you can use the relative path if the data is from the default lakehouse of current notebook, or you can use the absolute ABFS path if the data is from other lakehouse. you can copy this path from the context menu of the data explorer.
 
 ![Lakehouse explorer](https://learn.microsoft.com/en-us/fabric/data-engineering/media/lakehouse-notebook-explore/load-data-menu.png#lightbox)
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Create a shortcut</b></p>
 
-TODO: Activity Description and tasks
+In this activity we will be following with the Data warehouse tutorial introduction
 
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>
 
-TODO: Enter activity steps description with checkbox
+- Open the following reference in another tab, [Tutorial: Analyze data with a notebook](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-analyze-data-notebook)
+
+- Follow Steps 10 - 12
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
-    <li><a href="https://blog.fabric.microsoft.com/en-us/blog/connecting-to-onelake/" target="_blank">Connecting to OneLake</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/spark-compute" target="_blank">What is Spark compute in Microsoft Fabric?</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/runtime" target="_blank">Apache Spark Runtime in Fabric</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/create-custom-spark-pools" target="_blank">How to create custom Spark pools in Microsoft Fabric</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/high-concurrency-overview" target="_blank">High Concurrency mode in Fabric Spark</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/autotune?tabs=sparksql" target="_blank">What is autotune for Apache Spark configurations in Fabric and how to enable and disable it?</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/spark-job-concurrency-and-queueing" target="_blank">Concurrency limits and queueing in Microsoft Fabric Spark</a></li>
 </ul>
 
 Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/04%20-%20The%20Fabric%20Developer%20Experience.md).
