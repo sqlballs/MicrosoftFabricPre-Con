@@ -30,7 +30,7 @@ In this workshop you'll cover these topics:
 - Workspaces, User Security, Data Governance, and Data Integration	Understanding and creating Workspaces, creating a Data Warehouse, connecting and managing, ingesting data with pipielines and data flows, along with Security concepts
 - The Data Lakehouse:	Creating a Lakehouse, Linking data, using Spark to create new data sets in the Lakehouse
 - The Fabric Developer Experience:	Using Co-Pilot, SSMS, VS Code, command-line tools, development best-practices
-- The Fabric User Experience:	Power BI, KQL, Streaming and Event Data
+- The Fabric User Experience:	Power BI, the Kusto Query Language, Streaming and Event Data
 - Microsoft Fabric DevOps: Design, Sizing, Mointoring and Management, Source Control, and the EXPLAIN command.
 
 The goal of this workshop is to train the data professional to get an overview on how to determine when to implement a Microsoft Fabric solution, how to design the solution, implement it, use it, and manage, monitor and maintain it.
