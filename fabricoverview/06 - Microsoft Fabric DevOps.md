@@ -170,7 +170,7 @@ Open each of the following tools and navigate the various actions and properties
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Optional Activity: Learn basic Log Navigation</b></p>
 
-In this Activity you will navigate the primary interfaces for navigting the Azure Log Monitoring system. 
+In this Activity you will navigate the primary interfaces for navigating the Azure Log Monitoring system. 
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
