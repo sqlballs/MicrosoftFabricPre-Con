@@ -195,7 +195,7 @@ EXPLAIN can be applied to optimizable queries only, which are queries that can b
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
     <li><a href="https://learn.microsoft.com/en-us/fabric/admin/" target="_blank">Microsoft Fabric Administrator Portal</a></li>
-  <li><a href="[https://learn.microsoft.com/en-us/fabric/admin/](https://www.kevinrchant.com/2023/08/09/prepare-azure-devops-for-microsoft-fabric-git-integration/)" target="_blank">Kevin Chant's tutorial on git integration with Fabric</a></li>
+  <li><a href="https://www.kevinrchant.com/2023/08/09/prepare-azure-devops-for-microsoft-fabric-git-integration/" target="_blank">Kevin Chant's tutorial on git integration with Fabric</a></li>
   
 </ul>
 
