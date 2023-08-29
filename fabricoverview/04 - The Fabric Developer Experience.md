@@ -108,7 +108,7 @@ The prerequisites for the Synapse VS Code extension are:
 - Conda
 - Jupyter extension for VS Code
 
-After you have installed the required software, you must update the operating system properties to referene the new packages.
+After you have installed the required software, you must update the operating system properties to reference the new packages.
 
 **Windows**
 
@@ -189,9 +189,9 @@ Select the link below for a tutorial on getting started with Power BI in Fabric.
 
 <h2 id="4.5"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.5 Development Best Practices</h2>
 
-The itenteion of the module is to provide oractical guidance for data & analytics creators who are managing their content throughout its lifecycle in Microsoft Fabric. The article focuses on the use of git integration for source control and deployment pipelines as a release tool. For a general guidance on Enterprise content publishing, Enterprise content publishing.
+The intention of the module is to provide practical guidance for data & analytics creators who are managing their content throughout its lifecycle in Microsoft Fabric. The article focuses on the use of git integration for source control and deployment pipelines as a release tool. For a general guidance on Enterprise content publishing, Enterprise content publishing.
 
-## Your should conside 4 best practices when deploying within your Microsoft Fabric Tenant: ##
+## Your should consider 4 best practices when deploying within your Microsoft Fabric Tenant: ##
 * Content preparation - Prepare your content for lifecycle management.
 * Development - Learn about the best ways of creating content in the deployment pipelines development stage.
 * Test - Understand how to use a deployment pipelines test stage to test your environment.x
