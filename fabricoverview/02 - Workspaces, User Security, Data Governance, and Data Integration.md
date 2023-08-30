@@ -201,7 +201,7 @@ Based on the JIT role, the request may also include an approval from internal Mi
 
 <h3>Resiliency</h3>
 
-Resiliency is another concept that deals with the security of your data, by ensuring it is available when you need it.  The primary functions that provide resliency are *Resource Zones* and *Business Continuity and Disaster Recovery*. Microsoft Fabric also relies on the the availability concepts in [Azure Reliability](https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/overview).
+Resiliency is another concept that deals with the security of your data, by ensuring it is available when you need it.  The primary functions that provide resiliency are *Resource Zones* and *Business Continuity and Disaster Recovery*. Microsoft Fabric also relies on the availability concepts in [Azure Reliability](https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/overview).
 
 Azure availability zones are at least three physically separate groups of datacenters within each Azure region. Datacenters within each zone are equipped with independent power, cooling, and networking infrastructure. In the case of a local zone failure, availability zones are designed so that if the one zone is affected, regional services, capacity, and high availability are supported by the remaining two zones. Failures can range from software and hardware failures to events such as earthquakes, floods, and fires. Tolerance to failures is achieved with redundancy and logical isolation of Azure services. For more detailed information on availability zones in Azure, see Regions and availability zones.
 
@@ -209,7 +209,7 @@ Azure availability zone-enabled services are designed to provide the right level
 
 Availability zones allow Fabric customers to run critical applications with higher availability and fault tolerance in the event of datacenter failures. Fabric supports zone-redundant availability zones, such that resources replicate across zones automatically, without any customer intervention.
 
-Business Continuity and Disaster Recovery (BCDR) is supported in Fabric for for Power BI Fabric items, such as datasets, reports, etc.
+Business Continuity and Disaster Recovery (BCDR) is supported in Fabric for Power BI Fabric items, such as datasets, reports, etc.
 
 > Note: Non-Power BI Fabric items, such as Notebooks, KQL Databases, or for data stored in OneLake are not covered under BCDR
 
