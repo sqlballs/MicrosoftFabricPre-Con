@@ -72,7 +72,7 @@ In this activity, you will walk through creating a PowerBI Project and connectin
 
 - [Open this reference about PowerBI Projects and complete the outlined steps](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-overview)
 - [Open this reference and read it to understand the project dataset folder layout](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-dataset)
-- [Open this reference and read it to understand the project report folder layout](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-dataset)
+- [Open this reference and read it to understand the project report folder layout](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-report)
 
 Pick only one of the following steps for the last tutorial, depending on what system you prefer to use for source control
 - [Open this tutorial and walk through the steps to integrate a PowerBI project folder with Git](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-git)
