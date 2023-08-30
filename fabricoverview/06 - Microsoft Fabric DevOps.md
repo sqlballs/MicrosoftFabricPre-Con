@@ -29,7 +29,7 @@ You'll cover these topics in this Module on Fabric DevOps:
 
 <h2 id="6.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.1 Designing and sizing a Fabric solution</h2>
 
-The first step in implementing a Microsoft Fabric solution is to thoroughly understand the business opporunities from your organization, and then understand the various solutions within the Microsoft Fabric platform, so that you can choose the proper elements, sizing and pricing for your organization. Throughout this course, you have learned more about the services and solutions within Microsoft Fabric, and in this section, you'll put that information to use to design a solution. 
+The first step in implementing a Microsoft Fabric solution is to thoroughly understand the business opportunities from your organization, and then understand the various solutions within the Microsoft Fabric platform, so that you can choose the proper elements, sizing and pricing for your organization. Throughout this course, you have learned more about the services and solutions within Microsoft Fabric, and in this section, you'll put that information to use to design a solution. 
 
 Designing a data solution for a large organization can be a complex process that requires careful planning and execution. Here are some steps that can be taken to design a data solution for a large organization:
 
@@ -170,7 +170,7 @@ Open each of the following tools and navigate the various actions and properties
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Optional Activity: Learn basic Log Navigation</b></p>
 
-In this Activity you will navigate the primary interfaces for navigting the Azure Log Monitoring system. 
+In this Activity you will navigate the primary interfaces for navigating the Azure Log Monitoring system. 
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
@@ -195,7 +195,7 @@ EXPLAIN can be applied to optimizable queries only, which are queries that can b
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
     <li><a href="https://learn.microsoft.com/en-us/fabric/admin/" target="_blank">Microsoft Fabric Administrator Portal</a></li>
-  <li><a href="[https://learn.microsoft.com/en-us/fabric/admin/](https://www.kevinrchant.com/2023/08/09/prepare-azure-devops-for-microsoft-fabric-git-integration/)" target="_blank">Kevin Chant's tutorial on git integration with Fabric</a></li>
+  <li><a href="https://www.kevinrchant.com/2023/08/09/prepare-azure-devops-for-microsoft-fabric-git-integration/" target="_blank">Kevin Chant's tutorial on git integration with Fabric</a></li>
   
 </ul>
 
