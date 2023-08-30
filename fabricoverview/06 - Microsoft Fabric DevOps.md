@@ -29,7 +29,7 @@ You'll cover these topics in this Module on Fabric DevOps:
 
 <h2 id="6.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.1 Designing and sizing a Fabric solution</h2>
 
-The first step in implementing a Microsoft Fabric solution is to thoroughly understand the business opporunities from your organization, and then understand the various solutions within the Microsoft Fabric platform, so that you can choose the proper elements, sizing and pricing for your organization. Throughout this course, you have learned more about the services and solutions within Microsoft Fabric, and in this section, you'll put that information to use to design a solution. 
+The first step in implementing a Microsoft Fabric solution is to thoroughly understand the business opportunities from your organization, and then understand the various solutions within the Microsoft Fabric platform, so that you can choose the proper elements, sizing and pricing for your organization. Throughout this course, you have learned more about the services and solutions within Microsoft Fabric, and in this section, you'll put that information to use to design a solution. 
 
 Designing a data solution for a large organization can be a complex process that requires careful planning and execution. Here are some steps that can be taken to design a data solution for a large organization:
 
