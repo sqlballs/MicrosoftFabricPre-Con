@@ -19,7 +19,7 @@ You'll cover these topics in this Module:
 <dl>
   <dt><a href="#01">2.1 - Understanding and creating Workspaces</a></dt>
   <dt><a href="#02">2.2 - Connecting to and managing the Workspace</a></dt>
-  <dt><a href="#03">2.3 - Ingesting data with pipielines and data flows</a></dt>
+  <dt><a href="#03">2.3 - Ingesting data with pipelines and data flows</a></dt>
   <dt><a href="#04">2.4 - Security concepts</a></dt>
 </dl>
 
@@ -100,6 +100,7 @@ To manage your Workspace, you can follow these steps:
 In this Activity you will access and work with your Workspace.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+
 - [Open the following reference and follow the steps you see there](https://learn.microsoft.com/en-us/fabric/get-started/give-access-workspaces)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
@@ -181,7 +182,7 @@ In cases where the Microsoft engineer can't troubleshoot your issue by using sta
 - Whether the requester is an isolated identity or using multi-factor authentication
 - Permissions levels
 
-Based on the JIT role, the request may also include an approval from internal Microsoft approvers. For example, the approver might be the customer support lead or the DevOps Manager.When the request requires direct access to customer data, a Customer Lockbox request is initiated. For example, in cases where remote desktop access to a customer's virtual machine is needed. Once the Customer Lockbox request is made, it awaits customer's approval before access is granted.
+Based on the JIT role, the request may also include an approval from internal Microsoft approvers. For example, the approver might be the customer support lead or the DevOps Manager When the request requires direct access to customer data, a Customer Lockbox request is initiated. For example, in cases where remote desktop access to a customer's virtual machine is needed. Once the Customer Lockbox request is made, it awaits customer's approval before access is granted.
 
 ![Lockbox](https://learn.microsoft.com/en-us/fabric/security/media/security-lockbox/email-example.png#lightbox)
 
@@ -203,7 +204,7 @@ Business Continuity and Disaster Recovery (BCDR) is supported in Fabric for Powe
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Work with Fabric Access Systems</b></p>
 
-In the following three tuorials, you will work with conditional access, security lockboxes, and service tags. 
+In the following three tutorials, you will work with conditional access, security lockboxes, and service tags. 
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
