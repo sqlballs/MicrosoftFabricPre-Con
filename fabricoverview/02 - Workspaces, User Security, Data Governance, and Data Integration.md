@@ -27,23 +27,22 @@ You'll cover these topics in this Module:
 
 <h2 id="01"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.1 Understanding and creating Workspaces</h2>
 
-Microsoft Fabric is a comprehensive platform that offers a variety of tools designed for the creation and administration of data pipelines. Within Microsoft Fabric, a Workspace serves as a fundamental element, facilitating collaboration among users on different projects, including dashboards, reports, and various other content1. Each individual using Microsoft Fabric is allocated a personal workspace called My workspace, providing them with a dedicated area to work on their own content and projects.
+Microsoft Fabric is a comprehensive platform that offers a variety of tools designed for the creation and administration of data pipelines. Within Microsoft Fabric, a Workspace serves as a fundamental element, facilitating collaboration among users on different projects, including dashboards, reports, and various other content. Each individual using Microsoft Fabric is allocated a personal workspace called *My workspace*, providing them with a dedicated area to work on their own content and projects.
 
 ![](https://learn.microsoft.com/pt-br/fabric/onelake/media/onelake-overview/onelake-foundation-for-fabric.png)
 
-#### <i>Microsoft Fabric components</i>
+#### Microsoft Fabric components
 
 This section describes tenants, capacities, and workspaces, which are the main building blocks of a Microsoft Fabric subscription.
 
-#### <i>Tenant</i>
+### Tenant
 The foundation of a Microsoft Fabric subscription is the tenant. Each tenant is tied to a specific Domain Name System (DNS). Your tenant is created when you buy a capacity, and after it's created, you can add more capacities. Usually, an organization has one tenant. In such cases, the tenant is synonymous with the organization. Some companies may want to have several tenants, each with their own capacities.
 
-#### <i>Capacity</i>
+### Capacity
 A Microsoft Fabric capacity resides on a tenant. Each capacity that sits under a specific tenant is a distinct pool of resources allocated to Microsoft Fabric. The size of the capacity determines the amount of computation power your organization gets. Before you purchase Microsoft Fabric, review the capacity and SKUs section, to establish which capacity is right for your organization.
 
-#### <i>Workspace</i>
-Workspaces reside within capacities and are used as containers for Microsoft Fabric items. Each Microsoft Fabric user has a personal workspace known as My Workspace. More workspaces can be created to enable collaboration. By default, workspaces are created in your organization's shared capacity. When your organization has other capacities, workspaces - including My Workspaces - can be assigned to any capacity in your organization.
-
+### Workspace
+Workspaces reside within capacities and are used as containers for Microsoft Fabric items. Each Microsoft Fabric user has a personal workspace known as *My Workspace*. More workspaces can be created to enable collaboration. By default, workspaces are created in your organization's shared capacity. When your organization has other capacities, workspaces - including My Workspaces - can be assigned to any capacity in your organization.
 
 <br>
 
@@ -55,26 +54,21 @@ Microsoft Fabric admins can use the Create workspaces setting to designate which
 
 To create a Microsoft Fabric workspace, you need to:
 
-        Sign in to Power BI.
-        
-        Select Workspaces > New workspace.
-        
-        Fill out the Create a workspace form by giving the workspace a unique name (mandatory), providing a description of the workspace (optional), and assigning the workspace to a domain (optional).
-        
-        Expand the Advanced section.
-        
-        Choose Fabric capacity or Trial in the License mode section.
-        
-        Choose a premium capacity you have access to.
-        
-        Select Apply. The workspace is created and opened.
+- Sign in to Power BI.
+- Select Workspaces > New workspace.
+- Fill out the Create a workspace form by giving the workspace a unique name (mandatory), providing a description of the workspace (optional), and assigning the workspace to a domain (optional).
+- Expand the Advanced section.
+- Choose Fabric capacity or Trial in the License mode section.
+- Choose a premium capacity you have access to.
+- Select Apply.
+
+The workspace is now created and opened.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-- [How to create a Workspace.](https://learn.microsoft.com/en-us/fabric/get-started/create-workspaces)
+- [Open the following reference and follow the steps you see there](https://learn.microsoft.com/en-us/fabric/get-started/create-workspaces)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
-
 
 <h2 id="02"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.2 Connecting to and managing the Workspace</h2>
 
@@ -103,13 +97,10 @@ To manage your Workspace, you can follow these steps:
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Access to Workspace/b></p>
 
-  TODO:-[How to give user access to users](https://learn.microsoft.com/en-us/fabric/get-started/give-access-workspaces)
-
+In this Activity you will access and work with your Workspace.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
-
-TODO: [Understand Roles in Workspaces](https://learn.microsoft.com/en-us/fabric/get-started/roles-workspaces)      
-             [Manage a workspace with GIT](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git)
+- [Open the following reference and follow the steps you see there](https://learn.microsoft.com/en-us/fabric/get-started/give-access-workspaces)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -118,7 +109,6 @@ TODO: [Understand Roles in Workspaces](https://learn.microsoft.com/en-us/fabric/
 In the previous module, you learned about the main storage concept, OneLake. To move data into and out of OneLake, you will use the Microsoft Fabric experience of *Microsoft Azure Data Factory*.
 
 Data Factory provides a data integration tool to ingest, prepare and transform data from a rich set of data sources (for example, databases, data warehouse, Lakehouse, real-time data, and more). Using the Data Factory, you can transform the data with intelligent transformations and leverage a rich set of activities. Microsoft Fabric uses Data Factory to  bring fast copy (data movement) capabilities to both *dataflows* and *data pipelines*. With Fast Copy, you can move data quickly, and it enables you to bring data to your Lakehouse and Data Warehouse in Microsoft Fabric for analytics.
-
 
 There are two primary concepts to understand about using Azure Data Factory with Microsoft Fabric: 
 
@@ -137,7 +127,7 @@ Dataflows are built using Power Query in Microsoft products and services such as
 
 Data pipelines enable powerful workflow capabilities at cloud-scale. With data pipelines, you can build complex workflows that can refresh your dataflow, move PB-size data, and define sophisticated control flow pipelines. You use data pipelines to build complex ETL and data factory workflows that can perform many different tasks at scale. Control flow capabilities are built into data pipelines that allow you to build workflow logic, which provides loops and conditionals.
 
-Add a configuration-driven copy activity together with your low-code dataflow refresh in a single pipeline for an end-to-end ETL data pipeline. You can even add code-first activities for Spark Notebooks, SQL scripts, stored procs, and more.
+You can add a configuration-driven copy activity together with your low-code dataflow refresh in a single pipeline for an end-to-end ETL data pipeline. You can even add code-first activities for Spark Notebooks, SQL scripts, stored procs, and more.
 
 ![Data Pipeline](https://learn.microsoft.com/en-us/fabric/data-factory/media/data-factory-overview/data-pipelines.png#lightbox)
 
@@ -145,14 +135,11 @@ Add a configuration-driven copy activity together with your low-code dataflow re
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Create a Data Flow and a Data Pipeline</b></p>
 
-TODO: [Use Data Pipeline](https://learn.microsoft.com/en-us/fabric/data-factory/templates)
-
-[Use Dataflow in a Pipeline](https://learn.microsoft.com/en-us/fabric/data-factory/tutorial-dataflows-gen2-pipeline-activity)
-
+In this Activity you will follow a tutorial to create a Data Flow and use it in a Data Pipeline.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-TODO: Enter activity steps description with checkbox
+- [Open the following reference and follow the steps you see there](https://learn.microsoft.com/en-us/fabric/data-factory/tutorial-dataflows-gen2-pipeline-activity)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -182,12 +169,11 @@ You can use Azure service tags with Microsoft Fabric to enable an Azure SQL Mana
 
 Use Customer Lockbox for Microsoft Azure to control how Microsoft engineers access your data in an audited way. Typically, Customer Lockbox is used to help Microsoft engineers troubleshoot a Microsoft Fabric service support request. Customer Lockbox can also be used when Microsoft identifies a problem, and a Microsoft-initiated event is opened to investigate the issue.
 
-To enable Customer Lockbox for Microsoft Fabric, you must be an Azure AD Global Administrator. To assign roles in Azure AD, see Assign Azure AD roles to users.
+To enable Customer Lockbox for Microsoft Fabric, you must be an Azure AD Global Administrator. To assign roles in Azure AD, see Assign Azure AD roles to users. You can then follow these steps:
 
 - Open the Azure portal.
 - Go to Customer Lockbox for Microsoft Azure.
 - In the Administration tab, select Enabled.
-
 
 In cases where the Microsoft engineer can't troubleshoot your issue by using standard tools, elevated permissions are requested using the Just-In-Time (JIT) access service. The request can come from the original support engineer, or from a different engineer. After the access request is submitted, the JIT service evaluates the request, considering factors such as:
 
@@ -213,24 +199,23 @@ Business Continuity and Disaster Recovery (BCDR) is supported in Fabric for Powe
 
 > Note: Non-Power BI Fabric items, such as Notebooks, KQL Databases, or for data stored in OneLake are not covered under BCDR
 
-
 <br>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Work with Fabric Access Systems</b></p>
 
-TODO: [Configure Conditional Access in MS Fabric](https://learn.microsoft.com/en-us/fabric/security/security-conditional-access#configure-conditional-access-for-fabric)
-
-[Enable Customer Lockbox in MS Fabric](https://learn.microsoft.com/en-us/fabric/security/security-lockbox)
+In the following three tuorials, you will work with conditional access, security lockboxes, and service tags. 
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-TODO: [How to Use service tags with Power BI](https://learn.microsoft.com/en-us/power-bi/enterprise/service-premium-service-tags)
+- [Open the following reference and follow the steps you see there](https://learn.microsoft.com/en-us/fabric/security/security-conditional-access#configure-conditional-access-for-fabric)
+- [Open the following reference and follow the steps you see there](https://learn.microsoft.com/en-us/fabric/security/security-lockbox)
+- [Open the following reference and follow the steps you see there](https://learn.microsoft.com/en-us/power-bi/enterprise/service-premium-service-tags)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
-    <li><a href="" target="_blank">TODO: Enter courses, books, posts, whatever the student needs to extend their study</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/training/modules/administer-fabric/4-manage-security" target="_blank">You can find a training module here for Microsoft Fabric security topics. </a></li>
 </ul>
 
 Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/03%20-%20The%20Data%20Lakehouse.md).
