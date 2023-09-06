@@ -130,7 +130,7 @@ In this section you'll see how to read/write data into your lakehouse with a not
 
 *Load data with a Juypter Notebook*
 
-It is so incredibly easy to load data into a notebook using Microsoft Fabric.  Any table in your Lakehouse can easily be added to a new or existing notebook by simply clicking on the table, selecting Load Data, and then selecting Spark.  This will add a PySpark command to your notebook loading the top 1000 rows into a data frame and displaying them.
+It is simple to load data into a notebook using Microsoft Fabric.  Any table in your Lakehouse can easily be added to a new or existing notebook by simply clicking on the table, selecting Load Data, and then selecting Spark.  This will add a PySpark command to your notebook loading the top 1000 rows into a data frame and displaying them.
 
 *Load data with an Apache Spark API*
 
