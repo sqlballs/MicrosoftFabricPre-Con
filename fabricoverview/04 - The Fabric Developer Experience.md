@@ -203,12 +203,28 @@ The intention of the module is to provide practical guidance for data & analytic
 * Connect different stages to different databases
 * Use parameters for configurations that will change between stages 
 
+Define clear boundaries and permissions for different teams and environments. You can create separate workspaces for each team, so they can have their own source control repos and deployment schedules. You can also plan who can access and edit the content in the Git repo and the pipeline stages.
+
+Use separate databases and parameters for different stages. This can help you protect production data, reduce development data size, and make changes easier. You can use data source rules or parameters to switch data sources in different stages.
+
+
 ### Development ###
 * Back up your work into a git repository
 * Rolling back changes
 * Working with a ‘private’ workspace
 * Use Client tools to edit your work
 * Managing workspaces and branches
+
+Commit your work to a Git repository to back it up and track changes. You can use tools like VSCode, Power BI Desktop, or others to author your content locally and push it to the remote repo. You can also sync the workspace with the repo to upload the changes.
+
+Revert to a previous version of your work if needed. You can use the undo operation to undo the immediate changes you made, as long as they are not committed yet. You can also use git revert or git reset to promote an older commit to be the HEAD, and then update the workspace with that new commit.
+
+Use a separate workspace as an isolated environment for your work. You can create a new branch from the main branch and connect it to the workspace, so you can work without conflicts or interruptions. You can also switch the connection to a different branch on the same workspace if needed.
+
+Use client tools for editing your work if possible. Some items and tools support local development, such as Notebooks in VSCode or datasets and reports in Power BI Desktop. These tools can help you work faster and more efficiently. You can also push the changes from the client tools to the remote repo and sync the workspace.
+
+Manage your workspaces and branches effectively. You can create branches and commit changes to them locally, push them to the remote repo, and create pull requests to the main branch, all without a workspace. A workspace is needed only as a testing environment to check that everything works in a real-life scenario. You can also reuse the same workspace for different branches if you have a private workspace with all required configurations.
+
 
 ### Test ###
 * Simulate your production environment
@@ -217,14 +233,33 @@ The intention of the module is to provide practical guidance for data & analytic
 * Updating data items 
 * Test your app
 
+Test your content in a simulated production environment. You can use a deployment pipeline test stage or an additional workspace connected to Git to test your content with real-life data and capacity. This can help you identify and fix any issues before deploying to production.
+
+Use deployment rules to ensure data sources and parameters are set correctly for each stage. You can use data source rules or parameters to switch data sources in different stages. This can help you protect production data, reduce development data size, and make changes easier.
+
+Check related items for any impact or dependency. Your changes may affect the performance or functionality of existing items that are connected to the updated ones. You can use impact analysis to find the related items and test them as well.
+
+Update data items carefully and safely. Data items are items that store data, and their definition in Git defines how the data is stored. When updating an item in the workspace, you are importing its definition into the workspace and applying it on the existing data. Some changes may cause data loss or corruption, so be mindful when applying the changes. 
+
+Test your app from an end user’s point of view. If you are distributing content to your customers through an app, you should review the app’s new version before it’s in production. You can publish and update apps for development and test stages, and check the app content and settings.
+
+
 ### Production ###
 * Manage who can deploy to production
 * Update the production app
 * Deploying into production using git branches
 * Quick fixes to content
 
+Control who can access and edit the content in the production stage. You can use production workspace permissions to manage who can deploy or view the content. You can also limit access to the Git repo or the pipeline by only enabling permissions to users that are part of the content creation process.
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Do a deeper review of items discussed within the Development Best Practices module</b></p>
+Update the app content and settings after deploying to production. Deployment does not include updating the app automatically. You can update the app manually or use the deployment pipelines API. Updating the app ensures that end users can see and use the latest version of your content.
+
+Use release branches to deploy updates from Git to different stages. You will need to change the connection of the workspace to the new release branch before each deployment. You will also need to handle any changes to the source code or configuration that are required by your build or release pipeline before deploying to the workspace.
+
+Implement and test any fixes in the development stage before deploying them to production. Deploying a fix without testing it first can cause more problems. Deploying across the pipeline stages allows you to check that the fix works and does not break anything else.
+
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Conduct a thorough review of the topics covered in the Development Best Practices module.</b></p>
 
 For more detail on the items discussed within Development Best Practices module read through the link provided.
 
