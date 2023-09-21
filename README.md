@@ -31,7 +31,7 @@ In this workshop you'll cover these topics:
 - The Data Lakehouse:	Creating a Lakehouse, Linking data, using Spark to create new data sets in the Lakehouse
 - The Fabric Developer Experience:	Using Co-Pilot, SSMS, VS Code, command-line tools, development best-practices
 - The Fabric User Experience:	Power BI, the Kusto Query Language, Streaming and Event Data
-- Microsoft Fabric DevOps: Design, Sizing, Mointoring and Management, Source Control, and the EXPLAIN command.
+- Microsoft Fabric DevOps: Design, Sizing, Monitoring and Management, Source Control, and the EXPLAIN command.
 
 The goal of this workshop is to train the data professional to get an overview on how to determine when to implement a Microsoft Fabric solution, how to design the solution, implement it, use it, and manage, monitor and maintain it.
 
