@@ -76,7 +76,7 @@ To work with your Microsoft Fabric Workspace, you need to connect to it.
 
 ![Fabric Workspace view](https://learn.microsoft.com/en-us/fabric/get-started/media/workspaces/fabric-workspace-page.png#lightbox)
 
-Workspaces are places to collaborate with colleagues to create collections of items such as lakehouses, warehouses, and reports.To connect to a Microsoft Fabric Workspace, you can follow these steps1:
+Workspaces are places to collaborate with colleagues to create collections of items such as lakehouses, warehouses, and reports. To connect to a Microsoft Fabric Workspace, you can follow these steps1:
 
 - Go to *Manage gateways* to create connection.
 - From the page header in *Data Integration service*, select *Settings > Manage connections and gateways*.
