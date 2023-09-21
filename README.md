@@ -27,7 +27,7 @@ You can view all of the [courses and other workshops our team has created at thi
 In this workshop you'll cover these topics:
 
 - Introduction and Overview:	Introduction of the course, Basic Concepts, Services, Roles, Benchmarks. Verification of pre-requisites
-- Workspaces, User Security, Data Governance, and Data Integration	Understanding and creating Workspaces, creating a Data Warehouse, connecting and managing, ingesting data with pipielines and data flows, along with Security concepts
+- Workspaces, User Security, Data Governance, and Data Integration	Understanding and creating Workspaces, creating a Data Warehouse, connecting and managing, ingesting data with pipelines and data flows, along with Security concepts
 - The Data Lakehouse:	Creating a Lakehouse, Linking data, using Spark to create new data sets in the Lakehouse
 - The Fabric Developer Experience:	Using Co-Pilot, SSMS, VS Code, command-line tools, development best-practices
 - The Fabric User Experience:	Power BI, the Kusto Query Language, Streaming and Event Data
@@ -92,7 +92,7 @@ This is a modular workshop, and in each section, you'll learn concepts, technolo
 
   <tr><td><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/01%20-%20Introduction%20and%20Overview.md" target="_blank">01 - Introduction and Overview </a></td><td> Introduction of the course, Basic Concepts, Services, Roles, Benchmarks. Verification of pre-requisites.</td></tr>
   
-  <tr><td style="background-color: AliceBlue; color: black;"><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/02%20-%20Workspaces%2C%20User%20Security%2C%20Data%20Governance%2C%20and%20Data%20Integration.md" target="_blank">02 - Workspaces, User Security, Data Governance, and Data Integration</a> </td><td td style="background-color: AliceBlue; color: black;"> Understanding and creating Workspaces, creating a Data Warehouse, connecting and managing, ingesting data with pipielines and data flows, along with Security concepts</td></tr>
+  <tr><td style="background-color: AliceBlue; color: black;"><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/02%20-%20Workspaces%2C%20User%20Security%2C%20Data%20Governance%2C%20and%20Data%20Integration.md" target="_blank">02 - Workspaces, User Security, Data Governance, and Data Integration</a> </td><td td style="background-color: AliceBlue; color: black;"> Understanding and creating Workspaces, creating a Data Warehouse, connecting and managing, ingesting data with pipelines and data flows, along with Security concepts</td></tr>
   
   <tr><td><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/03%20-%20The%20Data%20Lakehouse.md" target="_blank">03 - The Data Lakehouse </a></td><td> Creating a Lakehouse, Linking data, using Spark to create new data sets in the Lakehouse</td></tr>
   
