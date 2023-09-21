@@ -48,12 +48,12 @@ You can create your own workspaces and lakehouses within OneLake, which are like
 Microsoft Fabric is designed to help you turn your large and complex data into actionable workloads and analytics. It is a powerful and easy-to-use tool that can help you grow your business and achieve your goals.
 
 In this Course, you will understand:
-- the basic concepts, services, roles, and benchmarks of Microsoft Fabric
-- how to create and manage workspaces, data warehouses, and data integration pipelines and data flows
-- how to Secure and govern your data with distributed ownership and collaboration
-- how to different analytical engines can be used to run T-SQL, Python, or KQL queries in order to load, transform, query, and visualize your data
-- how to use various developer tools, such as Co-Pilot, SSMS, VS Code, and command-line tools, to develop and test your data applications
-- how Microsoft Fabric integrates with DevOps
+- The <b>basic</b> concepts, services, roles, and benchmarks of Microsoft Fabric
+- <b>How to create and manage</b> workspaces, data warehouses, and data integration pipelines and data flows
+- <b>How to Secure and govern</b> your data with distributed ownership and collaboration
+- <b>How to different analytical engines</b> can be used to run T-SQL, Python, or KQL queries in order to load, transform, query, and visualize your data
+- <b>How to use various developer tools</b>, such as Co-Pilot, SSMS, VS Code, and command-line tools, to develop and test your data applications
+- <b>How</b> Microsoft Fabric integrates with DevOps
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -158,16 +158,130 @@ For a brief video overview of Data Sharing see this video:
 
 <h2 id="1.6"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.6 - Understanding Microsoft Fabric Benchmarks</h2>
 
-![](https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/06/image_mihir-1024x661.gif)
+![](https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/Fabric-Utilization-DW-static-caption-1024x575.png)
+
+## What are Capacities?
+Microsoft Fabric is a unified data platform that offers shared experiences, architecture, governance, compliance, and billing. Capacities provide the computing power that drives all of these experiences. They offer a simple and unified way to scale resources to meet customer demand and can be easily increased with a SKU upgrade.
+
+<p>
+
+### Bursting & Smoothing
+
+Bursting allows you to consume extra compute resources beyond what have been purchased to speed the execution of a workload. For example, instead of running a job on 64 CU and completing in 60 seconds, bursting could use 256 CUs to complete the job in 15 seconds.
+
+- Bursting is a SaaS feature and requires no user management. Behind the scenes, the capacity platform is pre-provisioning Microsoft managed virtualized compute resources to optimize for maximum performance.
+- Compute spikes generated from bursting will not cause throttling due to smoothing policies outlined in the next section.
+
+![](https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/FabricBurstingSmoothing5.gif)
+
+<p>
+
+When a capacity is running multiple jobs, a sudden spike in compute demand may be generated that exceeds the limits of a purchased capacity. Smoothing simplifies capacity management here by spreading the evaluation of compute to ensure that your jobs run smoothly and efficiently. Two places to expect to see this in place is:
+
+<p>
+
+- <b>For interactive jobs run by users:</b> capacity demand is typically smoothed over 5 minutes to reduce short-term temporal spikes.  
+- <B>For scheduled, or background jobs:</b> capacity demand is spread over 24 hours, eliminating the concern of job scheduling or contention.
+
+<p>
+Smoothing will not impact execution time, that is always at peak performance! Smoothing simply also allows you to size your capacity based on average, not peak usage.
+
+### OneLake Storage Reporting in Capacity Metrics
+
+With this new feature, you can easily analyze your storage consumption by selecting your Capacity, choosing the date range, and viewing usage by workspace. This will provide you with valuable insights into your overall storage spend and enable you to monitor daily or hourly trends with usage of drill-through. 
+
+![](https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/onelake-demo-ux-1024x732.png)
+<p>
+
+### Capacity Long Running Workloads
 
 
-Microsoft Fabric Capacity Metrics app is designed to provide monitoring capabilities for Power BI Premium capacities. Capacity metrics in Fabric is a governance feature for admins to monitor the performance of workloads and their usage compared to purchased capacity. 
+We’re introducing a new optimization for long-running jobs. Historically, if a job’s reported usage exceeded capacity limits, the following jobs would be throttled. Now, if a job’s reported usage exceeds capacity limits, throttling will not be immediately applied to following jobs. Instead, any overage will be automatically balanced against future capacity when the system has unutilized capacity. This feature to “borrow from the future” is in addition to smoothing and is also seamless to customers and supported by the following new analytics experience in Capacity Metrics.
+<p>
 
-The Azure security baseline for Service Fabric is also available. 
+![](https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/Throttling-cumulative-burndown-1024x378.png)
+
+After the October 1st platform update, capacity throttling policies will now be based on the amount of future capacity consumption that resulted from smoothing policies, this offers increased Overage protection for when future use is less than 10 minutes and richer queue management features to prevent excessive overload when usage exceeds an hour. The 4 new policies are outlined in Table 1
+
+<p>
+
+<table style="height: 327px" width="1110">
+<tbody>
+<tr>
+<td><strong>Future Smoothed Consumption – Policy Limits</strong></td>
+<td>
+<p><strong>Platform Policy</strong></p>
+</td>
+<td>
+<p><strong>Experience Impact</strong></p>
+</td>
+</tr>
+<tr>
+<td>Usage &lt;= 10 minutes</td>
+<td>
+<p>Overage protection</p>
+</td>
+<td>
+<p>Jobs can consume 10 minutes of future capacity use without throttling.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>10 minutes &lt; Usage &lt;= 60 minutes</p>
+</td>
+<td>
+<p>Interactive Delay</p>
+</td>
+<td>
+<p>User requested interactive type jobs will be throttled.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>60 minutes &lt; Usage &lt;= 24 hours</p>
+</td>
+<td>
+<p>Interactive Rejection</p>
+</td>
+<td>
+<p>User requested interactive type jobs will be rejected.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Usage &gt; 24 hours</p>
+</td>
+<td>
+<p>Background Rejection</p>
+</td>
+<td>
+<p>User Scheduled background jobs will be rejected from execution.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+To help you monitor and analyze the new policies, we’ve added a new throttling tab in the utilization section of the Capacity Metrics. You can now easily observe future usage as a percentage of each limit, and even drill down to specific workloads that contributed to an overage.
+
+![](https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/Throttling-policy-analaytics-1024x387.png)
+
+### Power BI & Microsoft Fabric - One Capacity Model
+Capacity Units offer more granularity than the previously used v-cores and let us offer smaller sized capacities to Fabric customers with a very low entry point for pricing. Starting on 10/1, we will be updating all Power BI premium SKU’s (EM, P and A) to report in capacity units. Key takeaways for this change:
+<p>
+
+- This update will not result in any change to the throughput of a capacity.
+- Power BI Premium SKU’s EM / A and P will now report usage using CUs.
+- There will be one version of the Capacity Metrics app that supports all Power BI and Fabric capacity SKUs
+
+![](https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/a-screenshot-of-a-test-description-automatically.png)
+
 <p>
 For more information about the Microsoft Fabric Capacity app see the following documentation:
 
 -  [Capacity metrics in Microsoft Fabric Announcement](https://blog.fabric.microsoft.com/en-us/blog/capacity-metrics-in-microsoft-fabric)
+
+-  [Understand the metrics app OneLake page](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app-onelake-page)
+-  [Fabric Capacities – Everything you need to know about what’s new and what’s coming](https://blog.fabric.microsoft.com/en-us/blog/fabric-capacities-everything-you-need-to-know-about-whats-new-and-whats-coming?ft=All)
 
 -  [What is the utilization and metrics app?](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app)
 -  [Install the Microsoft Fabric capacity metrics app](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app-install?tabs=1st)
