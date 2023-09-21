@@ -48,7 +48,7 @@ Workspaces reside within capacities and are used as containers for Microsoft Fab
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity:Creating your first Workspace</b></p>
 
-In this activity you will create a basic Workspace in Fabric.
+In this activity you will verify or create a basic Workspace in Fabric.
 
 Microsoft Fabric admins can use the Create workspaces setting to designate which users in the organization can create workspaces.
 
