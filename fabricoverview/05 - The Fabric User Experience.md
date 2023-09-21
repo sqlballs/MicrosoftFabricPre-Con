@@ -55,8 +55,16 @@ As a developer, you can use this integration to:
 - Users can leverage Git integration and deployment pipelines for an end-to-end application lifecycle management of their work by developing through Git integration and deploying their Power BI content across dev, test, and production workspaces. Developers can use the user interface (UI) experience or automate the process through other tools, such as Azure Pipelines.
 
 #### PowerBI Projects
+Power BI Desktop introduces a new way to author, collaborate, and save your projects. You can now save your work as a Power BI Project (PBIP). As a project, report and dataset artifact definitions are saved as individual plain text files in a simple, intuitive folder structure.
+
+Project files come with the following benefits:
+- <b>Text editor support</b> - Artifact definition files are JSON formatted text files containing model dataset and report metadata.
+- <b>Programmatic generation and editing artifact definitions</b> - You can create scripts using the popular and easy to use Tabular Model Scripting Language (TMSL), or create your own custom applications to make changes to your artifact definitions.
+- <b>Source control</b> - Power BI dataset and report artifact definitions can be stored in a source control system, like Git. With Git, you can track version history, compare revisions (diff), and revert to previous versions.
+- <b>Continuous Integration and Continuous Delivery (CI/CD)</b> - You can use systems where developers in your organization submit a proposed change to the CI/CD system.
 
 ##### Dataset and Report Project Files 
+The dataset and report project folders and files  contain the settings and configurations that represent the datasets and reports within a PowerBI project. All the settings are represented in a way that allows for code changes via text editing (<b>you can automate changes</b>).
 
 ##### Enterprise-grade collaboration with Git integration for Power BI datasets and reports
 
@@ -113,6 +121,13 @@ You'll use the streaming and query capabilities of Real-Time Analytics to answer
 - [Get data with Eventstream](https://learn.microsoft.com/en-us/fabric/real-time-analytics/tutorial-2-event-streams)
 - [Get historical data](https://learn.microsoft.com/en-us/fabric/real-time-analytics/tutorial-3-get-historical-data)
 
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
+<ul>
+    <li><a href="https://www.youtube.com/watch?v=-HhU7yLyuUU" target="_blank"> Real-time Tracking the International Space Station with Microsoft Fabric! - Tales from the Field</a></li>
+    <li><a href="https://www.youtube.com/watch?v=_RFvcPBNiOk" target="_blank"> Real-time Tracking the International Space Station with Microsoft Fabric! | Part 2 - Tales from the Field</a></li>
+</ul>
+
+
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <h2 id="5.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.3 Working with Fabric and the Kusto Query Language (KQL)</h2>
@@ -150,7 +165,7 @@ The KQL Queryset uses the Kusto Query language for creating queries, and also su
 In Real-Time Analytics, you interact with your data in the context of databases. A single workspace can hold multiple databases, and each database can hold multiple tables.
 </br>
 
-The KQL Queryset is the item used to run queries, view, and customize query results on data from a KQL database. Each tab in the KQL queryset can be associated with a different KQL database, and lets your save queries for later use or share with others to collaborate on data exploration. You can also change the KQL database associated with any tab, allowing you to run the same query on data in different states.The KQL Queryset uses the Kusto Query language for creating queries, and also supports many SQL functions. 
+The KQL Queryset is the item used to run queries, view, and customize query results on data from a KQL database. Each tab in the KQL queryset can be associated with a different KQL database, and lets your save queries for later use or share with others to collaborate on data exploration. You can also change the KQL database associated with any tab, allowing you to run the same query on data in different states. The KQL Queryset uses the Kusto Query language for creating queries, and also supports many SQL functions. 
 
 In this activity, you will learn how to query your data using Kusto Query Language in a KQL queryset.
 
@@ -168,6 +183,7 @@ In this activity, you will learn how to query your data using Kusto Query Langua
     <li><a href="https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/?context=/fabric/context/context-rta&pivots=fabric" target="_blank">Kusto Query Overview</a></li>
     <li><a href="https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-overview" target="_blank">PowerBI Desktop Projects</a></li>
     <li><a href="https://learn.microsoft.com/en-us/fabric/real-time-analytics/realtime-analytics-compare" target="_blank"> Comparing Real-Time Analytics and Azure Data Explorer</a></li>
+    <li><a href="https://www.youtube.com/watch?v=ZVrvP20ezYk" target="_blank">Microsoft Fabric Real-Time Analytics Tutorial!!</a></li>
 
 </ul>
 
