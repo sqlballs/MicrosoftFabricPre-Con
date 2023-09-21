@@ -126,7 +126,7 @@ Microsoft Fabric Data Engineering and Data Science experiences operate on a full
 
 **Load Data with Spark**
 
-In this section you'll see how to read/write data into your lakehouse with a notebook.Spark API and Pandas API are supported to achieve this goal.
+In this section you'll see how to read/write data into your lakehouse with a notebook. Spark API and Pandas API are supported to achieve this goal.
 
 *Load data with a Juypter Notebook*
 
