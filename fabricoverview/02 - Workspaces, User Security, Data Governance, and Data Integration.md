@@ -95,7 +95,7 @@ To manage your Workspace, you can follow these steps:
 
 <br>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Access to Workspace/b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Access to Workspace</b></p>
 
 In this Activity you will access and work with your Workspace.
 
