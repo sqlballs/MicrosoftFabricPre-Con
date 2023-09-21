@@ -190,7 +190,7 @@ Validate that you have a Microsoft Fabric Enabled Workspace:
 <p>
 If have a Power BI License, a Microsoft Fabric Capacity, but have not created a workspace:
 
-- Navigate to [Lakehouse tutorial: Create a Fabric workspace](https://learn.microsoft.com/en-us/fabric/data-engineering/tutorial-lakehouse-get-started)
+- Navigate to [Tutorial: Create a Microsoft Fabric workspace](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-workspace)
 - Navigate to your Microsoft Fabric enabled workspace
 - Click +New
 - Click Show all
