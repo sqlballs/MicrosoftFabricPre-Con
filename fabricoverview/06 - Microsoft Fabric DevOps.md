@@ -60,7 +60,7 @@ There are a few decisions to make as you bring your solution design.
 - One of your first steps is to enable Microsoft Fabric for your Tenant. [You can find the process for that here.](https://learn.microsoft.com/en-us/fabric/admin/fabric-switch)
 - Next, you need to understand the licensing model for using the solution. [You can find more information on that here.](https://learn.microsoft.com/en-us/fabric/enterprise/licenses)
 - You can then review the [Microsoft Fabric decision guide: data warehouse or lakehouse at this reference](https://learn.microsoft.com/en-us/fabric/get-started/decision-guide-warehouse-lakehouse)
-- After reviewing that material, you can check the [Microsoft Fabric decision guide: copy activity, dataflow, or Spark at this referenece](https://learn.microsoft.com/en-us/fabric/get-started/decision-guide-pipeline-dataflow-spark)
+- After reviewing that material, you can check the [Microsoft Fabric decision guide: copy activity, dataflow, or Spark at this reference](https://learn.microsoft.com/en-us/fabric/get-started/decision-guide-pipeline-dataflow-spark)
 
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Locate and Create a Design Decision Document for a real-world Analytics solution</b></p>
@@ -125,7 +125,7 @@ There are some considerations to keep in mind when working with git and Microsof
 
 <h2 id="6.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.3 Monitoring and Managing a Fabric solution</h2>
 
-Managing a Microsoft Fabric solution involves multiple tools, processes, and procedures. Since there are multiple products involved, you'll often take an "outside-in" approach, where you start the administration and monitoring at the outermost level and drill in to the specifc area of focus. this outside in approach should involve getting as many components under one view as possible. The Microsoft Fabric platform has various tools and features to help you administer the solution from as broad a perspective as possible, and you may also augment these views with administration processes and tools of your own. 
+Managing a Microsoft Fabric solution involves multiple tools, processes, and procedures. Since there are multiple products involved, you'll often take an "outside-in" approach, where you start the administration and monitoring at the outermost level and drill in to the specific area of focus. This outside in approach should involve getting as many components under one view as possible. The Microsoft Fabric platform has various tools and features to help you administer the solution from as broad a perspective as possible, and you may also augment these views with administration processes and tools of your own. 
 
 <h3>Administration</h3>
 Your primary tasks in administration are in recovery, capacity management, object security, and user management, along with Governance and Compliance. Most of these are at done at the *workspace* level, although there are individual management tools that deal with other aspects of the solution. These interfaces include: 
