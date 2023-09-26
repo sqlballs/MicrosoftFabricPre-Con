@@ -156,6 +156,12 @@ To learn how to connect VS Code to Microsoft Fabric, please select the link belo
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 - <a href="https://learn.microsoft.com/en-us/fabric/data-engineering/setup-vs-code-extension">What is the Synapse Visual Studio Code extension.</a>
 
+<p></p>
+
+The following video shows us how to connect Visual Studio Code to our Microsoft Fabric Workspace and then how to interact with an existing Notebook so we can interface with our Lakehouse & Spark:
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/0tODoHLXhMc/0.jpg)](https://www.youtube.com/watch?v=0tODoHLXhMc&ab)
+
 <b></b>
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
