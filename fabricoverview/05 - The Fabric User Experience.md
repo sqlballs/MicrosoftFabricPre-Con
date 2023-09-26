@@ -70,7 +70,8 @@ The dataset and report project folders and files  contain the settings and confi
 
 We are also enabling more seamless collaboration with your development team on Power BI content with Git integration. You can now easily connect your workspace to Azure DevOps repositories to track changes, revert to previous versions, and merge updates from multiple team members into a single source of truth that will be synced into the workspace with a single click.
 
-[Review this video to learn more about Power BI and Fabric](https://youtu.be/fvuL8Nk_gxU)
+[![Title card for the Guy in a Cube video "PowerBI and Fabric"](https://img.youtube.com/vi/fvuL8Nk_gxU/0.jpg)](https://www.youtube.com/watch?v=fvuL8Nk_gxU)
+
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: PowerBI Desktop Projects and Git Integration</b></p>
 
@@ -123,11 +124,10 @@ You'll use the streaming and query capabilities of Real-Time Analytics to answer
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
-    <li><a href="https://www.youtube.com/watch?v=-HhU7yLyuUU" target="_blank"> Real-time Tracking the International Space Station with Microsoft Fabric! - Tales from the Field</a></li>
-    <li><a href="https://www.youtube.com/watch?v=_RFvcPBNiOk" target="_blank"> Real-time Tracking the International Space Station with Microsoft Fabric! | Part 2 - Tales from the Field</a></li>
+    <li>Please bookmark and review later, the following videos:</li>
 </ul>
 
-
+[![Title card for the Tales from the Field video "Real-time Tracking the ISS with Microsoft Fabric! - Part 1"](https://img.youtube.com/vi/-HhU7yLyuUU/0.jpg)](https://www.youtube.com/watch?v=-HhU7yLyuUU) [![Title card for the Tales from the Field video "Real-time Tracking the ISS with Microsoft Fabric! - Part 1"](https://img.youtube.com/vi/_RFvcPBNiOk/0.jpg)](https://www.youtube.com/watch?v=_RFvcPBNiOk)
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <h2 id="5.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.3 Working with Fabric and the Kusto Query Language (KQL)</h2>
@@ -183,8 +183,10 @@ In this activity, you will learn how to query your data using Kusto Query Langua
     <li><a href="https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/?context=/fabric/context/context-rta&pivots=fabric" target="_blank">Kusto Query Overview</a></li>
     <li><a href="https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-overview" target="_blank">PowerBI Desktop Projects</a></li>
     <li><a href="https://learn.microsoft.com/en-us/fabric/real-time-analytics/realtime-analytics-compare" target="_blank"> Comparing Real-Time Analytics and Azure Data Explorer</a></li>
-    <li><a href="https://www.youtube.com/watch?v=ZVrvP20ezYk" target="_blank">Microsoft Fabric Real-Time Analytics Tutorial!!</a></li>
+    <li>Please bookmark and review the following video:</a></li>
 
 </ul>
+
+[![Title card for the Tales from the Field video "The Microsoft Fabric Real-time Analytics Tutorial"](https://img.youtube.com/vi/ZVrvP20ezYk/0.jpg)](https://www.youtube.com/watch?v=ZVrvP20ezYk)
 
 Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/06%20-%20Microsoft%20Fabric%20DevOps.md).
