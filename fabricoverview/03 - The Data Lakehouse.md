@@ -71,7 +71,8 @@ In this activity we will be following with the Data warehouse tutorial introduct
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>
 
-- Open the following reference in another tab, [Tutorial: Analyze data with a notebook](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-analyze-data-notebook)
+- Validate that you have created a Lakehouse from the previous module
+- If not, open the following reference in another tab, [Tutorial: Analyze data with a notebook](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-analyze-data-notebook)
 
 - Follow Steps 1 - 3
 
