@@ -148,6 +148,15 @@ In this Activity you will follow a tutorial to create a Data Flow and use it in 
 
 Security and reliability are key foundational features for every organization. In Microsoft Fabric, as you bring your data to the cloud and use it with various analytics experiences such as Power BI, Data Factory, and the next generation of Synapse, Microsoft ensures that built-in security and reliability features secure your data at rest and transit.
 
+There are various constructs in Microsoft Fabric dealing with Security. They include: 
+
+- Role-based access control (RBAC) to control access to the warehouse and its data.
+- SSL encryption to secure the communication between the warehouse and the client applications.
+- Azure Storage Service Encryption to protect the data in transit and at rest.
+- Azure Monitor and Azure Log Analytics to monitor the warehouse activity and audit the access to the data.
+- Multi-Factor Authentication (MFA) to add an extra layer of security to user accounts.
+- Azure Active Directory (Azure AD) integration to manage the user identities and access to the warehouse.
+
 There are three important Security features to understand: 
 
 - Conditional access - Secure your apps using Azure Active Directory (Azure AD).
