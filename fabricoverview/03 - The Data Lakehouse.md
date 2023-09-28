@@ -21,6 +21,7 @@ You'll cover these topics in this Module:
   <dt><a href="#3.1" target="_blank">3.1 - Creating a Lakehouse</a></dt>
   <dt><a href="#3.2" target="_blank">3.2 - Linking data</a></dt>
   <dt><a href="#3.3" target="_blank">3.3 - Using Spark to create new data sets in the Lakehouse</a></dt>
+    <dt><a href="#3.3" target="_blank">3.4 - How to accelerate data prep with Data Wrangler in Microsoft Fabric</a></dt>
 
 </dl>
 
@@ -151,6 +152,47 @@ In this activity we will be following with the Data warehouse tutorial introduct
 - Open the following reference in another tab, [Tutorial: Analyze data with a notebook](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-analyze-data-notebook)
 
 - Follow Steps 10 - 12
+
+
+</b></p>
+
+<p style="border-bottom: 1px solid lightgrey;"></p>
+
+<h2 id="3.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.4 - How to accelerate data prep with Data Wrangler in Microsoft Fabric</h2>
+
+<img  src="https://learn.microsoft.com/en-us/fabric/data-science/media/data-wrangler/view-summary-panel.png#lightbox">
+
+Data Wrangler is a notebook-based tool that provides users with an immersive experience to conduct exploratory data analysis. The feature combines a grid-like data display with dynamic summary statistics, built-in visualizations, and a library of common data-cleaning operations. Each operation can be applied in a matter of clicks, updating the data display in real time and generating code that can be saved back to the notebook as a reusable function.
+
+<p>
+
+### Launch Data Wrangler
+
+
+<img  src="https://learn.microsoft.com/en-us/fabric/data-science/media/data-wrangler/launch-data-wrangler.png#lightbox">
+
+Users can launch Data Wrangler directly from a Microsoft Fabric notebook to explore and transform any Pandas DataFrame. 
+
+### Viewing summary statistics
+<img  src="https://learn.microsoft.com/en-us/fabric/data-science/media/data-wrangler/view-summary-panel.png#lightbox">
+
+When Data Wrangler launches, it generates a descriptive overview of the displayed DataFrame in the Summary panel. This overview includes information about the DataFrame's dimensions, missing values, and more. Selecting any column in the Data Wrangler grid prompts the Summary panel to update and display descriptive statistics about that specific column. Quick insights about every column are also available in its header.
+
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Optional Activity: How to accelerate data prep with Data Wrangler in Microsoft Fabric</b></p>
+
+In this <b>Optional</b> activity we will be following with the Data warehouse tutorial introduction
+
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png">
+
+- IF THERE IS TIME
+- - Open the following reference in another tab, [How to accelerate data prep with Data Wrangler in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/data-science/data-wrangler)
+
+- - Follow the steps on the page to utilize Data Wrangler
+
+- - Alternatively you can watch the following video on your own time to see this tutorial in action.
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/uwsCFJR3rmk/0.jpg)](https://www.youtube.com/watch?v=uwsCFJR3rmk)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
