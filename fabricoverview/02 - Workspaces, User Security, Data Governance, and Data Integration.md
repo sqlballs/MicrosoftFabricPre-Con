@@ -17,10 +17,10 @@ In each module you'll get more references, which you should follow up on to lear
 You'll cover these topics in this Module:
 
 <dl>
-  <dt><a href="#01">2.1 - Understanding and creating Workspaces</a></dt>
-  <dt><a href="#02">2.2 - Connecting to and managing the Workspace</a></dt>
-  <dt><a href="#03">2.3 - Ingesting data with pipelines and data flows</a></dt>
-  <dt><a href="#04">2.4 - Security concepts</a></dt>
+  <dt><a href="#21-understanding-and-creating-workspaces">2.1 - Understanding and creating Workspaces</a></dt>
+  <dt><a href="#22-connecting-to-and-managing-the-workspace">2.2 - Connecting to and managing the Workspace</a></dt>
+  <dt><a href="#23-ingesting-data-with-pipelines-and-data-flows">2.3 - Ingesting data with pipelines and data flows</a></dt>
+  <dt><a href="#24-security-concepts">2.4 - Security concepts</a></dt>
 </dl>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
