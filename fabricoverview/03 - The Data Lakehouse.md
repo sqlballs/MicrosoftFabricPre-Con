@@ -21,7 +21,7 @@ You'll cover these topics in this Module:
   <dt><a href="#3.1" target="_blank">3.1 - Creating a Lakehouse</a></dt>
   <dt><a href="#3.2" target="_blank">3.2 - Linking data</a></dt>
   <dt><a href="#3.3" target="_blank">3.3 - Using Spark to create new data sets in the Lakehouse</a></dt>
-    <dt><a href="#3.3" target="_blank">3.4 - How to accelerate data prep with Data Wrangler in Microsoft Fabric</a></dt>
+    <dt><a href="#3.4" target="_blank">3.4 - How to accelerate data prep with Data Wrangler in Microsoft Fabric</a></dt>
 
 </dl>
 
