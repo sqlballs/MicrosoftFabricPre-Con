@@ -18,7 +18,7 @@ You'll cover these topics in this Module on Fabric DevOps:
 
 <dl>
 
-  <dt><a href="#6.1" target="_blank">6.1 - Designing and sizing a Fabric solution</a></dt>
+  <dt><a href="#61-designing-and-sizing-a-fabric-solution" target="_blank">6.1 - Designing and sizing a Fabric solution</a></dt>
   <dt><a href="#6.2" target="_blank">6.2 - Source Control integration with Microsoft Fabric</a></dt>
   <dt><a href="#6.3" target="_blank">6.3 - Monitoring and Managing a Fabric solution</a></dt>
   <dt><a href="#6.4" target="_blank">6.4 - Understanding the EXPLAIN command</a></dt>
