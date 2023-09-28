@@ -18,9 +18,9 @@ You'll cover these topics in this Module on the User Experience:
 
 <dl>
 
-  <dt><a href="#5.1" target="_blank">5.1 - Working with Fabric using Power BI</a></dt>
-  <dt><a href="#5.2" target="_blank">5.2 - Working with Fabric and Streaming / Event Data</a></dt>
-  <dt><a href="#5.3" target="_blank">5.3 - Working with Fabric and the Kusto Query Language (KQL)</a></dt>
+  <dt><a href="51-working-with-fabric-using-power-bi" target="_blank">5.1 - Working with Fabric using Power BI</a></dt>
+  <dt><a href="#52-working-with-fabric-and-streaming--event-data" target="_blank">5.2 - Working with Fabric and Streaming / Event Data</a></dt>
+  <dt><a href="#53-working-with-fabric-and-the-kusto-query-language-kql" target="_blank">5.3 - Working with Fabric and the Kusto Query Language (KQL)</a></dt>
 
   
 </dl>
