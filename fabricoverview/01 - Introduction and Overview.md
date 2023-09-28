@@ -17,7 +17,7 @@ In each module you'll get more references, which you should follow up on to lear
 You'll cover these topics in this Module:
 <dl>
 
-  <dt><a href="#1-1" target="_blank">1.1 - Introduction of the course</a><dt>
+  <dt><a href="#11-introduction-of-the-course" target="_blank">1.1 - Introduction of the course</a><dt>
   <dt><a href="#1.2" target="_blank">1.2 - Basic Concepts in Microsoft Fabric</a><dt>
   <dt><a href="#1.3" target="_blank">1.3 - 1.3 OneLake & Microsoft Fabric Architecture</a><dt>
   <dt><a href="#1.4" target="_blank">1.4 - Microsoft Fabric Services</a><dt>
