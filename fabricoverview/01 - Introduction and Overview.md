@@ -17,7 +17,7 @@ In each module you'll get more references, which you should follow up on to lear
 You'll cover these topics in this Module:
 <dl>
 
-  <dt><a href="#1.1" target="_blank">1.1 - Introduction of the course</a><dt>
+  <dt><a href="#1-1" target="_blank">1.1 - Introduction of the course</a><dt>
   <dt><a href="#1.2" target="_blank">1.2 - Basic Concepts in Microsoft Fabric</a><dt>
   <dt><a href="#1.3" target="_blank">1.3 - 1.3 OneLake & Microsoft Fabric Architecture</a><dt>
   <dt><a href="#1.4" target="_blank">1.4 - Microsoft Fabric Services</a><dt>
@@ -29,7 +29,7 @@ You'll cover these topics in this Module:
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="1.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.1 Introduction of the Course</h2>
+<h2 id="1-1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.1 Introduction of the Course</h2>
 
 Imagine you have a lot of data from different sources and you want to use it to make better decisions for your business. You need a tool that can help you collect, store, process, analyze, and visualize your data in one place. You also want a tool that is easy to use, secure, and flexible. That’s what Microsoft Fabric is all about.
 
