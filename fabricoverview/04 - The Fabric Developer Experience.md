@@ -18,11 +18,11 @@ You'll cover these topics in this Module on the Developer Experience:
 
 <dl>
 
-  <dt><a href="#4.1" target="_blank">4.1 - Using Co-Pilot</a></dt>
-  <dt><a href="#4.2" target="_blank">4.2 - Using SQL Server Management Studio</a></dt>
-  <dt><a href="#4.3" target="_blank">4.3 - Using Visual Studio Code</a></dt>
-  <dt><a href="#4.4" target="_blank">4.4 - Using Power BI</a></dt>
-  <dt><a href="#4.5" target="_blank">4.5 - Development Best Practices</a></dt>
+  <dt><a href="#41-using-co-pilot" target="_blank">4.1 - Using Co-Pilot</a></dt>
+  <dt><a href="#42-using-sql-server-management-studio" target="_blank">4.2 - Using SQL Server Management Studio</a></dt>
+  <dt><a href="#43-using-visual-studio-code" target="_blank">4.3 - Using Visual Studio Code</a></dt>
+  <dt><a href="#44-using-power-bi" target="_blank">4.4 - Using Power BI</a></dt>
+  <dt><a href="#45-development-best-practices" target="_blank">4.5 - Development Best Practices</a></dt>
 
 </dl>
 
