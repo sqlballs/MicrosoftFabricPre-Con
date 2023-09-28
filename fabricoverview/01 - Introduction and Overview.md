@@ -18,12 +18,12 @@ You'll cover these topics in this Module:
 <dl>
 
   <dt><a href="#11-introduction-of-the-course" target="_blank">1.1 - Introduction of the course</a><dt>
-  <dt><a href="#1.2" target="_blank">1.2 - Basic Concepts in Microsoft Fabric</a><dt>
-  <dt><a href="#1.3" target="_blank">1.3 - 1.3 OneLake & Microsoft Fabric Architecture</a><dt>
-  <dt><a href="#1.4" target="_blank">1.4 - Microsoft Fabric Services</a><dt>
-  <dt><a href="#1.5" target="_blank">1.5 - Microsoft Fabric Roles</a><dt>
-  <dt><a href="#1.6" target="_blank">1.6 - Understanding Microsoft Fabric Benchmarks</a><dt>
-  <dt><a href="#1.7" target="_blank">1.7 - Verification of pre-requisites for the Activities</a><dt>
+  <dt><a href="#12-basic-concepts-in-microsoft-fabric" target="_blank">1.2 - Basic Concepts in Microsoft Fabric</a><dt>
+  <dt><a href="#13-onelake--microsoft-fabric-architecture" target="_blank">1.3 - 1.3 OneLake & Microsoft Fabric Architecture</a><dt>
+  <dt><a href="#14---microsoft-fabric-services" target="_blank">1.4 - Microsoft Fabric Services</a><dt>
+  <dt><a href="#15---microsoft-fabric-roles" target="_blank">1.5 - Microsoft Fabric Roles</a><dt>
+  <dt><a href="#16---understanding-microsoft-fabric-benchmarks" target="_blank">1.6 - Understanding Microsoft Fabric Benchmarks</a><dt>
+  <dt><a href="#17---verification-of-pre-requisites-for-the-activities" target="_blank">1.7 - Verification of pre-requisites for the Activities</a><dt>
 
 </dl>
 
