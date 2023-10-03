@@ -21,7 +21,6 @@ You'll cover these topics in this Module on Fabric DevOps:
   <dt><a href="#61-designing-and-sizing-a-fabric-solution" target="_blank">6.1 - Designing and sizing a Fabric solution</a></dt>
   <dt><a href="#6.2" target="_blank">6.2 - Source Control integration with Microsoft Fabric</a></dt>
   <dt><a href="#6.3" target="_blank">6.3 - Monitoring and Managing a Fabric solution</a></dt>
-  <dt><a href="#6.4" target="_blank">6.4 - Understanding the EXPLAIN command</a></dt>
 
 </dl>
 
@@ -177,18 +176,6 @@ In this Activity you will navigate the primary interfaces for navigating the Azu
 - [Open this reference and follow the steps you see there](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/tutorials/learn-common-operators?pivots=azuremonitor) 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
-
-<h2 id="6.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.4 Understanding the EXPLAIN command</h2>
-
-Monitoring occurs at the physical or hardware level, the platform level, and the service level. However, one of the most important aspects of performance is in the code that runs on the system. The code might be external to the system, making calls in, or server-side. For the server-side Transact-SQL code that runs, and important keyword to understand is the EXPLAIN keyword. 
-
-The EXPLAIN T-SQL command returns the query plan for an Azure Synapse Analytics SQL statement without running the statement. You can use EXPLAIN to preview the operations that require data movement and to view the estimated costs of the query operations. 
-
-> Note: EXPLAIN WITH RECOMMENDATIONS applies to Azure Synapse Analytics.
-
-EXPLAIN can be applied to optimizable queries only, which are queries that can be improved or modified based on the results of an EXPLAIN command. The supported EXPLAIN commands are provided in the previous section. Attempting to use EXPLAIN with an unsupported query type will either return an error or echo the query. It's important to remember that EXPLAIN is not supported in a user transaction.
-
-[You can learn much more about EXPLAIN, with examples, at this reference](https://learn.microsoft.com/en-us/sql/t-sql/queries/explain-transact-sql?view=azure-sqldw-latest)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
