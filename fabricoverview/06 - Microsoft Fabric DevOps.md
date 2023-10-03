@@ -150,7 +150,7 @@ When you hover over an item's name, any available quick actions for the item typ
 
 Another important concept in monitoring your solution is to understand how each component uses its own internal logging system or transmits that information to the Microsoft Azure Logging system. [This reference provides a guide to the various ingestion mechanisms for Azure Logs](https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/platform-logs-overview). 
 
-To analyze the logs, you have several options. Log analysis is based on the Azure Data Explorer, and uses the Kusto Query Language (KQL) to navigate, along with a graphical Interface. [You can learn more about analyzing logs at this reference](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-query-overview).
+To analyze the logs, you have several options. Log analysis is based on the Azure Data Explorer, and uses the Kusto Query Language (KQL) to navigate, along with a graphical Interface. [You can learn more about analyzing logs at this reference](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-query-overview). [There's an excellent resource to learn more about Kusto here.](https://detective.kusto.io/)
 
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Review the Monitoring and Management Tools for Microsoft Fabric</b></p>
