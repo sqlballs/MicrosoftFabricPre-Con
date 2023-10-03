@@ -29,7 +29,7 @@ In this workshop you'll cover these topics:
 - Introduction and Overview:	Introduction of the course, Basic Concepts, Services, Roles, Benchmarks. Verification of pre-requisites
 - Workspaces, User Security, Data Governance, and Data Integration	Understanding and creating Workspaces, creating a Data Warehouse, connecting and managing, ingesting data with pipelines and data flows, along with Security concepts
 - The Data Lakehouse:	Creating a Lakehouse, Linking data, using Spark to create new data sets in the Lakehouse
-- The Fabric Developer Experience:	Using Co-Pilot, SSMS, VS Code, command-line tools, development best-practices
+- The Fabric Developer Experience:	Using Co-Pilot, SSMS, VS Code, and development best-practices
 - The Fabric User Experience:	Power BI, the Kusto Query Language, Streaming and Event Data
 - Microsoft Fabric DevOps: Design, Sizing, Monitoring and Management, Source Control, and the EXPLAIN command.
 
