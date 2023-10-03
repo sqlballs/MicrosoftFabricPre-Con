@@ -48,21 +48,38 @@ Workspaces reside within capacities and are used as containers for Microsoft Fab
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity:Creating your first Workspace</b></p>
 
-In this activity you will verify or create a basic Workspace in Fabric.
 
-Microsoft Fabric admins can use the Create workspaces setting to designate which users in the organization can create workspaces.
 
-To create a Microsoft Fabric workspace, you need to:
+<b>
 
-- Sign in to Power BI.
-- Select Workspaces > New workspace.
-- Fill out the Create a workspace form by giving the workspace a unique name (mandatory), providing a description of the workspace (optional), and assigning the workspace to a domain (optional).
-- Expand the Advanced section.
-- Choose Fabric capacity or Trial in the License mode section.
-- Choose a premium capacity you have access to.
-- Select Apply.
+- Validate that you have created a Workspace from the previous module
+- - If not, execute the following steps.
 
-The workspace is now created and opened.
+
+</b>
+
+In order to complete any exercises required in this class you should have followed the [Pre-Requisites](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md) outlined in the Read.me file. 
+
+Validate that you have a Microsoft Fabric Enabled Workspace:
+- Navigate to [Power BI.com](https://www.powerbi.com)
+- Click on Workspaces
+- Navigate to your Microsoft Fabric enabled workspace
+- Click +New
+- Click Show all
+- Ask an Instructor to validate that you have a Microsoft Fabric Enabled Workspace
+
+<p>
+If have a Power BI License, a Microsoft Fabric Capacity, but have not created a workspace:
+
+- Navigate to [Tutorial: Create a Microsoft Fabric workspace](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-workspace)
+- Navigate to your Microsoft Fabric enabled workspace
+- Click +New
+- Click Show all
+- Ask an Instructor to validate that you have a Microsoft Fabric Enabled Workspace
+
+<p>
+
+If you cannot complete these steps open and follow the  [Pre-Requisites](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md).
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
