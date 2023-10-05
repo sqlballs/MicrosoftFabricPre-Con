@@ -65,7 +65,7 @@ In this activity we will be following with the Data warehouse tutorial introduct
 - Open the following reference in another tab, [Tutorial: Analyze data with a notebook](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-analyze-data-notebook)
 
 
-- - Follow Steps 1 - 3
+- - Follow Steps 2 - 3
 
 </b></p>
 
