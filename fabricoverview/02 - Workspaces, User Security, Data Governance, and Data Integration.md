@@ -81,9 +81,7 @@ If have a Power BI License, a Microsoft Fabric Capacity, but have not created a 
 
 If you cannot complete these steps open and follow the  [Pre-Requisites](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md).
 
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-- [Open the following reference and follow the steps you see there](https://learn.microsoft.com/en-us/fabric/get-started/create-workspaces)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -151,13 +149,15 @@ You can add a configuration-driven copy activity together with your low-code dat
 
 <br>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Create a Data Flow and a Data Pipeline</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Create a Data Flow Gen 2</b></p>
 
-In this Activity you will follow a tutorial to create a Data Flow and use it in a Data Pipeline.
+In this Activity you will follow a tutorial to create a Data Flow Gen 2 and use it.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-- [Open the following reference and follow the steps you see there](https://learn.microsoft.com/en-us/fabric/data-factory/tutorial-dataflows-gen2-pipeline-activity)
+
+- [Open the following reference and execute steps 1 - 3 only] (https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-analyze-data-notebook)
+- [Open the following reference and follow steps 1 - 18.  Using the Lakehouse we created in the previous step 'ShortcutExercise'](https://learn.microsoft.com/en-us/fabric/data-factory/create-first-dataflow-gen2)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
