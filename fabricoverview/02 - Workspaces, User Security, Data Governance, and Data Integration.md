@@ -156,6 +156,7 @@ In this Activity you will follow a tutorial to create a Data Flow Gen 2 and use 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
 
+
 - [Open the following reference and execute steps 1 - 3 only] (https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-analyze-data-notebook)
 - [Open the following reference and follow steps 1 - 18.  Using the Lakehouse we created in the previous step 'ShortcutExercise'](https://learn.microsoft.com/en-us/fabric/data-factory/create-first-dataflow-gen2)
 
