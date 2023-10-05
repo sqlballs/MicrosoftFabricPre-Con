@@ -233,7 +233,7 @@ Business Continuity and Disaster Recovery (BCDR) is supported in Fabric for Powe
 
 <br>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Work with Fabric Access Systems</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Optional Activity: Work with Fabric Access Systems</b></p>
 
 In the following three tutorials, you will work with conditional access, security lockboxes, and service tags. 
 
