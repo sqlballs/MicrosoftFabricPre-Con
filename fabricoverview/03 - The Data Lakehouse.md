@@ -66,14 +66,13 @@ A data engineer can interact with the lakehouse and the data within the lakehous
 
 <br>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Create a Lakehouse</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Create a Data Warehouse</b></p>
 
 In this activity we will be following with the Data warehouse tutorial introduction
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>
 
-- Validate that you have created a Lakehouse from the previous module
-- - If not, open the following reference in another tab, [Tutorial: Analyze data with a notebook](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-analyze-data-notebook)
+- Open the following reference in another tab, [Tutorial: Analyze data with a notebook](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-analyze-data-notebook)
 
 
 - - Follow Steps 1 - 3
@@ -114,6 +113,7 @@ In this activity we will be following with the Data warehouse tutorial introduct
 - Open the following reference in another tab, [Tutorial: Analyze data with a notebook](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-analyze-data-notebook)
 
 - Follow Steps 4 - 9
+- - In Step 9 Remember to use the Lakehouse we created in Module 2!
 
 </b></p>
 
