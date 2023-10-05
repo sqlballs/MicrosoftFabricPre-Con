@@ -18,7 +18,7 @@ You'll cover these topics in this Module:
 
 <dl>
 
-  <dt><a href="#11-creating-a-lakehouse" target="_blank">3.1 - Creating a Lakehouse</a></dt>
+  <dt><a href="#11-creating-a-lakehouse" target="_blank">3.1 - Understanding a Microsoft Fabric Lakehouse</a></dt>
   <dt><a href="#32---linking-data" target="_blank">3.2 - Linking data</a></dt>
   <dt><a href="#33---using-spark-to-create-new-data-sets-in-the-lakehouse" target="_blank">3.3 - Using Spark to create new data sets in the Lakehouse</a></dt>
     <dt><a href="#34---how-to-accelerate-data-prep-with-data-wrangler-in-microsoft-fabric" target="_blank">3.4 - How to accelerate data prep with Data Wrangler in Microsoft Fabric</a></dt>
@@ -27,7 +27,7 @@ You'll cover these topics in this Module:
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="3.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.1 Creating a Lakehouse</h2>
+<h2 id="3.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.1 Understanding a Microsoft Fabric Lakehouse</h2>
 
 Microsoft Fabric Lakehouse is a data architecture platform for storing, managing, and analyzing structured and unstructured data in a single location. It is a flexible and scalable solution that allows organizations to handle large volumes of data using a variety of tools and frameworks to process and analyze that data. It integrates with other data management and analytics tools to provide a comprehensive solution for data engineering and analytics. 
 
@@ -52,16 +52,6 @@ A data engineer can interact with the lakehouse and the data within the lakehous
 - Apache Spark job definitions: Data engineers can develop robust applications and orchestrate the execution of compiled Spark jobs in Java, Scala, and Python. Learn more about Spark jobs: What is an Apache Spark job definition?.
 - Dataflows Gen 2: Data engineers can leverage Dataflows Gen 2 to ingest and prepare their data. Find more information on load data using dataflows: Create your first dataflow to get and transform data.
 
-**Creating a Data Lakehouse**
-
-*Creating a lakehouse from the Data Engineering homepage* 
-
-- Browse to the Data Engineering homepage.
-- Under the New section, locate the Lakehouse card and select it to get started with the creation process
-- Enter a name for the lakehouse and a sensitivity label if your organization requires one, and select Create.
-- Once the lakehouse is created, you land on the Lakehouse Editor page where you can get started and load data.
-
-![Data Lakehouse Card](https://learn.microsoft.com/en-us/fabric/data-engineering/media/create-lakehouse/lakehouse-card.png)
 
 
 <br>
@@ -104,7 +94,7 @@ To create a shortcut, open *Lakehouse Explorer* and select where to place the sh
 
 Shortcuts to Microsoft Fabric internal sources will use the calling user identity. External shortcuts will use connectivity details, including security details specified when the shortcut is created.
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Create a shortcut</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Ingest Data & Create a shortcut</b></p>
 
 In this activity we will be following with the Data warehouse tutorial introduction
 
@@ -143,7 +133,7 @@ To specify the location to read from, you can use the relative path if the data 
 
 ![Lakehouse explorer](https://learn.microsoft.com/en-us/fabric/data-engineering/media/lakehouse-notebook-explore/load-data-menu.png#lightbox)
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Create a shortcut</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Create Cross Database Queries for Reporting</b></p>
 
 In this activity we will be following with the Data warehouse tutorial introduction
 
