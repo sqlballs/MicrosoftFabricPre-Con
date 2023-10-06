@@ -130,11 +130,28 @@ Managing a Microsoft Fabric solution involves multiple tools, processes, and pro
 Your primary tasks in administration are in recovery, capacity management, object security, and user management, along with Governance and Compliance. Most of these are at done at the *workspace* level, although there are individual management tools that deal with other aspects of the solution. These interfaces include: 
 
 - [Microsoft Fabric admin portal](https://learn.microsoft.com/en-us/fabric/admin/admin-center): Acquire and work with capacities, Ensure quality of service, Manage workspaces, Publish visuals, Verify codes used to embed Microsoft Fabric in other applications, Troubleshoot data access and other issues
+
+<img src = "https://learn.microsoft.com/en-us/power-bi/admin/media/service-admin-portal/power-bi-settings-menu.png" height = 400>
+  
 - [Microsoft 365 admin portal](https://admin.microsoft.com/): Manage users and groups, Purchase and assign licenses, Block users from accessing Microsoft Fabric
+
+ <img src="https://th.bing.com/th/id/R.0bba966c93c501a25699e7fdff90a36f?rik=C4zRsPtLjGSeog&pid=ImgRaw&r=0" height = 400> 
+  
 - [Microsoft 365 Security & Microsoft Purview compliance portal](https://admin.microsoft.com/): Review and manage auditing, Data classification and tracking, Data loss prevention policies, Microsoft Purview Data Lifecycle Management
+
+ <img src="https://th.bing.com/th/id/R.0bba966c93c501a25699e7fdff90a36f?rik=C4zRsPtLjGSeog&pid=ImgRaw&r=0" height = 400> 
+  
 - [Azure Active Directory in the Azure portal](https://aad.portal.azure.com/): Configure conditional access to Microsoft Fabric resources
+
+<img src="https://learn.microsoft.com/pt-br/azure/active-directory/fundamentals/media/add-users-azure-active-directory/add-user-in-users-all-users.png" height = 400>
+
 - [PowerShell cmdlets](https://learn.microsoft.com/en-us/powershell/power-bi/overview): Manage workspaces and other aspects of Microsoft Fabric using scripts
+
+<img src="https://learn.microsoft.com/en-us/azure/active-directory/reports-monitoring/media/reference-powershell-reporting/get-azureadauditsigninlogs.png" height = 400>
+
 - [Administrative APIs and SDK](https://learn.microsoft.com/en-us/power-bi/developer/visuals/create-r-based-power-bi-desktop): Build custom admin tools.
+
+<img src="https://reviewsapp.org/uploads/visual-studio-code-a-powerful-tool-for-all-developers.png" height = 400>
 
 <h3>Monitoring</h3>
 Depending on your solution, you'll develop a custom set of monitoring tools, processes and techniques that give you the most insight into the status, trends, issues and alerts for your deployment. It's best to start with an "outside-in" approach for these monitoring elements, since that will help you narrow down any actions you need to take quickly. You can use the tools provided within the system for this approach, but you will likely need to combine some of them with other tools and perhaps integrate your monitoring into your organization's current tool set. 
