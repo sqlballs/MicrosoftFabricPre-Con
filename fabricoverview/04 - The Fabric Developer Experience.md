@@ -90,6 +90,8 @@ To learn how to connect SSMS to Microsoft Fabric, please select the link below. 
     <li><a href="https://youtu.be/iDLTj-tCLdY?si=tv0t9MO7ptx0W_Ud" target="_blank"> Connect to Microsoft Fabric with 5 Tools</a></li>
 </ul>
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/iDLTj-tCLdY/0.jpg)](https://www.youtube.com/watch?v=iDLTj-tCLdY)
+
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <h2 id="4.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.3 Using Visual Studio Code</h2>
