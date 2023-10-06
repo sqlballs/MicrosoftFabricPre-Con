@@ -248,6 +248,7 @@ In the following three tutorials, you will work with conditional access, securit
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
     <li><a href="https://learn.microsoft.com/en-us/training/modules/administer-fabric/4-manage-security" target="_blank">You can find a training module here for Microsoft Fabric security topics. </a></li>
+      <li><a href="https://learn.microsoft.com/en-us/fabric/governance/microsoft-purview-fabric" target="_blank">You can find additional information on using Microsoft Purview to govern Microsoft Fabric. </a></li>
 </ul>
 
 Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/03%20-%20The%20Data%20Lakehouse.md).
