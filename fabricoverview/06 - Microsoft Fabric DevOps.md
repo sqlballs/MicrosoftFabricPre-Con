@@ -63,11 +63,9 @@ There are a few decisions to make as you bring your solution design.
 - After reviewing that material, you can check the [Microsoft Fabric decision guide: copy activity, dataflow, or Spark at this reference](https://learn.microsoft.com/en-us/fabric/get-started/decision-guide-pipeline-dataflow-spark)
 
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Locate and Create a Design Decision Document for a real-world Analytics solution</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Self-Guided Activity: Locate and Create a Design Decision Document for a real-world Analytics solution</b></p>
 
 In this activity, you will determine a real-world opportunity at your organization for an Advanced Analytics solution, and create a design document you can use as a template for when you return to work. 
-
-> You may work on this Activity individually or as a team with someone from your organization.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
@@ -80,6 +78,7 @@ In this activity, you will determine a real-world opportunity at your organizati
 
 <h2 id="6.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.2 - Discover and Govern Data in your Deployment</h2>
 
+[Microsoft Purview](https://learn.microsoft.com/en-us/training/purview/)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
