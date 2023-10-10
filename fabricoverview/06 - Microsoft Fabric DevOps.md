@@ -6,7 +6,7 @@
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png"> <h2>06 - Microsoft Fabric DevOps</h2>
+<img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png"> <h2>06 - Designing, Operating, and Controlling a Microsoft Fabric Deployment</h2>
 
 In this workshop you'll cover using The Microsoft Fabric Platform to implement a complete Analytics solution.
 
@@ -18,9 +18,10 @@ You'll cover these topics in this Module on Fabric DevOps:
 
 <dl>
 
-  <dt><a href="#61-designing-and-sizing-a-fabric-solution" target="_blank">6.1 - Designing and sizing a Fabric solution</a></dt>
-  <dt><a href="#6.2" target="_blank">6.2 - Source Control integration with Microsoft Fabric</a></dt>
-  <dt><a href="#6.3" target="_blank">6.3 - Monitoring and Managing a Fabric solution</a></dt>
+  <dt><a href="#6.1-designing-and-sizing-a-fabric-solution" target="_blank">6.1 - Designing and sizing a Fabric solution</a></dt>
+  <dt><a href="#6.2" target="_blank">6.2 - Discover and Govern Data in your Deployment</a></dt>
+  <dt><a href="#6.3" target="_blank">6.3 - Source Control integration with Microsoft Fabric</a></dt>
+  <dt><a href="#6.4" target="_blank">6.4 - Monitoring and Managing a Fabric solution</a></dt>
 
 </dl>
 
@@ -77,7 +78,12 @@ In this activity, you will determine a real-world opportunity at your organizati
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="6.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.2 Source Control integration with Microsoft Fabric</h2>
+<h2 id="6.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.2 - Discover and Govern Data in your Deployment</h2>
+
+
+<p style="border-bottom: 1px solid lightgrey;"></p>
+
+<h2 id="6.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.3 Source Control integration with Microsoft Fabric</h2>
 
 The primary integration method for working with Microsoft Fabric in a Source Control system is the git program. If you are new to git, [there is a free course you can take here - ensure you understand the material there before continuing](https://learn.microsoft.com/en-us/training/modules/intro-to-git/) since this section will assume knowledge from that course. 
 
@@ -122,7 +128,7 @@ There are some considerations to keep in mind when working with git and Microsof
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="6.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.3 Monitoring and Managing a Fabric solution</h2>
+<h2 id="6.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.4 Monitoring and Managing a Fabric solution</h2>
 
 Managing a Microsoft Fabric solution involves multiple tools, processes, and procedures. Since there are multiple products involved, you'll often take an "outside-in" approach, where you start the administration and monitoring at the outermost level and drill in to the specific area of focus. This outside in approach should involve getting as many components under one view as possible. The Microsoft Fabric platform has various tools and features to help you administer the solution from as broad a perspective as possible, and you may also augment these views with administration processes and tools of your own. 
 
@@ -169,7 +175,7 @@ Another important concept in monitoring your solution is to understand how each 
 To analyze the logs, you have several options. Log analysis is based on the Azure Data Explorer, and uses the Kusto Query Language (KQL) to navigate, along with a graphical Interface. [You can learn more about analyzing logs at this reference](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-query-overview). [There's an excellent resource to learn more about Kusto here.](https://detective.kusto.io/)
 
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Review the Monitoring and Management Tools for Microsoft Fabric</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Self-Guided Activity: Review the Monitoring and Management Tools for Microsoft Fabric</b></p>
 
 In this Activity you will navigate the primary interfaces for monitoring and managing your solution. You can augment this activity with a discussion of your current monitoring and management tools and processes, and how you can integrate these into your process.
 
