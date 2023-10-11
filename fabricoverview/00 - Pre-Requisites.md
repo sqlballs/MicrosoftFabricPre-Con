@@ -75,3 +75,27 @@ The best way to take this workshop is to use your [Microsoft Developer Network (
 You can also use your own account or one provided to you by your organization, but you must be able to create a resource group and create and manage a Data Microsoft Fabric Capacity and attach it to your Power BI Workspace. 
 
 
+<h2 id="1.7"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.7 - Verification of pre-requisites for the Activities</h2>
+
+In order to complete any exercises required in this class you should have followed the [Pre-Requisites](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md) outlined in the Read.me file. 
+
+Validate that you have a Microsoft Fabric Enabled Workspace:
+- Navigate to [Power BI.com](https://www.powerbi.com)
+- Click on Workspaces
+- Navigate to your Microsoft Fabric enabled workspace
+- Click +New
+- Click Show all
+- Ask an Instructor to validate that you have a Microsoft Fabric Enabled Workspace
+
+<p>
+If have a Power BI License, a Microsoft Fabric Capacity, but have not created a workspace:
+
+- Navigate to [Tutorial: Create a Microsoft Fabric workspace](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-workspace)
+- Navigate to your Microsoft Fabric enabled workspace
+- Click +New
+- Click Show all
+- Ask an Instructor to validate that you have a Microsoft Fabric Enabled Workspace
+
+<p>
+
+If you cannot complete these steps open and follow the  [Pre-Requisites](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md).
