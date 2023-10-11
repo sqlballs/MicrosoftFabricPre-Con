@@ -26,24 +26,14 @@ You'll cover these topics in this Module:
 
 <h2 id="01"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.1 Data Warehouse</h2>
 
-Microsoft Fabric is a comprehensive platform that offers a variety of tools designed for the creation and administration of data pipelines. Within Microsoft Fabric, a Workspace serves as a fundamental element, facilitating collaboration among users on different projects, including dashboards, reports, and various other content. Each individual using Microsoft Fabric is allocated a personal workspace called *My workspace*, providing them with a dedicated area to work on their own content and projects.
+Microsoft Fabric introduces a lake centric data warehouse built on an enterprise grade distributed processing engine that enables industry leading performance at scale while eliminating the need for configuration and management. Through an easy to use SaaS experience that is tightly integrated with Power BI for easy analysis and reporting, Warehouse in Microsoft Fabric converges the world of data lakes and warehouses with a goal of greatly simplifying an organizations investment in their analytics estate. Data warehousing workloads benefit from the rich capabilities of the SQL engine over an open data format, enabling customers to focus on data preparation, analysis and reporting over a single copy of their data stored in their Microsoft OneLake.
 
-![](https://learn.microsoft.com/en-us/fabric/enterprise/media/licenses/tenants-capacities.png#lightbox)
+The Warehouse is built for any skill level - from the citizen developer through to the professional developer, DBA or data engineer. The rich set of experiences built into Microsoft Fabric workspace enables customers to reduce their time to insights by having an easily consumable, always connected dataset that is integrated with Power BI in DirectLake mode. This enables second-to-none industry leading performance that ensures a customer's report always has the most recent data for analysis and reporting. Cross-database querying can be leveraged to quickly and seamlessly leverage multiple data sources that span multiple databases for fast insights and zero data duplication.  
 
-#### Microsoft Fabric components
+#### Create your first Workspace
 
-This section describes tenants, capacities, and workspaces, which are the main building blocks of a Microsoft Fabric subscription.
+https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-warehouse
 
-### Tenant
-The foundation of a Microsoft Fabric subscription is the tenant. Each tenant is tied to a specific Domain Name System (DNS). Your tenant is created when you buy a capacity, and after it's created, you can add more capacities. Usually, an organization has one tenant. In such cases, the tenant is synonymous with the organization. Some companies may want to have several tenants, each with their own capacities.
-
-### Capacity
-A Microsoft Fabric capacity resides on a tenant. Each capacity that sits under a specific tenant is a distinct pool of resources allocated to Microsoft Fabric. The size of the capacity determines the amount of computation power your organization gets. Before you purchase Microsoft Fabric, review the capacity and SKUs section, to establish which capacity is right for your organization.
-
-### Workspace
-Workspaces reside within capacities and are used as containers for Microsoft Fabric items. Each Microsoft Fabric user has a personal workspace known as *My Workspace*. More workspaces can be created to enable collaboration. By default, workspaces are created in your organization's shared capacity. When your organization has other capacities, workspaces - including My Workspaces - can be assigned to any capacity in your organization.
-
-<br>
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity:Creating your first Workspace</b></p>
 
