@@ -6,7 +6,7 @@
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png"> <h2>02 - Workspaces, User Security, Data Governance, and Data Integration</h2>
+<img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png"> <h2>02 - Data Warehouse and Data Integration</h2>
 
 In this workshop you'll cover using The Microsoft Fabric Platform to implement a complete Analytics solution using the Microsoft Fabric platform.
 
@@ -17,15 +17,14 @@ In each module you'll get more references, which you should follow up on to lear
 You'll cover these topics in this Module:
 
 <dl>
-  <dt><a href="#21-understanding-and-creating-workspaces">2.1 - Understanding and creating Workspaces</a></dt>
-  <dt><a href="#22-connecting-to-and-managing-the-workspace">2.2 - Connecting to and managing the Workspace</a></dt>
+  <dt><a href="#21-understanding-and-creating-workspaces">2.1 - Data Warehouse</a></dt>
+  <dt><a href="#22-connecting-to-and-managing-the-workspace">2.2 - Data Flows Gen 2</a></dt>
   <dt><a href="#23-ingesting-data-with-pipelines-and-data-flows">2.3 - Ingesting data with pipelines and data flows</a></dt>
-  <dt><a href="#24-security-concepts">2.4 - Security concepts</a></dt>
-</dl>
+  </dl>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="01"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.1 Understanding and creating Workspaces</h2>
+<h2 id="01"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.1 Data Warehouse</h2>
 
 Microsoft Fabric is a comprehensive platform that offers a variety of tools designed for the creation and administration of data pipelines. Within Microsoft Fabric, a Workspace serves as a fundamental element, facilitating collaboration among users on different projects, including dashboards, reports, and various other content. Each individual using Microsoft Fabric is allocated a personal workspace called *My workspace*, providing them with a dedicated area to work on their own content and projects.
 
