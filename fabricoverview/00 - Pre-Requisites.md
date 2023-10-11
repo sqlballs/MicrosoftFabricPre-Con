@@ -12,11 +12,28 @@ The "Microsoft Fabric Overview for the Data Professional" workshop is taught usi
 
 *IN ORDER TO DO ANY EXERCISES YOU MUST HAVE A POWER BI LICENSE FIRST AND A MICROSOFT FABRIC ENABLED WORKSPACE SECOND.  We will review these steps below.*
 
-For this workshop, you will be required to execute workloads utilizing Microsoft Fabric.  In order to do this you must first sign up for a Power BI license.  If you do not have a Power BI license you can sign up for one for free.
+For this workshop, you will be required to execute workloads utilizing Microsoft Fabric.  In order to do this you must first sign up for or have a M365 account with the proper permissions.  If you do not have an M365 account with the proper permissions you can sign up for a 90 day free trial of M365.
+
+Next you must have a Power BI Pro license.  If you do not have a Power BI license you can sign up for one for free 60 day trial.
 
 You will also require a Microsoft Fabric Capacity or a Free trial Microsoft Fabic Capacity.  Your Power BI Tenent must have Fabric Capacity enabled in order to create a Microsoft Fabric Workspace.
 
 </a>. 
+<p>
+
+
+## Required Permissions
+
+In order to be a Microsoft Fabric Admin for your orginization, you must be in one of the following roles
+
+- Global administrator
+- Power Platform administrator
+- Microsoft Fabric administrator
+
+<p>
+
+Microsoft 365 user admins assign users to the Fabric administrator or Power Platform administrator roles in the Microsoft 365 admin portal.
+<p>
 
 The other requirements are:
 
