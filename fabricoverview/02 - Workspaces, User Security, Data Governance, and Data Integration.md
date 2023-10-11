@@ -17,8 +17,8 @@ In each module you'll get more references, which you should follow up on to lear
 You'll cover these topics in this Module:
 
 <dl>
-  <dt><a href="#21-understanding-and-creating-workspaces">2.1 - Data Warehouse</a></dt>
-  <dt><a href="#22-connecting-to-and-managing-the-workspace">2.2 - Data Flows Gen 2</a></dt>
+  <dt><a href="#21-Data Warehouse">2.1 - Data Warehouse</a></dt>
+  <dt><a href="#22-Data Flows Gen 2">2.2 - Data Flows Gen 2</a></dt>
   <dt><a href="#23-ingesting-data-with-pipelines-and-data-flows">2.3 - Ingesting data with pipelines and data flows</a></dt>
   </dl>
 
@@ -30,49 +30,8 @@ Microsoft Fabric introduces a lake centric data warehouse built on an enterprise
 
 The Warehouse is built for any skill level - from the citizen developer through to the professional developer, DBA or data engineer. The rich set of experiences built into Microsoft Fabric workspace enables customers to reduce their time to insights by having an easily consumable, always connected dataset that is integrated with Power BI in DirectLake mode. This enables second-to-none industry leading performance that ensures a customer's report always has the most recent data for analysis and reporting. Cross-database querying can be leveraged to quickly and seamlessly leverage multiple data sources that span multiple databases for fast insights and zero data duplication.  
 
-#### Create your first Workspace
-
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity:Creating your first Warehouse</b></p>
 https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-warehouse
-
-
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity:Creating your first Workspace</b></p>
-
-
-
-<b>
-
-- Validate that you have created a Workspace from the previous module
-- - If not, execute the following steps.
-
-
-</b>
-
-In order to complete any exercises required in this class you should have followed the [Pre-Requisites](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md) outlined in the Read.me file. 
-
-Validate that you have a Microsoft Fabric Enabled Workspace:
-- Navigate to [Power BI.com](https://www.powerbi.com)
-- Click on Workspaces
-- Navigate to your Microsoft Fabric enabled workspace
-- Click +New
-- Click Show all
-- Ask an Instructor to validate that you have a Microsoft Fabric Enabled Workspace
-
-<p>
-If have a Power BI License, a Microsoft Fabric Capacity, but have not created a workspace:
-
-- Navigate to [Tutorial: Create a Microsoft Fabric workspace](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-workspace)
-- Navigate to your Microsoft Fabric enabled workspace
-- Click +New
-- Click Show all
-- Ask an Instructor to validate that you have a Microsoft Fabric Enabled Workspace
-
-<p>
-
-If you cannot complete these steps open and follow the  [Pre-Requisites](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md).
-
-
-
-<p style="border-bottom: 1px solid lightgrey;"></p>
 
 <h2 id="02"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.2 Connecting to and managing the Workspace</h2>
 
