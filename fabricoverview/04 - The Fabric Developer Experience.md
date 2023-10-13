@@ -98,9 +98,15 @@ To learn how to connect SSMS to Microsoft Fabric, please select the link below. 
 
 <h2 id="4.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.3 Using Azure Data Studio</h2>
 
+Azure Data Studio is a versatile tool for working with data from various sources, such as SQL Server, Azure SQL Database, Azure Synapse, Microsoft Fabric, and more. It enables you to query, design, and manage your databases and data warehouses on-premises or in the cloud. Azure Data Studio is free, open-source, and cross-platform, so you can run it on Windows, macOS, or Linux. It also supports multiple languages, such as SQL, PowerShell, Python, KQL, Apache Spark, and PySpark. Azure Data Studio has a modern and intuitive interface that features a query editor, native Jupyter Notebooks, an integrated terminal, and built-in Git support. You can also enhance your environment with extensions that offer new features and services for Azure Data Studio. Some of the popular extensions are Database Projects, GitHub Copilot, Oracle to Azure SQL Migration Assistant, PostgreSQL Migration Assistant, and more. You can explore more extensions in the extension library or create your own. Azure Data Studio is designed to simplify the data landscape and provide a unified tooling experience for data professionals.
+
 <h2 id="4.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.4 Using Microsoft Excel</h2>
 
+Microsoft Excel is a software program that allows you to create, edit, and analyze spreadsheets and data. It is part of the Microsoft 365 suite of productivity tools, or it can be purchased separately. You can use Excel to organize your data in rows and columns, perform calculations with formulas and functions, create charts and graphs to visualize your data, and share your work with others. Excel also supports various languages and data types, such as SQL, Python, KQL, and Power BI.
+
 <h2 id="4.5"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.5 Using OneLake File Explorer</h2>
+
+The OneLake file explorer application enables a seamless integration of OneLake with Windows File Explorer. It synchronizes all OneLake items that you have access to in Windows File Explorer automatically. Synchronization means updating the metadata of files and folders to reflect the latest changes, and uploading the local modifications to the OneLake service.
 
 <h2 id="4.6"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.6 Using Visual Studio Code</h2>
 
