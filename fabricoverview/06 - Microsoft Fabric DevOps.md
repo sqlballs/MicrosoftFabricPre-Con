@@ -18,7 +18,7 @@ You'll cover these topics in this Module on Fabric DevOps:
 
 <dl>
 
-  <dt><a href="#6.1-designing-and-sizing-a-fabric-solution" target="_blank">6.1 - Designing and sizing a Fabric solution</a></dt>
+  <dt><a href="#6.1" target="_blank">6.1 - Designing and sizing a Fabric solution</a></dt>
   <dt><a href="#6.2" target="_blank">6.2 - Discover and Govern Data in your Deployment</a></dt>
   <dt><a href="#6.3" target="_blank">6.3 - Source Control integration with Microsoft Fabric</a></dt>
   <dt><a href="#6.4" target="_blank">6.4 - Monitoring and Managing a Fabric solution</a></dt>
@@ -62,7 +62,6 @@ There are a few decisions to make as you bring your solution design.
 - You can then review the [Microsoft Fabric decision guide: data warehouse or lakehouse at this reference](https://learn.microsoft.com/en-us/fabric/get-started/decision-guide-warehouse-lakehouse)
 - After reviewing that material, you can check the [Microsoft Fabric decision guide: copy activity, dataflow, or Spark at this reference](https://learn.microsoft.com/en-us/fabric/get-started/decision-guide-pipeline-dataflow-spark)
 
-
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Self-Guided Activity: Locate and Create a Design Decision Document for a real-world Analytics solution</b></p>
 
 In this activity, you will determine a real-world opportunity at your organization for an Advanced Analytics solution, and create a design document you can use as a template for when you return to work. 
@@ -78,7 +77,23 @@ In this activity, you will determine a real-world opportunity at your organizati
 
 <h2 id="6.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.2 - Discover and Govern Data in your Deployment</h2>
 
-[Microsoft Purview](https://learn.microsoft.com/en-us/training/purview/)
+Data Governance is the set of processes and tools for locating, defining, documenting and tracking data from source systems as it moves throughout the processing cycle to analytics. Microsoft Purview is a unified data-governance service that helps you manage and govern your on-premises, in-multicloud, and any software-as-a-service (SaaS) data. You can use it to create a current and past map of your data landscape with using an automated data discovery system, sensitive data classifications, and end-to-end data lineage. You can then expose this map to your users so that they can quickly find authoritative data for analysis. 
+
+Microsoft Purview is designed to help enterprises get the most value from their existing information assets. With this cloud-based service, you can register your data sources to help you discover and manage them. Your data sources remain in place, but a copy of the metadata for the source is added to Microsoft Purview. You can register a wide range of sources in Azure and across your multicloud data estate in Microsoft Purview. These sources include Azure Data Lake Storage, AWS, Azure SQL Database on-premises and in the cloud, and many more.
+
+ <img src="https://learn.microsoft.com/en-us/training/modules/intro-to-microsoft-purview/media/data-map-sources.png" height = 400> 
+
+Microsoft Purview Consists of three main systems: a **Microsoft Purview Data Map**, which provides a structure for your data estate in Microsoft Purview, where you can map your existing data stores into groups and hierarchies; the **Microsoft Purview Data Catalog**, which allows your users to browse the metadata stored in the data map so that they can find reliable data and understand its context; and **Microsoft Purview Data Estate Insights**, covering a high-level view into your data catalog, covering Data stewardship, Catalog adoption, Asset insights, Scan insights, Glossary insights, Classification insights, and Sensitivity insights. 
+
+[You can find the complete list of Microsoft Purview learning and reference resources at this location.](https://learn.microsoft.com/en-us/training/purview/)
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Self-Guided Activity: Work through the Data Catalog Tutorial</b></p>
+
+In this activity, you will follow the basic training tutorial for Microsfot Azure Purview.
+
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+
+- [Open the following reference, and follow all of the steps you see there.](https://learn.microsoft.com/en-us/training/modules/intro-to-microsoft-purview/) 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
