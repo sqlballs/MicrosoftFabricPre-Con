@@ -20,8 +20,11 @@ You'll cover these topics in this Module on the Developer Experience:
 
   <dt><a href="#41-using-co-pilot" target="_blank">4.1 - Using Co-Pilot</a></dt>
   <dt><a href="#42-using-sql-server-management-studio" target="_blank">4.2 - Using SQL Server Management Studio</a></dt>
-  <dt><a href="#43-using-visual-studio-code" target="_blank">4.3 - Using Visual Studio Code</a></dt>
-  <dt><a href="#44-using-power-bi" target="_blank">4.4 - Using Power BI</a></dt>
+  <dt><a href="#43-using-azure-data-studio" target="_blank">4.3 - Using Azure Data Studio</a></dt>
+  <dt><a href="#44-using-microsoft-excel" target="_blank">4.4 - Using Microsoft Excel</a></dt>
+  <dt><a href="#45-using-onelake-file-explorer" target="_blank">4.5 - Using OneLake File Explorer</a></dt>
+  <dt><a href="#46-using-visual-studio-code" target="_blank">4.6 - Using Visual Studio Code</a></dt>
+  <dt><a href="#47-using-power-bi" target="_blank">4.7 - Using Power BI</a></dt>
 
 </dl>
 
@@ -93,7 +96,13 @@ To learn how to connect SSMS to Microsoft Fabric, please select the link below. 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="4.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.3 Using Visual Studio Code</h2>
+<h2 id="4.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.3 Using Azure Data Studio</h2>
+
+<h2 id="4.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.4 Using Microsoft Excel</h2>
+
+<h2 id="4.5"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.5 Using OneLake File Explorer</h2>
+
+<h2 id="4.6"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.6 Using Visual Studio Code</h2>
 
 Using Visual Studio Code with Microsoft Fabric is a great way to develop and deploy applications for the cloud. Visual Studio Code is a free, open source, and cross-platform code editor that supports multiple languages and runtimes, such as C#, Java, Python, and .NET. Microsoft Fabric is an all-in-one analytics solution for enterprises that covers everything from data movement to data science, real-time analytics, and business intelligence. It offers a comprehensive suite of services, including data lake, data engineering, and data integration, all in one place.
 
@@ -177,7 +186,7 @@ The following video shows us how to connect Visual Studio Code to our Microsoft 
 
 
 
-<h2 id="4.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.4 Using Power BI</h2>
+<h2 id="4.7"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.7 Using Power BI</h2>
 
 Power BI natively and fully supports a Warehouse or Lakehouse SQL Endpoint as a data source, eliminating the need for the SQL Connection string. The Data Hub provides direct access to all of the warehouses that you have permissions for.
 
