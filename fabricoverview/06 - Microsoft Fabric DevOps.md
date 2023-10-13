@@ -79,9 +79,12 @@ In this activity, you will determine a real-world opportunity at your organizati
 
 Data Governance is the set of processes and tools for locating, defining, documenting and tracking data from source systems as it moves throughout the processing cycle to analytics. Microsoft Purview is a unified data-governance service that helps you manage and govern your on-premises, in-multicloud, and any software-as-a-service (SaaS) data. You can use it to create a current and past map of your data landscape with using an automated data discovery system, sensitive data classifications, and end-to-end data lineage. You can then expose this map to your users so that they can quickly find authoritative data for analysis. 
 
+
 Microsoft Purview is designed to help enterprises get the most value from their existing information assets. With this cloud-based service, you can register your data sources to help you discover and manage them. Your data sources remain in place, but a copy of the metadata for the source is added to Microsoft Purview. You can register a wide range of sources in Azure and across your multicloud data estate in Microsoft Purview. These sources include Azure Data Lake Storage, AWS, Azure SQL Database on-premises and in the cloud, and many more.
 
+
  <img src="https://learn.microsoft.com/en-us/training/modules/intro-to-microsoft-purview/media/data-map-sources.png" height = 400> 
+
 
 Microsoft Purview Consists of three main systems: a **Microsoft Purview Data Map**, which provides a structure for your data estate in Microsoft Purview, where you can map your existing data stores into groups and hierarchies; the **Microsoft Purview Data Catalog**, which allows your users to browse the metadata stored in the data map so that they can find reliable data and understand its context; and **Microsoft Purview Data Estate Insights**, covering a high-level view into your data catalog, covering Data stewardship, Catalog adoption, Asset insights, Scan insights, Glossary insights, Classification insights, and Sensitivity insights. 
 
@@ -95,7 +98,9 @@ In this activity, you will follow the basic training tutorial for Microsfot Azur
 
 - [Open the following reference, and follow all of the steps you see there.](https://learn.microsoft.com/en-us/training/modules/intro-to-microsoft-purview/) 
 
+
 <p style="border-bottom: 1px solid lightgrey;"></p>
+
 
 <h2 id="6.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.3 Source Control integration with Microsoft Fabric</h2>
 
