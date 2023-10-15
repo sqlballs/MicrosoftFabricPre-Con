@@ -18,7 +18,7 @@ You'll cover these topics in this Module:
 
 <dl>
   <dt><a href="#21-Data Warehouse">2.1 - Data Warehouse</a></dt>
-  <dt><a href="#22-Data Flows Gen 2">2.2 - Data Flows Gen 2</a></dt>
+  <dt><a href="#22-Data Flows Gen 2">2.2 - Ingesting data with pipelines</a></dt>
   <dt><a href="#23-ingesting-data-with-pipelines-and-data-flows">2.3 - Ingesting data with pipelines and data flows</a></dt>
   </dl>
 
@@ -33,40 +33,7 @@ The Warehouse is built for any skill level - from the citizen developer through 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity:Creating your first Warehouse</b></p>
 https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-warehouse
 
-<h2 id="02"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.2 Connecting to and managing the Workspace</h2>
-
-To work with your Microsoft Fabric Workspace, you need to connect to it. 
-
-![Fabric Workspace view](https://learn.microsoft.com/en-us/fabric/get-started/media/workspaces/fabric-workspace-page.png#lightbox)
-
-Workspaces are places to collaborate with colleagues to create collections of items such as lakehouses, warehouses, and reports. To connect to a Microsoft Fabric Workspace, you can follow these steps1:
-
-- Go to *Manage gateways* to create connection.
-- From the page header in *Data Integration service*, select *Settings > Manage connections and gateways*.
-- Select *New* at the top of the ribbon to add a new data source.
-- The *New connection* pane is displayed on the left side of the page.
-
-To manage your Workspace, you can follow these steps:
-
-- Go to the workspace you want to manage.
-- Select the workspace *settings* icon.
-- In the *Settings* pane, you can manage the following settings:
-  - General settings
-  - Security settings
-  - Data integration settings
-  - Advanced settings
-
-<br>
-
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Access to Workspace</b></p>
-
-In this Activity you will access and work with your Workspace.
-
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
-
-- [Open the following reference and follow the steps you see there](https://learn.microsoft.com/en-us/fabric/get-started/give-access-workspaces)
-
-<p style="border-bottom: 1px solid lightgrey;"></p>
+<h2 id="02"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.2 Ingesting data with pipelines</h2>
 
 <h2 id="03"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.3 Ingesting data with pipelines and data flows</h2>
 
