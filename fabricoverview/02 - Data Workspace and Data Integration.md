@@ -85,22 +85,10 @@ Dataflows are built using Power Query in Microsoft products and services such as
 
 <br>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Create a Data Flow Gen 2</b></p>
-
-In this Activity you will follow a tutorial to create a Data Flow Gen 2 and use it.
-
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b>
-</p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity:Create a Lakehouse & Ingest Data using Dataflow Gen2</b></p>
+https://learn.microsoft.com/en-us/fabric/data-engineering/tutorial-build-lakehouse
 
 
-
-
-
-- [Open the following reference and execute steps 1 - 3 only](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-analyze-data-notebook)
-
-- [Open the following reference and follow steps 1 - 18.  Using the Lakehouse we created in the previous step 'ShortcutExercise'](https://learn.microsoft.com/en-us/fabric/data-factory/create-first-dataflow-gen2)
-
-<p style="border-bottom: 1px solid lightgrey;"></p>
 
 
 Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/03%20-%20The%20Data%20Lakehouse.md).
