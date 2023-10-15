@@ -65,10 +65,10 @@ https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-ingest-data
 Since Data Warehousing is closely related to the SQL experience persona, you can leverage many of the features that you were accustomed to using in SQL Server, such as:
 
 - <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-tables" target="_blank">Create Tables</a>
-- Load data using T-SQL
-- Clone a table using T-SQL
-- Transform data using stored procedure
-- Create a query with the visual query builder
+- <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-load-data" target="_blank">Load data using T-SQL</a>
+- <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-clone-table" target="_blank">Clone a table using T-SQL</a>
+- <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-transform-data" target="_blank">Transform data using stored procedure</a>
+- <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-visual-query" target="_blank">Create a query with the visual query builder</a>
   
 
 <h2 id="03"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.3 Ingesting data with pipelines and data flows</h2>
