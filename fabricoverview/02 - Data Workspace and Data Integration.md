@@ -50,7 +50,15 @@ Data pipelines enable powerful workflow capabilities at cloud-scale. With data p
 
 You can add a configuration-driven copy activity together with your low-code dataflow refresh in a single pipeline for an end-to-end ETL data pipeline. You can even add code-first activities for Spark Notebooks, SQL scripts, stored procs, and more.
 
+Data pipelines offer an alternative to using the COPY command through a graphical user interface. A data pipeline is a logical grouping of activities that together perform a data ingestion task. Pipelines allow you to manage extract, transform, and load (ETL) activities instead of managing each one individually.
+
+In this tutorial, you'll create a new pipeline that loads sample data into a Warehouse in Microsoft Fabric.
+
 ![Data Pipeline](https://learn.microsoft.com/en-us/fabric/data-factory/media/data-factory-overview/data-pipelines.png#lightbox)
+
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity:Ingest data into warehouse</b></p>
+https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-ingest-data
 
   
 
