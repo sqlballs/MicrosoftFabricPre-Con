@@ -126,12 +126,28 @@ Open Azure Data Studio. If already open, you can connect manually by selecting O
 
 - [Open this reference and follow the steps you see there](https://learn.microsoft.com/en-us/azure-data-studio/azure-view?view=sql-server-ver16)
 
+</br>
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <h2 id="4.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.4 Using Microsoft Excel</h2>
 <br></br>
 
 Microsoft Excel is a software program that allows you to create, edit, and analyze spreadsheets and data. It is part of the Microsoft 365 suite of productivity tools, or it can be purchased separately. You can use Excel to organize your data in rows and columns, perform calculations with formulas and functions, create charts and graphs to visualize your data, and share your work with others. Excel also supports various languages and data types, such as SQL, Python, KQL, and Power BI.
+
+In the menu bar at the top of the page, select the Data tab, select Get Data, select From Azure, and then select From Azure SQL Database.
+
+<img src="https://learn.microsoft.com/en-us/azure/azure-sql/database/media/connect-excel/excel_data_source.png?view=azuresql" height = 400> 
+
+In the SQL Server database dialog box, type the Server name you want to connect to in the form xxxxxxxxxx-xxxxxxxxxx.xxxx-datawarehouse.pbidedicated.windows.net. Enter in the name of your data warehouse. Select OK to open the credentials window.
+
+<img src="https://learn.microsoft.com/en-us/azure/azure-sql/database/media/connect-excel/server-name.png?view=azuresql" height = 400> 
+
+In the SQL Server database dialog box, select Microsoft Account on the left side, and then login with your Microsoft Credentials which have access to Microsoft Fabric. Select Connect to open the Navigator.
+
+
+<img src="https://learn.microsoft.com/en-us/azure/azure-sql/database/media/connect-excel/connect-to-server.png?view=azuresql" height = 400> 
+
+<br></br>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -264,21 +280,27 @@ To select a Fabric workspace, you must have a workspace created. If you don't ha
 <h2 id="4.8"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.8 Using Power BI</h2>
 <br></br>
 
+Microsoft Fabric lets you create reusable and default Power BI datasets to create reports in various ways in Power BI. This article describes the various ways you can use your Warehouse or SQL Endpoint, and their default Power BI datasets, to create reports.
+
+For example, you can establish a live connection to a shared dataset in the Power BI service and create many different reports from the same dataset. You can create a data model in Power BI Desktop and publish to the Power BI service. Then, you and others can create multiple reports in separate .pbix files from that common data model and save them to different workspaces.
+
+Advanced users can build reports from a warehouse using a composite model or using the SQL connection string.
+
 Power BI natively and fully supports a Warehouse or Lakehouse SQL Endpoint as a data source, eliminating the need for the SQL Connection string. The Data Hub provides direct access to all of the warehouses that you have permissions for.
 
-![pbimf](https://learn.microsoft.com/en-us/power-bi/fundamentals/media/fabric-get-started/configure-connection.png)
+<img src="https://learn.microsoft.com/en-us/power-bi/fundamentals/media/fabric-get-started/configure-connection.png" height = 400> 
 
 
 </br>
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png">
-<b>Optional Activity: Connect to Fabric with Power BI users.</b></p>
+<b>Optional Activity: Create reports using Power BI Desktop.</b></p>
 <br>
-</br>In this tutorial, you learn how to use Dataflows Gen2 and Pipelines to ingest data into a Lakehouse and create a dimensional model. You also learn how to generate a beautiful report automatically to display the latest sales figures from start to finish in just 45 minutes.
+</br>You can build reports from datasets with Power BI Desktop using a Live connection to the default dataset. For information on how to make the connection, see connect to datasets from Power BI Desktop.
 </br>
 </br>
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><br><b>Steps</b></br></p>
 
-- [Open this reference and follow the steps you see there](https://learn.microsoft.com/en-us/power-bi/fundamentals/fabric-get-started) 
+- [Open this reference and follow the steps you see there](https://learn.microsoft.com/en-us/fabric/data-warehouse/create-reports#create-reports-using-power-bi-desktop) 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
