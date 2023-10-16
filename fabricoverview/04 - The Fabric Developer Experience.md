@@ -42,13 +42,13 @@ Copilot also enables users to easily and quickly create and customize reports, w
 Microsoft has released *quick measure* suggestions for DAX capability that helps analysts quickly create the code they need. 
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png">
-<b>Activity: Learn more about how Copilot works with Power BI </b></p>
+<b>Optional Activity: Learn more about how Copilot works with Power BI </b></p>
 
 To learn more about how Copilot works with Power BI, please select the link below. This link will take you to a video demonstration of Copilot in action, as well as a tutorial on how to get started with Copilot & Power BI. 
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-- [Open the following reference in another tab](https://www.microsoft.com/en-us/videoplayer/embed/RW13t3E), to watch video demonstration of Copilot and Power BI in action. 
+- [Open this reference and follow the steps you see there](https://www.microsoft.com/en-us/videoplayer/embed/RW13t3E)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -79,20 +79,13 @@ Once that  connection is established, Object Explorer displays the connected war
 When connecting via SSMS (or Azure Data Studio), you see both a SQL Endpoint and Warehouse listed as warehouses, and it's difficult to differentiate between the two item types and their functionality. For this reason, we strongly encourage you to adopt a naming convention that allows you to easily distinguish between the two item types when you work in tools outside of the Microsoft Fabric portal experience.
 
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Connecting to your Fabric Workspace using SSMS.</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Optional Activity: Connecting to your Fabric Workspace using SSMS.</b></p>
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-To learn how to connect SSMS to Microsoft Fabric, please select the link below. This link will take you to a tutorial that explains how to retrieve the SQL connection string from your Microsoft Fabric workspace, and how to use it to establish a connection in SSMS. You will also see how to explore and query the data objects in your Microsoft Fabric environment using SSMS.
+Link to tutorial: SSMS and Microsoft Fabric. Learn how to get SQL connection string from workspace and connect SSMS. Learn how to query and explore data objects in Microsoft Fabric with SSMS.
 
-- <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/connectivity">Click here for a demo on how to connect to Microsoft Fabric with SSMS.</a>
-
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
-<ul>
-    <li><a href="https://youtu.be/iDLTj-tCLdY?si=tv0t9MO7ptx0W_Ud" target="_blank"> Connect to Microsoft Fabric with 5 Tools</a></li>
-</ul>
-
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/iDLTj-tCLdY/0.jpg)](https://www.youtube.com/watch?v=iDLTj-tCLdY)
+- [Open this reference and follow the steps you see there](https://learn.microsoft.com/en-us/fabric/data-warehouse/connectivity) 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -211,9 +204,9 @@ Select the link below for a tutorial on getting started with Power BI in Fabric.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
-    <li><a href="https://learn.microsoft.com/en-us/fabric/cicd/cicd-tutorial" target="_blank">End to end lifecycle management tutorial</a></li>
-    <li><a href="https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git" target="_blank">Get started with git integration</a></li>
-    <li><a href="https://learn.microsoft.com/en-us/fabric/cicd/deployment-pipelines/get-started-with-deployment-pipelines" target="_blank">Get started with deployment pipelines</a></li>
+    <li><a href="https://youtu.be/iDLTj-tCLdY?si=tv0t9MO7ptx0W_Ud" target="_blank"> Connect to Microsoft Fabric with 5 Tools</a></li>
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/iDLTj-tCLdY/0.jpg)](https://www.youtube.com/watch?v=iDLTj-tCLdY)
 </ul>
 
 Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/05%20-%20The%20Fabric%20User%20Experience.md).
