@@ -95,8 +95,8 @@ Link to tutorial: SSMS and Microsoft Fabric. Learn how to get SQL connection str
 Azure Data Studio is a versatile tool for working with data from various sources, such as SQL Server, Azure SQL Database, Azure Synapse, Microsoft Fabric, and more. It enables you to query, design, and manage your databases and data warehouses on-premises or in the cloud. Azure Data Studio is free, open-source, and cross-platform, so you can run it on Windows, macOS, or Linux. It also supports multiple languages, such as SQL, PowerShell, Python, KQL, Apache Spark, and PySpark. Azure Data Studio has a modern and intuitive interface that features a query editor, native Jupyter Notebooks, an integrated terminal, and built-in Git support. You can also enhance your environment with extensions that offer new features and services for Azure Data Studio. Some of the popular extensions are Database Projects, GitHub Copilot, Oracle to Azure SQL Migration Assistant, PostgreSQL Migration Assistant, and more. You can explore more extensions in the extension library or create your own. Azure Data Studio is designed to simplify the data landscape and provide a unified tooling experience for data professionals.
 
 Prerequisites: Before you can set up a connection, the following prerequisites are required1:
-- A Microsoft Fabric tenant account with an active subscription1.
-- A Microsoft Fabric enabled Workspace1.
+- A Microsoft Fabric tenant account with an active subscription.
+- A Microsoft Fabric enabled Workspace.
 
 Retrieve the SQL connection string: Navigate to your workspace, select the Warehouse, and select More options. Select Copy SQL connection string to copy the connection string to your clipboard.
 
@@ -124,7 +124,7 @@ When you create, update, or delete a file via Windows File Explorer, it automati
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-Link to tutorial: Using OneLake file explorer to access Fabric data.
+Using OneLake file explorer to access, edit, and upload to Fabric data.
 
 - [Open this reference and follow the steps you see there](https://learn.microsoft.com/en-us/fabric/onelake/onelake-file-explorer) 
 
