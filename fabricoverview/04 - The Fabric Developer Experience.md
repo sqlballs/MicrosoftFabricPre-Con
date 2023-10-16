@@ -60,7 +60,8 @@ The following paragraphs describe how to use SQL Server Management Studio (SSMS)
 
  First, you need to obtain your connection string, which is a sequence of characters that specifies how to connect to the warehouse. To do this, go to your workspace, select the Warehouse, and click on More options. Then, choose Copy SQL connection string and paste it somewhere convenient.
 
-[//]: #(https://learn.microsoft.com/en-us/fabric/data-warehouse/media/connectivity/warehouse-copy-sql-connection-string.png#lightbox)
+<img src="https://learn.microsoft.com/en-us/fabric/data-warehouse/media/connectivity/warehouse-copy-sql-connection-string.png#lightbox" height = 400> 
+
 
 Next, you need to launch SSMS and enter the connection string in the Connect to Server dialog box. Click on Connect to establish the connection. After that, you can query and manage your warehouse data using SSMS. This is a simple and efficient way to access your warehouse data from the Microsoft Fabric workspace.
 
@@ -70,11 +71,11 @@ In the Connect to Server dialog box, paste the SQL connection string from the Fa
 
 Once the Connect to Server window is open, paste the connection string copied from the previous section of this article into the Server name box. Select Connect and proceed with the appropriate credentials for authentication. Remember that only Azure Active Directory - MFA authentication is supported.
 
-![SSMS](https://learn.microsoft.com/en-us/fabric/data-warehouse/media/connectivity/connect-server-window.png#lightbox)
+<img src="https://learn.microsoft.com/en-us/fabric/data-warehouse/media/connectivity/connect-server-window.png#lightbox" height = 400> 
 
 Once that  connection is established, Object Explorer displays the connected warehouse from the workspace and its respective tables and views, all of which are ready to be queried.
 
-![SSMS](https://learn.microsoft.com/en-us/fabric/data-warehouse/media/connectivity/object-explorer-example.png#lightbox)
+<img src="https://learn.microsoft.com/en-us/fabric/data-warehouse/media/connectivity/object-explorer-example.png#lightbox" height = 400> 
 
 When connecting via SSMS (or Azure Data Studio), you see both a SQL Endpoint and Warehouse listed as warehouses, and it's difficult to differentiate between the two item types and their functionality. For this reason, we strongly encourage you to adopt a naming convention that allows you to easily distinguish between the two item types when you work in tools outside of the Microsoft Fabric portal experience.
 
@@ -93,6 +94,16 @@ Link to tutorial: SSMS and Microsoft Fabric. Learn how to get SQL connection str
 
 Azure Data Studio is a versatile tool for working with data from various sources, such as SQL Server, Azure SQL Database, Azure Synapse, Microsoft Fabric, and more. It enables you to query, design, and manage your databases and data warehouses on-premises or in the cloud. Azure Data Studio is free, open-source, and cross-platform, so you can run it on Windows, macOS, or Linux. It also supports multiple languages, such as SQL, PowerShell, Python, KQL, Apache Spark, and PySpark. Azure Data Studio has a modern and intuitive interface that features a query editor, native Jupyter Notebooks, an integrated terminal, and built-in Git support. You can also enhance your environment with extensions that offer new features and services for Azure Data Studio. Some of the popular extensions are Database Projects, GitHub Copilot, Oracle to Azure SQL Migration Assistant, PostgreSQL Migration Assistant, and more. You can explore more extensions in the extension library or create your own. Azure Data Studio is designed to simplify the data landscape and provide a unified tooling experience for data professionals.
 
+Prerequisites: Before you can set up a connection, the following prerequisites are required1:
+- A Microsoft Fabric tenant account with an active subscription1.
+- A Microsoft Fabric enabled Workspace1.
+
+Retrieve the SQL connection string: Navigate to your workspace, select the Warehouse, and select More options. Select Copy SQL connection string to copy the connection string to your clipboard.
+
+<img src="https://learn.microsoft.com/en-us/fabric/data-warehouse/media/connectivity/warehouse-copy-sql-connection-string.png#lightbox" height = 400> 
+
+
+
 <h2 id="4.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.4 Using Microsoft Excel</h2>
 
 Microsoft Excel is a software program that allows you to create, edit, and analyze spreadsheets and data. It is part of the Microsoft 365 suite of productivity tools, or it can be purchased separately. You can use Excel to organize your data in rows and columns, perform calculations with formulas and functions, create charts and graphs to visualize your data, and share your work with others. Excel also supports various languages and data types, such as SQL, Python, KQL, and Power BI.
@@ -100,6 +111,24 @@ Microsoft Excel is a software program that allows you to create, edit, and analy
 <h2 id="4.5"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.5 Using OneLake File Explorer</h2>
 
 The OneLake file explorer application enables a seamless integration of OneLake with Windows File Explorer. It synchronizes all OneLake items that you have access to in Windows File Explorer automatically. Synchronization means updating the metadata of files and folders to reflect the latest changes, and uploading the local modifications to the OneLake service.
+
+- To stop OneLake from launching on Windows startup, go to Task Manager > Startup apps, right-click OneLake and choose Disable
+- To launch OneLake manually, use Windows search (Windows+S) and click on OneLake. The app will refresh your synced folders automatically.
+- To exit OneLake, right-click the OneLake icon on the taskbar, and choose Exit. The sync will pause, and you won't be able to access placeholders. You will still see the blue cloud icon for placeholders that were not downloaded.
+
+<img src="https://learn.microsoft.com/en-us/fabric/onelake/media/onelake-file-explorer/onelake-file-explorer-screen-v-2.png#lightbox" height = 400> 
+
+When you create, update, or delete a file via Windows File Explorer, it automatically syncs the changes to OneLake service. Updates to your item made outside of your File Explorer aren't automatically synced. To pull these updates, you need to right-click on the item or subfolder in Windows File Explorer and select Sync from OneLake.
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Optional Activity: Use OneLake file explorer to access Fabrc data.</b></p>
+
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+
+Link to tutorial: Using OneLake file explorer to access Fabric data.
+
+- [Open this reference and follow the steps you see there](https://learn.microsoft.com/en-us/fabric/onelake/onelake-file-explorer) 
+
+
 
 <h2 id="4.6"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.6 Using Visual Studio Code</h2>
 
@@ -158,28 +187,17 @@ To select a Fabric workspace, you must have a workspace created. If you don't ha
 - Multiple Active Result Sets (MARS) is unsupported for Microsoft Fabric Warehouse. MARS is disabled by default, however if MultipleActiveResultSets is included in the connection string, it should be removed or set to false.
 - On connection to a warehouse, you may receive an error that "The token size exceeded the maximum allowed payload size". This may be due to having a large number of warehouses within the workspace or being a member of a large number of Azure AD groups. For most users, the error typically would not occur until approaching beyond 80 warehouses in the workspace. In event of this error, work with the Workspace admin to clean up unused Warehouses and retry the connection, or contact support if the problem persists.
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Connect to Microsoft Fabric using Visual Studio Code</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Optional Activity: Connect to Microsoft Fabric using Visual Studio Code</b></p>
 
-To learn how to connect VS Code to Microsoft Fabric, please select the link below.
+Learn how to connect VS Code to Microsoft Fabric.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
-- <a href="https://learn.microsoft.com/en-us/fabric/data-engineering/setup-vs-code-extension">What is the Synapse Visual Studio Code extension.</a>
+
+- [Open this reference and follow the steps you see there](https://learn.microsoft.com/en-us/fabric/data-engineering/setup-vs-code-extension) 
 
 <p></p>
 
-The following video shows us how to connect Visual Studio Code to our Microsoft Fabric Workspace and then how to interact with an existing Notebook so we can interface with our Lakehouse & Spark:
-
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/0tODoHLXhMc/0.jpg)](https://www.youtube.com/watch?v=0tODoHLXhMc&ab)
-
 <b></b>
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
-<ul>
-    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-with-vs-code" target="_blank">Microsoft Fabric notebook experience in VS Code</a></li>
-    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-resource-with-vs-code" target="_blank">Microsoft Fabric notebook resource in VS Code</a></li>
-    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-sjd-with-vs-code" target="_blank">Spark job definition experience in VS Code</a></li>
-    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/explore-lakehouse-with-vs-code" target="_blank">Explore Microsoft Fabric lakehouses in VS Code</a></li>
-
-</ul>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -204,9 +222,20 @@ Select the link below for a tutorial on getting started with Power BI in Fabric.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-with-vs-code" target="_blank">Microsoft Fabric notebook experience in VS Code</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-resource-with-vs-code" target="_blank">Microsoft Fabric notebook resource in VS Code</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-sjd-with-vs-code" target="_blank">Spark job definition experience in VS Code</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/explore-lakehouse-with-vs-code" target="_blank">Explore Microsoft Fabric lakehouses in VS Code</a></li>
     <li><a href="https://youtu.be/iDLTj-tCLdY?si=tv0t9MO7ptx0W_Ud" target="_blank"> Connect to Microsoft Fabric with 5 Tools</a></li>
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/iDLTj-tCLdY/0.jpg)](https://www.youtube.com/watch?v=iDLTj-tCLdY)
+
+   
+   <li><a href="https://www.youtube.com/watch?v=0tODoHLXhMc&ab" target="_blank"> Microsoft Fabric, VS Code, Notebooks, & Spark! Set it up, connect to a Workspace, EDIT, & Upload!! </a></li>
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/0tODoHLXhMc/0.jpg)](https://www.youtube.com/watch?v=0tODoHLXhMc&ab)
 </ul>
+
+<b></b>
 
 Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/05%20-%20The%20Fabric%20User%20Experience.md).
