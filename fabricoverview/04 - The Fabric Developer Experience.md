@@ -99,7 +99,9 @@ When connecting via SSMS (or Azure Data Studio), you see both a SQL Endpoint and
 
 Azure Data Studio is a versatile tool for working with data from various sources, such as SQL Server, Azure SQL Database, Azure Synapse, Microsoft Fabric, and more. It enables you to query, design, and manage your databases and data warehouses on-premises or in the cloud. Azure Data Studio is free, open-source, and cross-platform, so you can run it on Windows, macOS, or Linux. It also supports multiple languages, such as SQL, PowerShell, Python, KQL, Apache Spark, and PySpark. Azure Data Studio has a modern and intuitive interface that features a query editor, native Jupyter Notebooks, an integrated terminal, and built-in Git support. You can also enhance your environment with extensions that offer new features and services for Azure Data Studio. Some of the popular extensions are Database Projects, GitHub Copilot, Oracle to Azure SQL Migration Assistant, PostgreSQL Migration Assistant, and more. You can explore more extensions in the extension library or create your own. Azure Data Studio is designed to simplify the data landscape and provide a unified tooling experience for data professionals.
 
-Prerequisites: Before you can set up a connection, the following prerequisites are required1:
+<img src="https://learn.microsoft.com/en-us/azure-data-studio/media/quickstart-sql-database/new-connection-icon.png" height = 400> 
+
+Prerequisites: Before you can set up a connection, the following prerequisites are required:
 - A Microsoft Fabric tenant account with an active subscription.
 - A Microsoft Fabric enabled Workspace.
 
@@ -107,6 +109,24 @@ Retrieve the SQL connection string: Navigate to your workspace, select the Wareh
 
 <img src="https://learn.microsoft.com/en-us/fabric/data-warehouse/media/connectivity/warehouse-copy-sql-connection-string.png#lightbox" height = 400> 
 
+Open Azure Data Studio. If already open, you can connect manually by selecting Object Explorer > Connect > Database Engine. Once the Connect to Server window is open, paste the connection string copied from the previous step into the Server name box. Select Connect and proceed with the appropriate credentials for authentication.
+
+<img src="https://learn.microsoft.com/en-us/azure-data-studio/media/azure-view/azure-connection-configuration.png" height = 400> 
+
+**_note_** For the server you will be using the SQL connection string copied to the clipboard. It will look similair to the following : xxxxxxxxxx-xxxxxxxxxx.xxxx-datawarehouse.pbidedicated.windows.net
+
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png">
+<b>Optional Activity: Using Azure Data Studio to access Microsoft Fabric.</b></p>
+<br>
+</br>Using Azure Data Studio to Explore and manage Azure SQL resources.
+</br>
+</br>
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><br><b>Steps</b></br></p>
+
+- [Open this reference and follow the steps you see there](https://learn.microsoft.com/en-us/azure-data-studio/azure-view?view=sql-server-ver16)
+
+<p style="border-bottom: 1px solid lightgrey;"></p>
 
 <h2 id="4.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.4 Using Microsoft Excel</h2>
 <br></br>
