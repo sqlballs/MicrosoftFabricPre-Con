@@ -223,7 +223,8 @@ In this Activity you will navigate the primary interfaces for navigating the Azu
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
-    <li><a href="https://learn.microsoft.com/en-us/fabric/admin/" target="_blank">Microsoft Fabric Administrator Portal</a></li>
+  <li><a href="https://data-ascend.com/2023/10/11/how-do-you-set-up-your-data-governance-in-microsoft-fabric/">Microsoft MVP Marthe Moengen has an excellent article on Data Governance in Microsoft Fabric that you can reference here.</a></li>
+  <li><a href="https://learn.microsoft.com/en-us/fabric/admin/" target="_blank">Microsoft Fabric Administrator Portal</a></li>
   <li><a href="https://www.kevinrchant.com/2023/08/09/prepare-azure-devops-for-microsoft-fabric-git-integration/" target="_blank">Kevin Chant's tutorial on git integration with Fabric</a></li>
   
 </ul>
