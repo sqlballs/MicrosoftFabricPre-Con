@@ -50,8 +50,7 @@ The other requirements are:
 - **A Microsoft Fabric Capacity** - This could be a free trial or a provisioned Azure Capacity.
 - **A Computer with an Internet Browser** - To participate in the activities in this Workshop you must have a computer and an internet browser.
 - **A Working Internet Connection** - Microsoft Fabric is a SaaS, Software as a Service, platform hosted on the Internet.  You must have internet connectivity to access Microsoft Fabric.
-- **Microsoft Azure, Maybe**: This is only required if you do not have a free trial Microsoft Fabric Capacity.  
-This workshop uses the Microsoft Fabric which  platform to host the Microsoft Fabric Capacity, and optionally you can deploy a Microsoft Fabric Capacity. You can use a free Azure account, an MSDN Account, your own account, or potentially one provided for you, as long as you can create about $200.00 (U.S.) worth of assets. 
+- **Microsoft Azure, Maybe**: This is only required if you do not have a free trial Microsoft Fabric Capacity. This workshop uses the Microsoft Fabric which  platform to host the Microsoft Fabric Capacity, and optionally you can deploy a Microsoft Fabric Capacity. You can use a free Azure account, an MSDN Account, your own account, or potentially one provided for you, as long as you can create about $200.00 (U.S.) worth of assets. 
 
 
 *Note that all following activities must be completed prior to class - there will not be time to perform these operations during the workshop.*
