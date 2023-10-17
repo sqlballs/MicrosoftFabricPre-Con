@@ -215,50 +215,8 @@ The Synapse VS Code extension enables a seamless and productive developer experi
 
 Visual Studio Code is a widely used and lightweight source code editor that runs on your desktop and supports Windows, macOS, and Linux platforms. With the Synapse VS Code extension, you can create, execute, and debug your notebook and Spark job definition locally in VS Code. You can also submit the code to the remote Spark compute in your Fabric workspace for running or debugging. Moreover, the extension enables you to browse your lakehouse data, including tables and raw files, in VS Code.
 
-**Prerequisites**
+<img src="https://learn.microsoft.com/en-us/fabric/data-engineering/media/vscode/list-notebook.png" height = 400> 
 
-The prerequisites for the Synapse VS Code extension are:
-
-- Java 1.8
-- Conda
-- Jupyter extension for VS Code
-
-After you have installed the required software, you must update the operating system properties to reference the new packages.
-
-**Windows**
-
-1. Add JAVA_HOME to the environment variables and point it to the directory where java 1.8 is installed.
-
-2. Add both %JAVA_HOME%/bin and the condabin subfolder of the Conda installation to the system path directory.
-
-**macOS**
-Run the conda.sh in the terminal:
-
-1. Open the terminal window, change the directory to the folder where conda is installed, then change to the subdirectory etc/profile.d. The subdirectory should contain a file named conda.sh.
-2. Execute source conda.sh.
-3. In the same terminal window, run sudo conda init.
-4. Type in Java --version. The version should be Java 1.8.
-
-**Install the extension and prepare your environment**
-
-1. In VS Code, search for Synapse VS Code in the VS Code extension marketplace and install the extension. (The extension is still under preview, so you need to select the prerelease version to install.)
-2. After the extension installation is complete, restart VS Code. The icon for the extension is listed at the VS Code activity bar.
-
-**Setting a local working directory**
-
-To edit a notebook, you must have a local copy of the notebook content. The local working directory of the extension serves as the local root folder for all downloaded notebooks, even notebooks from different workspaces. By invoking the command Synapse:Set Local Work Folder, you can specify a folder as the local working directory for the extension. These are the steps:
-
-- Sign in and out of your account
-- From the VS Code command palette, enter the Synapse:Sign in command to sign in to the extension. A separate browser sign-in page appears.
-- Enter your username and password.
-- After you successfully sign in, your username will be displayed in the VS Code status bar to indicate that you're signed in.
-![vscsignin](https://learn.microsoft.com/en-us/fabric/data-engineering/media/vscode/signin-status.png)
-- To sign out of the extension, enter the command Synapse: Sign off.
-
-**Choose a workspace to work with**
-
-To select a Fabric workspace, you must have a workspace created. If you don't have one, you can create one in the Fabric portal. Once you have a workspace, choose it by selecting the Select Workspace option. A list appears of all workspaces that you have access to; select the one you want from the list.
- 
 **Considerations and limitations**
 - SQL Authentication is not supported.
 - Multiple Active Result Sets (MARS) is unsupported for Microsoft Fabric Warehouse. MARS is disabled by default, however if MultipleActiveResultSets is included in the connection string, it should be removed or set to false.
