@@ -226,7 +226,7 @@ In this Activity you will navigate the primary interfaces for navigating the Azu
   <li><a href="https://data-ascend.com/2023/10/11/how-do-you-set-up-your-data-governance-in-microsoft-fabric/">Microsoft MVP Marthe Moengen has an excellent article on Data Governance in Microsoft Fabric that you can reference here.</a></li>
   <li><a href="https://learn.microsoft.com/en-us/fabric/admin/" target="_blank">Microsoft Fabric Administrator Portal</a></li>
   <li><a href="https://www.kevinrchant.com/2023/08/09/prepare-azure-devops-for-microsoft-fabric-git-integration/" target="_blank">Kevin Chant's tutorial on git integration with Fabric</a></li>
-  
+  <li><a href="https://learn.microsoft.com/en-us/fabric/get-started/whats-new" target="_blank">As always, this is a fast-changing technology, so ensure you check this reference to find the latest improvements.</a></li>
 </ul>
 
 Congratulations! You have completed this workshop on *Microsoft Fabric for the Data Professional*. You now have the tools, assets, and processes you need to extrapolate this information into other applications.
