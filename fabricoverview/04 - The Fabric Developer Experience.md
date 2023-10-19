@@ -44,7 +44,7 @@ Copilot also enables users to easily and quickly create and customize reports, w
 Microsoft has released *quick measure* suggestions for DAX capability that helps analysts quickly create the code they need. 
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png">
-<b>Optional Activity: Learn more about how Copilot works with Power BI </b></p>
+<b>Self-Guided Activity: Learn more about how Copilot works with Power BI </b></p>
 <br>
 </br>To learn more about how Copilot works with Power BI, please select the link below. This link will take you to a video demonstration of Copilot in action, as well as a tutorial on how to get started with Copilot & Power BI. 
 </br>
@@ -84,7 +84,7 @@ Once that  connection is established, Object Explorer displays the connected war
 When connecting via SSMS (or Azure Data Studio), you see both a SQL Endpoint and Warehouse listed as warehouses, and it's difficult to differentiate between the two item types and their functionality. For this reason, we strongly encourage you to adopt a naming convention that allows you to easily distinguish between the two item types when you work in tools outside of the Microsoft Fabric portal experience.
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png">
-<b>Optional Activity: Connecting to your Fabric Workspace using SSMS.</b></p>
+<b>Self-Guided Activity: Connecting to your Fabric Workspace using SSMS.</b></p>
 <br>
 </br>Learn how to get SQL connection string from workspace and connect SSMS. Learn how to query and explore data objects in Microsoft Fabric with SSMS. 
 </br>
@@ -118,7 +118,7 @@ Open Azure Data Studio. If already open, you can connect manually by selecting O
 
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png">
-<b>Optional Activity: Using Azure Data Studio to access Microsoft Fabric.</b></p>
+<b>Self-Guided Activity: Using Azure Data Studio to access Microsoft Fabric.</b></p>
 <br>
 </br>Using Azure Data Studio to Explore and manage Azure SQL resources.
 </br>
@@ -166,7 +166,7 @@ The OneLake file explorer application enables a seamless integration of OneLake 
 When you create, update, or delete a file via Windows File Explorer, it automatically syncs the changes to OneLake service. Updates to your item made outside of your File Explorer aren't automatically synced. To pull these updates, you need to right-click on the item or subfolder in Windows File Explorer and select Sync from OneLake.
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png">
-<b>Optional Activity: Use OneLake file explorer to access Fabrc data.</b></p>
+<b>Self-Guided Activity: Use OneLake file explorer to access Fabrc data.</b></p>
 <br>
 </br>Using OneLake file explorer to access, edit, and upload to Fabric data.
 </br>
@@ -195,7 +195,7 @@ The Connections pane shows all the configured cluster connections. For each clus
 
 </br>
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png">
-<b>Optional Activity: Installation and using Kusto.Explorer.</b></p>
+<b>Self-Guided Activity: Installation and using Kusto.Explorer.</b></p>
 <br>
 </br>Installation and Usage of Kusto.Explorer Desktop Application.
 </br>
@@ -225,7 +225,7 @@ Visual Studio Code is a widely used and lightweight source code editor that runs
 
 </br>
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png">
-<b>Optional Activity: Connect to Microsoft Fabric using Visual Studio Code.</b></p>
+<b>Self-Guided Activity: Connect to Microsoft Fabric using Visual Studio Code.</b></p>
 <br>
 </br>Learn how to connect VS Code to Microsoft Fabric.
 </br>
@@ -252,7 +252,7 @@ Power BI natively and fully supports a Warehouse or Lakehouse SQL Endpoint as a 
 
 </br>
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png">
-<b>Optional Activity: Create reports using Power BI Desktop.</b></p>
+<b>Self-Guided Activity: Create reports using Power BI Desktop.</b></p>
 <br>
 </br>You can build reports from datasets with Power BI Desktop using a Live connection to the default dataset. For information on how to make the connection, see connect to datasets from Power BI Desktop.
 </br>
