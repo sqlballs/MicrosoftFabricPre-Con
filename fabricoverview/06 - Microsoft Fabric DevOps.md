@@ -209,7 +209,7 @@ Open each of the following tools and navigate the various actions and properties
 
 > If you only reviewed the documentation in this Activity, ensure you bookmark each of these references and then perform the Activity in full once you do have your deployment. 
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Optional Activity: Learn basic Log Navigation</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Self-Guided Activity: Learn basic Log Navigation</b></p>
 
 In this Activity you will navigate the primary interfaces for navigating the Azure Log Monitoring system. 
 
