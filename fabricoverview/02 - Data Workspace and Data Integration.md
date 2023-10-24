@@ -114,7 +114,7 @@ Dataflows are built using Power Query in Microsoft products and services such as
 <br>
 
 
-
+<p style="border-bottom: 1px solid lightgrey;"></p>
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
