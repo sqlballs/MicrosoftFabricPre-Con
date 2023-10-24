@@ -83,16 +83,25 @@ In this tutorial, you'll create a new pipeline that loads sample data into a War
 Since Data Warehousing is closely related to the SQL experience persona, you can leverage many of the features that you were accustomed to using in SQL Server, such as:
 
 - <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-tables" target="_blank">Create Tables</a>
+  Creating a table in Fabric is a remarkably similar process to creating a table in SQL Server. You can initiate a new query within the Fabric editor or SQL Server Management Studio (SSMS) and execute the 'create table' script, which will result in the table's creation within Microsoft Fabric.
+
+
+  ![image](https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/11f9beaa-6d57-4538-b2db-89f1470c7e56)
+
 - <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-load-data" target="_blank">Load data using T-SQL</a>
+Loading data into your newly created table is a straightforward process. You can achieve this with ease by utilizing the COPY INTO T-SQL statement. This statement allows you to efficiently load data into your tables.
+
+![image](https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/717e6430-b66d-4fd1-bda5-7ef97e1e4d0f)
+
 - <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-clone-table" target="_blank">Clone a table using T-SQL</a>
 - <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-transform-data" target="_blank">Transform data using stored procedure</a>
 - <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-visual-query" target="_blank">Create a query with the visual query builder</a>
   
 
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity:Ingest data into warehouse</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity:SQL Experience</b></p>
 
-- Open the following reference in another tab, [Tutorial: Analyze data with a notebook](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-analyze-data-notebook)
+- Open the following reference in another tab, [Tutorial: SQL Experience](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-tables)
 
 
 - - Follow Steps 4 - 8
