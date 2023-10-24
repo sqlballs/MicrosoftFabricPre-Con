@@ -106,6 +106,15 @@ Microsoft Fabric offers the capability to create near-instantaneous zero-copy cl
 ![image](https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/a05bc1b4-5033-4056-9a81-8c52a3c80a73)
 
 - <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-transform-data" target="_blank">Transform data using stored procedure</a>
+
+For SQL users, the availability of stored procedures is a valuable feature, and you'll be pleased to know that Microsoft Fabric supports them in a way that aligns with your familiarity. Writing stored procedures in Fabric follows the same approach as you would in SQL Server, making it convenient for users to leverage this important SQL functionality. The data can be transformed using Stored procedures.
+
+![image](https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/dac19efe-a5ec-4c38-8315-12bc6990d48e)
+
+
+
+
+
 - <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-visual-query" target="_blank">Create a query with the visual query builder</a>
 
 Microsoft Fabric is designed with user-friendliness in mind, catering to individuals who may not be proficient in writing SQL queries. You have the option to utilize the Visual Query Builder, a graphical interface that simplifies the process of building queries. By merely dragging and dropping fields, the query builder will seamlessly generate the necessary SQL query in the background. This feature makes data retrieval and manipulation more accessible for a broader range of users.
