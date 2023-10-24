@@ -160,6 +160,15 @@ Dataflows are built using Power Query in Microsoft products and services such as
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
  <li><a href="https://learn.microsoft.com/en-us/fabric/release-plan/">Microsoft Fabric release plan documentation</a></li>
+ <li><a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/security/">Data Warehouse Security</a></li>
+ <li><a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/connectivity">Data Warehouse Connectivity</a></li>
+ <li><a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/guidelines-warehouse-performance">Data Warehouse Performance Guidelines</a></li>
+ <li><a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/data-types">Data Warehouse Data Types</a></li>
+ <li><a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/table-constraints">Data Warehouse Table Constraints</a></li>
+ <li><a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/statistics">Data Warehouse Statistics</a></li>
+ <li><a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/usage-reporting">Data Warehouse Usage Monitoring</a></li>
+ <li><a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/compute-capacity-smoothing-throttling">Data Warehouse Smoothing & Throttling</a></li>
+ <li><a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/monitor-using-dmv">Data Warehouse Monitoring using DMVs</a></li>
     
 
 </ul>
