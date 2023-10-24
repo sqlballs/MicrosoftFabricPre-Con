@@ -60,9 +60,19 @@ In this tutorial, you'll create a new pipeline that loads sample data into a War
 
 ![Data Pipeline](https://learn.microsoft.com/en-us/fabric/data-factory/media/data-factory-overview/data-pipelines.png#lightbox)
 
+<br>
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity:Ingest data into warehouse</b></p>
-https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-ingest-data
+
+- Open the following reference in another tab, [Tutorial: Analyze data with a notebook](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-analyze-data-notebook)
+
+
+- - Follow Steps 4 - 8
+
+<br>
+<p>
+
+
 
 <h2 id="03"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">SQL Experience</h2>
 
