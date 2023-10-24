@@ -349,6 +349,7 @@ If you cannot complete these steps open and follow the  [Pre-Requisites](https:/
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
+ <li><a href="https://learn.microsoft.com/en-us/fabric/release-plan/">Microsoft Fabric release plan documentation</a></li>
     <li><a href="https://learn.microsoft.com/en-us/fabric/onelake/onelake-overview">OneLake, the OneDrive for data</a></li>
     <li><a href="https://learn.microsoft.com/en-us/fabric/get-started/microsoft-fabric-overview " target="_blank">The primary page for documentation on Microsoft Fabric is here</a></li>
     <li><a href="https://learn.microsoft.com/en-us/training/paths/get-started-fabric/?WT.mc_id=DP-MVP-5004032">Microsoft Learn Pathway on Fabric</a></li>
