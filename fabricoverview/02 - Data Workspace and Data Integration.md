@@ -140,7 +140,7 @@ Microsoft Fabric is designed with user-friendliness in mind, catering to individ
 <p>
 
 
-<h2 id="03"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.4 Ingesting data with pipelines and data flows</h2>
+<h2 id="03"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.4 Ingesting Data using pipelines with Data flow Gen2</h2>
 
 
 
@@ -151,6 +151,14 @@ Dataflows provide a low-code interface for ingesting data from hundreds of data 
 Dataflows are built using Power Query in Microsoft products and services such as Excel, Power BI, Power Platform, Dynamics 365 Insights applications, and more, using Power Query to perform data ingestion and data transformations across the data estate. You can also create joins, aggregations, data cleansing, custom transformations, and much more all from a highly visual, low-code UI.
 
 ![Dataflows](https://learn.microsoft.com/en-us/fabric/data-factory/media/data-factory-overview/dataflow-experience.png#lightbox)
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Self-Guided Activity: Work through the Ingesting Data using pipelines with Data flow Gen2</b></p>
+
+In this activity, you will follow the basic training tutorial for Microsfot Azure Purview.
+
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+
+- [Open the following reference, and follow all of the steps you see there.](https://www.youtube.com/watch?v=mlxlPhJ5ovc&list=UULP0WSqYstuCm0f9QoO1wmZIA&index=3) 
 
 <br>
 
