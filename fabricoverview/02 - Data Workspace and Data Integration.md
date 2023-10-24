@@ -19,7 +19,8 @@ You'll cover these topics in this Module:
 <dl>
   <dt><a href="#21-Data Warehouse">2.1 - Data Warehouse</a></dt>
   <dt><a href="#22-Data Flows Gen 2">2.2 - Ingesting data with pipelines</a></dt>
-  <dt><a href="#23-ingesting-data-with-pipelines-and-data-flows">2.3 - Ingesting data with pipelines and data flows</a></dt>
+  <dt><a href="#22-Data Flows Gen 2">2.3 - SQL Experience</a></dt>
+  <dt><a href="#23-ingesting-data-with-pipelines-and-data-flows">2.4 - Ingesting data with pipelines and data flows</a></dt>
   </dl>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
@@ -29,6 +30,9 @@ You'll cover these topics in this Module:
 Microsoft Fabric introduces a lake centric data warehouse built on an enterprise grade distributed processing engine that enables industry leading performance at scale while eliminating the need for configuration and management. Through an easy to use SaaS experience that is tightly integrated with Power BI for easy analysis and reporting, Warehouse in Microsoft Fabric converges the world of data lakes and warehouses with a goal of greatly simplifying an organizations investment in their analytics estate. Data warehousing workloads benefit from the rich capabilities of the SQL engine over an open data format, enabling customers to focus on data preparation, analysis and reporting over a single copy of their data stored in their Microsoft OneLake.
 
 The Warehouse is built for any skill level - from the citizen developer through to the professional developer, DBA or data engineer. The rich set of experiences built into Microsoft Fabric workspace enables customers to reduce their time to insights by having an easily consumable, always connected dataset that is integrated with Power BI in DirectLake mode. This enables second-to-none industry leading performance that ensures a customer's report always has the most recent data for analysis and reporting. Cross-database querying can be leveraged to quickly and seamlessly leverage multiple data sources that span multiple databases for fast insights and zero data duplication.  
+
+![image](https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/761b96fa-4e30-43d1-8ffe-d34650599be2)
+
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity:Creating your first Warehouse</b></p>
 
