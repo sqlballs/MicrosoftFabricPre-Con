@@ -180,6 +180,7 @@ In this <b>Optional</b> activity we will be following with the Data warehouse tu
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
+ <li><a href="https://learn.microsoft.com/en-us/fabric/release-plan/">Microsoft Fabric release plan documentation</a></li>
     <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/spark-compute" target="_blank">What is Spark compute in Microsoft Fabric?</a></li>
     <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/runtime" target="_blank">Apache Spark Runtime in Fabric</a></li>
     <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/create-custom-spark-pools" target="_blank">How to create custom Spark pools in Microsoft Fabric</a></li>
