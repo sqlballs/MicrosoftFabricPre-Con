@@ -107,6 +107,14 @@ Microsoft Fabric offers the capability to create near-instantaneous zero-copy cl
 
 - <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-transform-data" target="_blank">Transform data using stored procedure</a>
 - <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-visual-query" target="_blank">Create a query with the visual query builder</a>
+
+Microsoft Fabric is designed with user-friendliness in mind, catering to individuals who may not be proficient in writing SQL queries. You have the option to utilize the Visual Query Builder, a graphical interface that simplifies the process of building queries. By merely dragging and dropping fields, the query builder will seamlessly generate the necessary SQL query in the background. This feature makes data retrieval and manipulation more accessible for a broader range of users.
+
+![image](https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/d39a994d-815b-44c3-bef5-4a24d5ab0ab6)
+
+
+![image](https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/5b87b205-64c8-4293-b063-9bbcb49ecc24)
+
   
 
 
