@@ -287,7 +287,13 @@ For more information about the Microsoft Fabric Capacity app see the following d
 -  [Install the Microsoft Fabric capacity metrics app](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app-install?tabs=1st)
 -  [Understand the metrics app overview page](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app-overview-page)
 -  [Understand the metrics app timepoint page](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app-timepoint-page)
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/TZnZob8B_Xk/0.jpg)](https://www.youtube.com/watch?v=TZnZob8B_Xk&?t=2196)
+
+
 <p style="border-bottom: 1px solid lightgrey;"></p>
+
+
 
 <h2 id="1.7"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.7 Understanding and creating Workspaces</h2>
 
