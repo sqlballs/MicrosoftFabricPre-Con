@@ -51,7 +51,9 @@ Microsoft has released *quick measure* suggestions for DAX capability that helps
 </br>
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><br><b>Steps</b></br></p>
 
-- [Open this reference and follow the steps you see there](https://www.microsoft.com/en-us/videoplayer/embed/RW13t3E)
+- Open this reference to see how to access Copilot in Power BI Desktop
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/4fJq8qessuM/0.jpg)](https://www.youtube.com/watch?v=4fJq8qessuM)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -92,6 +94,9 @@ When connecting via SSMS (or Azure Data Studio), you see both a SQL Endpoint and
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><br><b>Steps</b></br></p>
 
 - [Open this reference and follow the steps you see there](https://learn.microsoft.com/en-us/fabric/data-warehouse/connectivity#get-started-with-sql-server-management-studio-ssms)
+-  Open this reference to see an example of how to connect to Microsoft Fabric with SSMS click the following link.
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/iDLTj-tCLdY/0.jpg)](https://www.youtube.com/watch?v=iDLTj-tCLdY&t=63s)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -125,9 +130,9 @@ Open Azure Data Studio. If already open, you can connect manually by selecting O
 </br>
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><br><b>Steps</b></br></p>
 
-- Open this reference and follow the steps you see there
+-  Open this reference to see an example of how to connect to Microsoft Fabric with Azure Data Studio click the following link.
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/4fJq8qessuM/0.jpg)](https://www.youtube.com/watch?v=4fJq8qessuM)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/iDLTj-tCLdY/0.jpg)](https://www.youtube.com/watch?v=iDLTj-tCLdY&t=127s)
 
 </br>
 <p style="border-bottom: 1px solid lightgrey;"></p>
@@ -151,6 +156,21 @@ In the SQL Server database dialog box, select Microsoft Account on the left side
 <img src="https://learn.microsoft.com/en-us/azure/azure-sql/database/media/connect-excel/connect-to-server.png?view=azuresql" height = 400> 
 
 <br></br>
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png">
+<b>Self-Guided Activity: Using Microsoft Excel to access Microsoft Fabric.</b></p>
+<br>
+</br>Using Microsoft Excel to access Microsoft Fabric. 
+
+</br>
+</br>
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><br><b>Steps</b></br></p>
+
+- Open this reference and follow the steps you see there
+For an example of how to connect to Microsoft Fabric with Microsoft Excel click the following link.
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/iDLTj-tCLdY/0.jpg)](https://www.youtube.com/watch?v=iDLTj-tCLdY&t=279s)
+
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -176,6 +196,9 @@ When you create, update, or delete a file via Windows File Explorer, it automati
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><br><b>Steps</b></br></p>
 
 - [Open this reference and follow the steps you see there](https://learn.microsoft.com/en-us/fabric/onelake/onelake-file-explorer)
+- For an example of how to install and use OneLake Explorer watch the following video
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/4NbuG1JBq60/0.jpg)](https://www.youtube.com/watch?v=4NbuG1JBq60)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -206,6 +229,9 @@ The Connections pane shows all the configured cluster connections. For each clus
 
 - [Open this reference and follow the steps you see there](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/tools/kusto-explorer#connections-panel) 
 - [Open this reference and follow the steps you see there](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/tools/kusto-explorer-using) 
+- For an example of how to use Kutso Explorer to connect to Microsoft Fabric watch the following video
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/iDLTj-tCLdY/0.jpg)](https://youtu.be/iDLTj-tCLdY?t=186)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -236,6 +262,11 @@ Visual Studio Code is a widely used and lightweight source code editor that runs
 
 - [Open this reference and follow the steps you see there](https://learn.microsoft.com/en-us/fabric/data-engineering/setup-vs-code-extension) 
 
+- Open this reference to see how to access Microsoft Fabric with Visual Studio Code
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/0tODoHLXhMc/0.jpg)](https://www.youtube.com/watch?v=0tODoHLXhMc&ab)
+
+
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <h2 id="4.8"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.8 Using Power BI</h2>
@@ -262,6 +293,9 @@ Power BI natively and fully supports a Warehouse or Lakehouse SQL Endpoint as a 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><br><b>Steps</b></br></p>
 
 - [Open this reference and follow the steps you see there](https://learn.microsoft.com/en-us/fabric/data-warehouse/create-reports#create-reports-using-power-bi-desktop) 
+- For an example of how to use Power BI to connect to Microsoft Fabric watch the following video
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/iDLTj-tCLdY/0.jpg)](https://www.youtube.com/watch?v=iDLTj-tCLdY&t=329s)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -271,14 +305,13 @@ Power BI natively and fully supports a Warehouse or Lakehouse SQL Endpoint as a 
     <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-resource-with-vs-code" target="_blank">Microsoft Fabric notebook resource in VS Code</a></li>
     <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-sjd-with-vs-code" target="_blank">Spark job definition experience in VS Code</a></li>
     <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/explore-lakehouse-with-vs-code" target="_blank">Explore Microsoft Fabric lakehouses in VS Code</a></li>
-    <li><a href="https://youtu.be/iDLTj-tCLdY?si=tv0t9MO7ptx0W_Ud" target="_blank"> Connect to Microsoft Fabric with 5 Tools</a></li>
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/iDLTj-tCLdY/0.jpg)](https://www.youtube.com/watch?v=iDLTj-tCLdY)
+
 
    
    <li><a href="https://www.youtube.com/watch?v=0tODoHLXhMc&ab" target="_blank"> Microsoft Fabric, VS Code, Notebooks, & Spark! Set it up, connect to a Workspace, EDIT, & Upload!! </a></li>
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/0tODoHLXhMc/0.jpg)](https://www.youtube.com/watch?v=0tODoHLXhMc&ab)
+
 </ul>
 
 <b></b>
