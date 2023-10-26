@@ -27,7 +27,7 @@ You'll cover these topics in this Module:
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="3.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.1 Understanding a Microsoft Fabric Lakehouse</h2>
+<h2 id="3.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.1 Understanding a Microsoft Fabric Lakehouse</h2>
 
 Microsoft Fabric Lakehouse is a data architecture platform for storing, managing, and analyzing structured and unstructured data in a single location. It is a flexible and scalable solution that allows organizations to handle large volumes of data using a variety of tools and frameworks to process and analyze that data. It integrates with other data management and analytics tools to provide a comprehensive solution for data engineering and analytics. 
 
