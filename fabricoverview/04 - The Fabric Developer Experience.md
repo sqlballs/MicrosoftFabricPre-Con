@@ -125,7 +125,9 @@ Open Azure Data Studio. If already open, you can connect manually by selecting O
 </br>
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><br><b>Steps</b></br></p>
 
-- [Open this reference and follow the steps you see there](https://learn.microsoft.com/en-us/azure-data-studio/azure-view?view=sql-server-ver16)
+- Open this reference and follow the steps you see there
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/4fJq8qessuM/0.jpg)](https://www.youtube.com/watch?v=4fJq8qessuM)
 
 </br>
 <p style="border-bottom: 1px solid lightgrey;"></p>
