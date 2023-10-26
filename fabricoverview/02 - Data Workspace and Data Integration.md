@@ -158,7 +158,9 @@ In this activity, you will follow the basic training tutorial for Microsfot Azur
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-- [Open the following reference, and follow all of the steps you see there.](https://www.youtube.com/watch?v=mlxlPhJ5ovc&list=UULP0WSqYstuCm0f9QoO1wmZIA&index=3) 
+- Open the following reference, and follow all of the steps you see there.
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/mlxlPhJ5ovc/0.jpg)](https://www.youtube.com/watch?v=mlxlPhJ5ovc)
 
 <br>
 
