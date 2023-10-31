@@ -40,7 +40,10 @@ The Warehouse is built for any skill level - from the citizen developer through 
 
 
 - - Follow Step 2
+ 
+  [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/StIBBb69wDw/0.jpg)](https://www.youtube.com/watch?v=StIBBb69wDw))
 
+  
 <h2 id="02"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.2 Ingesting data with pipelines</h2>
 
 In the previous module, you learned about the main storage concept, OneLake. To move data into and out of OneLake, you will use the Microsoft Fabric experience of *Microsoft Azure Data Factory*.
