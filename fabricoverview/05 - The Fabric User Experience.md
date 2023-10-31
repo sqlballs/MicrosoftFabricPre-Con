@@ -6,7 +6,7 @@
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png"> <h2>05 - The Fabric User Experience</h2>
+<img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png"> <h2>05 - Real-Time Analytics with Microsoft Fabric</h2>
 
 In this workshop you'll cover using The Microsoft Fabric Platform to implement a complete Analytics solution using the Microsoft Fabric platform.
 
@@ -18,7 +18,7 @@ You'll cover these topics in this Module on the User Experience:
 
 <dl>
 
-  <dt><a href="51-working-with-fabric-using-power-bi" target="_blank">5.1 - Working with Fabric using Power BI</a></dt>
+  <dt><a href="51-working-with-fabric-using-power-bi" target="_blank">5.1 - Working with Azure Data Explorer in Microsoft Fabric</a></dt>
   <dt><a href="#52-working-with-fabric-and-streaming--event-data" target="_blank">5.2 - Working with Fabric and Streaming / Event Data</a></dt>
   <dt><a href="#53-working-with-fabric-and-the-kusto-query-language-kql" target="_blank">5.3 - Working with Fabric and the Kusto Query Language (KQL)</a></dt>
 
@@ -27,65 +27,35 @@ You'll cover these topics in this Module on the User Experience:
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="5.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.1 Working with Fabric using Power BI</h2>
-
-![](https://learn.microsoft.com/en-us/fabric/get-started/media/microsoft-fabric-overview/saas-foundation.png)
-
-Working with Power BI and Microsoft Fabric uses the features and functionality already present in Power BI. Power BI Premium customers can simply turn on the Fabric tenant setting in the admin portal. With Fabric’s unified capacity model, Power BI Premium capacity can be utilized by any of the new workloads. Read this documentation for more information on Fabric’s single capacity model. Power BI Pro customers can access this functionality through capacity trials. There are also several Power BI Premium only features designed to transform how you analyze and visualize your data.
-
-As you saw in a previous Module, Copilot in Power BI leverages the power of large language models into Power BI at every layer to help users get more done and create more value from their data. Using Copilot, you can simply describe the visuals and insights you’re looking for, and Copilot will do the rest. Users can create and tailor reports in seconds, generate and edit DAX calculations, create narrative summaries, and ask questions about their data, all in conversational language. With the ability to easily tailor the tone, scope, and style of narratives and add them seamlessly within reports, Power BI can also deliver data insights even more impactfully through easy-to-understand text summaries. Microsoft has also released the quick measure suggestions for DAX capability that helps analysts quickly create the code they need. 
-
-### Unified data foundation with OneLake and Direct Lake mode
-
-![](https://learn.microsoft.com/en-us/fabric/onelake/media/onelake-overview/onelake-foundation-for-fabric.png#lightbox)
-
-Power BI is standardizing on open data formats by adopting Delta Lake and Parquet as its native storage format to help you avoid vendor lock-in and reduce data duplication and management. Direct Lake mode unlocks incredible performance directly against OneLake, with no data movement. Combining this with the ability for the other analytical engines to read and write data directly in the lake, Fabric will reshape how business users consume big data. Power BI datasets in Direct Lake mode enjoy query performance on a par with import mode, with the real-time nature of DirectQuery. And the data never leaves the lake, so there is no need to manage refreshes.
-
-To try Direct Lake from your Lakehouse or Warehouse in Fabric, click on New Power BI Dataset, select the tables you want to include, and click Confirm. Open the data model to create measures and relationships as you would for any other Power BI dataset. Lastly, click new report and create beautiful Power BI reports. Note the integrated experience from data in the lake through to report creation without leaving the browser or performing a refresh.
-
-### PowerBI Desktop Developer Mode
-
-As a developer, you can use this integration to:
-
-- Use Power BI Desktop to author report and dataset metadata files in source-control friendly formats.
-- Save as a Power BI project (.PBIP) to a folder instead of to a .PBIX file.
-- Enable multiple developer collaboration, source control integration to track version history, compare different revisions (diff), and revert to previous versions.
-- Use continuous integration and continuous delivery (CI/CD) to enforce quality gates prior to reaching production environments.
-- Enable code reviews, automated testing, and automated build to validate the integrity of a deployment.
-- Users can leverage Git integration and deployment pipelines for an end-to-end application lifecycle management of their work by developing through Git integration and deploying their Power BI content across dev, test, and production workspaces. Developers can use the user interface (UI) experience or automate the process through other tools, such as Azure Pipelines.
-
-#### PowerBI Projects
-Power BI Desktop introduces a new way to author, collaborate, and save your projects. You can now save your work as a Power BI Project (PBIP). As a project, report and dataset artifact definitions are saved as individual plain text files in a simple, intuitive folder structure.
-
-Project files come with the following benefits:
-- <b>Text editor support</b> - Artifact definition files are JSON formatted text files containing model dataset and report metadata.
-- <b>Programmatic generation and editing artifact definitions</b> - You can create scripts using the popular and easy to use Tabular Model Scripting Language (TMSL), or create your own custom applications to make changes to your artifact definitions.
-- <b>Source control</b> - Power BI dataset and report artifact definitions can be stored in a source control system, like Git. With Git, you can track version history, compare revisions (diff), and revert to previous versions.
-- <b>Continuous Integration and Continuous Delivery (CI/CD)</b> - You can use systems where developers in your organization submit a proposed change to the CI/CD system.
-
-##### Dataset and Report Project Files 
-The dataset and report project folders and files  contain the settings and configurations that represent the datasets and reports within a PowerBI project. All the settings are represented in a way that allows for code changes via text editing (<b>you can automate changes</b>).
-
-##### Enterprise-grade collaboration with Git integration for Power BI datasets and reports
-
-We are also enabling more seamless collaboration with your development team on Power BI content with Git integration. You can now easily connect your workspace to Azure DevOps repositories to track changes, revert to previous versions, and merge updates from multiple team members into a single source of truth that will be synced into the workspace with a single click.
-
-[![Title card for the Guy in a Cube video "PowerBI and Fabric"](https://img.youtube.com/vi/fvuL8Nk_gxU/0.jpg)](https://www.youtube.com/watch?v=fvuL8Nk_gxU)
+<h2 id="5.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.1 Working with Azure Data Explorer in Microsoft Fabric</h2>
 
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: PowerBI Desktop Projects and Git Integration</b></p>
+![](https://learn.microsoft.com/en-us/fabric/real-time-analytics/media/sample-gallery/use-sample.png#lightbox)
 
-In this activity, you will walk through creating a PowerBI Project and connecting it to a GitHub repo
+### Working with Azure Data Explorer in Microsoft Fabric
 
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+Azure Data Explorer is a fully managed, high-performance, big data analytics platform that makes it easy to analyze high volumes of data in near real time. The Azure Data Explorer toolbox gives you an end-to-end solution for data ingestion, query, visualization, and management.
 
-- [Open this reference about PowerBI Projects and complete the outlined steps](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-overview)
-- [Open this reference and read it to understand the project dataset folder layout](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-dataset)
-- [Open this reference and read it to understand the project report folder layout](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-report)
+Real-Time Analytics is a fully managed big data analytics platform optimized for streaming, and time-series data. It utilizes a query language and engine with exceptional performance for searching structured, semi-structured, and unstructured data. Real-Time Analytics is fully integrated with the entire suite of Fabric products, for both data loading, data transformation, and advanced visualization scenarios.
 
-Pick only one of the following steps for the last tutorial, depending on what system you prefer to use for source control
-- [Open this tutorial and walk through the steps to integrate a PowerBI project folder with Git](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-git)
-- [Open this tutorial and walk through the steps to setup Azure Dev Ops integration](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-azdo)
+Real-Time Analytics is a data analytics SaaS experience in the Microsoft Fabric offering. Azure Data Explorer is a PaaS service in Azure. Kusto(the data engine) in Real-Time Analytics (KQL Database and KQL Queryset) and Azure Data Explorer share the same core engine with the identical core capabilities, but different management behavior. 
+
+### Kusto Engine 
+
+By analyzing structured, semi-structured, and unstructured data across time series, and by using Machine Learning, Kusto makes it simple to extract key insights, spot patterns and trends, and create forecasting models. The Kusto engine uses a traditional relational model, organizing data into tables with strongly-typed schemas. Tables are stored within databases, and a cluster can manage multiple databases. It is scalable, secure, robust, and enterprise-ready, and is useful for log analytics, time series analytics, IoT, and general-purpose exploratory analytics.
+
+Here are some ways that the Kusto engine stands out.
+
+##### Velocity, Variety, and Volume
+You can ingest terabytes of data in minutes in batch or streaming mode. You can query petabytes of data, with results returned within milliseconds to seconds. The Kusto engine provides high velocity (millions of events per second), low latency (seconds), and linear scale ingestion of raw data. Ingest your data in different formats and structures, flowing from various pipelines and sources.
+
+##### User-friendly Query Language
+
+Real-Time Analytics uses the [Kusto Query Language (KQL)](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/), an open-source language initially invented by the Kusto engine team. The language is simple to understand and learn, and highly productive. You can use simple operators and advanced analytics. Real-Time Analytics also supports [T-SQL](https://learn.microsoft.com/en-us/azure/data-explorer/t-sql).
+</br>
+</br>
+
+Open the links for the [Kusto Query Language (KQL)](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/) and for [T-SQL](https://learn.microsoft.com/en-us/azure/data-explorer/t-sql) is Kusto to learn more about the syntax and power of KQL.
 </br>
 </br>
 
@@ -169,6 +139,8 @@ The KQL Queryset is the item used to run queries, view, and customize query resu
 
 In this activity, you will learn how to query your data using Kusto Query Language in a KQL queryset.
 
+![](https://learn.microsoft.com/en-us/azure/data-explorer/media/data-explorer-overview/workflow.png)
+
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
 - [Explore data with KQL and SQL](https://learn.microsoft.com/en-us/fabric/real-time-analytics/tutorial-4-explore)
@@ -188,5 +160,21 @@ In this activity, you will learn how to query your data using Kusto Query Langua
 </ul>
 
 [![Title card for the Tales from the Field video "The Microsoft Fabric Real-time Analytics Tutorial"](https://img.youtube.com/vi/ZVrvP20ezYk/0.jpg)](https://www.youtube.com/watch?v=ZVrvP20ezYk)
+
+<p style="border-bottom: 1px solid lightgrey;"></p>
+
+<p style="border-bottom: 1px solid lightgrey;"></p>
+
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
+<ul>
+  <li><a href="https://radacad.com/fabric-real-time-analytics">Microsoft MVP Reza Rad walks through a demo he built, including a custom streaming application, to demonstrate using Real-time Analytics.</a></li>
+  <li><a href="https://learn.microsoft.com/en-us/fabric/real-time-analytics/overview" target="_blank">What is Real-Time Analytics in Microsoft Fabric</a></li>
+  <li><a href="https://learn.microsoft.com/en-us/fabric/get-started/whats-new#synapse-real-time-analytics-in-microsoft-fabric" target="_blank">What's new in Real-Time Analytics in Microsoft Fabric</a></li>
+  <li><a href="https://learn.microsoft.com/en-us/fabric/release-plan/real-time-analytics" target="_blank">What's new and planned for Synapse Real-Time Analytics in Microsoft Fabric</a></li>
+</ul>
+
+<p style="border-bottom: 1px solid lightgrey;"></p>
+
+<p style="border-bottom: 1px solid lightgrey;"></p>
 
 Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/06%20-%20Microsoft%20Fabric%20DevOps.md).
