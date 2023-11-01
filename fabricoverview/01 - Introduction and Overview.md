@@ -78,8 +78,7 @@ Microsoft Fabric enables organizations and individuals to turn large and complex
 
 - OneLake - [*OneLake*](https://learn.microsoft.com/en-us/fabric/onelake/onelake-overview)  is a single, unified, logical data lake for the whole organization. Like OneDrive, OneLake comes automatically with every Microsoft Fabric tenant and is designed to be the single place for all your analytics data. 
 
-![Fabric Diagram](https://learn.microsoft.com/en-us/fabric/get-started/media/microsoft-fabric-overview/saas-foundation.png)
-
+<p><img src="https://learn.microsoft.com/en-us/fabric/get-started/media/microsoft-fabric-overview/saas-foundation.png" height = 300>
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Review Exercise for this Course</b></p>
 
@@ -90,11 +89,10 @@ In this exercise, you will review the exercise we will use throughout the course
 - [Open the following reference in another tab](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-introduction), and read over the steps you see there. This is an example of the different tutorials that you will experience in this class. 
 
 <p>
-You can also review this video that introduces you to Microsoft Fabric and shows the results of the tutorial you will use in the Workshop:
+You can also right-click this link to open it in another tab and review this video that introduces you to Microsoft Fabric and shows the results of the tutorial you will use in the Workshop:
 
 <p><a href="https://www.youtube.com/watch?v=TSTeoeCNh7c"><img src="https://img.youtube.com/vi/TSTeoeCNh7c/0.jpg" height = 300></a> 
 
-<h2 id="1.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.3 OneLake & Microsoft Fabric Architecture</h2>
 
 ![OneLake Diagram](https://learn.microsoft.com/en-us/fabric/onelake/media/onelake-overview/onelake-foundation-for-fabric.png)
 
