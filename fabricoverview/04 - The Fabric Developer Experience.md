@@ -316,4 +316,4 @@ Power BI natively and fully supports a Warehouse or Lakehouse SQL Endpoint as a 
 
 <b></b>
 
-Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/05%20-%20The%20Fabric%20User%20Experience.md).
+Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/05%20-%20Real-Time%20Analytics%20with%20Microsoft%20Fabric.md).
