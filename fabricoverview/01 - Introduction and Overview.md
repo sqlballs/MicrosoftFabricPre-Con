@@ -32,21 +32,15 @@ You'll cover these topics in this Module:
 
 <h2 id="1-1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.1 Introduction of the Course</h2>
 
-Imagine you have a lot of data from different sources and you want to use it to make better decisions for your business. You need a tool that can help you collect, store, process, analyze, and visualize your data in one place. You also want a tool that is easy to use, secure, and flexible. That’s what Microsoft Fabric is all about.
+Data is a valuable asset for many organizations that want to make better business decisions. Microsoft Fabric is a Service that enables data collection, storage, processing, analysis, and visualization in one place. It offers a secure, flexible, and user-friendly solution for data management and transformation. Microsoft Fabric is a new solution that allows doing everything with data, from ingesting it to deriving insights from it. It provides different services for different purposes.
 
-<p>
+Microsoft Fabric leverages cloud technology, which eliminates the need for setting up or managing any infrastructure. It also integrates and secures data across different experiences and clouds, enabling seamless data workflows. Microsoft Fabric is currently in preview, which means it is under development and improvement. It combines new and existing features from Power BI, Azure Synapse, and Azure Data Factory into one environment. These features can be accessed through different user interfaces, depending on the data task.
 
-Microsoft Fabric is a new solution that lets you do everything with your data, from moving it to making sense of it. It has different services that you can use for different purposes.
-<p>
+Microsoft Fabric introduces OneLake, the OneDrive of the Data world. OneLake is not only a storage place for data, but also a logical layer that organizes and governs data.
 
+OneLake allows creating workspaces and lakehouses, which are similar to folders or projects for data. It also offers the Shortcut feature to access data from other workspaces or tenants, or from other cloud services like Azure Storage. This way, it ensures one copy of data for consistent and reliable insights.
 
-Microsoft Fabric is based on cloud technology, which means you don’t have to worry about setting up or managing any infrastructure. It also integrates and secures your data across different experiences and clouds, so you can work with it seamlessly. Microsoft Fabric is currently in preview, which means it is still being developed and improved. It combines new and existing features from Power BI, Azure Synapse, and Azure Data Factory into one environment. You can use these features through different user interfaces, depending on what you want to do with your data.
-<p>
-One of the best things about Microsoft Fabric is OneLake, the OneDrive of the Data world. OneLake is not just a storage place for your data, but also a logical layer that organizes and governs your data. 
-<p>
-You can create your own workspaces and lakehouses within OneLake, which are like folders or projects for your data. You can also use the Shortcut feature to access data from other workspaces or tenants, or from other cloud services like Azure Storage. This way, you can have one copy of your data for consistent and reliable insights.
-<p>
-Microsoft Fabric is designed to help you turn your large and complex data into actionable workloads and analytics. It is a powerful and easy-to-use tool that can help you grow your business and achieve your goals.
+Microsoft Fabric is designed to help turn large and complex data into actionable workloads and analytics. It is a powerful and easy-to-use tool that can help achieve business goals and growth.
 
 In this Course, you will understand:
 - The <b>basic</b> concepts, services, roles, and benchmarks of Microsoft Fabric
@@ -60,7 +54,7 @@ In this Course, you will understand:
 
 <h2 id="1.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.2 Basic Concepts in Microsoft Fabric</h2>
 
-Organizations are faced with multiple challenges in bringing together all data from their environment for actionable intelligence. There are many data professionals involved across the organization working with various data sources, tools, and processes. Microsoft Fabric brings together all these experiences into a unified platform to offer the most comprehensive big data analytics platform in the industry. 
+Actionable intelligence requires data integration from diverse sources and environments. This involves various data professionals across the organization using different data sources, tools, and processes. Microsoft Fabric unifies these experiences into a single platform that provides the industry’s most comprehensive big data analytics solution.
 
 Microsoft Fabric enables organizations and individuals to turn large and complex data repositories into actionable workloads and analytics, and is an implementation of a *[data mesh](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/what-is-data-mesh)* architecture. It provides various systems with associated tools and aspects to the data professionals in their day-to-day work:
 
@@ -78,7 +72,7 @@ Microsoft Fabric enables organizations and individuals to turn large and complex
 
 - OneLake - [*OneLake*](https://learn.microsoft.com/en-us/fabric/onelake/onelake-overview)  is a single, unified, logical data lake for the whole organization. Like OneDrive, OneLake comes automatically with every Microsoft Fabric tenant and is designed to be the single place for all your analytics data. 
 
-<p><img src="https://learn.microsoft.com/en-us/fabric/get-started/media/microsoft-fabric-overview/saas-foundation.png" height = 300>
+<p><img src="https://learn.microsoft.com/en-us/fabric/get-started/media/microsoft-fabric-overview/saas-foundation.png" height = 400>
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Review Exercise for this Course</b></p>
 
@@ -88,17 +82,17 @@ In this exercise, you will review the exercise we will use throughout the course
 
 - [Open the following reference in another tab](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-introduction), and read over the steps you see there. This is an example of the different tutorials that you will experience in this class. 
 
-<p>
 You can also right-click this link to open it in another tab and review this video that introduces you to Microsoft Fabric and shows the results of the tutorial you will use in the Workshop:
 
 <p><a href="https://www.youtube.com/watch?v=TSTeoeCNh7c"><img src="https://img.youtube.com/vi/TSTeoeCNh7c/0.jpg" height = 300></a> 
 
+<h3>Microsoft OneLake</h3>
 
-![OneLake Diagram](https://learn.microsoft.com/en-us/fabric/onelake/media/onelake-overview/onelake-foundation-for-fabric.png)
+Microsoft OneLake is a SaaS service that provides a single, unified, logical data lake for the entire organization. 
 
+<p><img src="https://learn.microsoft.com/en-us/fabric/onelake/media/onelake-overview/onelake-foundation-for-fabric.png" height = 400>
 
-
-Microsoft OneLake is a SaaS service that provides a single, unified, logical data lake for the entire organization. It is the foundation of Microsoft Fabric, a cloud-native data platform that enables customers to build and manage data solutions at scale. OneLake simplifies data storage, access, security, governance, and discovery by offering the following features:
+OneLake is the foundation of Microsoft Fabric, a cloud-native data platform that enables customers to build and manage data solutions at scale. OneLake simplifies data storage, access, security, governance, and discovery by offering the following features:
 <p>
 
 - One data lake for the entire organization: OneLake comes automatically with every Microsoft Fabric tenant and is designed to be the single place for all your analytics data. You don’t need to set up or manage any infrastructure or resources to use OneLake.
@@ -106,21 +100,15 @@ Microsoft OneLake is a SaaS service that provides a single, unified, logical dat
 - One security model living natively with the data in the lake (coming soon): OneLake will support a unified security model that lives with the data in the lake, enabling fine-grained access control and encryption at rest and in transit. You will be able to manage security policies at the tenant, workspace, or data item level.
 - A centralized OneLake data hub for data discovery and management: OneLake provides a data hub where you can discover, browse, and manage all the data items in your tenant. You can also use the data hub to create new data items, import or export data, monitor usage and performance, and troubleshoot issues.
 
-<p>
-
 <p style="border-bottom: 1px solid lightgrey;"></p>
-
-
-
-
 
 <h2 id="1.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.4 - Microsoft Fabric Services</h2>
 
 Microsoft Fabric is an end-to-end analytics solution with full-service capabilities including data movement, data lakes, data engineering, data integration, data science, real-time analytics, and business intelligence—all backed by a shared platform providing robust data security, governance, and compliance. It powers core Azure infrastructure as well as other Microsoft services such as Skype for Business, Intune, Azure Event Hubs, Azure Data Factory, Azure Cosmos DB, Azure SQL Database, Dynamics 365, and other services. It is an all-in-one analytics solution for enterprises that covers everything from data movement to data science. It offers a comprehensive suite of services including data lake, data engineering and data integration.
 
-A graphical list of these services are shown here:
+A graphical list of these services are shown in this diagram:
 
-![](https://learn.microsoft.com/en-us/fabric/get-started/media/microsoft-fabric-overview/workloads-access-data.png)
+<p><img src="https://learn.microsoft.com/en-us/fabric/get-started/media/microsoft-fabric-overview/workloads-access-data.png" height = 400>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -146,18 +134,21 @@ To understand more about Data Sharing see these links:
 
 - [Data Warehouse sharing](https://learn.microsoft.com/en-us/fabric/admin/microsoft-fabric-admin)
 - [Share your warehouse and manage permissions](https://learn.microsoft.com/en-us/fabric/data-warehouse/share-warehouse-manage-permissions)
-<p>
-For a brief video overview of Data Sharing see this video:
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Z4_yY8axMsc/0.jpg)](https://www.youtube.com/watch?v=Z4_yY8axMsc)
+You can also right-click this link to open it in another tab and review this video that introduces you to these concepts:
+
+<p><a href="https://www.youtube.com/watch?v=Z4_yY8axMsc"><img src="https://img.youtube.com/vi/Z4_yY8axMsc/0.jpg" height = 300></a> 
+
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <h2 id="1.6"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.6 - Understanding Microsoft Fabric Benchmarks</h2>
 
-![](https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/Fabric-Utilization-DW-static-caption-1024x575.png)
+There are several basic concepts in setting up the benchmarks for your Microsoft Fabric deployments.
 
 ## What are Capacities?
 Microsoft Fabric is a unified data platform that offers shared experiences, architecture, governance, compliance, and billing. Capacities provide the computing power that drives all of these experiences. They offer a simple and unified way to scale resources to meet customer demand and can be easily increased with a SKU upgrade.
+
+<p><img src="https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/Fabric-Utilization-DW-static-caption-1024x575.png" height = 400>
 
 <p>
 
@@ -168,7 +159,7 @@ Bursting allows you to consume extra compute resources beyond what have been pur
 - Bursting is a SaaS feature and requires no user management. Behind the scenes, the capacity platform is pre-provisioning Microsoft managed virtualized compute resources to optimize for maximum performance.
 - Compute spikes generated from bursting will not cause throttling due to smoothing policies outlined in the next section.
 
-![](https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/FabricBurstingSmoothing5.gif)
+<p><img src="https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/FabricBurstingSmoothing5.gif" height = 400>
 
 <p>
 
@@ -186,16 +177,17 @@ Smoothing will not impact execution time, that is always at peak performance! Sm
 
 With this new feature, you can easily analyze your storage consumption by selecting your Capacity, choosing the date range, and viewing usage by workspace. This will provide you with valuable insights into your overall storage spend and enable you to monitor daily or hourly trends with usage of drill-through. 
 
-![](https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/onelake-demo-ux-1024x732.png)
+<p><img src="https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/onelake-demo-ux.png" height = 400>
+
 <p>
 
 ### Capacity Long Running Workloads
 
 
-We’re introducing a new optimization for long-running jobs. Historically, if a job’s reported usage exceeded capacity limits, the following jobs would be throttled. Now, if a job’s reported usage exceeds capacity limits, throttling will not be immediately applied to following jobs. Instead, any overage will be automatically balanced against future capacity when the system has unutilized capacity. This feature to “borrow from the future” is in addition to smoothing and is also seamless to customers and supported by the following new analytics experience in Capacity Metrics.
+Fabric contains a new optimization for long-running jobs. Historically, if a job’s reported usage exceeded capacity limits, the following jobs would be throttled. Now, if a job’s reported usage exceeds capacity limits, throttling will not be immediately applied to following jobs. Instead, any overage will be automatically balanced against future capacity when the system has unutilized capacity. This feature to “borrow from the future” is in addition to smoothing and is also seamless to customers and supported by the following new analytics experience in Capacity Metrics.
 <p>
 
-![](https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/Throttling-cumulative-burndown-1024x378.png)
+<p><img src="https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/Throttling-cumulative-burndown.png" height = 400>
 
 After the October 1st platform update, capacity throttling policies will now be based on the amount of future capacity consumption that resulted from smoothing policies, this offers increased Overage protection for when future use is less than 10 minutes and richer queue management features to prevent excessive overload when usage exceeds an hour. The 4 new policies are outlined in Table 1
 
@@ -257,9 +249,9 @@ After the October 1st platform update, capacity throttling policies will now be 
 </tbody>
 </table>
 <p>
-To help you monitor and analyze the new policies, we’ve added a new throttling tab in the utilization section of the Capacity Metrics. You can now easily observe future usage as a percentage of each limit, and even drill down to specific workloads that contributed to an overage.
+To help you monitor and analyze the new policies, Microsoft Fabric has added a new throttling tab in the utilization section of the Capacity Metrics. You can now easily observe future usage as a percentage of each limit, and even drill down to specific workloads that contributed to an overage.
 
-![](https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/Throttling-policy-analaytics-1024x387.png)
+<p><img src="https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/Throttling-policy-analaytics.png" height = 400>
 
 ### Power BI & Microsoft Fabric - One Capacity Model
 Capacity Units offer more granularity than the previously used v-cores and let us offer smaller sized capacities to Fabric customers with a very low entry point for pricing. Starting on 10/1, we will be updating all Power BI premium SKU’s (EM, P and A) to report in capacity units. Key takeaways for this change:
@@ -269,33 +261,30 @@ Capacity Units offer more granularity than the previously used v-cores and let u
 - Power BI Premium SKU’s EM / A and P will now report usage using CUs.
 - There will be one version of the Capacity Metrics app that supports all Power BI and Fabric capacity SKUs
 
-![](https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/a-screenshot-of-a-test-description-automatically.png)
+<p><img src="https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/a-screenshot-of-a-test-description-automatically.png" height = 400>
 
 <p>
 For more information about the Microsoft Fabric Capacity app see the following documentation:
 
 -  [Capacity metrics in Microsoft Fabric Announcement](https://blog.fabric.microsoft.com/en-us/blog/capacity-metrics-in-microsoft-fabric)
-
 -  [Understand the metrics app OneLake page](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app-onelake-page)
 -  [Fabric Capacities – Everything you need to know about what’s new and what’s coming](https://blog.fabric.microsoft.com/en-us/blog/fabric-capacities-everything-you-need-to-know-about-whats-new-and-whats-coming?ft=All)
-
 -  [What is the utilization and metrics app?](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app)
 -  [Install the Microsoft Fabric capacity metrics app](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app-install?tabs=1st)
 -  [Understand the metrics app overview page](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app-overview-page)
 -  [Understand the metrics app timepoint page](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app-timepoint-page)
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/TZnZob8B_Xk/0.jpg)](https://www.youtube.com/watch?v=TZnZob8B_Xk&?t=2196)
+You can also right-click this link to open it in another tab and review this video that introduces you to these concepts:
 
+<p><a href="https://www.youtube.com/watch?v=TZnZob8B_Xk&?t=2196"><img src="https://img.youtube.com/vi/TZnZob8B_Xk/0.jpg" height = 300></a> 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
-
-
 
 <h2 id="1.7"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.7 Understanding and creating Workspaces</h2>
 
 Microsoft Fabric is a comprehensive platform that offers a variety of tools designed for the creation and administration of data pipelines. Within Microsoft Fabric, a Workspace serves as a fundamental element, facilitating collaboration among users on different projects, including dashboards, reports, and various other content. Each individual using Microsoft Fabric is allocated a personal workspace called *My workspace*, providing them with a dedicated area to work on their own content and projects.
 
-![](https://learn.microsoft.com/en-us/fabric/enterprise/media/licenses/tenants-capacities.png#lightbox)
+<p><img src="https://learn.microsoft.com/en-us/fabric/enterprise/media/licenses/tenants-capacities.png#lightbox" height = 400>
 
 #### Microsoft Fabric components
 
@@ -314,13 +303,10 @@ Workspaces reside within capacities and are used as containers for Microsoft Fab
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity:Creating your first Workspace</b></p>
 
-
-
 <b>
 
 - Validate that you have created a Workspace from the previous module
 - - If not, execute the following steps.
-
 
 </b>
 
@@ -347,8 +333,6 @@ If have a Power BI License, a Microsoft Fabric Capacity, but have not created a 
 
 If you cannot complete these steps open and follow the  [Pre-Requisites](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md).
 
-
-
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
  <li><a href="https://learn.microsoft.com/en-us/fabric/release-plan/">Microsoft Fabric release plan documentation</a></li>
@@ -360,6 +344,4 @@ If you cannot complete these steps open and follow the  [Pre-Requisites](https:/
 
 </ul>
 
-
 Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/02%20-%20Workspaces%2C%20User%20Security%2C%20Data%20Governance%2C%20and%20Data%20Integration.md).
-
