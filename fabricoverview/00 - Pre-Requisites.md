@@ -11,25 +11,17 @@
 
 The "Microsoft Fabric Overview for the Data Professional" workshop is taught using the following components, which you will install and configure in the sections that follow. 
 
-*IN ORDER TO DO ANY EXERCISES YOU MUST HAVE A POWER BI LICENSE FIRST AND A MICROSOFT FABRIC ENABLED WORKSPACE SECOND.  We will review these steps below.*
+**In Order to Commplete the Activities in this Workshop, you mush have a Power BI License and a Microsoft Fabric-Enabled Workspace. The steps for these requirements are explained below.**
 
-Reminder, Microsoft Fabric is a preview service.
+> Microsoft Fabric is currently in preview, and items may change or shift before this course material is updated.
 
-For this workshop, you will be required to execute workloads utilizing Microsoft Fabric.  In order to do this you must first sign up for or have a M365 account with the proper permissions.  If you do not have an M365 account with the proper permissions you can sign up for a 90 day free trial of M365.
+- For this workshop, you will be required to execute workloads using Microsoft Fabric.  In order to do this you must first sign up for, or currently have, an M365 account with the proper permissions.  If you do not have an M365 account with the proper permissions you can sign up for a 90 day free trial of M365.
+- Next you must have a Power BI Pro license.  If you do not have a Power BI license you can sign up for one for free 60 day trial.
+- You will also require a Microsoft Fabric Capacity or a Free trial Microsoft Fabic Capacity which will run for 60 days.  
+- Signing up for M365, Power BI, and Microsoft Fabric is free and does not require a credit card.
+- Your Power BI Tenent must have Fabric Capacity enabled in order to create a Microsoft Fabric Workspace.  
 
-Next you must have a Power BI Pro license.  If you do not have a Power BI license you can sign up for one for free 60 day trial.
-
-You will also require a Microsoft Fabric Capacity or a Free trial Microsoft Fabic Capacity which will run for 60 days.  
-
-Signing up for M365, Power BI, and Microsoft Fabric is free and does not require a credit card.
-
-Your Power BI Tenent must have Fabric Capacity enabled in order to create a Microsoft Fabric Workspace.  
-
-While you could create a free Azure Subscription for 1 year with a $200 credit, and then provision a Microsoft Fabric Capacity and attach it to a Power BI Workspace, it is possible to do this for free.
-
-</a> 
-<p>
-
+> You can also create a free Azure Subscription for 1 year with a $200 credit, and then provision a Microsoft Fabric Capacity and attach it to a Power BI Workspace.
 
 ## Required Permissions
 
@@ -51,8 +43,7 @@ The other requirements are:
 - **A Microsoft Fabric Capacity** - This could be a free trial or a provisioned Azure Capacity.
 - **A Computer with an Internet Browser** - To participate in the activities in this Workshop you must have a computer and an internet browser.
 - **A Working Internet Connection** - Microsoft Fabric is a SaaS, Software as a Service, platform hosted on the Internet.  You must have internet connectivity to access Microsoft Fabric.
-- **Microsoft Azure, Maybe**: This is only required if you do not have a free trial Microsoft Fabric Capacity. This workshop uses the Microsoft Fabric which  platform to host the Microsoft Fabric Capacity, and optionally you can deploy a Microsoft Fabric Capacity. You can use a free Azure account, an MSDN Account, your own account, or potentially one provided for you, as long as you can create about $200.00 (U.S.) worth of assets. 
-
+- **Potentially: A Microsoft Azure Account**: This is only required if you do not have a free trial Microsoft Fabric Capacity. This workshop uses the Microsoft Fabric which  platform to host the Microsoft Fabric Capacity, and optionally you can deploy a Microsoft Fabric Capacity. You can use a free Azure account, an MSDN Account, your own account, or potentially one provided for you, as long as you can create about $200.00 (U.S.) worth of assets. 
 
 *Note that all following activities must be completed prior to class - there will not be time to perform these operations during the workshop.*
 
@@ -67,8 +58,6 @@ Open this link in a seperate tab or window and follow all of the instructions, [
 Open this link in a seperate tab or window and follow all of the instructions, [How to Set Up A Microsoft Fabric (Preview) trial](https://learn.microsoft.com/en-us/fabric/get-started/fabric-trial)
 
 
-
-
 <h2 id="2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2 - Verification of pre-requisites for the Activities</h2>
 
 In order to complete any exercises required in this class you should have followed the [Pre-Requisites](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md) outlined in the Read.me file. 
@@ -80,7 +69,6 @@ Validate that you have a Microsoft Fabric Enabled Workspace:
 - Click +New
 - Click Show all
 - Validate that you see the options available to you to create Microsoft Fabric objects such as a Lakehouse, a Data Warehouse, Pipelines, KQL Database, or an EventStream
-
 
 <p>
 If have a Power BI License, a Microsoft Fabric Capacity, but have not created a workspace:
