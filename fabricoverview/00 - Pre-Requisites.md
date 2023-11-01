@@ -79,5 +79,5 @@ If have a Power BI License, a Microsoft Fabric Capacity, but have not created a 
 - Click Show all
 - Validate that you see the options available to you to create Microsoft Fabric objects such as a Lakehouse, a Data Warehouse, Pipelines, KQL Database, or an EventStream
 
-
+If you have completed all these steps, [you can continue to the first Module.](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/01%20-%20Introduction%20and%20Overview.md) 
 

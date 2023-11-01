@@ -90,12 +90,9 @@ In this exercise, you will review the exercise we will use throughout the course
 - [Open the following reference in another tab](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-introduction), and read over the steps you see there. This is an example of the different tutorials that you will experience in this class. 
 
 <p>
-On your own time or if there is time in the class here is a video that introduces you to Microsoft Fabric and shows the results of the tutorial we will be referring to in the class:
+You can also review this video that introduces you to Microsoft Fabric and shows the results of the tutorial you will use in the Workshop:
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/TSTeoeCNh7c/0.jpg)](https://www.youtube.com/watch?v=TSTeoeCNh7c)
-<p style="border-bottom: 1px solid lightgrey;"></p>
-
-
+<p><a href="https://www.youtube.com/watch?v=TSTeoeCNh7c"><img src="https://img.youtube.com/vi/TSTeoeCNh7c/0.jpg" height = 300></a> 
 
 <h2 id="1.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.3 OneLake & Microsoft Fabric Architecture</h2>
 
