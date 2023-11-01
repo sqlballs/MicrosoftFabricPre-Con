@@ -98,7 +98,7 @@ This is a modular workshop, and in each section, you'll learn concepts, technolo
   
   <tr><td style="background-color: AliceBlue; color: black;"><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/04%20-%20The%20Fabric%20Developer%20Experience.md" target="_blank">04 - The Fabric Developer Experience</a> </td><td td style="background-color: AliceBlue; color: black;"> Using Co-Pilot, SSMS, VS Code, and development best-practices</td></tr>  
   
-  <tr><td><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/05%20-%20The%20Fabric%20User%20Experience.md" target="_blank">05 - The Fabric User Experience </a></td><td> Power BI, KQL, Streaming and Event Data</td></tr>
+  <tr><td><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/05%20-%20The%20Fabric%20User%20Experience.md" target="_blank">05 - Real-Time Analytics with Microsoft Fabric </a></td><td> Azure Data Explorer, Fabric and Streaming / Event Data, the Kusto Query Language (KQL)</td></tr>
   
   <tr><td style="background-color: AliceBlue; color: black;"><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/06%20-%20Microsoft%20Fabric%20DevOps.md" target="_blank">06 - Designing, Operating, and Controlling a Microsoft Fabric Deployment</a> </td><td td style="background-color: AliceBlue; color: black;"> Design and Sizing a solution, using Microsoft Purview to govern the daata, Monitoring and Management, and Source Control for your Microsoft Fabric Deployment.</td></tr>
 
