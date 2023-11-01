@@ -16,7 +16,7 @@ The focus of this workshop is to understand how to use Microsoft Fabric in a sol
 
 You'll start with an introduction to Microsoft Fabric, move on to understanding Workspaces, user security, and data governance. From there you'll learn about the Data Lakehouse, and then understand the developer and user experience of Microsoft Fabric. You'll end with a section on the DevOps of a Microsoft Fabric solution, with a focus on how to extrapolate what you have learned to create other solutions for your organization.
 
-This [github README.MD file](https://lab.github.com/githubtraining/introduction-to-github) explains how the workshop is laid out, what you will learn, and the technologies you will use in this solution. To download this Lab to your local computer, click the **Clone or Download** button you see at the top right side of this page. [More about that process is here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository). 
+This github README.MD file explains how the workshop is laid out, what you will learn, and the technologies you will use in this solution. To download this Lab to your local computer, click the **Clone or Download** button you see at the top right side of this page. [More about that process is here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository). 
 
 You can view all of the [courses and other workshops our team has created at this link - open in a new tab to find out more.](https://microsoft.github.io/sqlworkshops/)
 
@@ -92,7 +92,7 @@ This is a modular workshop, and in each section, you'll learn concepts, technolo
 
   <tr><td><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/01%20-%20Introduction%20and%20Overview.md" target="_blank">01 - Introduction and Overview </a></td><td> Introduction of the course, Basic Concepts, Services, Roles, Benchmarks. Verification of prerequisites.</td></tr>
   
-  <tr><td style="background-color: AliceBlue; color: black;"><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/02%20-%20Workspaces%2C%20User%20Security%2C%20Data%20Governance%2C%20and%20Data%20Integration.md" target="_blank">02 -Data Warehouse and Data Integration</a> </td><td td style="background-color: AliceBlue; color: black;"> Understanding and creating Workspaces, creating a Data Warehouse, connecting and managing, ingesting data with pipelines and data flows</td></tr>
+  <tr><td style="background-color: AliceBlue; color: black;"><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/02%20-%20Data%20Workspace%20and%20Data%20Integration.md" target="_blank">02 -Data Warehouse and Data Integration</a> </td><td td style="background-color: AliceBlue; color: black;"> Understanding and creating Workspaces, creating a Data Warehouse, connecting and managing, ingesting data with pipelines and data flows</td></tr>
   
   <tr><td><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/03%20-%20The%20Data%20Lakehouse.md" target="_blank">03 - The Data Lakehouse </a></td><td> Creating a Lakehouse, Linking data, using Spark to create new data sets in the Lakehouse</td></tr>
   
@@ -127,7 +127,7 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 # Legal Notices
 
 ### License
-Microsoft and any contributors grant you a license to the Microsoft documentation and other content in this repository under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode), see [the LICENSE file](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web/blob/master/LICENSE), and grant you a license to any code in the repository under [the MIT License](https://opensource.org/licenses/MIT), see the [LICENSE-CODE file](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web/blob/master/LICENSE-CODE).
+Microsoft and any contributors grant you a license to the Microsoft documentation and other content in this repository under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode), and grant you a license to any code in the repository under [the MIT License](https://opensource.org/licenses/MIT).
 
 Microsoft, Windows, Microsoft Azure and/or other Microsoft products and services referenced in the documentation
 may be either trademarks or registered trademarks of Microsoft in the United States and/or other countries.
