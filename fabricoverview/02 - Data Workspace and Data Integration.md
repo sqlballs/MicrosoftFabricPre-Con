@@ -6,7 +6,7 @@
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png"> <h2>02 - Data Warehouse and Data Integration</h2>
+<h2 id="02"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png">02 - Data Warehouse and Data Integration</h2>
 
 In this workshop you'll cover using The Microsoft Fabric Platform to implement a complete Analytics solution using the Microsoft Fabric platform.
 
@@ -21,7 +21,7 @@ You'll cover these topics in this Module:
   <dt><a href="#22-Data Flows Gen 2">2.2 - Ingesting data with pipelines</a></dt>
   <dt><a href="#22-Data Flows Gen 2">2.3 - SQL Experience</a></dt>
   <dt><a href="#23-ingesting-data-with-pipelines-and-data-flows">2.4 - Ingesting data with pipelines and data flows</a></dt>
-  </dl>
+</dl>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -31,19 +31,19 @@ Microsoft Fabric introduces a lake centric data warehouse built on an enterprise
 
 The Warehouse is built for any skill level - from the citizen developer through to the professional developer, DBA or data engineer. The rich set of experiences built into Microsoft Fabric workspace enables customers to reduce their time to insights by having an easily consumable, always connected dataset that is integrated with Power BI in DirectLake mode. This enables second-to-none industry leading performance that ensures a customer's report always has the most recent data for analysis and reporting. Cross-database querying can be leveraged to quickly and seamlessly leverage multiple data sources that span multiple databases for fast insights and zero data duplication.  
 
-![image](https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/761b96fa-4e30-43d1-8ffe-d34650599be2)
-
+<p><img src="https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/761b96fa-4e30-43d1-8ffe-d34650599be2" height = 400>
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity:Creating your first Warehouse</b></p>
 
 - Open the following reference in another tab, [Tutorial: Analyze data with a notebook](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-warehouse)
-
-
 - - Follow Step 2
  
-  [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/StIBBb69wDw/0.jpg)](https://www.youtube.com/watch?v=StIBBb69wDw))
+ You can also right-click this link to open it in another tab and review this video that introduces you to these concepts:
 
-  
+ <p><a href="https://www.youtube.com/watch?v=StIBBb69wDw"><img src="https://img.youtube.com/vi/StIBBb69wDw/0.jpg" height = 300></a> 
+
+<p style="border-bottom: 1px solid lightgrey;"></p>
+
 <h2 id="02"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.2 Ingesting data with pipelines</h2>
 
 In the previous module, you learned about the main storage concept, OneLake. To move data into and out of OneLake, you will use the Microsoft Fabric experience of *Microsoft Azure Data Factory*.
@@ -65,38 +65,33 @@ Data pipelines offer an alternative to using the COPY command through a graphica
 
 In this tutorial, you'll create a new pipeline that loads sample data into a Warehouse in Microsoft Fabric.
 
-![Data Pipeline](https://learn.microsoft.com/en-us/fabric/data-factory/media/data-factory-overview/data-pipelines.png#lightbox)
+<p><img src="https://learn.microsoft.com/en-us/fabric/data-factory/media/data-factory-overview/data-pipelines.png#lightbox" height = 400>
 
 <br>
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity:Ingest data into warehouse</b></p>
 
 - Open the following reference in another tab, [Tutorial: Analyze data with a notebook](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-ingest-data)
-
-
 - - Follow Step 3
 
-<br>
-<p>
-
-
+<p style="border-bottom: 1px solid lightgrey;"></p>
 
 <h2 id="03"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.3 SQL Experience</h2>
 
-Since Data Warehousing is closely related to the SQL experience persona, you can leverage many of the features that you were accustomed to using in SQL Server, such as:
+Since Data Warehousing is closely related to the SQL experience persona, you can leverage many of the features that you may be accustomed to using in SQL Server, such as:
 
 - <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-tables" target="_blank">Create Tables</a>
 
    Creating a table in Fabric is a remarkably similar process to creating a table in SQL Server. You can initiate a new query within the Fabric editor or SQL Server Management Studio (SSMS) and execute the 'create table' script, which will result in the table's creation within Microsoft Fabric.
 
+  <p><img src="https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/11f9beaa-6d57-4538-b2db-89f1470c7e56" height = 100>
 
-  ![image](https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/11f9beaa-6d57-4538-b2db-89f1470c7e56)
 
 - <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-load-data" target="_blank">Load data using T-SQL</a>
 
 Loading data into your newly created table is a straightforward process. You can achieve this with ease by utilizing the COPY INTO T-SQL statement. This statement allows you to efficiently load data into your tables.
 
-![image](https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/717e6430-b66d-4fd1-bda5-7ef97e1e4d0f)
+<p><img src="https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/717e6430-b66d-4fd1-bda5-7ef97e1e4d0f" height = 200>
 
 - <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-clone-table" target="_blank">Clone a table using T-SQL</a>
 
@@ -106,48 +101,38 @@ Microsoft Fabric offers the capability to create near-instantaneous zero-copy cl
 - Table clones provide consistent reporting and zero-copy duplication of datasets for analytical workloads and machine learning modeling and testing.
 - Table clones provide the capability of data recovery in the event of a failed release or data corruption by retaining the previous state of data.
 
-![image](https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/a05bc1b4-5033-4056-9a81-8c52a3c80a73)
+<p><img src="https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/a05bc1b4-5033-4056-9a81-8c52a3c80a73" height = 150>
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/2rETPwBLnnY/0.jpg)](https://www.youtube.com/watch?v=2rETPwBLnnY)
+You can also right-click this link to open it in another tab and review this video that introduces you to these concepts:
+
+<p><a href="https://www.youtube.com/watch?v=2rETPwBLnnY"><img src="https://img.youtube.com/vi/2rETPwBLnnY/0.jpg" height=300>
 
 - <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-transform-data" target="_blank">Transform data using stored procedure</a>
 
-For SQL users, the availability of stored procedures is a valuable feature, and you'll be pleased to know that Microsoft Fabric supports them in a way that aligns with your familiarity. Writing stored procedures in Fabric follows the same approach as you would in SQL Server, making it convenient for users to leverage this important SQL functionality. The data can be transformed using Stored procedures.
+For SQL users, the availability of stored procedures is a valuable feature, and Microsoft Fabric supports them in a way that aligns with your familiarity. Writing stored procedures in Fabric follows the same approach as you would in SQL Server, making it convenient for users to leverage this important SQL functionality. The data can be transformed using Stored procedures.
 
-![image](https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/dac19efe-a5ec-4c38-8315-12bc6990d48e)
-
-
-
-
+<p><img src="https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/dac19efe-a5ec-4c38-8315-12bc6990d48e" height = 700>
 
 - <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-visual-query" target="_blank">Create a query with the visual query builder</a>
 
 Microsoft Fabric is designed with user-friendliness in mind, catering to individuals who may not be proficient in writing SQL queries. You have the option to utilize the Visual Query Builder, a graphical interface that simplifies the process of building queries. By merely dragging and dropping fields, the query builder will seamlessly generate the necessary SQL query in the background. This feature makes data retrieval and manipulation more accessible for a broader range of users.
 
-![image](https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/d39a994d-815b-44c3-bef5-4a24d5ab0ab6)
+<p><img src="https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/d39a994d-815b-44c3-bef5-4a24d5ab0ab6" height = 60>
 
+<br> 
 
-![image](https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/5b87b205-64c8-4293-b063-9bbcb49ecc24)
+<p><img src="https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/5b87b205-64c8-4293-b063-9bbcb49ecc24" height = 400>
 
-  
-
+<br> 
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity:SQL Experience</b></p>
 
 - Open the following reference in another tab, [Tutorial: SQL Experience](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-tables)
-
-
 - - Follow Steps 4 - 8
 
-
-
-
-<p>
-
+<p style="border-bottom: 1px solid lightgrey;"></p>
 
 <h2 id="03"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.4 Ingesting Data using pipelines with Data flow Gen2</h2>
-
-
 
 <h3>Microsoft Azure Data Factory Dataflows</h3>
 
@@ -155,7 +140,7 @@ Dataflows provide a low-code interface for ingesting data from hundreds of data 
 
 Dataflows are built using Power Query in Microsoft products and services such as Excel, Power BI, Power Platform, Dynamics 365 Insights applications, and more, using Power Query to perform data ingestion and data transformations across the data estate. You can also create joins, aggregations, data cleansing, custom transformations, and much more all from a highly visual, low-code UI.
 
-![Dataflows](https://learn.microsoft.com/en-us/fabric/data-factory/media/data-factory-overview/dataflow-experience.png#lightbox)
+<p><img src="https://learn.microsoft.com/en-us/fabric/data-factory/media/data-factory-overview/dataflow-experience.png#lightbox" height = 400>
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Self-Guided Activity: Work through the Ingesting Data using pipelines with Data flow Gen2</b></p>
 
@@ -163,12 +148,11 @@ In this activity, you will follow the basic training tutorial for Microsfot Azur
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-- Open the following reference, and follow all of the steps you see there.
+- Right-click this link to open it in another tab and review this video that introduces you to these concepts:
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/mlxlPhJ5ovc/0.jpg)](https://www.youtube.com/watch?v=mlxlPhJ5ovc)
+<p><a href="https://www.youtube.com/watch?v=mlxlPhJ5ovc"><img src="https://img.youtube.com/vi/mlxlPhJ5ovc/0.jpg" height = 300></a> 
 
 <br>
-
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -184,9 +168,6 @@ In this activity, you will follow the basic training tutorial for Microsfot Azur
  <li><a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/usage-reporting">Data Warehouse Usage Monitoring</a></li>
  <li><a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/compute-capacity-smoothing-throttling">Data Warehouse Smoothing & Throttling</a></li>
  <li><a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/monitor-using-dmv">Data Warehouse Monitoring using DMVs</a></li>
-    
-
 </ul>
-
 
 Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/03%20-%20The%20Data%20Lakehouse.md).
