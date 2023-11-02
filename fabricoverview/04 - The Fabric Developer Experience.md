@@ -301,6 +301,7 @@ Power BI natively and fully supports a Warehouse or Lakehouse SQL Endpoint as a 
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><br><b>For Further Study</b></br></p>
 <ul>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/release-plan/">Microsoft Fabric release plan documentation</a></li>
     <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-with-vs-code" target="_blank">Microsoft Fabric notebook experience in VS Code</a></li>
     <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-resource-with-vs-code" target="_blank">Microsoft Fabric notebook resource in VS Code</a></li>
     <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-sjd-with-vs-code" target="_blank">Spark job definition experience in VS Code</a></li>
