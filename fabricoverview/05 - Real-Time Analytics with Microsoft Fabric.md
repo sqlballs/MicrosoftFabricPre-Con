@@ -167,6 +167,7 @@ In this activity, you will learn how to query your data using Kusto Query Langua
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
+  <li><a href="https://learn.microsoft.com/en-us/fabric/release-plan/">Microsoft Fabric release plan documentation</a></li>
   <li><a href="https://radacad.com/fabric-real-time-analytics">Microsoft MVP Reza Rad walks through a demo he built, including a custom streaming application, to demonstrate using Real-time Analytics.</a></li>
   <li><a href="https://learn.microsoft.com/en-us/fabric/real-time-analytics/overview" target="_blank">What is Real-Time Analytics in Microsoft Fabric</a></li>
   <li><a href="https://learn.microsoft.com/en-us/fabric/get-started/whats-new#synapse-real-time-analytics-in-microsoft-fabric" target="_blank">What's new in Real-Time Analytics in Microsoft Fabric</a></li>
