@@ -21,7 +21,7 @@ You'll cover these topics in this Module:
   <dt><a href="#11-creating-a-lakehouse" target="_blank">3.1 - Understanding a Microsoft Fabric Lakehouse</a></dt>
   <dt><a href="#32---linking-data" target="_blank">3.2 - Linking data</a></dt>
   <dt><a href="#33---using-spark-to-create-new-data-sets-in-the-lakehouse" target="_blank">3.3 - Using Spark to create new data sets in the Lakehouse</a></dt>
-    <dt><a href="#34---how-to-accelerate-data-prep-with-data-wrangler-in-microsoft-fabric" target="_blank">3.4 - How to accelerate data prep with Data Wrangler in Microsoft Fabric</a></dt>
+  <dt><a href="#34---how-to-accelerate-data-prep-with-data-wrangler-in-microsoft-fabric" target="_blank">3.4 - How to accelerate data prep with Data Wrangler in Microsoft Fabric</a></dt>
 
 </dl>
 
@@ -31,16 +31,11 @@ You'll cover these topics in this Module:
 
 Microsoft Fabric Lakehouse is a data architecture platform for storing, managing, and analyzing structured and unstructured data in a single location. It is a flexible and scalable solution that allows organizations to handle large volumes of data using a variety of tools and frameworks to process and analyze that data. It integrates with other data management and analytics tools to provide a comprehensive solution for data engineering and analytics. 
 
-<br>
-
-<img style="height: 400; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://learn.microsoft.com/en-us/fabric/data-engineering/media/lakehouse-overview/lakehouse-overview.gif#lightbox">
-
-<br>
+<p><img src="https://learn.microsoft.com/en-us/fabric/data-engineering/media/lakehouse-overview/lakehouse-overview.gif" height=400>
 
 The Lakehouse creates a serving layer by auto-generating an SQL endpoint and a default dataset during creation. This new see-through functionality allows user to work directly on top of the delta tables in the lake to provide a frictionless and performant experience all the way from data ingestion to reporting.
 
 An important distinction between the warehouse is that it's a read-only experience and doesn't support the full T-SQL surface area of a transactional data warehouse. It is important to note that only the tables in Delta format are available in the SQL Endpoint. Parquet, CSV, and other formats can't be queried using the SQL Endpoint. If you don't see your table, convert it to Delta format.
-
 
 **Interacting with the Lakehouse item**
 
@@ -52,20 +47,10 @@ A data engineer can interact with the lakehouse and the data within the lakehous
 - Apache Spark job definitions: Data engineers can develop robust applications and orchestrate the execution of compiled Spark jobs in Java, Scala, and Python. Learn more about Spark jobs: What is an Apache Spark job definition?.
 - Dataflows Gen 2: Data engineers can leverage Dataflows Gen 2 to ingest and prepare their data. Find more information on load data using dataflows: Create your first dataflow to get and transform data.
 
-
-
-<br>
-
-
-
-</b></p>
-
-
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <h2 id="3.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.2 - Linking data</h2>
 
-<img  src="https://learn.microsoft.com/en-us/fabric/data-warehouse/media/tutorial-analyze-data-notebook/lakehouse-load-data-new-shortcut.png#lightbox">
 In Microsoft Fabric, there are a few ways you can get data into a lakehouse:
 
 - File upload from local computer.
@@ -73,9 +58,11 @@ In Microsoft Fabric, there are a few ways you can get data into a lakehouse:
 - Set up a dataflow or dataflow Gen2.
 - Apache Spark libraries in notebook code
 
+<p><img  src="https://learn.microsoft.com/en-us/fabric/data-warehouse/media/tutorial-analyze-data-notebook/lakehouse-load-data-new-shortcut.png" height=200>
+
 You will see examples of many of these processes throughout the course. You can also use a link of sorts to data - called a *shortcut*.
 
-Shortcuts in a lakehouse allow users to reference data without copying it. It unifies data from different lakehouses, workspaces, or external storage, such as ADLS Gen2 or AWS S3. You can quickly make large amounts of data available in your lakehouse locally without the latency of copying data from the source.
+*Shortcuts* in a lakehouse allow users to reference data without copying it. It unifies data from different lakehouses, workspaces, or external storage, such as ADLS Gen2 or AWS S3. You can quickly make large amounts of data available in your lakehouse locally without the latency of copying data from the source.
 
 **Setting up a shortcut**
 
@@ -89,24 +76,19 @@ Shortcuts to Microsoft Fabric internal sources will use the calling user identit
 
 In this activity we will be following with the Data warehouse tutorial introduction
 
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png">
 
 - Open the following reference in another tab, [Tutorial: Analyze data with a notebook](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-analyze-data-notebook)
-
 - Follow Steps 9
-- - In Step 9 Remember to use the Lakehouse we created in Module 2!
-
-</b></p>
+- - In Step 9 Remember to use the Lakehouse we created in Module 2
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <h2 id="3.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.3 - Using Spark to create new data sets in the Lakehouse</h2>
 
-<img  src="https://learn.microsoft.com/en-us/fabric/data-warehouse/media/tutorial-analyze-data-notebook/drop-dim-customer-notebook.png#lightbox">
-
-
 Microsoft Fabric Data Engineering and Data Science experiences operate on a fully managed Spark compute platform. This platform is designed to deliver unparalleled speed and efficiency. With starter pools, you can expect rapid Spark session initialization, typically within 5 to 10 seconds, and no need for manual setup. 
 
+<p><img  src="https://learn.microsoft.com/en-us/fabric/data-warehouse/media/tutorial-analyze-data-notebook/drop-dim-customer-notebook.png" height=300>
 
 **Load Data with Spark**
 
@@ -122,26 +104,22 @@ In the code cell of the notebook, you can read data from the source and load it 
 
 To specify the location to read from, you can use the relative path if the data is from the default lakehouse of current notebook, or you can use the absolute ABFS path if the data is from other lakehouse. you can copy this path from the context menu of the data explorer.
 
-![Lakehouse explorer](https://learn.microsoft.com/en-us/fabric/data-engineering/media/lakehouse-notebook-explore/load-data-menu.png#lightbox)
+<p><img  src="https://learn.microsoft.com/en-us/fabric/data-engineering/media/lakehouse-notebook-explore/load-data-menu.png" height=400>
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Create Cross Database Queries for Reporting</b></p>
 
 In this activity we will be following with the Data warehouse tutorial introduction
 
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>
+<b>Steps:</b>
 
 - Open the following reference in another tab, [Tutorial: Analyze data with a notebook](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-analyze-data-notebook)
-
 - Follow Steps 10 - 12
-
-
-</b></p>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <h2 id="3.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.4 - How to accelerate data prep with Data Wrangler in Microsoft Fabric</h2>
 
-<img  src="https://learn.microsoft.com/en-us/fabric/data-science/media/data-wrangler/view-summary-panel.png#lightbox">
+<p><img  src="https://learn.microsoft.com/en-us/fabric/data-science/media/data-wrangler/view-summary-panel.png" height=400>
 
 Data Wrangler is a notebook-based tool that provides users with an immersive experience to conduct exploratory data analysis. The feature combines a grid-like data display with dynamic summary statistics, built-in visualizations, and a library of common data-cleaning operations. Each operation can be applied in a matter of clicks, updating the data display in real time and generating code that can be saved back to the notebook as a reusable function.
 
@@ -149,34 +127,30 @@ Data Wrangler is a notebook-based tool that provides users with an immersive exp
 
 ### Launch Data Wrangler
 
-
-<img  src="https://learn.microsoft.com/en-us/fabric/data-science/media/data-wrangler/launch-data-wrangler.png#lightbox">
-
 Users can launch Data Wrangler directly from a Microsoft Fabric notebook to explore and transform any Pandas DataFrame. 
 
+<p><img  src="https://learn.microsoft.com/en-us/fabric/data-science/media/data-wrangler/launch-data-wrangler.png" height=400>
+
 ### Viewing summary statistics
-<img  src="https://learn.microsoft.com/en-us/fabric/data-science/media/data-wrangler/view-summary-panel.png#lightbox">
 
 When Data Wrangler launches, it generates a descriptive overview of the displayed DataFrame in the Summary panel. This overview includes information about the DataFrame's dimensions, missing values, and more. Selecting any column in the Data Wrangler grid prompts the Summary panel to update and display descriptive statistics about that specific column. Quick insights about every column are also available in its header.
 
+<p><img  src="https://learn.microsoft.com/en-us/fabric/data-science/media/data-wrangler/view-summary-panel.png" height=400>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Optional Activity: How to accelerate data prep with Data Wrangler in Microsoft Fabric</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Self-Guided Activity: How to accelerate data prep with Data Wrangler in Microsoft Fabric</b></p>
 
-In this <b>Optional</b> activity we will be following with the Data warehouse tutorial introduction
+In this Self-Guided activity you will follow  the Data warehouse tutorial introduction
 
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png">
+<b>Steps:</b>
 
-- IF THERE IS TIME
-- - Open the following reference in another tab, [How to accelerate data prep with Data Wrangler in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/data-science/data-wrangler)
+- Open the following reference in another tab: [How to accelerate data prep with Data Wrangler in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/data-science/data-wrangler)
+  - Follow the steps on the page to utilize Data Wrangler
 
-- - Follow the steps on the page to utilize Data Wrangler
+You can also right-click this link to open it in another tab and review this video that introduces you to these concepts:
 
-- - Alternatively you can watch the following video on your own time to see this tutorial in action.
-
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/uwsCFJR3rmk/0.jpg)](https://www.youtube.com/watch?v=uwsCFJR3rmk)
+<p><a href="https://www.youtube.com/watch?v=uwsCFJR3rmk"><img src="https://img.youtube.com/vi/uwsCFJR3rmk/0.jpg" height = 300></a> 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
-
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
