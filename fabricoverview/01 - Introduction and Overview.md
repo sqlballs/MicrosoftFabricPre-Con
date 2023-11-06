@@ -4,7 +4,6 @@
 
 #### <i>A Microsoft Course from Azure Data and the Fasttrack Team</i>
 
-
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png"> <h2>01 - Introduction and Overview</h2>
