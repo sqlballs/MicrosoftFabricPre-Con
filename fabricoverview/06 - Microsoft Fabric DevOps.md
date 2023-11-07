@@ -2,7 +2,7 @@
 
 # Workshop: Microsoft Fabric Overview for the Data Professional
 
-#### <i>A Microsoft Course from Azure Data and the Fasttrack Team</i>
+#### <i>A Microsoft Workshop from Azure Data and the Fasttrack Team</i>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -29,7 +29,7 @@ You'll cover these topics in this Module on Fabric DevOps:
 
 <h2 id="6.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.1 Designing and sizing a Fabric solution</h2>
 
-The first step in implementing a Microsoft Fabric solution is to thoroughly understand the business opportunities from your organization, and then understand the various solutions within the Microsoft Fabric platform, so that you can choose the proper elements, sizing and pricing for your organization. Throughout this course, you have learned more about the services and solutions within Microsoft Fabric, and in this section, you'll put that information to use to design a solution. 
+The first step in implementing a Microsoft Fabric solution is to thoroughly understand the business opportunities from your organization, and then understand the various solutions within the Microsoft Fabric platform, so that you can choose the proper elements, sizing and pricing for your organization. Throughout this Workshop, you have learned more about the services and solutions within Microsoft Fabric, and in this section, you'll put that information to use to design a solution. 
 
 Designing a data solution for a large organization can be a complex process that requires careful planning and execution. Here are some steps that can be taken to design a data solution for a large organization:
 
@@ -104,7 +104,7 @@ In this activity, you will follow the basic training tutorial for Microsfot Azur
 
 <h2 id="6.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.3 Source Control integration with Microsoft Fabric</h2>
 
-The primary integration method for working with Microsoft Fabric in a Source Control system is the git program. If you are new to git, [there is a free course you can take here - ensure you understand the material there before continuing](https://learn.microsoft.com/en-us/training/modules/intro-to-git/) since this section will assume knowledge from that course. 
+The primary integration method for working with Microsoft Fabric in a Source Control system is the git program. If you are new to git, [there is a free Workshop you can take here - ensure you understand the material there before continuing](https://learn.microsoft.com/en-us/training/modules/intro-to-git/) since this section will assume knowledge from that Workshop. 
 
 When you begin work on a project, you can version the solution at the  workspace level. This way, you can keep track of what you have done and undo any changes if you need to. You can also see what other people working on the same project have done in the same workspace. Using git provides the following advantages:
 

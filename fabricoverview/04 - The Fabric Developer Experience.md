@@ -2,7 +2,7 @@
 
 # Workshop: Microsoft Fabric Overview for the Data Professional
 
-#### <i>A Microsoft Course from Azure Data and the Fasttrack Team</i>
+#### <i>A Microsoft Workshop from Azure Data and the Fasttrack Team</i>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -49,7 +49,7 @@ To learn more about how Copilot works with Power BI, please select the link belo
 
 - Open this reference to see how to access Copilot in Power BI Desktop
 
-<p><a href="https://www.youtube.com/watch?v=4fJq8qessuM"><img src="https://img.youtube.com/vi/4fJq8qessuM/0.jpg" height = 300></a> 
+<p><a href="https://www.youtube.com/watch?v=4fJq8qessuM"><img src="https://img.youtube.com/vi/4fJq8qessuM/0.jpg" height = 200></a> 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -65,7 +65,6 @@ First, you need to obtain your connection string, which is a sequence of charact
 <img src="https://learn.microsoft.com/en-us/fabric/data-warehouse/media/connectivity/warehouse-copy-sql-connection-string.png" height = 400> 
 
 Next, you need to launch SSMS and enter the connection string in the Connect to Server dialog box. Click on Connect to establish the connection. After that, you can query and manage your warehouse data using SSMS. This is a simple and efficient way to access your warehouse data from the Microsoft Fabric workspace.
-
 
 <p><img src="https://learn.microsoft.com/en-us/fabric/data-warehouse/media/connectivity/object-explorer-connect-menu.png" height = 400>
 
@@ -91,7 +90,7 @@ In this Activity you will learn how to get SQL connection string from workspace 
 
 You can also right-click this link to open it in another tab and review this video that demonstrates this topic:
 
-<p><a href="https://www.youtube.com/watch?v=iDLTj-tCLdY&t=63s"><img src="https://img.youtube.com/vi/iDLTj-tCLdY/0.jpg" height = 300></a> 
+<p><a href="https://www.youtube.com/watch?v=iDLTj-tCLdY&t=63s"><img src="https://img.youtube.com/vi/iDLTj-tCLdY/0.jpg" height = 200></a> 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -115,7 +114,6 @@ Open Azure Data Studio. If already open, you can connect manually by selecting O
 
 > Note:  For the server you will be using the SQL connection string copied to the clipboard. It will look similair to the following : xxxxxxxxxx-xxxxxxxxxx.xxxx-datawarehouse.pbidedicated.windows.net
 
-
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Self-Guided Activity: Using Azure Data Studio to access Microsoft Fabric.</b></p>
 
 In this Activity you will use Azure Data Studio to Explore and manage Azure SQL resources.
@@ -124,7 +122,7 @@ In this Activity you will use Azure Data Studio to Explore and manage Azure SQL 
 
 -  Open this reference to see an example of how to connect to Microsoft Fabric with Azure Data Studio click the following link.
 
-<p><a href="https://www.youtube.com/watch?v=iDLTj-tCLdY&t=127s"><img src="https://img.youtube.com/vi/iDLTj-tCLdY/0.jpg" height = 300></a> 
+<p><a href="https://www.youtube.com/watch?v=iDLTj-tCLdY&t=127s"><img src="https://img.youtube.com/vi/iDLTj-tCLdY/0.jpg" height = 200></a> 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -152,7 +150,7 @@ In this Activity you will use Microsoft Excel to access Microsoft Fabric.
 
 - For an example of how to connect to Microsoft Fabric with Microsoft Excel click the following link:
 
-<p><a href="https://www.youtube.com/watch?v=iDLTj-tCLdY&t=279s"><img src="https://img.youtube.com/vi/iDLTj-tCLdY/0.jpg" height = 300></a> 
+<p><a href="https://www.youtube.com/watch?v=iDLTj-tCLdY&t=279s"><img src="https://img.youtube.com/vi/iDLTj-tCLdY/0.jpg" height = 200></a> 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -178,7 +176,7 @@ In this Activity you will use OneLake file explorer to access, edit, and upload 
 
 You can also right-click this link to open it in another tab and review this video that demonstrates this topic:
 
-<p><a href="https://www.youtube.com/watch?v=4NbuG1JBq60"><img src="https://img.youtube.com/vi/4NbuG1JBq60/0.jpg" height = 300></a> 
+<p><a href="https://www.youtube.com/watch?v=4NbuG1JBq60"><img src="https://img.youtube.com/vi/4NbuG1JBq60/0.jpg" height = 200></a> 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -208,7 +206,7 @@ In this Activity you will observe the installation and use of Kusto.Explorer Des
 
 You can also right-click this link to open it in another tab and review this video that demonstrates this topic:
 
-<p><a href="https://youtu.be/iDLTj-tCLdY?t=186"><img src="https://img.youtube.com/vi/iDLTj-tCLdY/0.jpg" height = 300></a> 
+<p><a href="https://youtu.be/iDLTj-tCLdY?t=186"><img src="https://img.youtube.com/vi/iDLTj-tCLdY/0.jpg" height = 200></a> 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -223,6 +221,7 @@ Visual Studio Code is a widely used and lightweight source code editor that runs
 <img src="https://learn.microsoft.com/en-us/fabric/data-engineering/media/vscode/list-notebook.png" height = 400> 
 
 **Considerations and limitations**
+
 - SQL Authentication is not supported.
 - Multiple Active Result Sets (MARS) is unsupported for Microsoft Fabric Warehouse. MARS is disabled by default, however if MultipleActiveResultSets is included in the connection string, it should be removed or set to false.
 - On connection to a warehouse, you may receive an error that "The token size exceeded the maximum allowed payload size". This may be due to having a large number of warehouses within the workspace or being a member of a large number of Azure AD groups. For most users, the error typically would not occur until approaching beyond 80 warehouses in the workspace. In event of this error, work with the Workspace admin to clean up unused Warehouses and retry the connection, or contact support if the problem persists.
@@ -237,7 +236,7 @@ In this Activity you will learn how to connect VS Code to Microsoft Fabric.
 
 You can also right-click this link to open it in another tab and review this video that demonstrates this topic:
 
-<p><a href="https://www.youtube.com/watch?v=0tODoHLXhMc&ab"><img src="https://img.youtube.com/vi/0tODoHLXhMc/0.jpg" height = 300></a> 
+<p><a href="https://www.youtube.com/watch?v=0tODoHLXhMc&ab"><img src="https://img.youtube.com/vi/0tODoHLXhMc/0.jpg" height = 200></a> 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -263,11 +262,12 @@ You can build reports from datasets with Power BI Desktop using a Live connectio
 
 You can also right-click this link to open it in another tab and review this video that demonstrates this topic:
 
-<p><a href="https://www.youtube.com/watch?v=iDLTj-tCLdY&t=329s"><img src="https://img.youtube.com/vi/iDLTj-tCLdY/0.jpg" height = 300></a> 
+<p><a href="https://www.youtube.com/watch?v=iDLTj-tCLdY&t=329s"><img src="https://img.youtube.com/vi/iDLTj-tCLdY/0.jpg" height = 200></a> 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
+
 <ul>
     <li><a href="https://learn.microsoft.com/en-us/fabric/release-plan/">Microsoft Fabric release plan documentation</a></li>
     <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-with-vs-code" target="_blank">Microsoft Fabric notebook experience in VS Code</a></li>

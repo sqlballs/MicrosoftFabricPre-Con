@@ -2,7 +2,7 @@
 
 # Workshop: Microsoft Fabric Overview for the Data Professional
 
-#### <i>A Microsoft Course from Azure Data and the Fasttrack Team</i>
+#### <i>A Microsoft Workshop from Azure Data and the Fasttrack Team</i>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -17,12 +17,10 @@ In each module you'll get more references, which you should follow up on to lear
 You'll cover these topics in this Module:
 
 <dl>
-
-  <dt><a href="#11-creating-a-lakehouse" target="_blank">3.1 - Understanding a Microsoft Fabric Lakehouse</a></dt>
-  <dt><a href="#32---linking-data" target="_blank">3.2 - Linking data</a></dt>
-  <dt><a href="#33---using-spark-to-create-new-data-sets-in-the-lakehouse" target="_blank">3.3 - Using Spark to create new data sets in the Lakehouse</a></dt>
-  <dt><a href="#34---how-to-accelerate-data-prep-with-data-wrangler-in-microsoft-fabric" target="_blank">3.4 - How to accelerate data prep with Data Wrangler in Microsoft Fabric</a></dt>
-
+  <dt><a href="#3.1" target="_blank">3.1 - Understanding a Microsoft Fabric Lakehouse</a></dt>
+  <dt><a href="#3.2" target="_blank">3.2 - Linking data</a></dt>
+  <dt><a href="#3.3" target="_blank">3.3 - Using Spark to create new data sets in the Lakehouse</a></dt>
+  <dt><a href="#3.4" target="_blank">3.4 - How to accelerate data prep with Data Wrangler in Microsoft Fabric</a></dt>
 </dl>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
@@ -60,7 +58,7 @@ In Microsoft Fabric, there are a few ways you can get data into a lakehouse:
 
 <p><img  src="https://learn.microsoft.com/en-us/fabric/data-warehouse/media/tutorial-analyze-data-notebook/lakehouse-load-data-new-shortcut.png" height=200>
 
-You will see examples of many of these processes throughout the course. You can also use a link of sorts to data - called a *shortcut*.
+You will see examples of many of these processes throughout the Workshop. You can also use a link of sorts to data - called a *shortcut*.
 
 *Shortcuts* in a lakehouse allow users to reference data without copying it. It unifies data from different lakehouses, workspaces, or external storage, such as ADLS Gen2 or AWS S3. You can quickly make large amounts of data available in your lakehouse locally without the latency of copying data from the source.
 
@@ -74,7 +72,7 @@ Shortcuts to Microsoft Fabric internal sources will use the calling user identit
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Ingest Data & Create a shortcut</b></p>
 
-In this activity we will be following with the Data warehouse tutorial introduction
+In this activity you will follow  the Data warehouse tutorial introduction.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png">
 
@@ -123,8 +121,6 @@ In this activity we will be following with the Data warehouse tutorial introduct
 
 Data Wrangler is a notebook-based tool that provides users with an immersive experience to conduct exploratory data analysis. The feature combines a grid-like data display with dynamic summary statistics, built-in visualizations, and a library of common data-cleaning operations. Each operation can be applied in a matter of clicks, updating the data display in real time and generating code that can be saved back to the notebook as a reusable function.
 
-<p>
-
 ### Launch Data Wrangler
 
 Users can launch Data Wrangler directly from a Microsoft Fabric notebook to explore and transform any Pandas DataFrame. 
@@ -148,7 +144,7 @@ In this Self-Guided activity you will follow  the Data warehouse tutorial introd
 
 You can also right-click this link to open it in another tab and review this video that introduces you to these concepts:
 
-<p><a href="https://www.youtube.com/watch?v=uwsCFJR3rmk"><img src="https://img.youtube.com/vi/uwsCFJR3rmk/0.jpg" height = 300></a> 
+<p><a href="https://www.youtube.com/watch?v=uwsCFJR3rmk"><img src="https://img.youtube.com/vi/uwsCFJR3rmk/0.jpg" height = 200></a> 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 

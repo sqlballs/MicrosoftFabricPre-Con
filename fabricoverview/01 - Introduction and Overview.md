@@ -2,7 +2,7 @@
 
 # Workshop: Microsoft Fabric Overview for the Data Professional
 
-#### <i>A Microsoft Course from Azure Data and the Fasttrack Team</i>
+#### <i>A Microsoft Workshop from Azure Data and the Fasttrack Team</i>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -16,20 +16,18 @@ In each module you'll get more references, which you should follow up on to lear
 
 You'll cover these topics in this Module:
 <dl>
-
-  <dt><a href="#11-introduction-of-the-course" target="_blank">1.1 - Introduction of the course</a><dt>
-  <dt><a href="#12-basic-concepts-in-microsoft-fabric" target="_blank">1.2 - Basic Concepts in Microsoft Fabric</a><dt>
-  <dt><a href="#13-onelake--microsoft-fabric-architecture" target="_blank">1.3 - 1.3 OneLake & Microsoft Fabric Architecture</a><dt>
-  <dt><a href="#14---microsoft-fabric-services" target="_blank">1.4 - Microsoft Fabric Services</a><dt>
-  <dt><a href="#15---microsoft-fabric-roles" target="_blank">1.5 - Microsoft Fabric Roles</a><dt>
-  <dt><a href="#16---understanding-microsoft-fabric-benchmarks" target="_blank">1.6 - Understanding Microsoft Fabric Benchmarks</a><dt>
-  <dt><a href="#17---verification-of-pre-requisites-for-the-activities" target="_blank">1.7 - Verification of pre-requisites for the Activities</a><dt>
-
+  <dt><a href="#1.1" target="_blank">1.1 - Introduction of the Workshop</a><dt>
+  <dt><a href="#1.2" target="_blank">1.2 - Basic Concepts in Microsoft Fabric</a><dt>
+  <dt><a href="#1.3" target="_blank">1.3 - OneLake & Microsoft Fabric Architecture</a><dt>
+  <dt><a href="#1.4" target="_blank">1.4 - Microsoft Fabric Services</a><dt>
+  <dt><a href="#1.5" target="_blank">1.5 - Microsoft Fabric Roles</a><dt>
+  <dt><a href="#1.6" target="_blank">1.6 - Understanding Microsoft Fabric Benchmarks</a><dt>
+  <dt><a href="#1.7" target="_blank">1.7 - Verification of pre-requisites for the Activities</a><dt>
 </dl>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="1-1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.1 Introduction of the Course</h2>
+<h2 id="1-1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.1 Introduction of the Workshop</h2>
 
 Data is a valuable asset for many organizations that want to make better business decisions. Microsoft Fabric is a Service that enables data collection, storage, processing, analysis, and visualization in one place. It offers a secure, flexible, and user-friendly solution for data management and transformation. Microsoft Fabric is a new solution that allows doing everything with data, from ingesting it to deriving insights from it. It provides different services for different purposes.
 
@@ -41,7 +39,7 @@ OneLake allows creating workspaces and lakehouses, which are similar to folders 
 
 Microsoft Fabric is designed to help turn large and complex data into actionable workloads and analytics. It is a powerful and easy-to-use tool that can help achieve business goals and growth.
 
-In this Course, you will understand:
+In this Workshop, you will learn:
 - The <b>basic</b> concepts, services, roles, and benchmarks of Microsoft Fabric
 - <b>How to create and manage</b> workspaces, data warehouses, and data integration pipelines and data flows
 - <b>How to Secure and govern</b> your data with distributed ownership and collaboration
@@ -67,15 +65,15 @@ Microsoft Fabric enables organizations and individuals to turn large and complex
 
 - *Real-Time Analytics* - Observational data, which is collected from various sources such as apps, IoT devices, human interactions, and so many more. It's currently the fastest growing data category. This data is often semi-structured in formats like JSON or Text. It comes in at high volume, with shifting schemas. These characteristics make it hard for traditional data warehousing platforms to work with. [Azure Synapse](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/real-time-analytics) is best in class engine for observational data analytics. 
 
-- Power BI - [*Power BI*](https://powerbi.microsoft.com/en-us/getting-started-with-power-bi/) is the world's leading Business Intelligence platform. It ensures that business owners can access all the data in Fabric quickly and intuitively to make better decisions with data. 
+- *Power BI* - [*Power BI*](https://powerbi.microsoft.com/en-us/getting-started-with-power-bi/) is the world's leading Business Intelligence platform. It ensures that business owners can access all the data in Fabric quickly and intuitively to make better decisions with data. 
 
-- OneLake - [*OneLake*](https://learn.microsoft.com/en-us/fabric/onelake/onelake-overview)  is a single, unified, logical data lake for the whole organization. Like OneDrive, OneLake comes automatically with every Microsoft Fabric tenant and is designed to be the single place for all your analytics data. 
+- *OneLake* - [*OneLake*](https://learn.microsoft.com/en-us/fabric/onelake/onelake-overview)  is a single, unified, logical data lake for the whole organization. Like OneDrive, OneLake comes automatically with every Microsoft Fabric tenant and is designed to be the single place for all your analytics data. 
 
 <p><img src="https://learn.microsoft.com/en-us/fabric/get-started/media/microsoft-fabric-overview/saas-foundation.png" height = 400>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Review Exercise for this Course</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Review Exercise for this Workshop</b></p>
 
-In this exercise, you will review the exercise we will use throughout the course. You will read over these steps only, in a future activity you will complete each step. 
+In this exercise, you will review the exercise we will use throughout the Workshop. You will read over these steps only, in a future activity you will complete each step. 
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
@@ -83,7 +81,7 @@ In this exercise, you will review the exercise we will use throughout the course
 
 You can also right-click this link to open it in another tab and review this video that introduces you to Microsoft Fabric and shows the results of the tutorial you will use in the Workshop:
 
-<p><a href="https://www.youtube.com/watch?v=TSTeoeCNh7c"><img src="https://img.youtube.com/vi/TSTeoeCNh7c/0.jpg" height = 300></a> 
+<p><a href="https://www.youtube.com/watch?v=TSTeoeCNh7c"><img src="https://img.youtube.com/vi/TSTeoeCNh7c/0.jpg" height = 200></a> 
 
 <h3>Microsoft OneLake</h3>
 
@@ -117,26 +115,25 @@ Microsoft Fabric has different admin roles such as Microsoft 365 admin roles, Po
 
 Workspace roles define what user can do with Microsoft Fabric items. Roles can be assigned to individuals or security groups from workspace view. Workspace roles in Microsoft Fabric extend the Power BI workspace roles by associating new Microsoft Fabric capabilities such as data integration and data exploration with existing workspace roles. 
 
-To be a Microsoft Fabric admin for your organization, you must be in one of the following roles: Global administrator, Power Platform administrator, Fabric administrator.
+To be a Microsoft Fabric admin for your organization, you must be in one of the following roles: Global administrator, Power Platform administrator, Fabric administrator. You can find more detail on these topics here:
 
 - [Administration Roles are described here](https://learn.microsoft.com/en-us/fabric/admin/microsoft-fabric-admin)
 - [Learn more about Microsoft Fabric admin roles](https://learn.microsoft.com/en-us/fabric/admin/roles)
 - [Roles in workspaces are described here](https://learn.microsoft.com/en-us/fabric/get-started/roles-workspaces)
 - [Understand more about Workspace roles and permissions in lakehouse](https://learn.microsoft.com/en-us/fabric/data-engineering/workspace-roles-lakehouse)
 
-<p>
 Data sharing is essential to fostering a data-driven culture within an organization. Sharing a Warehouse allows you to provide read access to enable downstream users within the organization to consume this data to make data-driven decisions, without having to make copies of data.
-<p>
+
 An Admin or Member within a workspace can share a Warehouse with another recipient (AAD user or AAD groups) within your organization. You can also grant these permissions using the “Manage permissions” experience.
-<p>
-To understand more about Data Sharing see these links:
+
+To understand more about Data Sharing see these references:
 
 - [Data Warehouse sharing](https://learn.microsoft.com/en-us/fabric/admin/microsoft-fabric-admin)
 - [Share your warehouse and manage permissions](https://learn.microsoft.com/en-us/fabric/data-warehouse/share-warehouse-manage-permissions)
 
 You can also right-click this link to open it in another tab and review this video that introduces you to these concepts:
 
-<p><a href="https://www.youtube.com/watch?v=Z4_yY8axMsc"><img src="https://img.youtube.com/vi/Z4_yY8axMsc/0.jpg" height = 300></a> 
+<p><a href="https://www.youtube.com/watch?v=Z4_yY8axMsc"><img src="https://img.youtube.com/vi/Z4_yY8axMsc/0.jpg" height = 200></a> 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -160,16 +157,11 @@ Bursting allows you to consume extra compute resources beyond what have been pur
 
 <p><img src="https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/FabricBurstingSmoothing5.gif" height = 400>
 
-<p>
-
 When a capacity is running multiple jobs, a sudden spike in compute demand may be generated that exceeds the limits of a purchased capacity. Smoothing simplifies capacity management here by spreading the evaluation of compute to ensure that your jobs run smoothly and efficiently. Two places to expect to see this in place is:
-
-<p>
 
 - <b>For interactive jobs run by users:</b> capacity demand is typically smoothed over 5 minutes to reduce short-term temporal spikes.  
 - <B>For scheduled, or background jobs:</b> capacity demand is spread over 24 hours, eliminating the concern of job scheduling or contention.
 
-<p>
 Smoothing will not impact execution time, that is always at peak performance! Smoothing simply also allows you to size your capacity based on average, not peak usage.
 
 ### OneLake Storage Reporting in Capacity Metrics
@@ -178,19 +170,14 @@ With this new feature, you can easily analyze your storage consumption by select
 
 <p><img src="https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/onelake-demo-ux.png" height = 400>
 
-<p>
 
 ### Capacity Long Running Workloads
 
-
 Fabric contains a new optimization for long-running jobs. Historically, if a job’s reported usage exceeded capacity limits, the following jobs would be throttled. Now, if a job’s reported usage exceeds capacity limits, throttling will not be immediately applied to following jobs. Instead, any overage will be automatically balanced against future capacity when the system has unutilized capacity. This feature to “borrow from the future” is in addition to smoothing and is also seamless to customers and supported by the following new analytics experience in Capacity Metrics.
-<p>
 
 <p><img src="https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/Throttling-cumulative-burndown.png" height = 400>
 
 After the October 1st platform update, capacity throttling policies will now be based on the amount of future capacity consumption that resulted from smoothing policies, this offers increased Overage protection for when future use is less than 10 minutes and richer queue management features to prevent excessive overload when usage exceeds an hour. The 4 new policies are outlined in Table 1
-
-<p>
 
 <table style="height: 327px" width="1110">
 <tbody>
@@ -263,7 +250,7 @@ Capacity Units offer more granularity than the previously used v-cores and let u
 <p><img src="https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/a-screenshot-of-a-test-description-automatically.png" height = 400>
 
 <p>
-For more information about the Microsoft Fabric Capacity app see the following documentation:
+For more information about the Microsoft Fabric Capacity app see the following references:
 
 -  [Capacity metrics in Microsoft Fabric Announcement](https://blog.fabric.microsoft.com/en-us/blog/capacity-metrics-in-microsoft-fabric)
 -  [Understand the metrics app OneLake page](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app-onelake-page)
@@ -275,7 +262,7 @@ For more information about the Microsoft Fabric Capacity app see the following d
 
 You can also right-click this link to open it in another tab and review this video that introduces you to these concepts:
 
-<p><a href="https://www.youtube.com/watch?v=TZnZob8B_Xk&?t=2196"><img src="https://img.youtube.com/vi/TZnZob8B_Xk/0.jpg" height = 300></a> 
+<p><a href="https://www.youtube.com/watch?v=TZnZob8B_Xk&?t=2196"><img src="https://img.youtube.com/vi/TZnZob8B_Xk/0.jpg" height = 200></a> 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -300,39 +287,35 @@ Workspaces reside within capacities and are used as containers for Microsoft Fab
 
 <br>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity:Creating your first Workspace</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Creating your first Workspace</b></p>
 
-<b>
+<br>
 
-- Validate that you have created a Workspace from the previous module
-- - If not, execute the following steps.
+In order to complete any exercises required in this class you should have followed the [Pre-Requisites](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md) outlined in the README file at the start of this Workshop. 
 
-</b>
+> Before conintuing with this Workshop, you must validate that you have created a Workspace from the previous module. If not, stop the Workshop now and execute the following steps.
 
-In order to complete any exercises required in this class you should have followed the [Pre-Requisites](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md) outlined in the Read.me file. 
+To ensure that you have a Microsoft Fabric Enabled Workspace:
 
-Validate that you have a Microsoft Fabric Enabled Workspace:
 - Navigate to [Power BI.com](https://www.powerbi.com)
 - Click on Workspaces
 - Navigate to your Microsoft Fabric enabled workspace
 - Click +New
 - Click Show all
-- Ask an Instructor to validate that you have a Microsoft Fabric Enabled Workspace
+- Validate that you have a Microsoft Fabric Enabled Workspace
 
-<p>
-If have a Power BI License, a Microsoft Fabric Capacity, but have not created a workspace:
+If you have a Power BI License, a Microsoft Fabric Capacity, but have not yet created a workspace:
 
 - Navigate to [Tutorial: Create a Microsoft Fabric workspace](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-workspace)
 - Navigate to your Microsoft Fabric enabled workspace
 - Click +New
 - Click Show all
-- Ask an Instructor to validate that you have a Microsoft Fabric Enabled Workspace
+- Validate that you have a Microsoft Fabric Enabled Workspace
 
-<p>
-
-If you cannot complete these steps open and follow the  [Pre-Requisites](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md).
+If you cannot complete these steps, open and follow the  [Pre-Requisites that you find here.](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md)
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
+
 <ul>
  <li><a href="https://learn.microsoft.com/en-us/fabric/release-plan/">Microsoft Fabric release plan documentation</a></li>
     <li><a href="https://learn.microsoft.com/en-us/fabric/onelake/onelake-overview">OneLake, the OneDrive for data</a></li>
@@ -340,7 +323,6 @@ If you cannot complete these steps open and follow the  [Pre-Requisites](https:/
     <li><a href="https://learn.microsoft.com/en-us/training/paths/get-started-fabric/?WT.mc_id=DP-MVP-5004032">Microsoft Learn Pathway on Fabric</a></li>
     <li><a href="https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app-install">Installing the Fabric Metrics app</a></li>
   <li><a href="https://erwindekreuk.com/microsoft-fabric-content-hub/">Microsoft Fabric Content Hub from Erwin de Kreuk</a></li>
-
 </ul>
 
 Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/02%20-%20Data%20Workspace%20and%20Data%20Integration.md).

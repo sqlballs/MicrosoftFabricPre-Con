@@ -2,7 +2,7 @@
 
 # Workshop: Microsoft Fabric Overview for the Data Professional
 
-#### <i>A Microsoft Course from Azure Data and the Fasttrack Team</i>
+#### <i>A Microsoft Workshop from Azure Data and the Fasttrack Team</i>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -17,15 +17,15 @@ In each module you'll get more references, which you should follow up on to lear
 You'll cover these topics in this Module:
 
 <dl>
-  <dt><a href="#21-Data Warehouse">2.1 - Data Warehouse</a></dt>
-  <dt><a href="#22-Data Flows Gen 2">2.2 - Ingesting data with pipelines</a></dt>
-  <dt><a href="#22-Data Flows Gen 2">2.3 - SQL Experience</a></dt>
-  <dt><a href="#23-ingesting-data-with-pipelines-and-data-flows">2.4 - Ingesting data with pipelines and data flows</a></dt>
+  <dt><a href="#2.1">2.1 - Data Warehouse</a></dt>
+  <dt><a href="#2.2">2.2 - Ingesting data with pipelines</a></dt>
+  <dt><a href="#2.3>2.3 - SQL Experience</a></dt>
+  <dt><a href="#2.4">2.4 - Ingesting data with pipelines and data flows</a></dt>
 </dl>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="01"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.1 Data Warehouse</h2>
+<h2 id="2.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.1 Data Warehouse</h2>
 
 Microsoft Fabric introduces a lake centric data warehouse built on an enterprise grade distributed processing engine that enables industry leading performance at scale while eliminating the need for configuration and management. Through an easy to use SaaS experience that is tightly integrated with Power BI for easy analysis and reporting, Warehouse in Microsoft Fabric converges the world of data lakes and warehouses with a goal of greatly simplifying an organizations investment in their analytics estate. Data warehousing workloads benefit from the rich capabilities of the SQL engine over an open data format, enabling customers to focus on data preparation, analysis and reporting over a single copy of their data stored in their Microsoft OneLake.
 
@@ -40,11 +40,11 @@ The Warehouse is built for any skill level - from the citizen developer through 
  
  You can also right-click this link to open it in another tab and review this video that introduces you to these concepts:
 
- <p><a href="https://www.youtube.com/watch?v=StIBBb69wDw"><img src="https://img.youtube.com/vi/StIBBb69wDw/0.jpg" height = 300></a> 
+ <p><a href="https://www.youtube.com/watch?v=StIBBb69wDw"><img src="https://img.youtube.com/vi/StIBBb69wDw/0.jpg" height = 200></a> 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="02"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.2 Ingesting data with pipelines</h2>
+<h2 id="2.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.2 Ingesting data with pipelines</h2>
 
 In the previous module, you learned about the main storage concept, OneLake. To move data into and out of OneLake, you will use the Microsoft Fabric experience of *Microsoft Azure Data Factory*.
 
@@ -65,7 +65,7 @@ Data pipelines offer an alternative to using the COPY command through a graphica
 
 In this tutorial, you'll create a new pipeline that loads sample data into a Warehouse in Microsoft Fabric.
 
-<p><img src="https://learn.microsoft.com/en-us/fabric/data-factory/media/data-factory-overview/data-pipelines.png#lightbox" height = 400>
+<p><img src="https://learn.microsoft.com/en-us/fabric/data-factory/media/data-factory-overview/data-pipelines.png" height = 300></p>
 
 <br>
 
@@ -76,7 +76,7 @@ In this tutorial, you'll create a new pipeline that loads sample data into a War
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="03"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.3 SQL Experience</h2>
+<h2 id="2.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.3 SQL Experience</h2>
 
 Since Data Warehousing is closely related to the SQL experience persona, you can leverage many of the features that you may be accustomed to using in SQL Server, such as:
 
@@ -105,7 +105,7 @@ Microsoft Fabric offers the capability to create near-instantaneous zero-copy cl
 
 You can also right-click this link to open it in another tab and review this video that introduces you to these concepts:
 
-<p><a href="https://www.youtube.com/watch?v=2rETPwBLnnY"><img src="https://img.youtube.com/vi/2rETPwBLnnY/0.jpg" height=300>
+<p><a href="https://www.youtube.com/watch?v=2rETPwBLnnY"><img src="https://img.youtube.com/vi/2rETPwBLnnY/0.jpg" height=200>
 
 - <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-transform-data" target="_blank">Transform data using stored procedure</a>
 
@@ -132,7 +132,7 @@ Microsoft Fabric is designed with user-friendliness in mind, catering to individ
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="03"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.4 Ingesting Data using pipelines with Data flow Gen2</h2>
+<h2 id="2.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.4 Ingesting Data using pipelines with Data flow Gen2</h2>
 
 <h3>Microsoft Azure Data Factory Dataflows</h3>
 
@@ -150,7 +150,7 @@ In this activity, you will follow the basic training tutorial for Microsfot Azur
 
 - Right-click this link to open it in another tab and review this video that introduces you to these concepts:
 
-<p><a href="https://www.youtube.com/watch?v=mlxlPhJ5ovc"><img src="https://img.youtube.com/vi/mlxlPhJ5ovc/0.jpg" height = 300></a> 
+<p><a href="https://www.youtube.com/watch?v=mlxlPhJ5ovc"><img src="https://img.youtube.com/vi/mlxlPhJ5ovc/0.jpg" height = 200></a> 
 
 <br>
 

@@ -2,7 +2,7 @@
 
 # Workshop: Kubernetes - From Bare Metal to SQL Server Big Data Clusters
 
-#### <i>A Microsoft Course from the SQL Server team</i>
+#### <i>A Microsoft Workshop from the SQL Server team</i>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -14,7 +14,7 @@ The focus of this workshop is to understand the hardware, software, and environm
 
 You'll start by understanding Containers and Kubernetes, moving on to a discussion of the hardware and software environment for Kubernetes, and then to more in-depth Kubernetes concepts. You'll follow-on with the SQL Server 2019 big data clusters architecture, and then how to use the entire system in a practical application, all with a focus on how to extrapolate what you have learned to create other solutions for your organization.
 
-> NOTE: This course is designed to be taught in-person with hardware or virtual environments provided by the instructional team. You will also get details for setting up your own hardware, virtual or Cloud environments for Kubernetes for a workshop backup or if you are not attending in-person. 
+> NOTE: This Workshop is designed to be taught in-person with hardware or virtual environments provided by the instructional team. You will also get details for setting up your own hardware, virtual or Cloud environments for Kubernetes for a workshop backup or if you are not attending in-person. 
 
 This [github README.MD file](https://lab.github.com/githubtraining/introduction-to-github) explains how the workshop is laid out, what you will learn, and the technologies you will use in this solution.
 
@@ -71,9 +71,9 @@ There are a few requirements for attending the workshop, listed below:
 
 If you are new to any of these, here are a few references you can complete prior to class:
 
--  [Microsoft SQL Server Administration and Use](https://www.microsoft.com/en-us/learning/course.aspx?cid=OD20764)
+-  [Microsoft SQL Server Administration and Use](https://www.microsoft.com/en-us/learning/Workshop.aspx?cid=OD20764)
 -  [HDFS](https://data-flair.training/blogs/hadoop-hdfs-tutorial/)
--  [Spark](https://www.edx.org/course/implementing-predictive-analytics-with-spark-in-az)
+-  [Spark](https://www.edx.org/Workshop/implementing-predictive-analytics-with-spark-in-az)
 -  [Hypervisor Technologies - Hyper-V](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-technology-overview)
 or
 -  [Hypervisor Technologies - VMWare](https://tsmith.co/free-vmware-training/)
