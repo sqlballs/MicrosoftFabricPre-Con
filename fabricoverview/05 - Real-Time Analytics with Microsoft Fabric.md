@@ -87,6 +87,8 @@ You can also right-click the following video links to open them in another tab a
   <li><a href="https://www.youtube.com/watch?v=_RFvcPBNiOk"><img src="https://img.youtube.com/vi/_RFvcPBNiOk/0.jpg" height = 200></a></li> 
 </ul>
 
+<h2 id="5.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.3 Working with Fabric and the Kusto Query Language (KQL)</h2>
+
 <h3>Real-Time Analytics</h3>
 
 Real-Time Analytics deals with working on data as it occurs, as quickly as possible to the source generation of the data. 
@@ -140,7 +142,6 @@ You can also right-click this link to open it in another tab and review this vid
 
 <li><a href="https://www.youtube.com/watch?v=ZVrvP20ezYk"><img src="https://img.youtube.com/vi/ZVrvP20ezYk/0.jpg" height = 200></a></li> 
 
-
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
@@ -155,11 +156,6 @@ You can also right-click this link to open it in another tab and review this vid
   <li><a href="https://learn.microsoft.com/en-us/fabric/get-started/whats-new#synapse-real-time-analytics-in-microsoft-fabric" target="_blank">What's new in Real-Time Analytics in Microsoft Fabric</a></li>
   <li><a href="https://learn.microsoft.com/en-us/fabric/release-plan/real-time-analytics" target="_blank">What's new and planned for Synapse Real-Time Analytics in Microsoft Fabric</a></li>
 </ul>
-
-
-
-
-<h2 id="5.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.3 Working with Fabric and the Kusto Query Language (KQL)</h2>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
