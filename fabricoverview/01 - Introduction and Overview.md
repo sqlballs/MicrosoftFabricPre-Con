@@ -83,9 +83,9 @@ You can also right-click this link to open it in another tab and review this vid
 
 <p><a href="https://www.youtube.com/watch?v=TSTeoeCNh7c"><img src="https://img.youtube.com/vi/TSTeoeCNh7c/0.jpg" height = 200></a> 
 
-<h3>Microsoft OneLake</h3>
+<h3>OneLake</h3>
 
-Microsoft OneLake is a SaaS service that provides a single, unified, logical data lake for the entire organization. 
+OneLake is a SaaS service that provides a single, unified, logical data lake for the entire organization. 
 
 <p><img src="https://learn.microsoft.com/en-us/fabric/onelake/media/onelake-overview/onelake-foundation-for-fabric.png" height = 400>
 

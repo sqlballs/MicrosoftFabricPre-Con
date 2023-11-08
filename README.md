@@ -45,9 +45,9 @@ The solution includes the following technologies - although you are not limited 
 
   <tr><th style="background-color: #1b20a1; color: white;">Technology</th> <th style="background-color: #1b20a1; color: white;">Description</th></tr>
 
-  <tr><td>Microsoft OneLake</td><td>Serves as the foundation storage layer for all other services, and as a Data Lake.</td></tr>
-  <tr><td>Microsoft Azure Data Factory</td><td>A fully scheduled cloud service for data pipelines.</td></tr>
-  <tr><td>Microsoft Synapse</td><td>The primary Data Lake, Data Warehouse, Data Science, and Data Analytics distributed processing system for the platform.</td></tr>
+  <tr><td>OneLake</td><td>Serves as the foundation storage layer for all other services, and as a Data Lake.</td></tr>
+  <tr><td>Data Factory</td><td>A fully scheduled cloud service for data pipelines.</td></tr>
+  <tr><td>Synapse</td><td>The primary Data Lake, Data Warehouse, Data Science, and Data Analytics distributed processing system for the platform.</td></tr>
   <tr><td>Microsoft Power BI</td><td>Closest-to-user interface for data analysis.</td></tr>
 
 </table>
