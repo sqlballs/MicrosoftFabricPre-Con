@@ -35,7 +35,7 @@ In this workshop you'll cover these topics:
 
 The goal of this workshop is to train the data professional to get an overview on how to determine when to implement a Microsoft Fabric solution, how to design the solution, implement it, use it, and manage, monitor and maintain it.
 
-In each *Module*, you will find Sections that have topics, concepts and technologies that you will cover throughout the Workshop. You will also find various *Activities* where you willwork through hands-on steps to learn the material. You will also see *Self-Guided Activities* that you should complete after an in-person experience, or along the way if you are taking this Workshop directly from this GitHub repository. 
+In each *Module*, you will find *Sections* that have topics, concepts and technologies that you will cover throughout the Workshop. You will also find various *Activities* where you willwork through hands-on steps to learn the material. You will also see *Self-Guided Activities* that you should complete after an in-person experience, or along the way if you are taking this Workshop directly from this GitHub repository. 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
