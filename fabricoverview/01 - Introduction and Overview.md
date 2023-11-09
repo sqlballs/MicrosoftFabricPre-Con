@@ -35,7 +35,7 @@ Microsoft Fabric leverages cloud technology, which eliminates the need for setti
 
 Microsoft Fabric introduces OneLake, the OneDrive of the Data world. OneLake is not only a storage place for data, but also a logical layer that organizes and governs data.
 
-OneLake allows creating workspaces and lakehouses, which are similar to folders or projects for data. It also offers the Shortcut feature to access data from other workspaces or tenants, or from other cloud services like Azure Storage. This way, it ensures one copy of data for consistent and reliable insights.
+OneLake is the storage layer behind all of Fabric. It offers the shortcut feature to access data from other workspace or tenants, or from other cloud services like Azure Storage without needing to move or duplicate data. This way, it ensures one copy of data for consistent and reliable insights.
 
 Microsoft Fabric is designed to help turn large and complex data into actionable workloads and analytics. It is a powerful and easy-to-use tool that can help achieve business goals and growth.
 
@@ -43,7 +43,7 @@ In this Workshop, you will learn:
 - The <b>basic</b> concepts, services, roles, and benchmarks of Microsoft Fabric
 - <b>How to create and manage</b> workspaces, data warehouses, and data integration pipelines and data flows
 - <b>How to Secure and govern</b> your data with distributed ownership and collaboration
-- <b>How to different analytical engines</b> can be used to run T-SQL, Python, or KQL queries in order to load, transform, query, and visualize your data
+- <b>How the different analytical engines</b> can be used to run T-SQL, Python, or KQL queries in order to load, transform, query, and visualize your data
 - <b>How to use various developer tools</b>, such as Co-Pilot, SSMS, VS Code, and command-line tools, to develop and test your data applications
 - <b>How</b> Microsoft Fabric integrates with DevOps
 
@@ -57,13 +57,13 @@ Microsoft Fabric enables organizations and individuals to turn large and complex
 
 - *Data Engineering* - Microsoft Fabric provides a Spark platform with a simplified but powerful authoring experiences, enabling data engineers to perform large scale data transformation and democratize data through the lakehouse. Microsoft Fabric Spark's integration with *Data Factory* enables notebooks and spark jobs to be scheduled and orchestrated. 
 
-- *Data Pipelines* - *Fabric Data Factory* combines the simplicity of *Power Query* with the scale and power of [Azure Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/introduction). You can use more than 200 native connectors to connect to data sources on-premises and in the cloud.
+- *Data Pipelines* - *Fabric Data Factory* combines the simplicity of *Power Query* with the scale and power of [Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/introduction). You can use more than 200 native connectors to connect to data sources on-premises and in the cloud.
 
 - *Data Science* - Various tools for Data Science in Microsoft Fabric enables you to build, deploy, and operationalize machine learning models. It integrates with [Azure Machine Learning](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2) to provide built-in experiment creation, tracking and model registry. Data scientists can enrich organizational data with predictions and allow business analysts to integrate those predictions into their BI reports. Microsoft Fabric allows you to work from descriptive to predictive insights. 
 
-- *Data Warehouse* - Microsoft Fabric provides a [Data Warehouse using SQL](https://learn.microsoft.com/en-us/azure/architecture/data-guide/relational-data/data-warehousing), with high performance and scale. It fully separates compute from storage, enabling independent scaling of both the components. Additionally, it natively stores data in the open Delta Lake format. 
+- *Data Warehouse* - Microsoft Fabric provides a [Data Warehouse](https://learn.microsoft.com/en-us/fabric/data-warehouse/data-warehousing), with high performance and scale. It fully separates compute from storage, enabling independent scaling of both the components. Additionally, it natively stores data in the open Delta Lake format. 
 
-- *Real-Time Analytics* - Observational data, which is collected from various sources such as apps, IoT devices, human interactions, and so many more. It's currently the fastest growing data category. This data is often semi-structured in formats like JSON or Text. It comes in at high volume, with shifting schemas. These characteristics make it hard for traditional data warehousing platforms to work with. [Azure Synapse](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/real-time-analytics) is best in class engine for observational data analytics. 
+- *Real-Time Analytics* - Observational data, which is collected from various sources such as apps, IoT devices, human interactions, and so many more. It's currently the fastest growing data category. This data is often semi-structured in formats like JSON or Text. It comes in at high volume, with shifting schemas. These characteristics make it hard for traditional data warehousing platforms to work with. [Fabric Real-Time Analytics](https://learn.microsoft.com/en-us/fabric/real-time-analytics/overview) is best in class engine for observational data analytics. 
 
 - *Power BI* - [*Power BI*](https://powerbi.microsoft.com/en-us/getting-started-with-power-bi/) is the world's leading Business Intelligence platform. It ensures that business owners can access all the data in Fabric quickly and intuitively to make better decisions with data. 
 
@@ -83,7 +83,9 @@ You can also right-click this link to open it in another tab and review this vid
 
 <p><a href="https://www.youtube.com/watch?v=TSTeoeCNh7c"><img src="https://img.youtube.com/vi/TSTeoeCNh7c/0.jpg" height = 200></a> 
 
-<h3>OneLake</h3>
+<p style="border-bottom: 1px solid lightgrey;"></p>
+
+<h2 id="1.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.3 OneLake & Microsoft Fabric Architecture</h2>
 
 OneLake is a SaaS service that provides a single, unified, logical data lake for the entire organization. 
 
