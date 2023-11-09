@@ -19,7 +19,7 @@ The "Microsoft Fabric Overview for the Data Professional" workshop is taught usi
 - Next you must have a Power BI Pro license.  If you do not have a Power BI license you can sign up for one for free 60 day trial.
 - You will also require a Microsoft Fabric Capacity or a Free trial Microsoft Fabic Capacity which will run for 60 days.  
 - Signing up for M365, Power BI, and Microsoft Fabric is free and does not require a credit card.
-- Your Power BI Tenent must have Fabric Capacity enabled in order to create a Microsoft Fabric Workspace.  
+- Your Power BI Tenent must have Fabric Capacity enabled in order to create a Microsoft Fabric Workspace.  Please review, [Enable for your tenant](https://github.dev/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md) and [Enable for a capacity](https://learn.microsoft.com/en-us/fabric/admin/fabric-switch#enable-for-a-capacity) for instructions in how to do this. 
 
 > You can also create a free Azure Subscription for 1 year with a $200 credit, and then provision a Microsoft Fabric Capacity and attach it to a Power BI Workspace.
 
@@ -58,26 +58,15 @@ Open this link in a seperate tab or window and follow all of the instructions, [
 Open this link in a seperate tab or window and follow all of the instructions, [How to Set Up A Microsoft Fabric (Preview) trial](https://learn.microsoft.com/en-us/fabric/get-started/fabric-trial)
 
 
-<h2 id="2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2 - Verification of pre-requisites for the Activities</h2>
+<h2 id="2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">Verification of pre-requisites for the Activities</h2>
 
 In order to complete any exercises required in this class you should have followed the [Pre-Requisites](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md) outlined in the Read.me file. 
 
 Validate that you have a Microsoft Fabric Enabled Workspace:
-- Navigate to [Power BI.com](https://www.powerbi.com)
-- Click on Workspaces
-- Navigate to your Microsoft Fabric enabled workspace
-- Click +New
-- Click Show all
-- Validate that you see the options available to you to create Microsoft Fabric objects such as a Lakehouse, a Data Warehouse, Pipelines, KQL Database, or an EventStream
-
-<p>
-If have a Power BI License, a Microsoft Fabric Capacity, but have not created a workspace:
-
 - Navigate to [Tutorial: Create a Microsoft Fabric workspace](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-workspace)
 - Navigate to your Microsoft Fabric enabled workspace
 - Click +New
 - Click Show all
 - Validate that you see the options available to you to create Microsoft Fabric objects such as a Lakehouse, a Data Warehouse, Pipelines, KQL Database, or an EventStream
 
-If you have completed all these steps, [you can continue to the first Module.](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/01%20-%20Introduction%20and%20Overview.md) 
 
