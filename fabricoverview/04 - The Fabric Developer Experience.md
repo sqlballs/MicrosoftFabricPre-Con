@@ -12,20 +12,20 @@ In this workshop you'll cover using The Microsoft Fabric Platform to implement a
 
 In each module you'll get more references, which you should follow up on to learn more. Also watch for links within the text - click on each one to explore that topic.
 
-(<a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md" target="_blank">Make sure you check out the <b>Pre-Requisites</b> page before you start</a>. You'll need all of the items loaded there before you can proceed with the workshop.)
+(<a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md" >Make sure you check out the <b>Pre-Requisites</b> page before you start</a>. You'll need all of the items loaded there before you can proceed with the workshop.)
 
 You'll cover these topics in this Module on the Developer Experience:
 
 <dl>
 
-  <dt><a href="#4.1" target="_blank">4.1 - Using Co-Pilot</a></dt>
-  <dt><a href="#4.2" target="_blank">4.2 - Using SQL Server Management Studio</a></dt>
-  <dt><a href="#4.3" target="_blank">4.3 - Using Azure Data Studio</a></dt>
-  <dt><a href="#4.4" target="_blank">4.4 - Using Microsoft Excel</a></dt>
-  <dt><a href="#4.5" target="_blank">4.5 - Using OneLake File Explorer</a></dt>
-  <dt><a href="#4.6" target="_blank">4.6 - Using Kusto Explorer</a></dt>
-  <dt><a href="#4.7" target="_blank">4.7 - Using Visual Studio Code</a></dt>
-  <dt><a href="#4.8" target="_blank">4.8 - Using Power BI</a></dt>
+  <dt><a href="#4.1" >4.1 - Using Co-Pilot</a></dt>
+  <dt><a href="#4.2" >4.2 - Using SQL Server Management Studio</a></dt>
+  <dt><a href="#4.3" >4.3 - Using Azure Data Studio</a></dt>
+  <dt><a href="#4.4" >4.4 - Using Microsoft Excel</a></dt>
+  <dt><a href="#4.5" >4.5 - Using OneLake File Explorer</a></dt>
+  <dt><a href="#4.6" >4.6 - Using Kusto Explorer</a></dt>
+  <dt><a href="#4.7" >4.7 - Using Visual Studio Code</a></dt>
+  <dt><a href="#4.8" >4.8 - Using Power BI</a></dt>
 
 </dl>
 
@@ -270,11 +270,11 @@ You can also right-click this link to open it in another tab and review this vid
 
 <ul>
     <li><a href="https://learn.microsoft.com/en-us/fabric/release-plan/">Microsoft Fabric release plan documentation</a></li>
-    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-with-vs-code" target="_blank">Microsoft Fabric notebook experience in VS Code</a></li>
-    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-resource-with-vs-code" target="_blank">Microsoft Fabric notebook resource in VS Code</a></li>
-    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-sjd-with-vs-code" target="_blank">Spark job definition experience in VS Code</a></li>
-    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/explore-lakehouse-with-vs-code" target="_blank">Explore Microsoft Fabric lakehouses in VS Code</a></li>
-   <li><a href="https://www.youtube.com/watch?v=0tODoHLXhMc&ab" target="_blank"> Microsoft Fabric, VS Code, Notebooks, & Spark! Set it up, connect to a Workspace, EDIT, & Upload</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-with-vs-code" >Microsoft Fabric notebook experience in VS Code</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-resource-with-vs-code" >Microsoft Fabric notebook resource in VS Code</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/author-sjd-with-vs-code" >Spark job definition experience in VS Code</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/explore-lakehouse-with-vs-code" >Explore Microsoft Fabric lakehouses in VS Code</a></li>
+   <li><a href="https://www.youtube.com/watch?v=0tODoHLXhMc&ab" > Microsoft Fabric, VS Code, Notebooks, & Spark! Set it up, connect to a Workspace, EDIT, & Upload</a></li>
 </ul>
 
 Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/05%20-%20Real-Time%20Analytics%20with%20Microsoft%20Fabric.md).

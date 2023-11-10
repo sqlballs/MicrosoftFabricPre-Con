@@ -12,17 +12,17 @@ In this workshop you'll cover using The Microsoft Fabric Platform to implement a
 
 In each module you'll get more references, which you should follow up on to learn more. Also watch for links within the text - click on each one to explore that topic.
 
-(<a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md" target="_blank">Make sure you check out the <b>Pre-Requisites</b> page before you start</a>. You'll need all of the items mentioned there to be completed before you can proceed with the workshop.)
+(<a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md" >Make sure you check out the <b>Pre-Requisites</b> page before you start</a>. You'll need all of the items mentioned there to be completed before you can proceed with the workshop.)
 
 You'll cover these topics in this Module:
 <dl>
-  <dt><a href="#1.1" target="_blank">1.1 - Introduction of the Workshop</a><dt>
-  <dt><a href="#1.2" target="_blank">1.2 - Basic Concepts in Microsoft Fabric</a><dt>
-  <dt><a href="#1.3" target="_blank">1.3 - OneLake & Microsoft Fabric Architecture</a><dt>
-  <dt><a href="#1.4" target="_blank">1.4 - Microsoft Fabric Services</a><dt>
-  <dt><a href="#1.5" target="_blank">1.5 - Microsoft Fabric Roles</a><dt>
-  <dt><a href="#1.6" target="_blank">1.6 - Understanding Microsoft Fabric Benchmarks</a><dt>
-  <dt><a href="#1.7" target="_blank">1.7 - Verification of pre-requisites for the Activities</a><dt>
+  <dt><a href="#1.1" >1.1 - Introduction of the Workshop</a><dt>
+  <dt><a href="#1.2" >1.2 - Basic Concepts in Microsoft Fabric</a><dt>
+  <dt><a href="#1.3" >1.3 - OneLake & Microsoft Fabric Architecture</a><dt>
+  <dt><a href="#1.4" >1.4 - Microsoft Fabric Services</a><dt>
+  <dt><a href="#1.5" >1.5 - Microsoft Fabric Roles</a><dt>
+  <dt><a href="#1.6" >1.6 - Understanding Microsoft Fabric Benchmarks</a><dt>
+  <dt><a href="#1.7" >1.7 - Verification of pre-requisites for the Activities</a><dt>
 </dl>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
@@ -321,7 +321,7 @@ If you cannot complete these steps, open and follow the  [Pre-Requisites that yo
 <ul>
  <li><a href="https://learn.microsoft.com/en-us/fabric/release-plan/">Microsoft Fabric release plan documentation</a></li>
     <li><a href="https://learn.microsoft.com/en-us/fabric/onelake/onelake-overview">OneLake, the OneDrive for data</a></li>
-    <li><a href="https://learn.microsoft.com/en-us/fabric/get-started/microsoft-fabric-overview " target="_blank">The primary page for documentation on Microsoft Fabric is here</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/get-started/microsoft-fabric-overview " >The primary page for documentation on Microsoft Fabric is here</a></li>
     <li><a href="https://learn.microsoft.com/en-us/training/paths/get-started-fabric/?WT.mc_id=DP-MVP-5004032">Microsoft Learn Pathway on Fabric</a></li>
     <li><a href="https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app-install">Installing the Fabric Metrics app</a></li>
   <li><a href="https://erwindekreuk.com/microsoft-fabric-content-hub/">Microsoft Fabric Content Hub from Erwin de Kreuk</a></li>

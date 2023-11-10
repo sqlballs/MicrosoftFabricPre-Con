@@ -12,7 +12,7 @@ In this workshop you'll cover using The Microsoft Fabric Platform to implement a
 
 In each module you'll get more references, which you should follow up on to learn more. Also watch for links within the text - click on each one to explore that topic.
 
-(<a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md" target="_blank">Make sure you check out the <b>Pre-Requisites</b> page before you start</a>. You'll need all of the items loaded there before you can proceed with the workshop.)
+(<a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md" >Make sure you check out the <b>Pre-Requisites</b> page before you start</a>. You'll need all of the items loaded there before you can proceed with the workshop.)
 
 You'll cover these topics in this Module:
 
@@ -80,20 +80,20 @@ In this tutorial, you'll create a new pipeline that loads sample data into a War
 
 Since Data Warehousing is closely related to the SQL experience persona, you can leverage many of the features that you may be accustomed to using in SQL Server, such as:
 
-- <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-tables" target="_blank">Create Tables</a>
+- <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-tables" >Create Tables</a>
 
    Creating a table in Fabric is a remarkably similar process to creating a table in SQL Server. You can initiate a new query within the Fabric editor or SQL Server Management Studio (SSMS) and execute the 'create table' script, which will result in the table's creation within Microsoft Fabric.
 
   <p><img src="https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/11f9beaa-6d57-4538-b2db-89f1470c7e56" height = 100>
 
 
-- <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-load-data" target="_blank">Load data using T-SQL</a>
+- <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-load-data" >Load data using T-SQL</a>
 
 Loading data into your newly created table is a straightforward process. You can achieve this with ease by utilizing the COPY INTO T-SQL statement. This statement allows you to efficiently load data into your tables.
 
 <p><img src="https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/717e6430-b66d-4fd1-bda5-7ef97e1e4d0f" height = 200>
 
-- <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-clone-table" target="_blank">Clone a table using T-SQL</a>
+- <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-clone-table" >Clone a table using T-SQL</a>
 
 Microsoft Fabric offers the capability to create near-instantaneous zero-copy clones with minimal storage costs.
 
@@ -107,13 +107,13 @@ You can also right-click this link to open it in another tab and review this vid
 
 <p><a href="https://www.youtube.com/watch?v=2rETPwBLnnY"><img src="https://img.youtube.com/vi/2rETPwBLnnY/0.jpg" height=200>
 
-- <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-transform-data" target="_blank">Transform data using stored procedure</a>
+- <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-transform-data" >Transform data using stored procedure</a>
 
 For SQL users, the availability of stored procedures is a valuable feature, and Microsoft Fabric supports them in a way that aligns with your familiarity. Writing stored procedures in Fabric follows the same approach as you would in SQL Server, making it convenient for users to leverage this important SQL functionality. The data can be transformed using Stored procedures.
 
 <p><img src="https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/dac19efe-a5ec-4c38-8315-12bc6990d48e" height = 700>
 
-- <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-visual-query" target="_blank">Create a query with the visual query builder</a>
+- <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-visual-query" >Create a query with the visual query builder</a>
 
 Microsoft Fabric is designed with user-friendliness in mind, catering to individuals who may not be proficient in writing SQL queries. You have the option to utilize the Visual Query Builder, a graphical interface that simplifies the process of building queries. By merely dragging and dropping fields, the query builder will seamlessly generate the necessary SQL query in the background. This feature makes data retrieval and manipulation more accessible for a broader range of users.
 

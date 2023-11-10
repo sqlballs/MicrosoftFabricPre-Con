@@ -12,15 +12,15 @@ In this workshop you'll cover using The Microsoft Fabric Platform to implement a
 
 In each module you'll get more references, which you should follow up on to learn more. Also watch for links within the text - click on each one to explore that topic.
 
-(<a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md" target="_blank">Make sure you check out the <b>Pre-Requisites</b> page before you start</a>. You'll need all of the items loaded there before you can proceed with the workshop.)
+(<a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md" >Make sure you check out the <b>Pre-Requisites</b> page before you start</a>. You'll need all of the items loaded there before you can proceed with the workshop.)
 
 You'll cover these topics in this Module:
 
 <dl>
-  <dt><a href="#3.1" target="_blank">3.1 - Understanding a Microsoft Fabric Lakehouse</a></dt>
-  <dt><a href="#3.2" target="_blank">3.2 - Linking data</a></dt>
-  <dt><a href="#3.3" target="_blank">3.3 - Using Spark to create new data sets in the Lakehouse</a></dt>
-  <dt><a href="#3.4" target="_blank">3.4 - How to accelerate data prep with Data Wrangler in Microsoft Fabric</a></dt>
+  <dt><a href="#3.1" >3.1 - Understanding a Microsoft Fabric Lakehouse</a></dt>
+  <dt><a href="#3.2" >3.2 - Linking data</a></dt>
+  <dt><a href="#3.3" >3.3 - Using Spark to create new data sets in the Lakehouse</a></dt>
+  <dt><a href="#3.4" >3.4 - How to accelerate data prep with Data Wrangler in Microsoft Fabric</a></dt>
 </dl>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
@@ -151,12 +151,12 @@ You can also right-click this link to open it in another tab and review this vid
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
  <li><a href="https://learn.microsoft.com/en-us/fabric/release-plan/">Microsoft Fabric release plan documentation</a></li>
-    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/spark-compute" target="_blank">What is Spark compute in Microsoft Fabric?</a></li>
-    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/runtime" target="_blank">Apache Spark Runtime in Fabric</a></li>
-    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/create-custom-spark-pools" target="_blank">How to create custom Spark pools in Microsoft Fabric</a></li>
-    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/high-concurrency-overview" target="_blank">High Concurrency mode in Fabric Spark</a></li>
-    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/autotune?tabs=sparksql" target="_blank">What is autotune for Apache Spark configurations in Fabric and how to enable and disable it?</a></li>
-    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/spark-job-concurrency-and-queueing" target="_blank">Concurrency limits and queueing in Microsoft Fabric Spark</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/spark-compute" >What is Spark compute in Microsoft Fabric?</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/runtime" >Apache Spark Runtime in Fabric</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/create-custom-spark-pools" >How to create custom Spark pools in Microsoft Fabric</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/high-concurrency-overview" >High Concurrency mode in Fabric Spark</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/autotune?tabs=sparksql" >What is autotune for Apache Spark configurations in Fabric and how to enable and disable it?</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/spark-job-concurrency-and-queueing" >Concurrency limits and queueing in Microsoft Fabric Spark</a></li>
 </ul>
 
 Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/04%20-%20The%20Fabric%20Developer%20Experience.md).

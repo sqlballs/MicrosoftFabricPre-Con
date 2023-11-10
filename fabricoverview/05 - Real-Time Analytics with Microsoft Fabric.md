@@ -12,14 +12,14 @@ In this workshop you'll cover using The Microsoft Fabric Platform to implement a
 
 In each module you'll get more references, which you should follow up on to learn more. Also watch for links within the text - click on each one to explore that topic.
 
-(<a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md" target="_blank">Make sure you check out the <b>Pre-Requisites</b> page before you start</a>. You'll need all of the items loaded there before you can proceed with the workshop.)
+(<a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md" >Make sure you check out the <b>Pre-Requisites</b> page before you start</a>. You'll need all of the items loaded there before you can proceed with the workshop.)
 
 You'll cover these topics in this Module on the User Experience:
 
 <dl>
-  <dt><a href="#5.1" target="_blank">5.1 - Working with Azure Data Explorer in Microsoft Fabric</a></dt>
-  <dt><a href="#5.2" target="_blank">5.2 - Working with Fabric and Streaming / Event Data</a></dt>
-  <dt><a href="#5.3" target="_blank">5.3 - Working with Fabric and the Kusto Query Language (KQL)</a></dt>
+  <dt><a href="#5.1" >5.1 - Working with Azure Data Explorer in Microsoft Fabric</a></dt>
+  <dt><a href="#5.2" >5.2 - Working with Fabric and Streaming / Event Data</a></dt>
+  <dt><a href="#5.3" >5.3 - Working with Fabric and the Kusto Query Language (KQL)</a></dt>
 </dl>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
@@ -146,15 +146,15 @@ You can also right-click this link to open it in another tab and review this vid
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
-    <li><a href="https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/?context=/fabric/context/context-rta&pivots=fabric" target="_blank">Kusto Query Overview</a></li>
-    <li><a href="https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-overview" target="_blank">PowerBI Desktop Projects</a></li>
-    <li><a href="https://learn.microsoft.com/en-us/fabric/real-time-analytics/realtime-analytics-compare" target="_blank"> Comparing Real-Time Analytics and Azure Data Explorer</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/?context=/fabric/context/context-rta&pivots=fabric" >Kusto Query Overview</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-overview" >PowerBI Desktop Projects</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/fabric/real-time-analytics/realtime-analytics-compare" > Comparing Real-Time Analytics and Azure Data Explorer</a></li>
     <li>Please bookmark and review the following video:</a></li>
   <li><a href="https://learn.microsoft.com/en-us/fabric/release-plan/">Microsoft Fabric release plan documentation</a></li>
   <li><a href="https://radacad.com/fabric-real-time-analytics">Microsoft MVP Reza Rad walks through a demo he built, including a custom streaming application, to demonstrate using Real-time Analytics.</a></li>
-  <li><a href="https://learn.microsoft.com/en-us/fabric/real-time-analytics/overview" target="_blank">What is Real-Time Analytics in Microsoft Fabric</a></li>
-  <li><a href="https://learn.microsoft.com/en-us/fabric/get-started/whats-new#synapse-real-time-analytics-in-microsoft-fabric" target="_blank">What's new in Real-Time Analytics in Microsoft Fabric</a></li>
-  <li><a href="https://learn.microsoft.com/en-us/fabric/release-plan/real-time-analytics" target="_blank">What's new and planned for Synapse Real-Time Analytics in Microsoft Fabric</a></li>
+  <li><a href="https://learn.microsoft.com/en-us/fabric/real-time-analytics/overview" >What is Real-Time Analytics in Microsoft Fabric</a></li>
+  <li><a href="https://learn.microsoft.com/en-us/fabric/get-started/whats-new#synapse-real-time-analytics-in-microsoft-fabric" >What's new in Real-Time Analytics in Microsoft Fabric</a></li>
+  <li><a href="https://learn.microsoft.com/en-us/fabric/release-plan/real-time-analytics" >What's new and planned for Synapse Real-Time Analytics in Microsoft Fabric</a></li>
 </ul>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>

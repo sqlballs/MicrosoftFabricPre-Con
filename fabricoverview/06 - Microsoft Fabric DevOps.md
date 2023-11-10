@@ -12,16 +12,16 @@ In this workshop you'll cover using The Microsoft Fabric Platform to implement a
 
 In each module you'll get more references, which you should follow up on to learn more. Also watch for links within the text - click on each one to explore that topic.
 
-(<a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md" target="_blank">Make sure you check out the <b>Pre-Requisites</b> page before you start</a>. You'll need all of the items loaded there before you can proceed with the workshop.)
+(<a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md" >Make sure you check out the <b>Pre-Requisites</b> page before you start</a>. You'll need all of the items loaded there before you can proceed with the workshop.)
 
 You'll cover these topics in this Module on Fabric DevOps:
 
 <dl>
 
-  <dt><a href="#6.1" target="_blank">6.1 - Designing and sizing a Fabric solution</a></dt>
-  <dt><a href="#6.2" target="_blank">6.2 - Discover and Govern Data in your Deployment</a></dt>
-  <dt><a href="#6.3" target="_blank">6.3 - Source Control integration with Microsoft Fabric</a></dt>
-  <dt><a href="#6.4" target="_blank">6.4 - Monitoring and Managing a Fabric solution</a></dt>
+  <dt><a href="#6.1" >6.1 - Designing and sizing a Fabric solution</a></dt>
+  <dt><a href="#6.2" >6.2 - Discover and Govern Data in your Deployment</a></dt>
+  <dt><a href="#6.3" >6.3 - Source Control integration with Microsoft Fabric</a></dt>
+  <dt><a href="#6.4" >6.4 - Monitoring and Managing a Fabric solution</a></dt>
 
 </dl>
 
@@ -35,7 +35,7 @@ Designing a data solution for a large organization can be a complex process that
 
 - Determine the goal of the data solution
 - Choose the data sources
-- Determine the data ingestion strategy.
+- Determine the data ingestion strategy
 - Design the data processing plan
 - Set up storage for the output of the pipeline
 - Plan the data workflow
@@ -55,7 +55,7 @@ In a large organization, a BI solution architecture can consist of:
 
 The design of such a complex structure requires an engineering mindset, though it can be one of the most creative and rewarding IT architecture efforts. [You can find a comprehensive general guide for creating a Data Architecture here.](https://learn.microsoft.com/en-us/azure/architecture/data-guide/)
 
-There are a few decisions to make as you bring your solution design. 
+There are a few decisions to make as you bring your solution design: 
 
 - One of your first steps is to enable Microsoft Fabric for your Tenant. [You can find the process for that here.](https://learn.microsoft.com/en-us/fabric/admin/fabric-switch)
 - Next, you need to understand the licensing model for using the solution. [You can find more information on that here.](https://learn.microsoft.com/en-us/fabric/enterprise/licenses)
@@ -116,8 +116,7 @@ To begin working with git and Microsoft Fabric, there are a few pre-requisites. 
 
 - An active Azure account registered to the same user that is using the Fabric workspace
 - Access to an existing repository
-- A Power BI Premium license. Your Power BI premium license still works for all Power BI features
-- A Fabric capacity is required to use all supported Fabric items
+- A Power BI Premium license. Your Power BI premium license still works for all Power BI features / A Fabric capacity 
 - Your organization’s administrator has to [enable the Fabric switch](https://learn.microsoft.com/en-us/fabric/admin/fabric-switch)
 
 With all that set up, you need to ensure the permissions are correct for the DevOps team. You can find a complete [definition of the permissions you need for each DevOps task at this reference](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-integration-process#permissions). 
@@ -158,15 +157,15 @@ Your primary tasks in administration are in recovery, capacity management, objec
 
 <img src = "https://learn.microsoft.com/en-us/power-bi/admin/media/service-admin-portal/power-bi-settings-menu.png" height = 400>
   
-- [Microsoft 365 admin portal](https://admin.microsoft.com/): Manage users and groups, Purchase and assign licenses, Block users from accessing Microsoft Fabric
+- [Microsoft 365 admin portal](https://learn.microsoft.com/en-us/purview/microsoft-365-compliance-center): Manage users and groups, Purchase and assign licenses, Block users from accessing Microsoft Fabric
 
  <img src="https://th.bing.com/th/id/R.0bba966c93c501a25699e7fdff90a36f?rik=C4zRsPtLjGSeog&pid=ImgRaw&r=0" height = 400> 
   
-- [Microsoft 365 Security & Microsoft Purview compliance portal](https://admin.microsoft.com/): Review and manage auditing, Data classification and tracking, Data loss prevention policies, Microsoft Purview Data Lifecycle Management
+- [Microsoft 365 Security & Microsoft Purview compliance portal](https://learn.microsoft.com/en-us/purview/microsoft-365-compliance-center): Review and manage auditing, Data classification and tracking, Data loss prevention policies, Microsoft Purview Data Lifecycle Management
 
  <img src="https://th.bing.com/th/id/R.0bba966c93c501a25699e7fdff90a36f?rik=C4zRsPtLjGSeog&pid=ImgRaw&r=0" height = 400> 
   
-- [Azure Active Directory in the Azure portal](https://aad.portal.azure.com/): Configure conditional access to Microsoft Fabric resources
+- [Azure Active Directory (Microsoft Entra) in the Azure portal](https://learn.microsoft.com/en-us/entra/fundamentals/whatis): Configure conditional access to Microsoft Fabric resources
 
 <img src="https://learn.microsoft.com/pt-br/azure/active-directory/fundamentals/media/add-users-azure-active-directory/add-user-in-users-all-users.png" height = 400>
 
@@ -174,7 +173,7 @@ Your primary tasks in administration are in recovery, capacity management, objec
 
 <img src="https://learn.microsoft.com/en-us/azure/active-directory/reports-monitoring/media/reference-powershell-reporting/get-azureadauditsigninlogs.png" height = 400>
 
-- [Administrative APIs and SDK](https://learn.microsoft.com/en-us/power-bi/developer/visuals/create-r-based-power-bi-desktop): Build custom admin tools.
+- [Administrative PowerShell for Power  BI](https://learn.microsoft.com/en-us/powershell/power-bi/overview?view=powerbi-ps): Use Power BI admin PowerShell commands.
 
 <img src="https://reviewsapp.org/uploads/visual-studio-code-a-powerful-tool-for-all-developers.png" height = 400>
 
@@ -205,7 +204,7 @@ Open each of the following tools and navigate the various actions and properties
 - [Admin Center](https://learn.microsoft.com/en-us/fabric/admin/admin-center) 
 - [Capacity management](https://learn.microsoft.com/en-us/fabric/enterprise/pause-resume)
 - [Using the Monitoring Hub](https://learn.microsoft.com/en-us/fabric/admin/monitoring-hub) 
-- [Using the Metrics app](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app)
+- [Using the Using the Fabric Capacity Metrics App](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app)
 
 > If you only reviewed the documentation in this Activity, ensure you bookmark each of these references and then perform the Activity in full once you do have your deployment. 
 
@@ -225,9 +224,9 @@ In this Activity you will navigate the primary interfaces for navigating the Azu
 <ul>
   <li><a href="https://learn.microsoft.com/en-us/fabric/release-plan/">Microsoft Fabric release plan documentation</a></li>
   <li><a href="https://data-ascend.com/2023/10/11/how-do-you-set-up-your-data-governance-in-microsoft-fabric/">Microsoft MVP Marthe Moengen has an excellent article on Data Governance in Microsoft Fabric that you can reference here.</a></li>
-  <li><a href="https://learn.microsoft.com/en-us/fabric/admin/" target="_blank">Microsoft Fabric Administrator Portal</a></li>
-  <li><a href="https://www.kevinrchant.com/2023/08/09/prepare-azure-devops-for-microsoft-fabric-git-integration/" target="_blank">Kevin Chant's tutorial on git integration with Fabric</a></li>
-  <li><a href="https://learn.microsoft.com/en-us/fabric/get-started/whats-new" target="_blank">As always, this is a fast-changing technology, so ensure you check this reference to find the latest improvements.</a></li>
+  <li><a href="https://learn.microsoft.com/en-us/fabric/admin/" >Microsoft Fabric Administrator Portal</a></li>
+  <li><a href="https://www.kevinrchant.com/2023/08/09/prepare-azure-devops-for-microsoft-fabric-git-integration/" >Kevin Chant's tutorial on git integration with Fabric</a></li>
+  <li><a href="https://learn.microsoft.com/en-us/fabric/get-started/whats-new" >As always, this is a fast-changing technology, so ensure you check this reference to find the latest improvements.</a></li>
 </ul>
 
 Congratulations! You have completed this workshop on *Microsoft Fabric for the Data Professional*. You now have the tools, assets, and processes you need to extrapolate this information into other applications.
