@@ -47,15 +47,13 @@ The other requirements are:
 
 *Note that all following activities must be completed prior to class - there will not be time to perform these operations during the workshop.*
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity 1-3: Set up Power BI License, Microsoft Fabric Capacity, Validate you have a computer, and Internet</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Set up M365 account, Power BI License, Microsoft Fabric Capacity, Validate you have a computer, and Internet</b></p>
 
 <p>
 
-Open this link in a seperate tab or window and follow all of the instructions, [How to Set Up A Microsoft 365 trial Account](https://aka.ms/GetM365Developer)
+Open this link in a seperate tab or window and follow all of the instructions, [Accessing Microsoft Fabric for developers, startups and enterprises!](https://blog.fabric.microsoft.com/en-us/blog/accessing-microsoft-fabric-for-developers-startups-and-enterprises/)
 
-<p>
 
-Open this link in a seperate tab or window and follow all of the instructions, [How to Set Up A Microsoft Fabric (Preview) trial](https://learn.microsoft.com/en-us/fabric/get-started/fabric-trial)
 
 
 <h2 id="2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">Verification of pre-requisites for the Activities</h2>
