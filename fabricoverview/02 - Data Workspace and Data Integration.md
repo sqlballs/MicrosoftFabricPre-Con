@@ -19,7 +19,7 @@ You'll cover these topics in this Module:
 <dl>
   <dt><a href="#2.1">2.1 - Data Warehouse</a></dt>
   <dt><a href="#2.2">2.2 - Ingesting data with pipelines</a></dt>
-  <dt><a href="#2.3>2.3 - SQL Experience</a></dt>
+  <dt><a href="#2.3">2.3 - SQL Experience</a></dt>
   <dt><a href="#2.4">2.4 - Ingesting data with pipelines and data flows</a></dt>
 </dl>
 
