@@ -87,13 +87,13 @@ Since Data Warehousing is closely related to the SQL experience persona, you can
   <p><img src="https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/11f9beaa-6d57-4538-b2db-89f1470c7e56" height = 100>
 
 
-- <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-load-data" >Load data using T-SQL</a>
+- <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/ingest-data-copy" >Load data using T-SQL</a>
 
 Loading data into your newly created table is a straightforward process. You can achieve this with ease by utilizing the COPY INTO T-SQL statement. This statement allows you to efficiently load data into your tables.
 
 <p><img src="https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/717e6430-b66d-4fd1-bda5-7ef97e1e4d0f" height = 200>
 
-- <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-clone-table" >Clone a table using T-SQL</a>
+- <a href="https://learn.microsoft.com/en-us/sql/t-sql/statements/create-table-as-clone-of-transact-sql?view=fabric&preserve-view=true" >Clone a table using T-SQL</a>
 
 Microsoft Fabric offers the capability to create near-instantaneous zero-copy clones with minimal storage costs.
 
