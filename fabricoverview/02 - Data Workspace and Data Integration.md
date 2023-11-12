@@ -105,7 +105,7 @@ Microsoft Fabric offers the capability to create near-instantaneous zero-copy cl
 
 You can also right-click this link to open it in another tab and review this video that introduces you to these concepts:
 
-<p><a href="https://www.youtube.com/watch?v=2rETPwBLnnY"><img src="https://img.youtube.com/vi/2rETPwBLnnY/0.jpg" height=200>
+<p><a href="https://www.youtube.com/watch?v=-VXiEEIS2wc"><img src="https://img.youtube.com/vi/-VXiEEIS2wc/0.jpg" height=200>
 
 - <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-transform-data" >Transform data using stored procedure</a>
 
