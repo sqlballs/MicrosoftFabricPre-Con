@@ -80,7 +80,7 @@ In this tutorial, you'll create a new pipeline that loads sample data into a War
 
 Since Data Warehousing is closely related to the SQL experience persona, you can leverage many of the features that you may be accustomed to using in SQL Server, such as:
 
-- <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-tables" >Create Tables</a>
+- <a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tables" >Create Tables</a>
 
    Creating a table in Fabric is a remarkably similar process to creating a table in SQL Server. You can initiate a new query within the Fabric editor or SQL Server Management Studio (SSMS) and execute the 'create table' script, which will result in the table's creation within Microsoft Fabric.
 
