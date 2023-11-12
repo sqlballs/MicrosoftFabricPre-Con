@@ -127,7 +127,7 @@ Microsoft Fabric is designed with user-friendliness in mind, catering to individ
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity:SQL Experience</b></p>
 
-- Open the following reference in another tab, [Tutorial: SQL Experience](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-tables)
+- Open the data warehouse created in section 2.1 then open the following reference in another tab, [Tutorial: SQL Experience](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-tables)
 - - Follow Steps 4 - 8
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
