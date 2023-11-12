@@ -20,7 +20,7 @@ You'll cover these topics in this Module:
   <dt><a href="#2.1">2.1 - Data Warehouse</a></dt>
   <dt><a href="#2.2">2.2 - Ingesting data with pipelines</a></dt>
   <dt><a href="#2.3">2.3 - SQL Experience</a></dt>
-  <dt><a href="#2.4">2.4 - Ingesting data with pipelines and data flows</a></dt>
+  <dt><a href="#2.4">2.4 - Ingesting data with pipelines and data flows gen2</a></dt>
 </dl>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
@@ -35,7 +35,7 @@ The Warehouse is built for any skill level - from the citizen developer through 
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity:Creating your first Warehouse</b></p>
 
-- Open the following reference in another tab, [Tutorial: Analyze data with a notebook](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-warehouse)
+- Open the following reference in another tab, [Tutorial: Creating your first Warehouse](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-warehouse)
 - - Follow Step 2
  
  You can also right-click this link to open it in another tab and review this video that introduces you to these concepts:
