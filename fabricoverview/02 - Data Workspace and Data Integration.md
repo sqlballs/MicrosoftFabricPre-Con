@@ -132,7 +132,7 @@ Microsoft Fabric is designed with user-friendliness in mind, catering to individ
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="2.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.4 Ingesting Data using pipelines with Data flow Gen2</h2>
+<h2 id="2.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.4 Ingesting Data using pipelines with Dataflows Gen2</h2>
 
 <h3>Data Factory Dataflows</h3>
 
@@ -144,7 +144,7 @@ Dataflows are built using Power Query in Microsoft products and services such as
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Self-Guided Activity: Work through the Ingesting Data using pipelines with Data flow Gen2</b></p>
 
-In this activity, you will follow the basic training tutorial for Microsfot Azure Purview.
+In this activity, you will follow the basic training tutorial for Ingesting Data using pipelines with Data Flow Gen2.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
