@@ -13,7 +13,6 @@ The "Microsoft Fabric Overview for the Data Professional" workshop is taught usi
 
 **In Order to Commplete the Activities in this Workshop, you mush have a Power BI License and a Microsoft Fabric-Enabled Workspace. The steps for these requirements are explained below.**
 
-> Microsoft Fabric is currently in preview, and items may change or shift before this Workshop material is updated.
 
 - For this workshop, you will be required to execute workloads using Microsoft Fabric.  In order to do this you must first sign up for, or currently have, an M365 account with the proper permissions.  If you do not have an M365 account with the proper permissions you can sign up for a 90 day free trial of M365.
 - Next you must have a Power BI Pro license.  If you do not have a Power BI license you can sign up for one for free 60 day trial.
