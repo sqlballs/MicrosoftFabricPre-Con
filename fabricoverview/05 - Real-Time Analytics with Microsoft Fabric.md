@@ -6,7 +6,7 @@
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png"> <h2>05 - Real-Time Analytics with Microsoft Fabric</h2>
+<img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png"> <h2>05 - Real-Time Intelligence with Microsoft Fabric</h2>
 
 In this workshop you'll cover using The Microsoft Fabric Platform to implement a complete Analytics solution.
 
@@ -17,22 +17,22 @@ In each module you'll get more references, which you should follow up on to lear
 You'll cover these topics in this Module on the User Experience:
 
 <dl>
-  <dt><a href="#5.1" >5.1 - Working with Synapse Real-Time Analytics in Microsoft Fabric</a></dt>
+  <dt><a href="#5.1" >5.1 - Working with Real-Time Intelligence in Microsoft Fabric</a></dt>
   <dt><a href="#5.2" >5.2 - Working with Fabric and Streaming / Event Data</a></dt>
   <dt><a href="#5.3" >5.3 - Working with Fabric and the Kusto Query Language (KQL)</a></dt>
 </dl>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="5.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.1 Working with Synapse Real-Time Analytics in Microsoft Fabric</h2>
+<h2 id="5.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.1 Working with Synapse Real-Time Intelligence in Microsoft Fabric</h2>
 
 Azure Data Explorer is a fully managed, high-performance, big data analytics platform that makes it easy to analyze high volumes of data in near real time. The Azure Data Explorer toolbox gives you an end-to-end solution for data ingestion, query, visualization, and management.
 
-<p><img src="https://learn.microsoft.com/en-us/fabric/real-time-analytics/media/sample-gallery/use-sample.png" height = 400>
+<p><img src="https://learn.microsoft.com/en-us/fabric/real-time-intelligence/media/overview/overview-schematic.png#lightbox" height = 400>
 
-Synapse Real-Time Analytics is a fully managed big data analytics platform optimized for streaming, and time-series data. It utilizes a query language and engine with exceptional performance for searching structured, semi-structured, and unstructured data. Real-Time Analytics is fully integrated with the entire suite of Fabric products, for both data loading, data transformation, and advanced visualization scenarios.
+Synapse Real-Time Intelligence is a fully managed big data analytics platform optimized for streaming, and time-series data. It utilizes a query language and engine with exceptional performance for searching structured, semi-structured, and unstructured data. Real-Time Intelligence is fully integrated with the entire suite of Fabric products, for both data loading, data transformation, and advanced visualization scenarios.
 
-Real-Time Analytics is a data analytics SaaS experience in the Microsoft Fabric offering. Azure Data Explorer is a PaaS service in Azure. Kusto(the data engine) in Real-Time Analytics (KQL Database and KQL Queryset) and Azure Data Explorer share the same core engine with the identical core capabilities, but different management behavior. 
+Real-Time Intelligence is a data analytics SaaS experience in the Microsoft Fabric offering. Azure Data Explorer is a PaaS service in Azure. Kusto(the data engine) in Real-Time Intelligence (KQL Database and KQL Queryset) and Azure Data Explorer share the same core engine with the identical core capabilities, but different management behavior. 
 
 <h3>Kusto Engine</h3>
 
@@ -45,16 +45,18 @@ You can ingest terabytes of data in minutes in batch or streaming mode. You can 
 
 <h4>User-friendly Query Language</h4>
 
-Real-Time Analytics uses the [Kusto Query Language (KQL)](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/), an open-source language initially invented by the Kusto engine team. The language is simple to understand and learn, and highly productive. You can use simple operators and advanced analytics. Real-Time Analytics also supports [T-SQL](https://learn.microsoft.com/en-us/azure/data-explorer/t-sql).
+Real-Time Intelligence uses the [Kusto Query Language (KQL)](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/), an open-source language initially invented by the Kusto engine team. The language is simple to understand and learn, and highly productive. You can use simple operators and advanced analytics. Real-Time Intelligence also supports [T-SQL](https://learn.microsoft.com/en-us/azure/data-explorer/t-sql).
 
 </br>
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <h2 id="5.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.2 Working with Fabric and Streaming / Event Data</h2>
 
-The *Event streams* feature in Microsoft Fabric is a centralized place in the Fabric platform to capture, transform, and route real-time events to various destinations with a no-code experience. It's part of the Real-time analytics experience. The Eventstream item you create in the portal is an instance of Fabric event streams (also called an *eventstream*). You add event data sources, routing destinations, and the event processor when the transformation is needed, to the eventstream.
+The *Event streams* feature in Microsoft Fabric is a centralized place in the Fabric platform to capture, transform, and route real-time events to various destinations with a no-code experience. It's part of the Real-time intelligence experience. The Eventstream item you create in the portal is an instance of Fabric event streams (also called an *eventstream*). You add event data sources, routing destinations, and the event processor when the transformation is needed, to the eventstream.
 
-<p><img src="https://learn.microsoft.com/en-us/fabric/real-time-analytics/media/real-time-analytics-overview/schematic-architecture.png" height = 400>
+The *Real-Time hub* serves as a centralized catalog within your organization. It facilitates easy access, addition, exploration, and data sharing. By expanding the range of data sources, it enables broader insights and visual clarity across various domains. Importantly, this hub ensures that data is not only available but also accessible to all, promoting quick decision-making and informed action. The sharing of streaming data from diverse sources unlocks the potential to build comprehensive business intelligence across your organization.
+
+<p><img src="https://learn.microsoft.com/en-us/fabric/real-time-intelligence/media/overview/overview-schematic.png" height = 400>
 
 Everything in Fabric event streams is designed for event data. Capturing, transforming, and routing event data are the essential capabilities of Fabric event streams. It has a scalable infrastructure that the Fabric platform manages on behalf of you.
 
@@ -64,20 +66,20 @@ A Drag-and-drop experience gives you an intuitive and easy way to create your ev
 
 The Fabric event streams feature supports sending data to diverse destinations, such as Lakehouse, KQL database, and Custom App. You can have multiple destinations in an eventstream that can be attached simultaneously to receive event data from your eventstreams without interfering with each other.
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Real-Time Analytics Introduction and Tutorial</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Real-Time Intelligence Introduction and Tutorial</b></p>
 
 This tutorial is based on sample streaming data called New York Yellow Taxi trip data. The dataset contains trip records of New York's yellow taxis, with fields capturing pick-up and drop-off dates/times, pick-up and drop-off locations, trip distances, itemized fares, rate types, payment types, and driver-reported passenger counts. This data doesn't contain latitude and longitude data, which will be loaded from a blob container and joined together with the streaming data in a later step.
 
-You'll use the streaming and query capabilities of Real-Time Analytics to answer key questions about the trip statistics, taxi demand in the boroughs of New York and related insights, and build Power BI reports.
+You'll use the streaming and query capabilities of Real-Time Intelligence to answer key questions about the trip statistics, taxi demand in the boroughs of New York and related insights, and build Power BI reports.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
 Open each of the following references, and complete the steps you see there:
 
-- [Tutorial - Introduction](https://learn.microsoft.com/en-us/fabric/real-time-analytics/tutorial-introduction)
-- [Create resources](https://learn.microsoft.com/en-us/fabric/real-time-analytics/tutorial-1-resources)
-- [Get data with Eventstream](https://learn.microsoft.com/en-us/fabric/real-time-analytics/tutorial-2-event-streams)
-- [Get historical data](https://learn.microsoft.com/en-us/fabric/real-time-analytics/tutorial-3-get-historical-data)
+- [Tutorial - Introduction](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/tutorial-introduction)
+- [Create resources](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/tutorial-1-resources)
+- [Get data in the Real-Time Hub](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/tutorial-2-get-real-time-events)
+
 
 You can also right-click the following video links to open them in another tab and review videos that demonstrate these concepts:
 
@@ -89,13 +91,11 @@ You can also right-click the following video links to open them in another tab a
 
 <h2 id="5.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.3 Working with Fabric and the Kusto Query Language (KQL)</h2>
 
-<h3>Real-Time Analytics</h3>
+<h3>Real-Time Intelligence</h3>
 
-Real-Time Analytics deals with working on data as it occurs, as quickly as possible to the source generation of the data. 
+Real-Time Intelligence deals with working on data as it occurs, as quickly as possible to the source generation of the data. 
 
-<p><img src="https://learn.microsoft.com/en-us/fabric/real-time-analytics/media/real-time-analytics-overview/product-view.png" height = 400>
-
-If any one of these questions describes your data needs, Real-Time Analytics is the right solution for you:
+If any one of these questions describes your data needs, Real-Time Intelligence is the right solution for you:
 
 - Do I need high freshness from data ingestion to query?
 - Do I want to transform streaming data?
@@ -107,7 +107,7 @@ If any one of these questions describes your data needs, Real-Time Analytics is 
 
 The types of industries that benefit from data analysis in Real-Time Analytics is varied. For example: finance, transportation and logistics, smart cities, smart buildings, manufacturing operations, automotive, and oil and gas.
 
-For Microsoft Fabric, the main items available in Real-Time Analytics include:
+For Microsoft Fabric, the main items available in Real-Time Intelligence include:
 
 - Eventstream for capturing, transforming, and routing real-time events to various destinations with a no-code experience.
 - A KQL database for data storage and management. Data loaded into a KQL database can be accessed in OneLake and is exposed to other Fabric experiences.
@@ -133,10 +133,11 @@ In this activity, you will learn how to query your data using Kusto Query Langua
 
 Open the following references and complete the steps you see there:
 
-- [Explore data with KQL and SQL](https://learn.microsoft.com/en-us/fabric/real-time-analytics/tutorial-4-explore)
-- [Use advanced KQL queries](https://learn.microsoft.com/en-us/fabric/real-time-analytics/tutorial-5-advanced-kql-query)
-- [Build a Power BI report](https://learn.microsoft.com/en-us/fabric/real-time-analytics/tutorial-6-build-report)
-- [Clean up resources](https://learn.microsoft.com/en-us/fabric/real-time-analytics/tutorial-7-clean-up-resources)
+- [Query streaming data in a KQL queryset](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/tutorial-3-query-data)
+- [Create a Real-Time Dashboard](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/tutorial-4-create-dashboard)
+- [Build a Power BI report](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/tutorial-5-build-report)
+- [Set an Alert on your event stream](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/tutorial-6-set-alert)
+- [Clean up resources](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/tutorial-7-clean-up-resources)
 
 You can also right-click this link to open it in another tab and review this video that demonstrates this topic:
 
@@ -147,12 +148,12 @@ You can also right-click this link to open it in another tab and review this vid
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
   <li><a href="https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/?context=/fabric/context/context-rta&pivots=fabric" >Kusto Query Overview</a></li>
-  <li><a href="https://learn.microsoft.com/en-us/fabric/real-time-analytics/realtime-analytics-compare" > Comparing Real-Time Analytics and Azure Data Explorer</a></li>
+  <li><a href="https://learn.microsoft.com/en-us/fabric/real-time-intelligence/realtime-intelligence-compare" > Comparing Real-Time Intelligence and comparable Azure solutions</a></li>
   <li><a href="https://learn.microsoft.com/en-us/fabric/release-plan/">Microsoft Fabric release plan documentation</a></li>
-  <li><a href="https://radacad.com/fabric-real-time-analytics">Microsoft MVP Reza Rad walks through a demo he built, including a custom streaming application, to demonstrate using Real-time Analytics.</a></li>
-  <li><a href="https://learn.microsoft.com/en-us/fabric/real-time-analytics/overview" >What is Real-Time Analytics in Microsoft Fabric</a></li>
-  <li><a href="https://learn.microsoft.com/en-us/fabric/get-started/whats-new#synapse-real-time-analytics-in-microsoft-fabric" >What's new in Real-Time Analytics in Microsoft Fabric</a></li>
-  <li><a href="https://learn.microsoft.com/en-us/fabric/release-plan/real-time-analytics" >What's new and planned for Synapse Real-Time Analytics in Microsoft Fabric</a></li>
+  <li><a href="https://radacad.com/fabric-real-time-analytics">Microsoft MVP Reza Rad walks through a demo he built, including a custom streaming application, to demonstrate using Real-time Intelligence.</a></li>
+  <li><a href="https://learn.microsoft.com/en-us/fabric/real-time-intelligence/overview" >What is Real-Time Intelligence in Microsoft Fabric</a></li>
+  <li><a href="https://learn.microsoft.com/en-us/fabric/get-started/whats-new#real-time-intelligence-in-microsoft-fabric" >What's new in Real-Time Intelligence in Microsoft Fabric</a></li>
+  <li><a href="https://learn.microsoft.com/en-us/fabric/release-plan/real-time-intelligence" >What's new and planned for Real-Time Intelligence in Microsoft Fabric</a></li>
 </ul>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
