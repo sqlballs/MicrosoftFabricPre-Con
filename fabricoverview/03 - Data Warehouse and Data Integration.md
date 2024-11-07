@@ -14,17 +14,17 @@ In each module you'll get more references, which you should follow up on to lear
 
 (<a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md" >Make sure you check out the <b>Pre-Requisites</b> page before you start</a>. You'll need all of the items loaded there before you can proceed with the workshop.)
 
-You'll cover these topics in this Module:
+You'll cover these topics in this module:
 
 <dl>
-  <dt><a href="#3.1">3.1 - Data Warehouse</a></dt>
-  <dt><a href="#3.2">3.2 - Ingesting data with Data Factory</a></dt>
-  <dt><a href="#3.3">3.3 - SQL Experience</a></dt>
+  <dt><a href="#3.1">3.1 - Creating a Data Warehouse</a></dt>
+  <dt><a href="#3.2">3.2 - Ingest and Transform Data with Fabric Data Factory</a></dt>
+  <dt><a href="#3.3">3.3 - Data Engineering with Fabric Data Warehouse</a></dt>
 </dl>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="3.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.1 Data Warehouse</h2>
+<h2 id="3.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.1 Creating a Data Warehouse</h2>
 
 Microsoft Fabric is a next-generation data warehousing solution within Microsoft Fabric.
 
@@ -43,10 +43,14 @@ Data warehouse customers benefit from:
 
 <p><img src="https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/761b96fa-4e30-43d1-8ffe-d34650599be2" height = 400>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Creating your first warehouse</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Creating your first data warehouse</b></p>
+
+In this activity, you will follow the data warehouse tutorial to create a data warehouse in your workspace.
+
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
 - Open the following reference in another tab, [Tutorial: Create a Warehouse in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-warehouse)
-- Complete all steps on this page of the the tutorial.
+  - Complete all steps on this page of the the tutorial.
  
  You can also right-click this link to open it in another tab and review this video that introduces you to these concepts:
 
@@ -54,7 +58,7 @@ Data warehouse customers benefit from:
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="3.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.2 Ingesting data with Data Factory</h2>
+<h2 id="3.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.2 Ingest and Transform Data with Fabric Data Factory</h2>
 
 Data Factory empowers you with a modern data integration experience to ingest, prepare and transform data from a rich set of data sources (for example, databases, data warehouse, Lakehouse, real-time data, and more). Whether you are a citizen or professional developer, you will be able to transform the data with intelligent transformations and leverage a rich set of activities. We can create pipelines to execute one or more activities, access data sources or services through linked services, and after creating a pipeline, we can add triggers to automatically run our processes at specific times or in response to changing scenarios. With Data Factory in Microsoft Fabric, we are bringing fast copy (data movement) capabilities to both dataflows and data pipelines. With Fast Copy, you can move data between your favorite data stores blazing fast. Most importantly, Fast Copy enables you to bring data to your Lakehouse and Data Warehouse in Microsoft Fabric for analytics.
 
@@ -70,14 +74,16 @@ Add a configuration-driven copy activity together with your low-code dataflow re
 
 <p><img src="https://learn.microsoft.com/en-us/fabric/data-factory/media/data-factory-overview/data-pipelines.png" height = 300></p>
 
-<b>In this tutorial, you'll create a new pipeline that loads sample data into a Warehouse in Microsoft Fabric.</b>
-
 <br>
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Ingest data into the data warehouse</b></p>
 
-- Open the following reference in another tab, [Tutorial: Ingest data into a Warehouse in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-ingest-data)
-- Complete all steps on this page of the the tutorial.
+In this activity, you will follow the data warehouse tutorial to load a data warehouse using a pipeline copy activity.
+
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+
+- In Microsoft Fabric, navigate to the workspace view then open the following reference in another tab, [Tutorial: Ingest data into a Warehouse in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-ingest-data)
+  - Complete steps 2 through 25.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -95,13 +101,13 @@ In this activity, you will follow the basic training tutorial for ingestingd dat
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-- Open the following reference in another tab, [Quickstart: Create your first dataflow to get and transform data](https://learn.microsoft.com/en-us/fabric/data-factory/create-first-dataflow-gen2)
+- Open the following reference in another tab and complete all steps, [Quickstart: Create your first dataflow to get and transform data](https://learn.microsoft.com/en-us/fabric/data-factory/create-first-dataflow-gen2)
 - Right-click this link to open it in another tab and review this video that introduces you to these concepts:
 
 <p><a href="https://www.youtube.com/watch?v=0jSTd2P20pk"><img src="https://img.youtube.com/vi/0jSTd2P20pk/0.jpg" height = 200></a> 
 
 
-<h2 id="3.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.3 SQL Experience</h2>
+<h2 id="3.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.3 Data Engineering with Fabric Data Warehouse</h2>
 
 Data Warehousing in Microsoft Fabric is a T-SQL based experience which means you can leverage many of the features that you may be accustomed to using in SQL Server, such as:
 
@@ -153,9 +159,16 @@ Microsoft Fabric is designed with user-friendliness in mind, catering to individ
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: SQL Experience</b></p>
 
-- Open the data warehouse created in section 3.1 then open the following reference in another tab, [Tutorial: Create tables in a data warehouse](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-tables)
-- Follow Steps 4 - 11
+In this activity, you will follow the data warehouse tutorial to create and load tables and transform data using T-SQL.
 
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+
+- Open the data warehouse created in section 3.1 then open the following reference in another tab, [Tutorial: Create tables in a data warehouse](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-tables)
+  - Follow steps 4 through 11.
+- Open the data warehouse created in section 3.1 then open the following reference in another tab, [Tutorial: Load data using T-SQL](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-load-data)
+  - Follow steps 1 through 8.
+- Open the data warehouse created in section 3.1 then open the following reference in another tab, [Tutorial: Transform data using a stored procedure](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-transform-data)
+  - Follow steps 1 through 16.
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 
@@ -173,4 +186,4 @@ Microsoft Fabric is designed with user-friendliness in mind, catering to individ
  <li><a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/monitor-using-dmv">Data Warehouse Monitoring using DMVs</a></li>
 </ul>
 
-Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/03%20-%20The%20Data%20Lakehouse.md).
+Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/04%20-%20The%20Data%20Lakehouse.md).
