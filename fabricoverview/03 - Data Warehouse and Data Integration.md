@@ -18,9 +18,8 @@ You'll cover these topics in this Module:
 
 <dl>
   <dt><a href="#3.1">3.1 - Data Warehouse</a></dt>
-  <dt><a href="#3.2">3.2 - Ingesting data with pipelines</a></dt>
+  <dt><a href="#3.2">3.2 - Ingesting data with Data Factory</a></dt>
   <dt><a href="#3.3">3.3 - SQL Experience</a></dt>
-  <dt><a href="#3.4">3.4 - Ingesting data with pipelines and data flows gen2</a></dt>
 </dl>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
@@ -44,7 +43,7 @@ Data warehouse customers benefit from:
 
 <p><img src="https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/761b96fa-4e30-43d1-8ffe-d34650599be2" height = 400>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Creating your first Warehouse</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Creating your first warehouse</b></p>
 
 - Open the following reference in another tab, [Tutorial: Create a Warehouse in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-warehouse)
 - Complete all steps on this page of the the tutorial.
@@ -55,21 +54,11 @@ Data warehouse customers benefit from:
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="3.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.2 Ingesting data with pipelines</h2>
-
-~~In the previous module, you learned about the main storage concept, OneLake. To move data into and out of OneLake, you will use the Microsoft Fabric experience of *Data Factory*.~~
+<h2 id="3.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.2 Ingesting data with Data Factory</h2>
 
 Data Factory empowers you with a modern data integration experience to ingest, prepare and transform data from a rich set of data sources (for example, databases, data warehouse, Lakehouse, real-time data, and more). Whether you are a citizen or professional developer, you will be able to transform the data with intelligent transformations and leverage a rich set of activities. We can create pipelines to execute one or more activities, access data sources or services through linked services, and after creating a pipeline, we can add triggers to automatically run our processes at specific times or in response to changing scenarios. With Data Factory in Microsoft Fabric, we are bringing fast copy (data movement) capabilities to both dataflows and data pipelines. With Fast Copy, you can move data between your favorite data stores blazing fast. Most importantly, Fast Copy enables you to bring data to your Lakehouse and Data Warehouse in Microsoft Fabric for analytics.
 
 There are two primary high-level features Data Factory implements: dataflows and pipelines.
-
-<h3>Dataflows</h3>
-
-Dataflows provide a low-code interface for ingesting data from hundreds of data sources, transforming your data using 300+ data transformations. You can then load the resulting data into multiple destinations, such as Azure SQL databases and more. Dataflows can be run repeatedly using manual or scheduled refresh, or as part of a data pipeline orchestration.
-
-Dataflows are built using the familiar Power Query experience that's available today across several Microsoft products and services such as Excel, Power BI, Power Platform, Dynamics 365 Insights applications, and more. Power Query empowers all users, from citizen to professional data integrators, to perform data ingestion and data transformations across their data estate. Perform joins, aggregations, data cleansing, custom transformations, and much more all from an easy-to-use, highly visual, low-code UI.
-
-<p><img src="https://learn.microsoft.com/en-us/fabric/data-factory/media/data-factory-overview/dataflow-experience.png" height = 300></p>
 
 <h3>Data Pipelines</h3>
 
@@ -91,6 +80,26 @@ Add a configuration-driven copy activity together with your low-code dataflow re
 - Complete all steps on this page of the the tutorial.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
+
+<h3>Dataflows</h3>
+
+Dataflows provide a low-code interface for ingesting data from hundreds of data sources, transforming your data using 300+ data transformations. You can then load the resulting data into multiple destinations, such as Azure SQL databases and more. Dataflows can be run repeatedly using manual or scheduled refresh, or as part of a data pipeline orchestration.
+
+Dataflows are built using the familiar Power Query experience that's available today across several Microsoft products and services such as Excel, Power BI, Power Platform, Dynamics 365 Insights applications, and more. Power Query empowers all users, from citizen to professional data integrators, to perform data ingestion and data transformations across their data estate. Perform joins, aggregations, data cleansing, custom transformations, and much more all from an easy-to-use, highly visual, low-code UI.
+
+<p><img src="https://learn.microsoft.com/en-us/fabric/data-factory/media/data-factory-overview/dataflow-experience.png" height = 300></p>
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Self-Guided Activity: Create your first dataflow to get and transform data</b></p>
+
+In this activity, you will follow the basic training tutorial for ingestingd data using Dataflows Gen2.
+
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+
+- Open the following reference in another tab, [Quickstart: Create your first dataflow to get and transform data](https://learn.microsoft.com/en-us/fabric/data-factory/create-first-dataflow-gen2)
+- Right-click this link to open it in another tab and review this video that introduces you to these concepts:
+
+<p><a href="https://www.youtube.com/watch?v=0jSTd2P20pk"><img src="https://img.youtube.com/vi/0jSTd2P20pk/0.jpg" height = 200></a> 
+
 
 <h2 id="3.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.3 SQL Experience</h2>
 
@@ -149,33 +158,6 @@ Microsoft Fabric is designed with user-friendliness in mind, catering to individ
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<b><i>********** Remove this section below ********** </b></i>
-
-<h2 id="3.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.4 Ingesting Data Using Dataflows Gen2</h2>
-
-<h3>Data Factory Dataflows</h3>
-
-Dataflows provide a low-code interface for ingesting data from hundreds of data sources, transforming your data using 300+ data transformations. You can then load the resulting data into multiple destinations, such as Azure SQL databases and more. Dataflows can be run repeatedly using manual or scheduled refresh, or as part of a data pipeline orchestration.
-
-Dataflows are built using Power Query in Microsoft products and services such as Excel, Power BI, Power Platform, Dynamics 365 Insights applications, and more, using Power Query to perform data ingestion and data transformations across the data estate. You can also create joins, aggregations, data cleansing, custom transformations, and much more all from a highly visual, low-code UI.
-
-<p><img src="https://learn.microsoft.com/en-us/fabric/data-factory/media/data-factory-overview/dataflow-experience.png#lightbox" height = 400>
-
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Self-Guided Activity: Work through the Ingesting Data using pipelines with Data flow Gen2</b></p>
-
-In this activity, you will follow the basic training tutorial for Ingesting Data using pipelines with Data Flow Gen2.
-
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
-
-- Right-click this link to open it in another tab and review this video that introduces you to these concepts:
-
-<p><a href="https://www.youtube.com/watch?v=mlxlPhJ5ovc"><img src="https://img.youtube.com/vi/mlxlPhJ5ovc/0.jpg" height = 200></a> 
-
-<b><i>********** Remove this section above ********** </b></i>
-
-<br>
-
-<p style="border-bottom: 1px solid lightgrey;"></p>
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
