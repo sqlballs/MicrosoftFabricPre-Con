@@ -20,11 +20,14 @@ You'll cover these topics in this Module on the User Experience:
   <dt><a href="#5.1" >5.1 - Working with Real-Time Intelligence in Microsoft Fabric</a></dt>
   <dt><a href="#5.2" >5.2 - Working with Fabric and Streaming / Event Data</a></dt>
   <dt><a href="#5.3" >5.3 - Working with Fabric and the Kusto Query Language (KQL)</a></dt>
+  <dt><a href="#5.4" >5.4 - Event House vs. KQL DB</a></dt>
+  <dt><a href="#5.5" >5.5 - KQL Dashboard</a></dt>
+  <dt><a href="#5.6" >5.6 - Data Activator</a></dt>
 </dl>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="5.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.1 Working with Synapse Real-Time Intelligence in Microsoft Fabric</h2>
+<h2 id="5.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.1 Working with Real-Time Intelligence in Microsoft Fabric</h2>
 
 Azure Data Explorer is a fully managed, high-performance, big data analytics platform that makes it easy to analyze high volumes of data in near real time. The Azure Data Explorer toolbox gives you an end-to-end solution for data ingestion, query, visualization, and management.
 
@@ -32,7 +35,7 @@ Azure Data Explorer is a fully managed, high-performance, big data analytics pla
 
 Synapse Real-Time Intelligence is a fully managed big data analytics platform optimized for streaming, and time-series data. It utilizes a query language and engine with exceptional performance for searching structured, semi-structured, and unstructured data. Real-Time Intelligence is fully integrated with the entire suite of Fabric products, for both data loading, data transformation, and advanced visualization scenarios.
 
-Real-Time Intelligence is a data analytics SaaS experience in the Microsoft Fabric offering. Azure Data Explorer is a PaaS service in Azure. Kusto(the data engine) in Real-Time Intelligence (KQL Database and KQL Queryset) and Azure Data Explorer share the same core engine with the identical core capabilities, but different management behavior. 
+Real-Time Intelligence is a data analytics SaaS experience in the Microsoft Fabric offering. Azure Data Explorer is a PaaS service in Azure. Kusto(the data engine) in Real-Time Intelligence (KQL Database and KQL Queryset) and Azure Data Explorer share the same core engine with the identical core capabilities, but different management behavior.
 
 <h3>Kusto Engine</h3>
 
@@ -52,11 +55,9 @@ Real-Time Intelligence uses the [Kusto Query Language (KQL)](https://learn.micro
 
 <h2 id="5.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.2 Working with Fabric and Streaming / Event Data</h2>
 
-The *Event streams* feature in Microsoft Fabric is a centralized place in the Fabric platform to capture, transform, and route real-time events to various destinations with a no-code experience. It's part of the Real-time intelligence experience. The Eventstream item you create in the portal is an instance of Fabric event streams (also called an *eventstream*). You add event data sources, routing destinations, and the event processor when the transformation is needed, to the eventstream.
+The _Event streams_ feature in Microsoft Fabric is a centralized place in the Fabric platform to capture, transform, and route real-time events to various destinations with a no-code experience. It's part of the Real-time intelligence experience. The Eventstream item you create in the portal is an instance of Fabric event streams (also called an _eventstream_). You add event data sources, routing destinations, and the event processor when the transformation is needed, to the eventstream.
 
-The *Real-Time hub* serves as a centralized catalog within your organization. It facilitates easy access, addition, exploration, and data sharing. By expanding the range of data sources, it enables broader insights and visual clarity across various domains. Importantly, this hub ensures that data is not only available but also accessible to all, promoting quick decision-making and informed action. The sharing of streaming data from diverse sources unlocks the potential to build comprehensive business intelligence across your organization.
-
-<p><img src="https://learn.microsoft.com/en-us/fabric/real-time-intelligence/media/overview/overview-schematic.png" height = 400>
+The _Real-Time hub_ serves as a centralized catalog within your organization. It facilitates easy access, addition, exploration, and data sharing. By expanding the range of data sources, it enables broader insights and visual clarity across various domains. Importantly, this hub ensures that data is not only available but also accessible to all, promoting quick decision-making and informed action. The sharing of streaming data from diverse sources unlocks the potential to build comprehensive business intelligence across your organization.
 
 Everything in Fabric event streams is designed for event data. Capturing, transforming, and routing event data are the essential capabilities of Fabric event streams. It has a scalable infrastructure that the Fabric platform manages on behalf of you.
 
@@ -74,26 +75,20 @@ You'll use the streaming and query capabilities of Real-Time Intelligence to ans
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-Open each of the following references, and complete the steps you see there:
+Open the following tutorial and complete steps 1-6(7 is a clean-up step and can be done when you are done with the tutorial), and complete the steps you see there:
 
 - [Tutorial - Introduction](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/tutorial-introduction)
-- [Create resources](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/tutorial-1-resources)
-- [Get data in the Real-Time Hub](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/tutorial-2-get-real-time-events)
 
+You can also right-click the following video link to open it in another tab and review a video that demonstrates these concepts:
 
-You can also right-click the following video links to open them in another tab and review videos that demonstrate these concepts:
-
-<a href="https://www.youtube.com/watch?v=-HhU7yLyuUU"><img src="https://img.youtube.com/vi/-HhU7yLyuUU/0.jpg" height = 200></a>
-<a href="https://www.youtube.com/watch?v=_RFvcPBNiOk"><img src="https://img.youtube.com/vi/_RFvcPBNiOk/0.jpg" height = 200></a>
+<a href="https://www.youtube.com/watch?v=iWepPEUUO_4"><img src="https://img.youtube.com/vi/iWepPEUUO_4/0.jpg" height = 200></a>
 
 </br>
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <h2 id="5.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.3 Working with Fabric and the Kusto Query Language (KQL)</h2>
 
-<h3>Real-Time Intelligence</h3>
-
-Real-Time Intelligence deals with working on data as it occurs, as quickly as possible to the source generation of the data. 
+Real-Time Intelligence deals with working on data as it occurs, as quickly as possible to the source generation of the data.
 
 If any one of these questions describes your data needs, Real-Time Intelligence is the right solution for you:
 
@@ -123,26 +118,43 @@ The KQL Queryset uses the Kusto Query language for creating queries, and also su
 In Real-Time Analytics, you interact with your data in the context of databases. A single workspace can hold multiple databases, and each database can hold multiple tables.
 </br>
 
-The KQL Queryset is the item used to run queries, view, and customize query results on data from a KQL database. Each tab in the KQL queryset can be associated with a different KQL database, and lets your save queries for later use or share with others to collaborate on data exploration. You can also change the KQL database associated with any tab, allowing you to run the same query on data in different states. The KQL Queryset uses the Kusto Query language for creating queries, and also supports many SQL functions. 
+The KQL Queryset is the item used to run queries, view, and customize query results on data from a KQL database. Each tab in the KQL queryset can be associated with a different KQL database, and lets your save queries for later use or share with others to collaborate on data exploration. You can also change the KQL database associated with any tab, allowing you to run the same query on data in different states. The KQL Queryset uses the Kusto Query language for creating queries, and also supports many SQL functions.
 
 <p><img src="https://learn.microsoft.com/en-us/azure/data-explorer/media/data-explorer-overview/workflow.png" height = 400></p>
 
-In this activity, you will learn how to query your data using Kusto Query Language in a KQL queryset.
+You can also right-click this link to open it in another tab and review this video that demonstrates how to use Copilot in Real-Time Intelligence:
 
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+<a href="https://www.youtube.com/watch?v=P5YBjkB4x3g"><img src="https://img.youtube.com/vi/P5YBjkB4x3g/0.jpg" height = 200></a>
 
-Open the following references and complete the steps you see there:
+</br>
+<p style="border-bottom: 1px solid lightgrey;"></p>
 
-- [Query streaming data in a KQL queryset](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/tutorial-3-query-data)
-- [Create a Real-Time Dashboard](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/tutorial-4-create-dashboard)
-- [Build a Power BI report](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/tutorial-5-build-report)
-- [Set an Alert on your event stream](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/tutorial-6-set-alert)
-- [Clean up resources](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/tutorial-7-clean-up-resources)
+<h2 id="5.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.4 Event House vs. KQLDB</h2>
 
-You can also right-click this link to open it in another tab and review this video that demonstrates this topic:
+_Insert Introductory paragraph_
 
-<a href="https://www.youtube.com/watch?v=ZVrvP20ezYk"><img src="https://img.youtube.com/vi/ZVrvP20ezYk/0.jpg" height = 200></a>
+<h3>Event House</h3>
 
+<h3>KQL Database</h3>
+
+</br>
+<p style="border-bottom: 1px solid lightgrey;"></p>
+
+<h2 id="5.5"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.5 KQL Dashboard</h2>
+
+_Insert Introductory paragraph_
+
+<h3>KQL Dashboard</h3>
+</br>
+
+<p style="border-bottom: 1px solid lightgrey;"></p>
+<h2 id="5.6"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.6 Event House vs. KQLDB</h2>
+
+_Insert Introductory paragraph_
+
+<h3>Data Activator</h3>
+
+</br>
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
