@@ -115,15 +115,36 @@ Data Warehousing in Microsoft Fabric is a T-SQL based experience which means you
 
    Creating a table in Fabric is a remarkably similar process to creating a table in SQL Server. You can initiate a new query within the Fabric editor or SQL Server Management Studio (SSMS) and execute the 'create table' script, which will result in the table's creation within Microsoft Fabric.
 
-<b><i>********** Replace this image **********</i></b>
-<p><img src="https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/11f9beaa-6d57-4538-b2db-89f1470c7e56" height = 100>
-<br><b><i>********** Replace this image **********</i></b>
+```sql
+DROP TABLE IF EXISTS [dbo].[dimension_city];
+CREATE TABLE [dbo].[dimension_city]
+    (
+        [CityKey] [int] NULL,
+        [WWICityID] [int] NULL,
+        [City] [varchar](8000) NULL,
+        [StateProvince] [varchar](8000) NULL,
+        [Country] [varchar](8000) NULL,
+        [Continent] [varchar](8000) NULL,
+        [SalesTerritory] [varchar](8000) NULL,
+        [Region] [varchar](8000) NULL,
+        [Subregion] [varchar](8000) NULL,
+        [Location] [varchar](8000) NULL,
+        [LatestRecordedPopulation] [bigint] NULL,
+        [ValidFrom] [datetime2](6) NULL,
+        [ValidTo] [datetime2](6) NULL,
+        [LineageKey] [int] NULL
+    );
+```
 
 <h3><a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/ingest-data-copy" >Load data using T-SQL</a></h3>
 
 Loading data into your newly created table is a straightforward process. You can achieve this with ease by utilizing the COPY INTO T-SQL statement. This statement allows you to efficiently load data into your tables.
 
-<p><img src="https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/717e6430-b66d-4fd1-bda5-7ef97e1e4d0f" height = 200>
+```sql
+COPY INTO [dbo].[dimension_city]
+FROM 'https://fabrictutorialdata.blob.core.windows.net/sampledata/WideWorldImportersDW/tables/dimension_city.parquet'
+WITH (FILE_TYPE = 'PARQUET');
+```
 
 <h3><a href="https://learn.microsoft.com/en-us/sql/t-sql/statements/create-table-as-clone-of-transact-sql" >Clone a table using T-SQL</a></h3>
 
@@ -133,7 +154,13 @@ Microsoft Fabric offers the capability to create near-instantaneous zero-copy cl
 - Table clones provide consistent reporting and zero-copy duplication of datasets for analytical workloads and machine learning modeling and testing.
 - Table clones provide the capability of data recovery in the event of a failed release or data corruption by retaining the previous state of data.
 
-<p><img src="https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/a05bc1b4-5033-4056-9a81-8c52a3c80a73" height = 150>
+```sql
+-- Create a clone of the dbo.dimension_city table.
+CREATE TABLE [dbo].[dimension_city1] AS CLONE OF [dbo].[dimension_city];
+
+-- Create a clone of the dbo.fact_sale table.
+CREATE TABLE [dbo].[fact_sale1] AS CLONE OF [dbo].[fact_sale];
+```
 
 You can also right-click this link to open it in another tab and review this video that introduces you to these concepts:
 
@@ -143,7 +170,57 @@ You can also right-click this link to open it in another tab and review this vid
 
 For SQL users, the availability of stored procedures is a valuable feature, and Microsoft Fabric supports them in a way that aligns with your familiarity. Writing stored procedures in Fabric follows the same approach as you would in SQL Server, making it convenient for users to leverage this important SQL functionality. The data can be transformed using Stored procedures.
 
-<p><img src="https://github.com/sqlballs/MicrosoftFabricPre-Con/assets/45181391/dac19efe-a5ec-4c38-8315-12bc6990d48e" height = 700>
+```sql
+-- Drop the stored procedure if it already exists.
+DROP PROCEDURE IF EXISTS [dbo].[populate_aggregate_sale_by_city]
+GO
+
+-- Create the populate_aggregate_sale_by_city stored procedure.
+CREATE PROCEDURE [dbo].[populate_aggregate_sale_by_city]
+AS
+BEGIN
+    -- If the aggregate table already exists, drop it. Then create the table.
+    DROP TABLE IF EXISTS [dbo].[aggregate_sale_by_date_city];
+    CREATE TABLE [dbo].[aggregate_sale_by_date_city]
+        (
+            [Date] [DATETIME2](6),
+            [City] [VARCHAR](8000),
+            [StateProvince] [VARCHAR](8000),
+            [SalesTerritory] [VARCHAR](8000),
+            [SumOfTotalExcludingTax] [DECIMAL](38,2),
+            [SumOfTaxAmount] [DECIMAL](38,6),
+            [SumOfTotalIncludingTax] [DECIMAL](38,6),
+            [SumOfProfit] [DECIMAL](38,2)
+        );
+
+    -- Reload the aggregated dataset to the table.
+    INSERT INTO [dbo].[aggregate_sale_by_date_city]
+    SELECT
+        FS.[InvoiceDateKey] AS [Date], 
+        DC.[City], 
+        DC.[StateProvince], 
+        DC.[SalesTerritory], 
+        SUM(FS.[TotalExcludingTax]) AS [SumOfTotalExcludingTax], 
+        SUM(FS.[TaxAmount]) AS [SumOfTaxAmount], 
+        SUM(FS.[TotalIncludingTax]) AS [SumOfTotalIncludingTax], 
+        SUM(FS.[Profit]) AS [SumOfProfit]
+    FROM [dbo].[fact_sale] AS FS
+    INNER JOIN [dbo].[dimension_city] AS DC
+        ON FS.[CityKey] = DC.[CityKey]
+    GROUP BY
+        FS.[InvoiceDateKey],
+        DC.[City], 
+        DC.[StateProvince], 
+        DC.[SalesTerritory]
+    ORDER BY 
+        FS.[InvoiceDateKey], 
+        DC.[StateProvince], 
+        DC.[City];
+END
+
+-- Execute the stored procedure to create the aggregate table.
+EXEC [dbo].[populate_aggregate_sale_by_city];
+```
 
 <h3><a href="https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-visual-query" >Create a query with the visual query builder</a></h3>
 
