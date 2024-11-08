@@ -6,154 +6,105 @@
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png"> <h2>05 - Real-Time Intelligence with Microsoft Fabric</h2>
-
-In this workshop you'll cover using The Microsoft Fabric Platform to implement a complete Analytics solution.
-
-In each module you'll get more references, which you should follow up on to learn more. Also watch for links within the text - click on each one to explore that topic.
+<img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png"> <h2>05 -  Mirroring in Fabric</h2>
+<br></br>
+In this module we will explore various data replication techniques using Mirroring in Fabric, which offers efficient and low-latency solutions. They will explore the process of integrating diverse data sources, such as Azure SQL Database, Azure Cosmos DB, and Snowflake, into a unified analytics platform, OneLake.
 
 (<a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/00%20-%20Pre-Requisites.md" >Make sure you check out the <b>Pre-Requisites</b> page before you start</a>. You'll need all of the items loaded there before you can proceed with the workshop.)
 
 You'll cover these topics in this Module on the User Experience:
 
 <dl>
-  <dt><a href="#5.1" >5.1 - Working with Real-Time Intelligence in Microsoft Fabric</a></dt>
-  <dt><a href="#5.2" >5.2 - Working with Fabric and Streaming / Event Data</a></dt>
-  <dt><a href="#5.3" >5.3 - Working with Fabric and the Kusto Query Language (KQL)</a></dt>
+  <dt><a href="#5.1" >5.1 - What is Mirroing in Fabric?</a></dt>
+  <dt><a href="#5.2" >5.2 - When to use Mirroing in Fabric</a></dt>
+  <dt><a href="#5.3" >5.3 - Configure Microsoft Fabric mirrored databases from Azure SQL Database</a></dt>
+  <dt><a href="#5.4" >5.4 - Furture of Mirroring in Fabric</a></dt>
+  <dt><a href="#5.5" >5.5 - Trouble shoot Fabric mirrored database</a></dt>
 </dl>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="5.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.1 Working with Synapse Real-Time Intelligence in Microsoft Fabric</h2>
+<h2 id="5.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.1 What is Mirroing in Fabric?</h2>
+<br></br>
 
-Azure Data Explorer is a fully managed, high-performance, big data analytics platform that makes it easy to analyze high volumes of data in near real time. The Azure Data Explorer toolbox gives you an end-to-end solution for data ingestion, query, visualization, and management.
+Mirroring in Fabric offers a low-cost and low-latency data replication solution, enabling seamless integration of data from various systems into a single analytics platform, OneLake. You can continuously replicate data from sources like Azure SQL Database, Azure Cosmos DB, Azure Databricks, and Snowflake.
 
-<p><img src="https://learn.microsoft.com/en-us/fabric/real-time-intelligence/media/overview/overview-schematic.png#lightbox" height = 400>
+Once the data is in OneLake, it becomes accessible in a queryable format, allowing the use of Fabric's diverse services, such as Spark analytics, notebook execution, data engineering, and Power BI Reports visualization. This solution offers an integrated, end-to-end product designed to simplify analytics and foster openness and collaboration, supporting the open-source Delta Lake table format.
 
-Synapse Real-Time Intelligence is a fully managed big data analytics platform optimized for streaming, and time-series data. It utilizes a query language and engine with exceptional performance for searching structured, semi-structured, and unstructured data. Real-Time Intelligence is fully integrated with the entire suite of Fabric products, for both data loading, data transformation, and advanced visualization scenarios.
-
-Real-Time Intelligence is a data analytics SaaS experience in the Microsoft Fabric offering. Azure Data Explorer is a PaaS service in Azure. Kusto(the data engine) in Real-Time Intelligence (KQL Database and KQL Queryset) and Azure Data Explorer share the same core engine with the identical core capabilities, but different management behavior. 
-
-<h3>Kusto Engine</h3>
-
-By analyzing structured, semi-structured, and unstructured data across time series, and by using Machine Learning, Kusto makes it simple to extract key insights, spot patterns and trends, and create forecasting models. The Kusto engine uses a traditional relational model, organizing data into tables with strongly-typed schemas. Tables are stored within databases, and a cluster can manage multiple databases. It is scalable, secure, robust, and enterprise-ready, and is useful for log analytics, time series analytics, IoT, and general-purpose exploratory analytics.
-
-The Kusto engine exhibits several distinctive features that enhance its performance and functionality.
-
-<h4>Velocity, Variety, and Volume</h4>
-You can ingest terabytes of data in minutes in batch or streaming mode. You can query petabytes of data, with results returned within milliseconds to seconds. The Kusto engine provides high velocity (millions of events per second), low latency (seconds), and linear scale ingestion of raw data. Ingest your data in different formats and structures, flowing from various pipelines and sources.
-
-<h4>User-friendly Query Language</h4>
-
-Real-Time Intelligence uses the [Kusto Query Language (KQL)](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/), an open-source language initially invented by the Kusto engine team. The language is simple to understand and learn, and highly productive. You can use simple operators and advanced analytics. Real-Time Intelligence also supports [T-SQL](https://learn.microsoft.com/en-us/azure/data-explorer/t-sql).
+Mirroring in Fabric accelerates the data integration process, providing a turnkey solution for creating data replicas in OneLake to meet all analytical needs.
 
 </br>
-<p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="5.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.2 Working with Fabric and Streaming / Event Data</h2>
+<h2 id="5.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.2 - When to use Mirroing in Fabric</h2>
+<br></br>
 
-The *Event streams* feature in Microsoft Fabric is a centralized place in the Fabric platform to capture, transform, and route real-time events to various destinations with a no-code experience. It's part of the Real-time intelligence experience. The Eventstream item you create in the portal is an instance of Fabric event streams (also called an *eventstream*). You add event data sources, routing destinations, and the event processor when the transformation is needed, to the eventstream.
+Today, many organizations face challenges with mission-critical operational or analytical data being isolated in silos, requiring complex ETL pipelines and business processes to access and work with this data. This situation leads to restricted access to important, constantly changing data, friction between people, processes, and technology, long wait times to create necessary data pipelines, and a lack of freedom to use preferred tools for analysis and sharing insights. Additionally, there is often no proper foundation for data collaboration and no common, open data formats for various analytical scenarios such as BI, AI, Integration, Engineering, and Apps.
 
-The *Real-Time hub* serves as a centralized catalog within your organization. It facilitates easy access, addition, exploration, and data sharing. By expanding the range of data sources, it enables broader insights and visual clarity across various domains. Importantly, this hub ensures that data is not only available but also accessible to all, promoting quick decision-making and informed action. The sharing of streaming data from diverse sources unlocks the potential to build comprehensive business intelligence across your organization.
+Mirroring in Fabric addresses these challenges by providing a seamless experience that accelerates the time-to-value for insights and decisions, and breaks down data silos between technology solutions. It offers near real-time replication of data into a SaaS data lake, with built-in analytics for BI and AI.
 
-<p><img src="https://learn.microsoft.com/en-us/fabric/real-time-intelligence/media/overview/overview-schematic.png" height = 400>
+The Microsoft Fabric platform, built on a foundation of SaaS, simplifies and integrates data processes to a new level. Mirroring in Fabric creates three essential items in your Fabric workspace:
+1. **Data replication management**: Manages the replication of data into OneLake and converts it to Parquet in an analytics-ready format, enabling further data engineering and data science scenarios.
+2. **SQL analytics endpoint**: Provides a SQL endpoint for querying and analyzing data.
+3. **Default semantic model**: Establishes a semantic model for easier data interpretation.
 
-Everything in Fabric event streams is designed for event data. Capturing, transforming, and routing event data are the essential capabilities of Fabric event streams. It has a scalable infrastructure that the Fabric platform manages on behalf of you.
+Furthermore, it supports a broad ecosystem of tools, including SQL Server Management Studio, Azure Data Studio, and GitHub Copilot. Sharing capabilities ensure ease of access control and secure decision-making across the organization.
 
-The event streams feature provides you with various source connectors to fetch the event data from diverse sources, such as Sample data and Azure Event Hubs. It also offers Custom App, the connection endpoint that enables you to develop your own applications to push event data into your eventstreams.
+Currently, the following external databases are available:
 
-A Drag-and-drop experience gives you an intuitive and easy way to create your event data processing, transforming, and routing logic without writing any code. An end-to-end data flow diagram in an eventstream can provide you with a comprehensive understanding of the data flow and organization.
+| Platform | Near real-time replication | End-to-end tutorial |
+|:--|:--|:--|
+| [Microsoft Fabric mirrored databases from Azure Cosmos DB (preview)](azure-cosmos-db.md) | Yes | [Tutorial: Azure Cosmos DB](azure-cosmos-db-tutorial.md) |
+| [Microsoft Fabric mirrored databases from Azure Databricks (preview)](azure-databricks.md) | Yes |[Tutorial: Azure Databricks](azure-databricks-tutorial.md) |
+| [Microsoft Fabric mirrored databases from Azure SQL Database (preview)](azure-sql-database.md) | Yes | [Tutorial: Azure SQL Database](azure-sql-database-tutorial.md) |
+| [Microsoft Fabric mirrored databases from Snowflake](snowflake.md) | Yes |[Tutorial: Snowflake](snowflake-tutorial.md) |
 
-The Fabric event streams feature supports sending data to diverse destinations, such as Lakehouse, KQL database, and Custom App. You can have multiple destinations in an eventstream that can be attached simultaneously to receive event data from your eventstreams without interfering with each other.
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Real-Time Intelligence Introduction and Tutorial</b></p>
+<<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Self-Guided Activity: Enabling Mirroring in your tenant</b></p>
 
-This tutorial is based on sample streaming data called New York Yellow Taxi trip data. The dataset contains trip records of New York's yellow taxis, with fields capturing pick-up and drop-off dates/times, pick-up and drop-off locations, trip distances, itemized fares, rate types, payment types, and driver-reported passenger counts. This data doesn't contain latitude and longitude data, which will be loaded from a blob container and joined together with the streaming data in a later step.
-
-You'll use the streaming and query capabilities of Real-Time Intelligence to answer key questions about the trip statistics, taxi demand in the boroughs of New York and related insights, and build Power BI reports.
+In this activity you will learn how to enable Mirroring within your tenant.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-Open each of the following references, and complete the steps you see there:
-
-- [Tutorial - Introduction](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/tutorial-introduction)
-- [Create resources](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/tutorial-1-resources)
-- [Get data in the Real-Time Hub](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/tutorial-2-get-real-time-events)
+- Follow the steps within the provided link. 
+<a href="https://learn.microsoft.com/en-us/fabric/database/mirrored-database/overview#how-do-i-enable-mirroring-in-my-tenant">How do I enable Mirroring in my tenant?</a>
 
 
-You can also right-click the following video links to open them in another tab and review videos that demonstrate these concepts:
-
-<a href="https://www.youtube.com/watch?v=-HhU7yLyuUU"><img src="https://img.youtube.com/vi/-HhU7yLyuUU/0.jpg" height = 200></a>
-<a href="https://www.youtube.com/watch?v=_RFvcPBNiOk"><img src="https://img.youtube.com/vi/_RFvcPBNiOk/0.jpg" height = 200></a>
-
-</br>
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="5.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.3 Working with Fabric and the Kusto Query Language (KQL)</h2>
+<h2 id="5.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.3 Configure Microsoft Fabric mirrored databases from Azure SQL Database</h2>
+<br></br>
+In this tutorial, you will learn about Mirroring in Fabric, an enterprise, cloud-based, zero-ETL, SaaS technology. Specifically, you will learn how to create a mirrored Azure SQL Database, which results in a read-only, continuously replicated copy of your Azure SQL Database data in OneLake.
 
-<h3>Real-Time Intelligence</h3>
+<br><br>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Configure Fabric Mirrored Database</b></p>
 
-Real-Time Intelligence deals with working on data as it occurs, as quickly as possible to the source generation of the data. 
+<p><img src="https://learn.microsoft.com/en-us/fabric/database/mirrored-database/media/azure-sql-database/fabric-mirroring-sql-database.svg" height = 400></p>
 
-If any one of these questions describes your data needs, Real-Time Intelligence is the right solution for you:
-
-- Do I need high freshness from data ingestion to query?
-- Do I want to transform streaming data?
-- Do I have a service that needs to access data with low query latency (in a matter of seconds)?
-- Does I need to search or access data in different formats, like structured data, semi-structured data (including complicated data such as JSON or other arrays), or unstructured data (for example, free text)?
-- Do I want the ability to query large amounts of data?
-- Does my data have a time component that can benefit from the time series-optimized database structure?
-- Do I want the ability to create ad-hoc queries on any field or row without prior optimization?
-
-The types of industries that benefit from data analysis in Real-Time Analytics is varied. For example: finance, transportation and logistics, smart cities, smart buildings, manufacturing operations, automotive, and oil and gas.
-
-For Microsoft Fabric, the main items available in Real-Time Intelligence include:
-
-- Eventstream for capturing, transforming, and routing real-time events to various destinations with a no-code experience.
-- A KQL database for data storage and management. Data loaded into a KQL database can be accessed in OneLake and is exposed to other Fabric experiences.
-- A KQL queryset to run queries, view, and customize query results on data. The KQL queryset allows you to save queries for future use, export and share queries with others, and includes the option to generate a Power BI report.
-
-The KQL Queryset is the item used to run queries, view, and customize query results on data from a KQL database. Each tab in the KQL queryset can be associated with a different KQL database, and lets your save queries for later use or share with others to collaborate on data exploration. You can also change the KQL database associated with any tab, allowing you to run the same query on data in different states.
-
-The KQL Queryset uses the Kusto Query language for creating queries, and also supports many SQL functions. For more information about the query language, see [this reference](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/index?context=/fabric/context/context).
-
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Create and Query a KQL Database</b></p>
-</br>
-
-In Real-Time Analytics, you interact with your data in the context of databases. A single workspace can hold multiple databases, and each database can hold multiple tables.
-</br>
-
-The KQL Queryset is the item used to run queries, view, and customize query results on data from a KQL database. Each tab in the KQL queryset can be associated with a different KQL database, and lets your save queries for later use or share with others to collaborate on data exploration. You can also change the KQL database associated with any tab, allowing you to run the same query on data in different states. The KQL Queryset uses the Kusto Query language for creating queries, and also supports many SQL functions. 
-
-<p><img src="https://learn.microsoft.com/en-us/azure/data-explorer/media/data-explorer-overview/workflow.png" height = 400></p>
-
-In this activity, you will learn how to query your data using Kusto Query Language in a KQL queryset.
+In this activity, you will learn how to Configure Microsoft Fabric mirrored databases from Azure SQL Database.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-Open the following references and complete the steps you see there:
+Open the following reference and complete the steps you see there:
 
-- [Query streaming data in a KQL queryset](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/tutorial-3-query-data)
-- [Create a Real-Time Dashboard](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/tutorial-4-create-dashboard)
-- [Build a Power BI report](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/tutorial-5-build-report)
-- [Set an Alert on your event stream](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/tutorial-6-set-alert)
-- [Clean up resources](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/tutorial-7-clean-up-resources)
+<a href="https://learn.microsoft.com/en-us/fabric/database/mirrored-database/azure-sql-database-tutorial"> Tutorial: Configure Microsoft Fabric mirrored databases from Azure SQL Database</a>
 
-You can also right-click this link to open it in another tab and review this video that demonstrates this topic:
+<p style="border-bottom: 1px solid lightgrey;"></p>
 
-<a href="https://www.youtube.com/watch?v=ZVrvP20ezYk"><img src="https://img.youtube.com/vi/ZVrvP20ezYk/0.jpg" height = 200></a>
+<h2 id="5.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.4 Furture of Mirroring in Fabric</h2>
+
+Need to determine what information we want to place here when it comes to the future of Mirroring in Fabric 
+
+<p style="border-bottom: 1px solid lightgrey;"></p>
+
+<h2 id="5.5"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.5 Trouble shoot Fabric mirrored database</h2>
+
+Add information and link to Brads Trouble Shooting video as a self guided 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
   <li><a href="https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/?context=/fabric/context/context-rta&pivots=fabric" >Kusto Query Overview</a></li>
-  <li><a href="https://learn.microsoft.com/en-us/fabric/real-time-intelligence/realtime-intelligence-compare" > Comparing Real-Time Intelligence and comparable Azure solutions</a></li>
-  <li><a href="https://learn.microsoft.com/en-us/fabric/release-plan/">Microsoft Fabric release plan documentation</a></li>
-  <li><a href="https://radacad.com/fabric-real-time-analytics">Microsoft MVP Reza Rad walks through a demo he built, including a custom streaming application, to demonstrate using Real-time Intelligence.</a></li>
-  <li><a href="https://learn.microsoft.com/en-us/fabric/real-time-intelligence/overview" >What is Real-Time Intelligence in Microsoft Fabric</a></li>
-  <li><a href="https://learn.microsoft.com/en-us/fabric/get-started/whats-new#real-time-intelligence-in-microsoft-fabric" >What's new in Real-Time Intelligence in Microsoft Fabric</a></li>
-  <li><a href="https://learn.microsoft.com/en-us/fabric/release-plan/real-time-intelligence" >What's new and planned for Real-Time Intelligence in Microsoft Fabric</a></li>
 </ul>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
