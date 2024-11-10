@@ -66,7 +66,8 @@ In this activity you will learn how to enable Mirroring within your tenant.
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
 - Follow the steps within the provided link. 
-<a href="https://learn.microsoft.com/en-us/fabric/database/mirrored-database/overview#how-do-i-enable-mirroring-in-my-tenant">How do I enable Mirroring in my tenant?</a>
+
+     <a href="https://learn.microsoft.com/en-us/fabric/database/mirrored-database/overview#how-do-i-enable-mirroring-in-my-tenant">How do I enable Mirroring in my tenant?</a>
 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
@@ -92,19 +93,74 @@ Open the following reference and complete the steps you see there:
 
 <h2 id="5.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.4 Furture of Mirroring in Fabric</h2>
 
-Need to determine what information we want to place here when it comes to the future of Mirroring in Fabric 
+<br></br>
+# Enhancements in Microsoft Fabric Mirroring
+With the continuous advancement of Microsoft Fabric, significant improvements have been made to Fabric Mirroring. To stay updated, it's advisable to regularly check the Fabric roadmap for the latest developments.
+## Recent Announcements and Enhancements
+In recent months, several limitations have been removed to support more data definition language (DDL) commands while Mirroring is active. These enhancements include:
+- **Alter Table**: Alter Column to change one datatype to another
+- **Drop Table**
+- **Rename Table**
+- **Rename Column**
+## Use Cases for Mirroring in Fabric
+Mirroring in Fabric offers a range of use cases, including:
+- Replicating data into One Lake and keeping it updated in near real-time.
+- Protecting operational databases from analytical workloads.
+- Providing raw data in the Fabric Lakehouse as a bronze layer to enable Medallion architecture.
+- Leveraging Direct Lake mode in Power BI instead of Direct Query or import mode.
+## Planned Features for Mirroring in Azure SQL Database
+Upcoming milestones for Mirroring in Azure SQL DB include:
+- Allowing connectivity to SQL Databases behind firewalls or private endpoints using Vnets.
+- Enabling the setup and management of Mirroring through programmatic APIs.
+- Supporting schema hierarchy and column mapping in data warehouse and lakehouse experiences.
+- Mirroring tables with no defined primary keys.
+- Improving security to connect SQLDB with lower level/reduced SQL permissions.
+- Mirroring additional data types (sql_variant, geography, geometry, etc.) to Fabric OneLake.
+- Supporting DDL: Truncate Table.
+## Services in Preview for Mirroring in Fabric
+The following services are either planned or currently in private preview for Mirroring in Fabric:
+- Azure Managed Instance
+- SQL Server
+- SQL Server
+- PostgreSQL
+
+<<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Self-Guided Activity: Examine Fabric Roadmap site</b></p>
+
+In this activity you will examine the Fabric Roadmap site. Bookmark this and add it to your cache of important links.
+
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+
+- Follow the steps within the provided link. 
+
+     <a href="https://blog.fabric.microsoft.com/en-us/blog/mirroring-azure-sqldb-new-public-preview-features?ft=Roadmap:category">Examine Fabric Roadmap Updates</a>
+
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="5.5"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.5 Trouble shoot Fabric mirrored database</h2>
+<h2 id="5.5"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.5 Trouble shoot Fabric Mirrored database</h2>
 
-Add information and link to Brads Trouble Shooting video as a self guided 
+<br></br>
+As with any service, it is crucial to understand troubleshooting methods for anticipated issues. For detailed guidance on troubleshooting Mirroring services, please refer to the comprehensive troubleshooting guide available at <a href="https://learn.microsoft.com/en-us/fabric/database/mirrored-database/troubleshooting"> Troubleshoot Fabric mirrored databases</a>.  
+
+<<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Self-Guided Activity: Examine insights into common mirroring challenges</b></p>
+
+<br></br>
+The following video will discuss 5 errors that could prevent the use of technology for forklifting, locating changes, and migrating those changes from your OLTP database into Microsoft Fabric.
+
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+
+- For a comprehensive introduction to troubleshooting mirroring concepts, please view the following video.:
+
+     <p><a href="https://www.youtube.com/watch?v=eID9cbAsdk0"><img src="https://img.youtube.com/vi/eID9cbAsdk0/0.jpg" height = 200></a> 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
-  <li><a href="https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/?context=/fabric/context/context-rta&pivots=fabric" >Kusto Query Overview</a></li>
+  <li><a href="https://learn.microsoft.com/en-us/fabric/database/mirrored-database/explore" >Explore data in your mirrored database using Microsoft Fabric</a></li>
+  <li><a href="https://learn.microsoft.com/en-us/fabric/database/mirrored-database/azure-cosmos-db" >Mirroring Azure Cosmos DB (Preview)</a></li>
+  <li><a href="https://learn.microsoft.com/en-us/fabric/database/mirrored-database/azure-databricks" >Mirroring Azure Databricks Unity Catalog (Preview)</a></li>
+  <li><a href="https://learn.microsoft.com/en-us/fabric/database/mirrored-database/snowflake" >Mirroring Snowflake</a></li>
 </ul>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
