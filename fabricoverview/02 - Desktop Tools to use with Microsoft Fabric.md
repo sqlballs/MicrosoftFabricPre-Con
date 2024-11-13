@@ -6,7 +6,7 @@
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png"> <h2>04 - The Fabric Developer Experience</h2>
+<img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png"> <h2>02 - Desktop Tools to use with Microsoft Fabric</h2>
 
 In this workshop you'll cover using The Microsoft Fabric Platform to implement a complete Analytics solution using the Microsoft Fabric platform.
 
@@ -18,20 +18,21 @@ You'll cover these topics in this Module on the Developer Experience:
 
 <dl>
 
-  <dt><a href="#4.1" >4.1 - Using Co-Pilot</a></dt>
-  <dt><a href="#4.2" >4.2 - Using SQL Server Management Studio</a></dt>
-  <dt><a href="#4.3" >4.3 - Using Azure Data Studio</a></dt>
-  <dt><a href="#4.4" >4.4 - Using Microsoft Excel</a></dt>
-  <dt><a href="#4.5" >4.5 - Using OneLake File Explorer</a></dt>
-  <dt><a href="#4.6" >4.6 - Using Kusto Explorer</a></dt>
-  <dt><a href="#4.7" >4.7 - Using Visual Studio Code</a></dt>
-  <dt><a href="#4.8" >4.8 - Using Power BI</a></dt>
+  <dt><a href="#2.1" >2.1 - Using Co-Pilot</a></dt>
+  <dt><a href="#2.2" >2.2 - Using SQL Server Management Studio</a></dt>
+  <dt><a href="#2.3" >2.3 - Using Azure Data Studio</a></dt>
+  <dt><a href="#2.4" >2.4 - Using Microsoft Excel</a></dt>
+  <dt><a href="#2.5" >2.5 - Using OneLake File Explorer</a></dt>
+  <dt><a href="#2.6" >2.6 - Using Kusto Explorer</a></dt>
+  <dt><a href="#2.7" >2.7 - Using Visual Studio Code</a></dt>
+  <dt><a href="#2.8" >2.8 - Using Power BI</a></dt>
+  <dt><a href="#2.9" >2.9 - Using Storage Explorer</a></dt>
 
 </dl>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="4.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.1 Using Co-Pilot</h2>
+<h2 id="2.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.1 Using Co-Pilot</h2>
 
 Copilot is a new feature in Power BI that harnesses the power of large language models to help users create value from their data using natural language. Users can simply describe their desired visuals and insights, and Copilot will generate them automatically, without requiring any manual input.
 
@@ -53,7 +54,7 @@ To learn more about how Copilot works with Power BI, please select the link belo
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="4.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.2 Using SQL Server Management Studio</h2>
+<h2 id="2.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.2 Using SQL Server Management Studio</h2>
 
 
 SSMS (SQL Server Management Studio) is a graphical tool that allows you to manage and query data from SQL Server databases. Fabric is a cloud-based data platform that enables you to create and manage data warehouses and lakehouses. A lakehouse is a hybrid of a data warehouse and a data lake, which combines the best features of both. SSMS can connect to Fabric lakehouse SQL endpoints, which are interfaces that allow you to run SQL queries on the data stored in Fabric.
@@ -94,7 +95,7 @@ You can also right-click this link to open it in another tab and review this vid
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="4.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.3 Using Azure Data Studio</h2>
+<h2 id="2.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.3 Using Azure Data Studio</h2>
 
 Azure Data Studio is a versatile tool for working with data from various sources, such as SQL Server, Azure SQL Database, Azure Synapse, Microsoft Fabric, and more. It enables you to query, design, and manage your databases and data warehouses on-premises or in the cloud. Azure Data Studio is free, open-source, and cross-platform, so you can run it on Windows, macOS, or Linux. It also supports multiple languages, such as SQL, PowerShell, Python, KQL, Apache Spark, and PySpark. Azure Data Studio has a modern and intuitive interface that features a query editor, native Jupyter Notebooks, an integrated terminal, and built-in Git support. You can also enhance your environment with extensions that offer new features and services for Azure Data Studio. Some of the popular extensions are Database Projects, GitHub Copilot, Oracle to Azure SQL Migration Assistant, PostgreSQL Migration Assistant, and more. You can explore more extensions in the extension library or create your own. Azure Data Studio is designed to simplify the data landscape and provide a unified tooling experience for data professionals.
 
@@ -126,7 +127,7 @@ In this Activity you will use Azure Data Studio to Explore and manage Azure SQL 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="4.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.4 Using Microsoft Excel</h2>
+<h2 id="2.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.4 Using Microsoft Excel</h2>
 
 Microsoft Excel is a software program that allows you to create, edit, and analyze spreadsheets and data. It is part of the Microsoft 365 suite of productivity tools, or it can be purchased separately. You can use Excel to organize your data in rows and columns, perform calculations with formulas and functions, create charts and graphs to visualize your data, and share your work with others. Excel also supports various languages and data types, such as SQL, Python, KQL, and Power BI.
 
@@ -154,7 +155,7 @@ In this Activity you will use Microsoft Excel to access Microsoft Fabric.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="4.5"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.5 Using OneLake File Explorer</h2> 
+<h2 id="2.5"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.5 Using OneLake File Explorer</h2> 
   
 The OneLake file explorer application enables a seamless integration of OneLake with Windows File Explorer. It synchronizes all OneLake items that you have access to in Windows File Explorer automatically. Synchronization means updating the metadata of files and folders to reflect the latest changes, and uploading the local modifications to the OneLake service.
 
@@ -180,7 +181,7 @@ You can also right-click this link to open it in another tab and review this vid
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="4.6"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.6 Using Kusto Explorer</h2>
+<h2 id="2.6"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.6 Using Kusto Explorer</h2>
 
 A Desktop Application for Data Exploration with Kusto Query Language. Kusto.Explorer is a robust Windows desktop application that empowers users to delve into their data using the Kusto Query Language, all within an intuitive and user-friendly interface.
 
@@ -210,7 +211,7 @@ You can also right-click this link to open it in another tab and review this vid
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="4.7"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.7 Using Visual Studio Code</h2>
+<h2 id="2.7"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.7 Using Visual Studio Code</h2>
 
 Using Visual Studio Code with Microsoft Fabric is a great way to develop and deploy applications for the cloud. Visual Studio Code is a free, open source, and cross-platform code editor that supports multiple languages and runtimes, such as C#, Java, Python, and .NET. Microsoft Fabric is an all-in-one analytics solution for enterprises that covers everything from data movement to data science, real-time analytics, and business intelligence. It offers a comprehensive suite of services, including data lake, data engineering, and data integration, all in one place.
 
@@ -240,7 +241,7 @@ You can also right-click this link to open it in another tab and review this vid
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="4.8"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.8 Using Power BI</h2>
+<h2 id="2.8"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.8 Using Power BI</h2>
 
 Microsoft Fabric lets you create reusable and default Power BI datasets to create reports in various ways in Power BI. This article describes the various ways you can use your Warehouse or SQL Endpoint, and their default Power BI datasets, to create reports.
 
@@ -265,6 +266,26 @@ You can also right-click this link to open it in another tab and review this vid
 <p><a href="https://www.youtube.com/watch?v=iDLTj-tCLdY&t=329s"><img src="https://img.youtube.com/vi/iDLTj-tCLdY/0.jpg" height = 200></a> 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
+
+<h2 id="2.9"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.9 Using Azure Storage Explorer</h2>
+
+Another tool that allows you to navigate and manage OneLake like OneLake File Explorer is Microsoft Azure Storage Explorer. Microsoft Azure Storage Explorer is a standalone app that makes it easy to work with Azure Storage accounts and their data, through desktop clients that run on Windows, macOS, and Linux.
+
+Once Azure Storage Explorer is connected to your OneLake, this is another client tool that allows you to view, upload, and download files from your OneLake, but also to move files between your OneLake and another Azure Storage location or type like Blob, Azure Data Lake, or even Azure File Shares.
+
+<img src="https://learn.microsoft.com/en-us/azure/storage/storage-explorer/media/vs-azure-tools-storage-manage-with-storage-explorer/vs-storage-explorer-overview.png" height = 400>
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Self-Guided Activity: Connecting Microsoft Azure Storage Explorer to OneLake</b></p>
+
+Azure Storage Explorer allows you to view and manage your cloud storage account’s contents. You can upload, download, or move files from one location to another. This article demonstrates OneLake integration with Azure Storage Explorer. 
+
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+
+- [Open this reference and follow the steps you see there](hhttps://learn.microsoft.com/en-us/fabric/onelake/onelake-azure-storage-explorer) 
+
+You can also right-click this link to open it in another tab and review this video that demonstrates this topic:
+
+<p><a href="https://www.youtube.com/watch?v=xingcILHkc0"><img src="https://img.youtube.com/vi/xingcILHkc0/0.jpg" height = 200></a> 
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 
