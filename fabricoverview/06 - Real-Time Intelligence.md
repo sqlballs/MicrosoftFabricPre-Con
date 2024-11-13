@@ -6,7 +6,7 @@
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png"> <h2>05 - Real-Time Intelligence with Microsoft Fabric</h2>
+<img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png"> <h2>06 - Real-Time Intelligence with Microsoft Fabric</h2>
 
 In this workshop you'll cover using The Microsoft Fabric Platform to implement a complete Analytics solution.
 
@@ -17,17 +17,17 @@ In each module you'll get more references, which you should follow up on to lear
 You'll cover these topics in this Module on the User Experience:
 
 <dl>
-  <dt><a href="#5.1" >5.1 - Working with Real-Time Intelligence in Microsoft Fabric</a></dt>
-  <dt><a href="#5.2" >5.2 - Working with Fabric and Streaming / Event Data</a></dt>
-  <dt><a href="#5.3" >5.3 - Working with Fabric and the Kusto Query Language (KQL)</a></dt>
-  <dt><a href="#5.4" >5.4 - Eventhouse vs. KQL Database</a></dt>
-  <dt><a href="#5.5" >5.5 - KQL Dashboard</a></dt>
-  <dt><a href="#5.6" >5.6 - Data Activator</a></dt>
+  <dt><a href="#6.1" >6.1 - Working with Real-Time Intelligence in Microsoft Fabric</a></dt>
+  <dt><a href="#6.2" >6.2 - Working with Fabric and Streaming / Event Data</a></dt>
+  <dt><a href="#6.3" >6.3 - Working with Fabric and the Kusto Query Language (KQL)</a></dt>
+  <dt><a href="#6.4" >6.4 - Eventhouse vs. KQL Database</a></dt>
+  <dt><a href="#6.5" >6.5 - KQL Dashboard</a></dt>
+  <dt><a href="#6.6" >6.6 - Data Activator</a></dt>
 </dl>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="5.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.1 Working with Real-Time Intelligence in Microsoft Fabric</h2>
+<h2 id="6.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.1 Working with Real-Time Intelligence in Microsoft Fabric</h2>
 
 Azure Data Explorer is a fully managed, high-performance, big data analytics platform that makes it easy to analyze high volumes of data in near real time. The Azure Data Explorer toolbox gives you an end-to-end solution for data ingestion, query, visualization, and management.
 
@@ -53,7 +53,7 @@ Real-Time Intelligence uses the [Kusto Query Language (KQL)](https://learn.micro
 </br>
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="5.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.2 Working with Fabric and Streaming / Event Data</h2>
+<h2 id="6.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.2 Working with Fabric and Streaming / Event Data</h2>
 
 The _Event streams_ feature in Microsoft Fabric is a centralized place in the Fabric platform to capture, transform, and route real-time events to various destinations with a no-code experience. It's part of the Real-time intelligence experience. The Eventstream item you create in the portal is an instance of Fabric event streams (also called an _eventstream_). You add event data sources, routing destinations, and the event processor when the transformation is needed, to the eventstream.
 
@@ -70,7 +70,7 @@ The Fabric event streams feature supports sending data to diverse destinations, 
 </br>
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="5.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.3 Working with Fabric and the Kusto Query Language (KQL)</h2>
+<h2 id="6.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.3 Working with Fabric and the Kusto Query Language (KQL)</h2>
 
 Real-Time Intelligence deals with working on data as it occurs, as quickly as possible to the source generation of the data.
 
@@ -84,7 +84,7 @@ If any one of these questions describes your data needs, Real-Time Intelligence 
 - Does my data have a time component that can benefit from the time series-optimized database structure?
 - Do I want the ability to create ad-hoc queries on any field or row without prior optimization?
 
-The types of industries that benefit from data analysis in Real-Time Analytics is varied. For example: finance, transportation and logistics, smart cities, smart buildings, manufacturing operations, automotive, and oil and gas.
+The types of industries that benefit from data analysis in Real-Time Intelligence is varied. For example: finance, transportation and logistics, smart cities, smart buildings, manufacturing operations, automotive, and oil and gas.
 
 For Microsoft Fabric, the main items available in Real-Time Intelligence include:
 
@@ -99,7 +99,7 @@ The KQL Queryset uses the Kusto Query language for creating queries, and also su
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Create and Query a KQL Database</b></p>
 </br>
 
-In Real-Time Analytics, you interact with your data in the context of databases. A single workspace can hold multiple databases, and each database can hold multiple tables.
+In Real-Time Intelligence, you interact with your data in the context of databases. A single workspace can hold multiple databases, and each database can hold multiple tables.
 </br>
 
 The KQL Queryset is the item used to run queries, view, and customize query results on data from a KQL database. Each tab in the KQL queryset can be associated with a different KQL database, and lets your save queries for later use or share with others to collaborate on data exploration. You can also change the KQL database associated with any tab, allowing you to run the same query on data in different states. The KQL Queryset uses the Kusto Query language for creating queries, and also supports many SQL functions.
@@ -113,13 +113,13 @@ You can also right-click this link to open it in another tab and review this vid
 </br>
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="5.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.4 Event House vs. KQLDB</h2>
+<h2 id="6.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.4 Event House vs. KQLDB</h2>
 
 Those new to Real-Time Intelligence may wonder about the differences between Event House and KQLDB. The following sections cover exactly what and Event House and a KQL Database are and their use case. The main difference that we will cover is similar to the constructs that organizations faced with running SQL Server on servers in their on-premises environment. Eventhouse would be analogous to the SQL Server with KQL Databases being analagous to the databases on the SQL Server
 
 <h3>Eventhouse</h3>
 
-Eventhouses provide a solution for handling and analyzing large volumes of data, particularly in scenarios requiring real-time analytics and exploration. They're designed to handle real-time data streams efficiently, which lets organizations ingest, process, and analyze data in near real-time. These aspects make eventhouses useful for scenarios where timely insights are crucial. Eventhouses provide a scalable infrastructure that allows organizations to handle growing volumes of data, ensuring optimal performance and resource use. Eventhouses are the preferred engine for semistructured and free text analysis. An eventhouse is a workspace of databases, which might be shared across a certain project. It allows you to manage multiple databases at once, sharing capacity and resources to optimize performance and cost. Eventhouses provide unified monitoring and management across all databases and per database.
+Eventhouses provide a solution for handling and analyzing large volumes of data, particularly in scenarios requiring Real-Time Intelligence and exploration. They're designed to handle real-time data streams efficiently, which lets organizations ingest, process, and analyze data in near real-time. These aspects make eventhouses useful for scenarios where timely insights are crucial. Eventhouses provide a scalable infrastructure that allows organizations to handle growing volumes of data, ensuring optimal performance and resource use. Eventhouses are the preferred engine for semistructured and free text analysis. An eventhouse is a workspace of databases, which might be shared across a certain project. It allows you to manage multiple databases at once, sharing capacity and resources to optimize performance and cost. Eventhouses provide unified monitoring and management across all databases and per database.
 
 Eventhouses are tailored to time-based, streaming events with structured, semistructured, and unstructured data. You can get data from multiple sources, in multiple pipelines (For example, Eventstream, SDKs, Kafka, Logstash, data flows, and more) and multiple data formats. This data is automatically indexed and partitioned based on ingestion time. An eventhouse would be used for any scenario that includes event-based data, for example, telemetry and log data, time series and IoT data, security and compliance logs, or financial records.
 
@@ -143,7 +143,7 @@ KQL Database limitations of note:
 </br>
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="5.5"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.5 KQL Dashboard</h2>
+<h2 id="6.5"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.5 KQL Dashboard</h2>
 
 A dashboard is a collection of tiles, optionally organized in pages, where each tile has an underlying query and a visual representation. You can natively export Kusto Query Language (KQL) queries to a dashboard as visuals and later modify their underlying queries and visual formatting as needed. In addition to ease of data exploration, this fully integrated dashboard experience provides improved query and visualization performance. As of the delivery of this course in November of 2024, Real-Time Dashboards is a feature in Public Preview and needs to be enabled in the Fabric Admin Portal. Please see the following graphic:
 
@@ -155,7 +155,7 @@ Similar to a PowerBI Dashboard, Real-Time Dashboards give you the opportunity to
 </br>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
-<h2 id="5.6"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.6 Data Activator</h2>
+<h2 id="6.6"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.6 Data Activator</h2>
 
 Data Activator is a no-code experience in Microsoft Fabric for automatically taking actions when patterns or conditions are detected in changing data. It monitors data in Power BI reports and Eventstreams items, for when the data hits certain thresholds or matches other patterns. It then automatically takes appropriate action such as alerting users or kicking off Power Automate workflows.
 
