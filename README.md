@@ -102,13 +102,13 @@ This is a modular workshop, and in each section, you'll learn concepts, technolo
 
    <tr><td><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/03%20-%20Data%20Warehouse%20and%20Data%20Integration.md" >03 - Data Warehouse and Data Integration </a></td><td>  Understanding and creating Workspaces, creating a Data Warehouse, connecting and managing, ingesting data with pipelines and data flows</td></tr>
 
-  <tr><td><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/03%20-%20The%20Data%20Lakehouse.md" >03 - The Data Lakehouse </a></td><td> Creating a Lakehouse, Linking data, using Spark to create new data sets in the Lakehouse</td></tr>
+  <tr><td><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/Final-Branch/fabricoverview/04%20-%20The%20Lakehouse.md" >04 - Data Warehouse and Data Integration </a></td><td>  Creating a Lakehouse, Linking data, using Spark to create new data sets in the Lakehouse</td></tr>
+
+  <tr><td><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/Final-Branch/fabricoverview/05%20-%20Introduction%20to%20Mirroring%20in%20Fabric.md" >05 - Database Mirroring </a></td><td> Introduction to Mirroring in Microsoft Fabric and how to utilize Mirroring as a Data Integration tool</td></tr>
+   
+  <tr><td><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/Final-Branch/fabricoverview/06%20-%20Real-Time%20Intelligence.md" >06 - Real-Time Analytics with Microsoft Fabric </a></td><td> Azure Data Explorer, Fabric and Streaming / Event Data, the Kusto Query Language (KQL)</td></tr>
   
-  <tr><td style="background-color: AliceBlue; color: black;"><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/04%20-%20The%20Fabric%20Developer%20Experience.md" >04 - The Fabric Developer Experience</a> </td><td td style="background-color: AliceBlue; color: black;"> Using Co-Pilot, SSMS, VS Code, and development best-practices</td></tr>  
-  
-  <tr><td><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/05%20-%20Real-Time%20Analytics%20with%20Microsoft%20Fabric.md" >05 - Real-Time Analytics with Microsoft Fabric </a></td><td> Azure Data Explorer, Fabric and Streaming / Event Data, the Kusto Query Language (KQL)</td></tr>
-  
-  <tr><td style="background-color: AliceBlue; color: black;"><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/06%20-%20Microsoft%20Fabric%20DevOps.md" >06 - Designing, Operating, and Controlling a Microsoft Fabric Deployment</a> </td><td td style="background-color: AliceBlue; color: black;"> Design and Sizing a solution, using Microsoft Purview to govern the daata, Monitoring and Management, and Source Control for your Microsoft Fabric Deployment.</td></tr>
+  <tr><td style="background-color: AliceBlue; color: black;"><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/Final-Branch/fabricoverview/07%20-%20CoPilots%20%26%20AI%20Skills.md" >07 - Copilots & AI Skills</a> </td><td td style="background-color: AliceBlue; color: black;"> Microsoft Fabric integrates AI and LLM capabilities to assist you in creating your data workloads.  Additionally you can use AI Skills to create RAG patterns off of your data to produce additional insights.</td></tr>
 
 </table>
 
