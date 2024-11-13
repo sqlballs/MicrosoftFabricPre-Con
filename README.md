@@ -104,7 +104,7 @@ This is a modular workshop, and in each section, you'll learn concepts, technolo
 
   <tr><td><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/04%20-%20The%20Lakehouse.md" >04 - Data Warehouse and Data Integration </a></td><td>  Creating a Lakehouse, Linking data, using Spark to create new data sets in the Lakehouse</td></tr>
 
-  <tr><td><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/05%20-%20Introduction%20to%20Mirroring%20in%20Fabric.mdd" >05 - Database Mirroring </a></td><td> Introduction to Mirroring in Microsoft Fabric and how to utilize Mirroring as a Data Integration tool</td></tr>
+  <tr><td><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/05%20-%20Introduction%20to%20Mirroring%20in%20Fabric.md" >05 - Database Mirroring </a></td><td> Introduction to Mirroring in Microsoft Fabric and how to utilize Mirroring as a Data Integration tool</td></tr>
    
   <tr><td><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/06%20-%20Real-Time%20Intelligence.md" >06 - Real-Time Analytics with Microsoft Fabric </a></td><td> Azure Data Explorer, Fabric and Streaming / Event Data, the Kusto Query Language (KQL)</td></tr>
   
