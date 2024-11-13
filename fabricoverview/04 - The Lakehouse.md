@@ -159,4 +159,4 @@ You can also right-click this link to open it in another tab and review this vid
     <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/spark-job-concurrency-and-queueing" >Concurrency limits and queueing in Microsoft Fabric Spark</a></li>
 </ul>
 
-Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/04%20-%20The%20Fabric%20Developer%20Experience.md).
+Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/Final-Branch/fabricoverview/05%20-%20Introduction%20to%20Mirroring%20in%20Fabric.md).

@@ -165,4 +165,4 @@ The following video will discuss 5 errors that could prevent the use of technolo
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/06%20-%20Microsoft%20Fabric%20DevOps.md).
+Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/Final-Branch/fabricoverview/06%20-%20Real-Time%20Intelligence.md).
