@@ -63,7 +63,7 @@ Microsoft Fabric enables organizations and individuals to turn large and complex
 
 - *Data Warehouse* - Microsoft Fabric provides a [Data Warehouse](https://learn.microsoft.com/en-us/fabric/data-warehouse/data-warehousing), with high performance and scale. It fully separates compute from storage, enabling independent scaling of both the components. Additionally, it natively stores data in the open Delta Lake format. 
 
-- *Real-Time Analytics* - Observational data, which is collected from various sources such as apps, IoT devices, human interactions, and so many more. It's currently the fastest growing data category. This data is often semi-structured in formats like JSON or Text. It comes in at high volume, with shifting schemas. These characteristics make it hard for traditional data warehousing platforms to work with. [Fabric Real-Time Analytics](https://learn.microsoft.com/en-us/fabric/real-time-analytics/overview) is best in class engine for observational data analytics. 
+- *Real-Time Intelligence* - Observational data, which is collected from various sources such as apps, IoT devices, human interactions, and so many more. It's currently the fastest growing data category. This data is often semi-structured in formats like JSON or Text. It comes in at high volume, with shifting schemas. These characteristics make it hard for traditional data warehousing platforms to work with. [Fabric Real-Time Intelligence](https://learn.microsoft.com/en-us/fabric/real-time-analytics/overview) is best in class engine for observational data analytics. 
 
 - *Power BI* - [*Power BI*](https://powerbi.microsoft.com/en-us/getting-started-with-power-bi/) is the world's leading Business Intelligence platform. It ensures that business owners can access all the data in Fabric quickly and intuitively to make better decisions with data. 
 
@@ -85,7 +85,7 @@ You can also right-click this link to open it in another tab and review this vid
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="1.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.3 OneLake & Microsoft Fabric Architecture</h2>
+<h2 id="1.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.3 OneLake & Microsoft Fabric Architecture</h2>
 
 OneLake is a SaaS service that provides a single, unified, logical data lake for the entire organization. 
 
