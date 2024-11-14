@@ -287,6 +287,8 @@ A Microsoft Fabric capacity resides on a tenant. Each capacity that sits under a
 ### Workspace
 Workspaces reside within capacities and are used as containers for Microsoft Fabric items. Each Microsoft Fabric user has a personal workspace known as *My Workspace*. More workspaces can be created to enable collaboration. By default, workspaces are created in your organization's shared capacity. When your organization has other capacities, workspaces - including My Workspaces - can be assigned to any capacity in your organization.
 
+[You can read more about deployment layouts in this document](https://learn.microsoft.com/en-us/azure/architecture/analytics/architecture/fabric-deployment-patterns).
+
 <br>
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Creating your first Workspace</b></p>
