@@ -96,12 +96,6 @@ The KQL Queryset is the item used to run queries, view, and customize query resu
 
 The KQL Queryset uses the Kusto Query language for creating queries, and also supports many SQL functions. For more information about the query language, see [this reference](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/index?context=/fabric/context/context).
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Create and Query a KQL Database</b></p>
-</br>
-
-In Real-Time Intelligence, you interact with your data in the context of databases. A single workspace can hold multiple databases, and each database can hold multiple tables.
-</br>
-
 The KQL Queryset is the item used to run queries, view, and customize query results on data from a KQL database. Each tab in the KQL queryset can be associated with a different KQL database, and lets your save queries for later use or share with others to collaborate on data exploration. You can also change the KQL database associated with any tab, allowing you to run the same query on data in different states. The KQL Queryset uses the Kusto Query language for creating queries, and also supports many SQL functions.
 
 <p><img src="https://learn.microsoft.com/en-us/azure/data-explorer/media/data-explorer-overview/workflow.png" height = 400></p>
@@ -115,7 +109,7 @@ You can also right-click this link to open it in another tab and review this vid
 
 <h2 id="6.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.4 Event House vs. KQLDB</h2>
 
-Those new to Real-Time Intelligence may wonder about the differences between Event House and KQLDB. The following sections cover exactly what and Event House and a KQL Database are and their use case. The main difference that we will cover is similar to the constructs that organizations faced with running SQL Server on servers in their on-premises environment. Eventhouse would be analogous to the SQL Server with KQL Databases being analagous to the databases on the SQL Server
+Those new to Real-Time Intelligence may wonder about the differences between Event House and KQLDB. In Real-Time Intelligence, you interact with your data in the context of databases. A single workspace can hold multiple databases, and each database can hold multiple tables. The following sections cover exactly what an Event House and a KQL Database are and their use case. The main difference that we will cover is similar to the constructs that organizations faced with running SQL Server on servers in their on-premises environment. Eventhouse would be analogous to the SQL Server with KQL Databases being analagous to the databases on the SQL Server.
 
 <h3>Eventhouse</h3>
 
@@ -129,7 +123,7 @@ Your eventhouse is designed to optimize cost by suspending the service when not 
 
 Databases are named entities that hold tables and stored functions. Kusto follows a relation model of storing the data where the upper-level entity is a database.
 
-A single cluster can host several databases, in which each database hosts its own collection of tables, stored functions, and external tables. Each database has its own set of permissions that follow the Role Based Access Control (RBAC) model.
+A single Eventhouse can host several databases, in which each database hosts its own collection of tables, stored functions, and external tables. Each database has its own set of permissions that follow the Role Based Access Control (RBAC) model.
 
 KQL Database limitations of note:
 
