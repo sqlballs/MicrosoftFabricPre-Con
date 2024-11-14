@@ -124,7 +124,7 @@ The following services are either planned or currently in private preview for Mi
 - SQL Server
 - PostgreSQL
 
-<<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Self-Guided Activity: Examine Fabric Roadmap site</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Self-Guided Activity: Examine Fabric Roadmap site</b></p>
 
 In this activity you will examine the Fabric Roadmap site. Bookmark this and add it to your cache of important links.
 
