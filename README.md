@@ -102,7 +102,7 @@ This is a modular workshop, and in each section, you'll learn concepts, technolo
 
    <tr><td><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/03%20-%20Data%20Warehouse%20and%20Data%20Integration.md" >03 - Data Warehouse and Data Integration </a></td><td>  Understanding and creating Workspaces, creating a Data Warehouse, connecting and managing, ingesting data with pipelines and data flows</td></tr>
 
-  <tr><td><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/04%20-%20The%20Lakehouse.md" >04 - Data Warehouse and Data Integration </a></td><td>  Creating a Lakehouse, Linking data, using Spark to create new data sets in the Lakehouse</td></tr>
+  <tr><td><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/04%20-%20The%20Lakehouse.md" >04 - The Lakehouse </a></td><td>  Creating a Lakehouse, Linking data, using Spark to create new data sets in the Lakehouse</td></tr>
 
   <tr><td><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/05%20-%20Introduction%20to%20Mirroring%20in%20Fabric.md" >05 - Database Mirroring </a></td><td> Introduction to Mirroring in Microsoft Fabric and how to utilize Mirroring as a Data Integration tool</td></tr>
    
