@@ -113,7 +113,7 @@ In this activity we will be following with the Data warehouse tutorial introduct
 
 <b>Steps:</b>
 
-- Open the following reference in another tab, [Tutorial: Analyze data with a notebook](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-analyze-data-notebook)
+- Open the following reference in another tab, [Tutorial: Analyze data with a notebook](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-sql-cross-warehouse-query-editor)
 - Follow Steps 11 - 13
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
