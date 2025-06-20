@@ -55,21 +55,37 @@ Actionable intelligence requires data integration from diverse sources and envir
 
 Microsoft Fabric enables organizations and individuals to turn large and complex data repositories into actionable workloads and analytics, and is an implementation of a *[data mesh](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/what-is-data-mesh)* architecture. It provides various systems with associated tools and aspects to the data professionals in their day-to-day work:
 
-- *Data Engineering* - Microsoft Fabric provides a Spark platform with a simplified but powerful authoring experiences, enabling data engineers to perform large scale data transformation and democratize data through the lakehouse. Microsoft Fabric Spark's integration with *Data Factory* enables notebooks and spark jobs to be scheduled and orchestrated. 
+- **Power BI**  
+  Power BI lets you easily connect to your data sources, visualize, and discover what's important, and share that with anyone or everyone you want. This integrated experience allows business owners to access all data in Fabric quickly and intuitively and to make better decisions with data.  
+  _For more information, see_ https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-overview
 
-- *Data Pipelines* - *Fabric Data Factory* combines the simplicity of *Power Query* with the scale and power of [Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/introduction). You can use more than 200 native connectors to connect to data sources on-premises and in the cloud.
+- **Databases**  
+  Databases in Microsoft Fabric are developer-friendly transactional databases such as Azure SQL Database, which allow you to easily create your operational database in Fabric. Using the mirroring capability, you can bring data from various systems together into OneLake. You can continuously replicate your existing data estate directly into Fabric's OneLake, including data from Azure SQL Database, Azure Cosmos DB, Azure Databricks, Snowflake, and Fabric SQL database.  
+  _For more information, see_ https://learn.microsoft.com/en-us/fabric/data-engineering/sql-database-overview _and_ https://learn.microsoft.com/en-us/fabric/data-engineering/mirroring-overview
 
-- *Data Science* - Various tools for Data Science in Microsoft Fabric enables you to build, deploy, and operationalize machine learning models. It integrates with [Azure Machine Learning](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2) to provide built-in experiment creation, tracking and model registry. Data scientists can enrich organizational data with predictions and allow business analysts to integrate those predictions into their BI reports. Microsoft Fabric allows you to work from descriptive to predictive insights. 
+- **Data Factory**  
+  Data Factory provides a modern data integration experience to ingest, prepare, and transform data from a rich set of data sources. It incorporates the simplicity of Power Query, and you can use more than 200 native connectors to connect to data sources on-premises and in the cloud.  
+  _For more information, see_ [What is Data Factory in Microsoft Fabric?](https://learn.microsoft.com/en-us- **Industry Solutions**  
+  Fabric provides industry-specific data solutions that address unique industry needs and challenges, and include data management, analytics, and decision-making.  
+  _For more information, see_ [Industry Solutions in Microsoft Fabric](https://learn.microsoftview
 
-- *Data Warehouse* - Microsoft Fabric provides a [Data Warehouse](https://learn.microsoft.com/en-us/fabric/data-warehouse/data-warehousing), with high performance and scale. It fully separates compute from storage, enabling independent scaling of both the components. Additionally, it natively stores data in the open Delta Lake format. 
+- **Real-Time Intelligence**  
+  Real-time Intelligence is an end-to-end solution for event-driven scenarios, streaming data, and data logs. It enables the extraction of insights, visualization, and action on data in motion by handling data ingestion, transformation, storage, modeling, analytics, visualization, tracking, AI, and real-time actions. The Real-Time hub in Real-Time Intelligence provides a wide variety of no-code connectors, converging into a catalog of organizational data that is protected, governed, and integrated across Fabric.  
+  _For more information, see_ https://learn.microsoft.com/en-us/fabric/real-time-intelligence/overview
 
-- *Real-Time Intelligence* - Observational data, which is collected from various sources such as apps, IoT devices, human interactions, and so many more. It's currently the fastest growing data category. This data is often semi-structured in formats like JSON or Text. It comes in at high volume, with shifting schemas. These characteristics make it hard for traditional data warehousing platforms to work with. [Fabric Real-Time Intelligence](https://learn.microsoft.com/en-us/fabric/real-time-analytics/overview) is best in class engine for observational data analytics. 
+- **Data Engineering**  
+  Fabric Data Engineering provides a Spark platform with great authoring experiences. It enables you to create, manage, and optimize infrastructures for collecting, storing, processing, and analyzing vast data volumes. Fabric Spark's integration with Data Factory allows you to schedule and orchestrate notebooks and Spark jobs.  
+  _For more information, see_ [What is Data engineering in Microsoft Fabric?](https://learn.microsoft.com/en-us/fabric/data-engineering/data-engineeringData Science enables you to build, deploy, and operationalize machine learning models from Fabric. It integrates with Azure Machine Learning to provide built-in experiment tracking and model registry. Data scientists can enrich organizational data with predictions and business analysts can integrate those predictions into their BI reports, allowing a shift from descriptive to predictive insights.  
+  _For more information, see_ https://learn.microsoft.com/en-us/fabric/data-science/data-science-overview
 
-- *Power BI* - [*Power BI*](https://powerbi.microsoft.com/en-us/getting-started-with-power-bi/) is the world's leading Business Intelligence platform. It ensures that business owners can access all the data in Fabric quickly and intuitively to make better decisions with data. 
+- **Fabric Data Warehouse**  
+  Fabric Data Warehouse provides industry-leading SQL performance and scale. It separates compute from storage, enabling independent scaling of both components. Additionally, it natively stores data in the open Delta Lake format.  
+  _For more information, see_ https://learn.microsoft.com/en-us/fabric/data-warehouse/data-warehouse-overview
+ 
 
 - *OneLake* - [*OneLake*](https://learn.microsoft.com/en-us/fabric/onelake/onelake-overview)  is a single, unified, logical data lake for the whole organization. Like OneDrive, OneLake comes automatically with every Microsoft Fabric tenant and is designed to be the single place for all your analytics data. 
 
-<p><img src="https://learn.microsoft.com/en-us/fabric/get-started/media/microsoft-fabric-overview/saas-foundation.png" height = 400>
+<p><img src="https://learn.microsoft.com/en-us/fabric/fundamentals/media/microsoft-fabric-overview/fabric-architecture.png#lightbox" height = 400>
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Review Exercise for this Workshop</b></p>
 
