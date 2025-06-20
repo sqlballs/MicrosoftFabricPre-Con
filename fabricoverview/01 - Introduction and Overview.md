@@ -244,7 +244,10 @@ Bursting allows you to consume extra compute resources beyond what have been pur
 - Bursting is a SaaS feature and requires no user management. Behind the scenes, the capacity platform is pre-provisioning Microsoft managed virtualized compute resources to optimize for maximum performance.
 - Compute spikes generated from bursting will not cause throttling due to smoothing policies outlined in the next section.
 
-<p><img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*9dH56AtX2Zif6BaP.gif" height = 400>
+<p>
+[Bursting and Smoothing](https://github.com/sqlballs/MicrosoftFabricPre-Con/raw/main/graphicsg.gif)
+
+
 
 When a capacity is running multiple jobs, a sudden spike in compute demand may be generated that exceeds the limits of a purchased capacity. Smoothing simplifies capacity management here by spreading the evaluation of compute to ensure that your jobs run smoothly and efficiently. Two places to expect to see this in place is:
 
