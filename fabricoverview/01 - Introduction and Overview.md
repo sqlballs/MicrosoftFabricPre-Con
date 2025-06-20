@@ -245,7 +245,15 @@ Bursting allows you to consume extra compute resources beyond what have been pur
 - Compute spikes generated from bursting will not cause throttling due to smoothing policies outlined in the next section.
 
 <p>
-[Bursting and Smoothing](https://github.com/sqlballs/MicrosoftFabricPre-Con/raw/main/graphicsg.gif)
+
+
+
+
+<img src="https://github.com/sqlballs/MicrosoftFabricPre-Con/raw/main/graphics/burstingmoothing.gif">
+
+
+
+
 
 
 
