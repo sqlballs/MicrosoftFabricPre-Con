@@ -19,7 +19,7 @@ You'll cover these topics in this Module:
   <dt><a href="#1.1" >1.1 - Introduction of the Workshop</a><dt>
   <dt><a href="#1.2" >1.2 - Basic Concepts in Microsoft Fabric</a><dt>
   <dt><a href="#1.3" >1.3 - OneLake & Microsoft Fabric Architecture</a><dt>
-  <dt><a href="#1.4" >1.4 - Microsoft Fabric Services</a><dt>
+  <dt><a href="#1.4" >1.4 - Microsoft Compute Engines</a><dt>
   <dt><a href="#1.5" >1.5 - Microsoft Fabric Roles</a><dt>
   <dt><a href="#1.6" >1.6 - Understanding Microsoft Fabric Benchmarks</a><dt>
   <dt><a href="#1.7" >1.7 - Verification of pre-requisites for the Activities</a><dt>
@@ -105,7 +105,7 @@ You can also right-click this link to open it in another tab and review this vid
 
 OneLake is a SaaS service that provides a single, unified, logical data lake for the entire organization. 
 
-<p><img src="https://learn.microsoft.com/en-us/fabric/onelake/media/onelake-overview/onelake-foundation-for-fabric.png" height = 400>
+<p><img src="https://learn.microsoft.com/en-us/fabric/fundamentals/media/microsoft-fabric-overview/hierarchy-within-tenant.png" height = 400>
 
 OneLake is the foundation of Microsoft Fabric, a cloud-native data platform that enables customers to build and manage data solutions at scale. OneLake simplifies data storage, access, security, governance, and discovery by offering the following features:
 <p>
@@ -117,13 +117,15 @@ OneLake is the foundation of Microsoft Fabric, a cloud-native data platform that
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="1.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.4 - Microsoft Fabric Services</h2>
+<h2 id="1.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.4 - Microsoft Fabric Compute Engines</h2>
 
-Microsoft Fabric is an end-to-end analytics solution with full-service capabilities including data movement, data lakes, data engineering, data integration, data science, real-time analytics, and business intelligence—all backed by a shared platform providing robust data security, governance, and compliance. It powers core Azure infrastructure as well as other Microsoft services such as Skype for Business, Intune, Azure Event Hubs, Azure Data Factory, Azure Cosmos DB, Azure SQL Database, Dynamics 365, and other services. It is an all-in-one analytics solution for enterprises that covers everything from data movement to data science. It offers a comprehensive suite of services including data lake, data engineering and data integration.
+All Microsoft Fabric compute experiences come preconfigured with OneLake, much like Office apps automatically use organizational OneDrive. The experiences such as Data Engineering, Data Warehouse, Data Factory, Power BI, and Real-Time Intelligence etc. use OneLake as their native store without extra setup.
 
 A graphical list of these services are shown in this diagram:
 
-<p><img src="https://learn.microsoft.com/en-us/fabric/get-started/media/microsoft-fabric-overview/workloads-access-data.png" height = 400>
+<p><img src="https://learn.microsoft.com/en-us/fabric/fundamentals/media/microsoft-fabric-overview/onelake-architecture.png#lightbox" height = 400>
+
+OneLake lets you instantly mount your existing PaaS storage accounts using the Shortcut feature. You don't have to migrate your existing data. Shortcuts provide direct access to data in Azure Data Lake Storage. They also enable easy data sharing between users and applications without duplicating files. Additionally, you can create shortcuts to other storage systems, allowing you to analyze cross-cloud data with intelligent caching that reduces egress costs and brings data closer to compute.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -131,13 +133,64 @@ A graphical list of these services are shown in this diagram:
 
 Microsoft Fabric has different admin roles such as Microsoft 365 admin roles, Power Platform and Power BI admin roles, and Capacity admin roles. 
 
-Workspace roles define what user can do with Microsoft Fabric items. Roles can be assigned to individuals or security groups from workspace view. Workspace roles in Microsoft Fabric extend the Power BI workspace roles by associating new Microsoft Fabric capabilities such as data integration and data exploration with existing workspace roles. 
+<h3>Admin roles related to Microsoft Fabric</h3>
 
-To be a Microsoft Fabric admin for your organization, you must be in one of the following roles: Global administrator, Power Platform administrator, Fabric administrator. You can find more detail on these topics here:
+
+| Role Type                        | Role Name                  | Responsibilities                                                                                   | Where to Assign                          |
+|----------------------------------|----------------------------|----------------------------------------------------------------------------------------------------|------------------------------------------|
+| **Microsoft 365 Admin Roles**    | Global Administrator       | Full access to all management features; can assign roles to others                                | Microsoft 365 Admin Portal or PowerShell |
+|                                  | Billing Administrator      | Manage subscriptions and purchase licenses                                                        | Microsoft 365 Admin Portal or PowerShell |
+|                                  | License Administrator      | Assign or remove licenses for users                                                               | Microsoft 365 Admin Portal or PowerShell |
+|                                  | User Administrator         | Create/manage users and groups; reset passwords                                                   | Microsoft 365 Admin Portal or PowerShell |
+| **Power Platform & Fabric Roles**| Power Platform Administrator<br>Fabric Administrator | Enable/disable Fabric features; report on usage; manage auditing                                  | Microsoft 365 Admin Portal or PowerShell |
+| **Capacity Admin Roles**         | Capacity Administrator     | Assign workspaces to capacity; manage user permissions and memory usage for workloads             | Assigned when capacity is created        |
+
+
+
+
+
+You can find more detail on this topic here:
 
 - [Administration Roles are described here](https://learn.microsoft.com/en-us/fabric/admin/microsoft-fabric-admin)
+
+
+<h3>Microsoft Fabric admin roles</h3>
+
+| Role                        | Description                                                                                                                  | How to Assign                                                                                     | Access Level                                                                                   |
+|-----------------------------|------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| **Fabric Administrator**    | Grants full control over organization-wide Microsoft Fabric settings and admin features (excluding licensing).              | Assign via Microsoft 365 admin portal or PowerShell. https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/add-users?view=o365-worldwide | Full access to Fabric admin portal, usage metrics, and feature controls.                      |
+| **Power Platform Administrator** | Also grants full control over Microsoft Fabric settings and admin features (excluding licensing).                          | Assign via Microsoft 365 admin portal or PowerShell. https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_remote?view=powershell-7.3 | Full access to Fabric admin portal, usage metrics, and feature controls.                      |
+
+You can find more detail on this topic here:
 - [Learn more about Microsoft Fabric admin roles](https://learn.microsoft.com/en-us/fabric/admin/roles)
-- [Roles in workspaces are described here](https://learn.microsoft.com/en-us/fabric/get-started/roles-workspaces)
+
+
+
+<h3>Microsoft Fabric workspace roles</h3>
+
+Workspace roles define what user can do with Microsoft Fabric items. Roles can be assigned to individuals or security groups from workspace view. Workspace roles in Microsoft Fabric extend the Power BI workspace roles by associating new Microsoft Fabric capabilities such as data integration and data exploration with existing workspace roles. 
+
+
+| Capability                                                                                                     | Admin | Member | Contributor | Viewer |
+|---------------------------------------------------------------------------------------------------------------|:-----:|:------:|:-----------:|:------:|
+| Update and delete the workspace                                                                               | ✅    |        |             |        |
+| Add or remove people, including other admins                                                                  | ✅    |        |             |        |
+| Add members or others with lower permissions                                                                  | ✅    | ✅     |             |        |
+| Allow others to reshare items¹                                                                                | ✅    | ✅     |             |        |
+| Create or modify database mirroring items                                                                     | ✅    | ✅     | ✅          |        |
+| Create or modify warehouse items                                                                              | ✅    | ✅     | ✅          |        |
+| Create or modify SQL database items                                                                           | ✅    | ✅     | ✅          |        |
+| View and read content of pipelines, notebooks, Spark jobs, ML models, experiments, and eventstreams          | ✅    | ✅     | ✅          | ✅     |
+| View and read KQL databases, query-sets, digital twin builder items, and real-time dashboards                 | ✅    | ✅     | ✅          | ✅     |
+| Connect to SQL analytics endpoint of Lakehouse or Warehouse                                                  | ✅    | ✅     | ✅          | ✅     |
+| Read Lakehouse and Data Warehouse data via TDS endpoint (ReadData)                                           | ✅    | ✅     | ✅          | ✅     |
+| Read Lakehouse and Data Warehouse data via OneLake APIs and Spark (ReadAll)                                  | ✅    | ✅     | ✅          |        |
+| Read Lakehouse data through Lakehouse explorer (ReadAll)                                                     | ✅    | ✅     | ✅          |        |
+|
+
+You can find more detail on these topics here:
+
+- [Roles in workspaces are described here](https://learn.microsoft.com/en-us/fabric/fundamentals/roles-workspaces)
 - [Understand more about Workspace roles and permissions in lakehouse](https://learn.microsoft.com/en-us/fabric/data-engineering/workspace-roles-lakehouse)
 
 Data sharing is essential to fostering a data-driven culture within an organization. Sharing a Warehouse allows you to provide read access to enable downstream users within the organization to consume this data to make data-driven decisions, without having to make copies of data.
@@ -148,6 +201,8 @@ To understand more about Data Sharing see these references:
 
 - [Data Warehouse sharing](https://learn.microsoft.com/en-us/fabric/admin/microsoft-fabric-admin)
 - [Share your warehouse and manage permissions](https://learn.microsoft.com/en-us/fabric/data-warehouse/share-warehouse-manage-permissions)
+- [Share items in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/fundamentals/share-items)
+
 
 You can also right-click this link to open it in another tab and review this video that introduces you to these concepts:
 
@@ -162,7 +217,23 @@ There are several basic concepts in setting up the benchmarks for your Microsoft
 ## What are Capacities?
 Microsoft Fabric is a unified data platform that offers shared experiences, architecture, governance, compliance, and billing. Capacities provide the computing power that drives all of these experiences. They offer a simple and unified way to scale resources to meet customer demand and can be easily increased with a SKU upgrade.
 
-<p><img src="https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/Fabric-Utilization-DW-static-caption-1024x575.png" height = 400>
+<p>
+
+| SKU     | Capacity Units (CU) | Power BI SKU | Power BI v-cores |
+|---------|---------------------|--------------|------------------|
+| F2      | 2                   | –            | 0.25             |
+| F4      | 4                   | –            | 0.5              |
+| F8      | 8                   | EM/A1        | 1                |
+| F16     | 16                  | EM2/A2       | 2                |
+| F32     | 32                  | EM3/A3       | 4                |
+| F64     | 64                  | P1/A4        | 8                |
+| Trial   | 64                  | –            | 8                |
+| F128    | 128                 | P2/A5        | 16               |
+| F256    | 256                 | P3/A6        | 32               |
+| F512    | 512                 | P4/A7        | 64               |
+| F1024   | 1024                | P5/A8        | 128              |
+| F2048   | 2048                | –            | 256              |
+
 
 <p>
 
@@ -173,7 +244,7 @@ Bursting allows you to consume extra compute resources beyond what have been pur
 - Bursting is a SaaS feature and requires no user management. Behind the scenes, the capacity platform is pre-provisioning Microsoft managed virtualized compute resources to optimize for maximum performance.
 - Compute spikes generated from bursting will not cause throttling due to smoothing policies outlined in the next section.
 
-<p><img src="https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/FabricBurstingSmoothing5.gif" height = 400>
+<p><img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*9dH56AtX2Zif6BaP.gif" height = 400>
 
 When a capacity is running multiple jobs, a sudden spike in compute demand may be generated that exceeds the limits of a purchased capacity. Smoothing simplifies capacity management here by spreading the evaluation of compute to ensure that your jobs run smoothly and efficiently. Two places to expect to see this in place is:
 
