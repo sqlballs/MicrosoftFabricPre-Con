@@ -1,4 +1,18 @@
-# Module 04 - Fabric SQL Database
+![](../graphics/microsoftlogo.png)
+
+# Workshop: Microsoft Fabric Overview for the Data Professional
+
+#### <i>A Microsoft Workshop</i>
+
+<p style="border-bottom: 1px solid lightgrey;"></p>
+
+<img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png"> <h2> 07 - Copilots & AI Skills </h2>
+
+In this workshop you'll cover using The Microsoft Fabric Platform to implement a complete Analytics solution.
+
+In each module you'll get more references, which you should follow up on to learn more. Also watch for links within the text - click on each one to explore that topic.
+
+# Module 08 - Fabric SQL Database
 
 ## Overview
 
