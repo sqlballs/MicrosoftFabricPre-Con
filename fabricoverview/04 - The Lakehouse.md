@@ -18,9 +18,10 @@ You'll cover these topics in this Module:
 
 <dl>
   <dt><a href="#4.1" >4.1 - Understanding a Microsoft Fabric Lakehouse</a></dt>
-  <dt><a href="#4.2" >4.2 - Linking data</a></dt>
+  <dt><a href="#4.2" >4.2 - Loading Data & Shortcuts</a></dt>
   <dt><a href="#4.3" >4.3 - Using Spark to create new data sets in the Lakehouse</a></dt>
   <dt><a href="#4.4" >4.4 - How to accelerate data prep with Data Wrangler in Microsoft Fabric</a></dt>
+  <dt><a href="#4.5" >4.5 - Transform and enrich data seamlessly with AI functions</a></dt>
 </dl>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
@@ -47,14 +48,21 @@ A data engineer can interact with the lakehouse and the data within the lakehous
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="4.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.2 - Linking data</h2>
+<h2 id="4.2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.2 - Loading Data & Shortcuts</h2>
 
-In Microsoft Fabric, there are a few ways you can get data into a lakehouse:
+In Microsoft Fabric, there are a few ways you can get data into a lakehouse.
 
-- File upload from local computer.
-- Run a copy tool in pipelines.
-- Set up a dataflow or dataflow Gen2.
-- Apache Spark libraries in notebook code
+### Considerations when choosing approach to load data
+
+| Use Case                                | Recommendation                                                                 |
+|-----------------------------------------|---------------------------------------------------------------------------------|
+| Small file upload from local machine    | Use **Local file upload**                                                      |
+| Small data or specific connector        | Use **Dataflows**                                                              |
+| Large data source                       | Use **Copy tool in pipelines**                                                 |
+| Complex data transformations            | Use **Notebook code**                                                          |
+| Streaming data                          | Use **Eventstream** to stream data into **Eventhouse**; enable **OneLake availability** and create a shortcut from **Lakehouse** |
+| Time-series data                        | Get data from **Eventhouse**                                                   |
+
 
 <p><img  src="https://learn.microsoft.com/en-us/fabric/data-warehouse/media/tutorial-analyze-data-notebook/lakehouse-load-data-new-shortcut.png" height=200>
 
@@ -69,6 +77,22 @@ To create a shortcut, open *Lakehouse Explorer* and select where to place the sh
 **Access Control for shortcuts**
 
 Shortcuts to Microsoft Fabric internal sources will use the calling user identity. External shortcuts will use connectivity details, including security details specified when the shortcut is created.
+
+
+**Stream real-time events with Eventstream**
+
+With Eventstream, you can get, process, and route high volumes real-time events from a wide variety of sources.
+
+<img src="https://learn.microsoft.com/en-us/fabric/data-engineering/media/load-data-lakehouse/get-data-eventstream.png">
+
+To see how to add lakehouse as a destination for Eventstream, see <a href="https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-streams/get-data-from-eventstream-in-multiple-fabric-items#get-data-from-eventstream-in-a-lakehouse">Get data from Eventstream in a lakehouse</a>.
+
+For optimal streaming performance, you can stream data from Eventstream into an Eventhouse and then enable OneLake availability.
+
+
+**Get data from Eventhouse**
+
+When you enable OneLake availability on data in an Eventhouse, a Delta table is created in OneLake. This Delta table can be accessed by a lakehouse using a shortcut. 
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Ingest Data & Create a shortcut</b></p>
 
@@ -148,6 +172,38 @@ You can also right-click this link to open it in another tab and review this vid
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
+
+
+<h2 id="4.5"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.5 - Transform and enrich data seamlessly with AI functions</h2>
+
+<p><img  src="https://learn.microsoft.com/en-us/fabric/data-science/media/data-wrangler/view-summary-panel.png" height=400>
+
+Currently in preview with Microsoft Fabric, all business professionals—from developers to analysts—can derive more value from their enterprise data through Generative AI, using experiences like Copilot and Fabric data agents. Thanks to a new set of AI functions for data engineering, Fabric users can now harness the power of industry-leading large language models (LLMs) to transform and enrich data seamlessly.
+
+AI functions harness the power of GenAI for summarization, classification, text generation, and so much more—all with a single line of code:
+
+Calculate similarity with ai.similarity: 
+<p>
+
+- <a href="https://learn.microsoft.com/en-us/fabric/data-science/ai-functions/overview?tabs=pandas#calculate-similarity-with-aisimilarity">Calculate similarity with ai.similarity:</a> Compare the meaning of input text with a single common text value, or with corresponding text values in another column.
+- <a href="https://learn.microsoft.com/en-us/fabric/data-science/ai-functions/overview?tabs=pandas#categorize-text-with-aiclassify">Categorize text with ai.classify:</a> Classify input text values according to labels you choose.
+- <a href="https://learn.microsoft.com/en-us/fabric/data-science/ai-functions/overview?tabs=pandas#detect-sentiment-with-aianalyze_sentiment">Detect sentiment with ai.analyze_sentiment:</a> Identify the emotional state expressed by input text.
+- <a href="https://learn.microsoft.com/en-us/fabric/data-science/ai-functions/overview?tabs=pandas#extract-entities-with-aiextract">Extract entities with ai.extract:</a> Find and extract specific types of information from input text, for example locations or names.
+- <a href="https://learn.microsoft.com/en-us/fabric/data-science/ai-functions/overview?tabs=pandas#fix-grammar-with-aifix_grammar">Fix grammar with ai.fix_grammar:</a> Correct the spelling, grammar, and punctuation of input text.
+- <a href="https://learn.microsoft.com/en-us/fabric/data-science/ai-functions/overview?tabs=pandas#summarize-text-with-aisummarize">Summarize text with ai.summarize:</a> Get summaries of input text.
+- <a href="https://learn.microsoft.com/en-us/fabric/data-science/ai-functions/overview?tabs=pandas#translate-text-with-aitranslate">Translate text with ai.translate:</a> Translate input text into another language.
+- <a href="https://learn.microsoft.com/en-us/fabric/data-science/ai-functions/overview?tabs=pandas#answer-custom-user-prompts-with-aigenerate_response">Answer custom user prompts with ai.generate_response:</a> Generate responses based on your own instructions.
+<p>
+
+It's seamless to incorporate these functions as part of data-science and data-engineering workflows, whether you're working with pandas or Spark. There is no detailed configuration, no complex infrastructure management, and no specific technical expertise needed.
+
+
+You can also right-click this link to open it in another tab and review this video to see a demonstration of AI Functions.
+
+<p><a href="https://www.youtube.com/watch?v=rfvCgPS3ie0"><img src="https://img.youtube.com/vi/rfvCgPS3ie0/0.jpg" height = 200></a> 
+
+<p style="border-bottom: 1px solid lightgrey;"></p>
+
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
  <li><a href="https://learn.microsoft.com/en-us/fabric/release-plan/">Microsoft Fabric release plan documentation</a></li>
@@ -157,6 +213,7 @@ You can also right-click this link to open it in another tab and review this vid
     <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/high-concurrency-overview" >High Concurrency mode in Fabric Spark</a></li>
     <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/autotune?tabs=sparksql" >What is autotune for Apache Spark configurations in Fabric and how to enable and disable it?</a></li>
     <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/spark-job-concurrency-and-queueing" >Concurrency limits and queueing in Microsoft Fabric Spark</a></li>
+        <li><a href="https://learn.microsoft.com/en-us/fabric/data-engineering/lakehouse-schemas" >What are lakehouse schemas (Preview)?</a></li>
 </ul>
 
 Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/05%20-%20Introduction%20to%20Mirroring%20in%20Fabric.md).
