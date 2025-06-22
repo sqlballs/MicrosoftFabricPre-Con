@@ -18,16 +18,16 @@ You'll cover these topics in this Module on Fabric DevOps:
 
 <dl>
 
-  <dt><a href="#6-1" >6.1 - Designing and sizing a Fabric solution</a></dt>
-  <dt><a href="#6-2" >6.2 - Discover and Govern Data in your Deployment</a></dt>
-  <dt><a href="#6-3" >6.3 - Source Control integration with Microsoft Fabric</a></dt>
-  <dt><a href="#6-4" >6.4 - Monitoring and Managing a Fabric solution</a></dt>
+  <dt><a href="#9-1" >9.1 - Designing and sizing a Fabric solution</a></dt>
+  <dt><a href="#9-2" >9.2 - Discover and Govern Data in your Deployment</a></dt>
+  <dt><a href="#9-3" >9.3 - Source Control integration with Microsoft Fabric</a></dt>
+  <dt><a href="#9-4" >9.4 - Monitoring and Managing a Fabric solution</a></dt>
 
 </dl>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="6-1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.1 Designing and sizing a Fabric solution</h2>
+<h2 id="9-1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">9.1 Designing and sizing a Fabric solution</h2>
 
 The first step in implementing a Microsoft Fabric solution is to thoroughly understand the business opportunities from your organization, and then understand the various solutions within the Microsoft Fabric platform, so that you can choose the proper elements, sizing and pricing for your organization. Throughout this Workshop, you have learned more about the services and solutions within Microsoft Fabric, and in this section, you'll put that information to use to design a solution. 
 
@@ -75,7 +75,7 @@ In this activity, you will determine a real-world opportunity at your organizati
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="6-2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.2 - Discover and Govern Data in your Deployment</h2>
+<h2 id="9-2"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">9.2 - Discover and Govern Data in your Deployment</h2>
 
 Data Governance is the set of processes and tools for locating, defining, documenting and tracking data from source systems as it moves throughout the processing cycle to analytics. Microsoft Purview is a unified data-governance service that helps you manage and govern your on-premises, in-multicloud, and any software-as-a-service (SaaS) data. You can use it to create a current and past map of your data landscape with using an automated data discovery system, sensitive data classifications, and end-to-end data lineage. You can then expose this map to your users so that they can quickly find authoritative data for analysis. 
 
@@ -102,7 +102,7 @@ In this activity, you will follow the basic training tutorial for Microsfot Azur
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 
-<h2 id="6-3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.3 Source Control integration with Microsoft Fabric</h2>
+<h2 id="9-3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">9.3 Source Control integration with Microsoft Fabric</h2>
 
 The primary integration method for working with Microsoft Fabric in a Source Control system is the git program. If you are new to git, [there is a free Workshop you can take here - ensure you understand the material there before continuing](https://learn.microsoft.com/en-us/training/modules/intro-to-git/) since this section will assume knowledge from that Workshop. 
 
@@ -146,7 +146,7 @@ There are some considerations to keep in mind when working with git and Microsof
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="6-4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">6.4 Monitoring and Managing a Fabric solution</h2>
+<h2 id="9-4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">9.4 Monitoring and Managing a Fabric solution</h2>
 
 Managing a Microsoft Fabric solution involves multiple tools, processes, and procedures. Since there are multiple products involved, you'll often take an "outside-in" approach, where you start the administration and monitoring at the outermost level and drill in to the specific area of focus. This outside in approach should involve getting as many components under one view as possible. The Microsoft Fabric platform has various tools and features to help you administer the solution from as broad a perspective as possible, and you may also augment these views with administration processes and tools of your own. 
 
