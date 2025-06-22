@@ -20,13 +20,12 @@ You'll cover these topics in this Module on the Developer Experience:
 
   <dt><a href="#2.1" >2.1 - Using Co-Pilot</a></dt>
   <dt><a href="#2.2" >2.2 - Using SQL Server Management Studio</a></dt>
-  <dt><a href="#2.3" >2.3 - Using Azure Data Studio</a></dt>
-  <dt><a href="#2.4" >2.4 - Using Microsoft Excel</a></dt>
-  <dt><a href="#2.5" >2.5 - Using OneLake File Explorer</a></dt>
-  <dt><a href="#2.6" >2.6 - Using Kusto Explorer</a></dt>
-  <dt><a href="#2.7" >2.7 - Using Visual Studio Code</a></dt>
-  <dt><a href="#2.8" >2.8 - Using Power BI</a></dt>
-  <dt><a href="#2.9" >2.9 - Using Storage Explorer</a></dt>
+  <dt><a href="#2.3" >2.3 - Using Microsoft Excel</a></dt>
+  <dt><a href="#2.4" >2.4 - Using OneLake File Explorer</a></dt>
+  <dt><a href="#2.5" >2.5 - Using Kusto Explorer</a></dt>
+  <dt><a href="#2.6" >2.6 - Using Visual Studio Code</a></dt>
+  <dt><a href="#2.7" >2.7 - Using Power BI</a></dt>
+  <dt><a href="#2.8" >2.8 - Using Storage Explorer</a></dt>
 
 </dl>
 
@@ -34,15 +33,80 @@ You'll cover these topics in this Module on the Developer Experience:
 
 <h2 id="2.1"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.1 Using Co-Pilot</h2>
 
-Copilot is a new feature in Power BI that harnesses the power of large language models to help users create value from their data using natural language. Users can simply describe their desired visuals and insights, and Copilot will generate them automatically, without requiring any manual input.
+Copilot in Power BI that harnesses the power of large language models to help users create value from their data using natural language. Users can simply describe their desired visuals and insights, and Copilot will generate them automatically, without requiring any manual input.
 
 Copilot also enables users to easily and quickly create and customize reports, write and edit DAX formulas, produce narrative summaries, and query their data in a conversational way. Users can tailor the tone, scope, and style of the narratives and integrate them into their reports for more effective data communication through clear and concise text.
 
-<img src="https://powerbiblogscdn.azureedge.net/wp-content/uploads/2023/05/AZ_Trident-PBi-D365-Blog-Hero-1200x628.png" height = 400> 
+
+
+
 
 Microsoft has released *quick measure* suggestions for DAX capability that helps analysts quickly create the code they need. 
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Self-Guided Activity: Learn more about how Copilot works with Power BI </b></p>
+
+## Start Copilot in Power BI Desktop
+
+To get started with Copilot in Power BI Desktop, follow these steps:
+
+1. **Open a Power BI report** and select **Copilot** in the ribbon.  
+   The Copilot pane appears and prompts you to select a workspace.  
+   link-to-copilot-pane-image
+
+   <img src="https://learn.microsoft.com/en-us/power-bi/create-reports/media/copilot-enable-power-bi/copilot-button-ribbon.png#lightbox">
+
+2. **Select the workspace** you’d like to associate this report with for Copilot use.  
+   Only workspaces that support Copilot will appear.  
+   link-to-workspace-picker-image
+
+      <img src="https://learn.microsoft.com/en-us/power-bi/create-reports/media/copilot-enable-power-bi/copilot-workspace-selection.png">
+
+3. Use the **Settings gear** in the bottom-right corner of Power BI to:
+   - Switch the associated workspace
+   - Check which workspace your report is associated with  
+   link-to-workspace-settings-image
+
+      <img src="https://learn.microsoft.com/en-us/power-bi/create-reports/media/copilot-enable-power-bi/report-settings-gear.png">
+
+
+4. This opens the **Options** window.  
+   Navigate to the **Copilot (preview)** settings to:
+   - See which workspace you’re currently working with
+   - Select a new workspace  
+   link-to-options-window-image
+
+  <img src="https://learn.microsoft.com/en-us/power-bi/create-reports/media/copilot-enable-power-bi/copilot-settings.png#lightbox">
+
+
+5. Select the workspace you’d like to associate this report with for Copilot use. Only workspaces that support Copilot appear.
+
+<img src="https://learn.microsoft.com/en-us/power-bi/create-reports/media/copilot-enable-power-bi/copilot-workspace-selection.png">
+
+
+Use the Settings gear in the bottom-right corner of Power BI to switch the associated workspace or check which workspace your report is associated with.
+
+
+<img src="https://learn.microsoft.com/en-us/power-bi/create-reports/media/copilot-enable-power-bi/report-settings-gear.png">
+
+
+This opens the Options window, where you can navigate to the Copilot (preview) settings to see which workspace you’re currently working with and select a new workspace.
+
+<img src="https://learn.microsoft.com/en-us/power-bi/create-reports/media/copilot-enable-power-bi/copilot-settings.png#lightbox">
+
+
+
+### ⚠️ Error Message
+
+If you don’t have access to any workspaces that are in the correct capacity to use Copilot, you’ll see this message in the Copilot (preview) settings:
+
+> _"Either none of your workspaces have the right capacity to use Copilot, or you don't have the right permission to use them."_
+
+
+
+---
+
+Now you're ready to create a report with Copilot in Power BI Desktop!
+
 
 To learn more about how Copilot works with Power BI, please select the link below. This link will take you to a video demonstration of Copilot in action, as well as a tutorial on how to get started with Copilot & Power BI. 
 
@@ -93,41 +157,10 @@ You can also right-click this link to open it in another tab and review this vid
 
 <p><a href="https://www.youtube.com/watch?v=iDLTj-tCLdY&t=63s"><img src="https://img.youtube.com/vi/iDLTj-tCLdY/0.jpg" height = 200></a> 
 
-<p style="border-bottom: 1px solid lightgrey;"></p>
-
-<h2 id="2.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.3 Using Azure Data Studio</h2>
-
-Azure Data Studio is a versatile tool for working with data from various sources, such as SQL Server, Azure SQL Database, Azure Synapse, Microsoft Fabric, and more. It enables you to query, design, and manage your databases and data warehouses on-premises or in the cloud. Azure Data Studio is free, open-source, and cross-platform, so you can run it on Windows, macOS, or Linux. It also supports multiple languages, such as SQL, PowerShell, Python, KQL, Apache Spark, and PySpark. Azure Data Studio has a modern and intuitive interface that features a query editor, native Jupyter Notebooks, an integrated terminal, and built-in Git support. You can also enhance your environment with extensions that offer new features and services for Azure Data Studio. Some of the popular extensions are Database Projects, GitHub Copilot, Oracle to Azure SQL Migration Assistant, PostgreSQL Migration Assistant, and more. You can explore more extensions in the extension library or create your own. Azure Data Studio is designed to simplify the data landscape and provide a unified tooling experience for data professionals.
-
-<img src="https://learn.microsoft.com/en-us/azure-data-studio/media/quickstart-sql-database/new-connection-icon.png" height = 400> 
-
-Prerequisites: Before you can set up a connection, the following prerequisites are required:
-- A Microsoft Fabric tenant account with an active subscription.
-- A Microsoft Fabric enabled Workspace.
-
-Retrieve the SQL connection string: Navigate to your workspace, select the Warehouse, and select More options. Select Copy SQL connection string to copy the connection string to your clipboard.
-
-<img src="https://learn.microsoft.com/en-us/fabric/data-warehouse/media/connectivity/warehouse-copy-sql-connection-string.png" height = 400> 
-
-Open Azure Data Studio. If already open, you can connect manually by selecting Object Explorer > Connect > Database Engine. Once the Connect to Server window is open, paste the connection string copied from the previous step into the Server name box. Select Connect and proceed with the appropriate credentials for authentication.
-
-<img src="https://learn.microsoft.com/en-us/azure-data-studio/media/azure-view/azure-connection-configuration.png" height = 400> 
-
-> Note:  For the server you will be using the SQL connection string copied to the clipboard. It will look similair to the following : xxxxxxxxxx-xxxxxxxxxx.xxxx-datawarehouse.pbidedicated.windows.net
-
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Self-Guided Activity: Using Azure Data Studio to access Microsoft Fabric.</b></p>
-
-In this Activity you will use Azure Data Studio to Explore and manage Azure SQL resources.
-
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
-
--  Open this reference to see an example of how to connect to Microsoft Fabric with Azure Data Studio click the following link.
-
-<p><a href="https://www.youtube.com/watch?v=iDLTj-tCLdY&t=127s"><img src="https://img.youtube.com/vi/iDLTj-tCLdY/0.jpg" height = 200></a> 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="2.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.4 Using Microsoft Excel</h2>
+<h2 id="2.3"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.3 Using Microsoft Excel</h2>
 
 Microsoft Excel is a software program that allows you to create, edit, and analyze spreadsheets and data. It is part of the Microsoft 365 suite of productivity tools, or it can be purchased separately. You can use Excel to organize your data in rows and columns, perform calculations with formulas and functions, create charts and graphs to visualize your data, and share your work with others. Excel also supports various languages and data types, such as SQL, Python, KQL, and Power BI.
 
@@ -155,7 +188,7 @@ In this Activity you will use Microsoft Excel to access Microsoft Fabric.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="2.5"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.5 Using OneLake File Explorer</h2> 
+<h2 id="2.4"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.4 Using OneLake File Explorer</h2> 
   
 The OneLake file explorer application enables a seamless integration of OneLake with Windows File Explorer. It synchronizes all OneLake items that you have access to in Windows File Explorer automatically. Synchronization means updating the metadata of files and folders to reflect the latest changes, and uploading the local modifications to the OneLake service.
 
@@ -181,7 +214,7 @@ You can also right-click this link to open it in another tab and review this vid
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="2.6"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.6 Using Kusto Explorer</h2>
+<h2 id="2.5"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.5 Using Kusto Explorer</h2>
 
 A Desktop Application for Data Exploration with Kusto Query Language. Kusto.Explorer is a robust Windows desktop application that empowers users to delve into their data using the Kusto Query Language, all within an intuitive and user-friendly interface.
 
@@ -211,7 +244,7 @@ You can also right-click this link to open it in another tab and review this vid
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="2.7"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.7 Using Visual Studio Code</h2>
+<h2 id="2.6"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.6 Using Visual Studio Code</h2>
 
 Using Visual Studio Code with Microsoft Fabric is a great way to develop and deploy applications for the cloud. Visual Studio Code is a free, open source, and cross-platform code editor that supports multiple languages and runtimes, such as C#, Java, Python, and .NET. Microsoft Fabric is an all-in-one analytics solution for enterprises that covers everything from data movement to data science, real-time analytics, and business intelligence. It offers a comprehensive suite of services, including data lake, data engineering, and data integration, all in one place.
 
@@ -241,7 +274,7 @@ You can also right-click this link to open it in another tab and review this vid
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2 id="2.8"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.8 Using Power BI</h2>
+<h2 id="2.7"><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">2.7 Using Power BI</h2>
 
 Microsoft Fabric lets you create reusable and default Power BI datasets to create reports in various ways in Power BI. This article describes the various ways you can use your Warehouse or SQL Endpoint, and their default Power BI datasets, to create reports.
 
