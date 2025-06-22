@@ -249,7 +249,7 @@ Bursting allows you to consume extra compute resources beyond what have been pur
 
 
 
-<img src="https://github.com/sqlballs/MicrosoftFabricPre-Con/raw/main/graphics/burstingmoothing.gif">
+<img src="https://learn.microsoft.com/en-us/fabric/enterprise/media/fabric-cross-filter.gif#lightbox">
 
 
 
@@ -266,16 +266,16 @@ Smoothing will not impact execution time, that is always at peak performance! Sm
 
 ### OneLake Storage Reporting in Capacity Metrics
 
-With this new feature, you can easily analyze your storage consumption by selecting your Capacity, choosing the date range, and viewing usage by workspace. This will provide you with valuable insights into your overall storage spend and enable you to monitor daily or hourly trends with usage of drill-through. 
+With this feature, you can easily analyze your storage consumption by selecting your Capacity, choosing the date range, and viewing usage by workspace. This will provide you with valuable insights into your overall storage spend and enable you to monitor daily or hourly trends with usage of drill-through. 
 
-<p><img src="https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/onelake-demo-ux.png" height = 400>
+<p><img src="https://learn.microsoft.com/en-us/fabric/onelake/media/onelake-capacity-consumption/onelake-storage.png#lightbox" >
 
 
 ### Capacity Long Running Workloads
 
-Fabric contains a new optimization for long-running jobs. Historically, if a job’s reported usage exceeded capacity limits, the following jobs would be throttled. Now, if a job’s reported usage exceeds capacity limits, throttling will not be immediately applied to following jobs. Instead, any overage will be automatically balanced against future capacity when the system has unutilized capacity. This feature to “borrow from the future” is in addition to smoothing and is also seamless to customers and supported by the following new analytics experience in Capacity Metrics.
+Fabric contains an optimization for long-running jobs. Historically, if a job’s reported usage exceeded capacity limits, the following jobs would be throttled. Now, if a job’s reported usage exceeds capacity limits, throttling will not be immediately applied to following jobs. Instead, any overage will be automatically balanced against future capacity when the system has unutilized capacity. This feature to “borrow from the future” is in addition to smoothing and is also seamless to customers and supported by the following new analytics experience in Capacity Metrics.
 
-<p><img src="https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/Throttling-cumulative-burndown.png" height = 400>
+<p><img src="https://learn.microsoft.com/en-us/fabric/enterprise/media/fabric-cross-filter-overages.gif#lightbox" >
 
 After the October 1st platform update, capacity throttling policies will now be based on the amount of future capacity consumption that resulted from smoothing policies, this offers increased Overage protection for when future use is less than 10 minutes and richer queue management features to prevent excessive overload when usage exceeds an hour. The 4 new policies are outlined in Table 1
 
@@ -335,19 +335,19 @@ After the October 1st platform update, capacity throttling policies will now be 
 </tbody>
 </table>
 <p>
-To help you monitor and analyze the new policies, Microsoft Fabric has added a new throttling tab in the utilization section of the Capacity Metrics. You can now easily observe future usage as a percentage of each limit, and even drill down to specific workloads that contributed to an overage.
+To help you monitor and analyze the policies, Microsoft Fabric has a  throttling tab in the utilization section of the Capacity Metrics. You can now easily observe future usage as a percentage of each limit, and even drill down to specific workloads that contributed to an overage.
 
-<p><img src="https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/Throttling-policy-analaytics.png" height = 400>
+<p><img src="https://learn.microsoft.com/en-us/fabric/enterprise/media/fabric-drill-through.gif#lightbox" >
 
 ### Power BI & Microsoft Fabric - One Capacity Model
-Capacity Units offer more granularity than the previously used v-cores and let us offer smaller sized capacities to Fabric customers with a very low entry point for pricing. Starting on 10/1, we will be updating all Power BI premium SKU’s (EM, P and A) to report in capacity units. Key takeaways for this change:
+Capacity Units offer more granularity than the previously used v-cores and let us offer smaller sized capacities to Fabric customers with a very low entry point for pricing. As of 10/1/2024 all Power BI premium SKU’s (EM, P and A) to report in capacity units. Key takeaways for this change:
 <p>
 
 - This update will not result in any change to the throughput of a capacity.
-- Power BI Premium SKU’s EM / A and P will now report usage using CUs.
+- Power BI Premium SKU’s EM / A and P now report usage using CUs.
 - There will be one version of the Capacity Metrics app that supports all Power BI and Fabric capacity SKUs
 
-<p><img src="https://dataplatformblogcdn.azureedge.net/wp-content/uploads/2023/09/a-screenshot-of-a-test-description-automatically.png" height = 400>
+<p>
 
 <p>
 For more information about the Microsoft Fabric Capacity app see the following references:
