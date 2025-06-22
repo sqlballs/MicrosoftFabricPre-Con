@@ -419,6 +419,7 @@ If you cannot complete these steps, open and follow the  [Pre-Requisites that yo
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 
 <ul>
+<li><a href="https://learn.microsoft.com/en-us/fabric/onelake/security/get-started-security">OneLake security overview</a></li>
  <li><a href="https://learn.microsoft.com/en-us/fabric/release-plan/">Microsoft Fabric release plan documentation</a></li>
     <li><a href="https://learn.microsoft.com/en-us/fabric/onelake/onelake-overview">OneLake, the OneDrive for data</a></li>
     <li><a href="https://learn.microsoft.com/en-us/fabric/get-started/microsoft-fabric-overview " >The primary page for documentation on Microsoft Fabric is here</a></li>
@@ -426,5 +427,7 @@ If you cannot complete these steps, open and follow the  [Pre-Requisites that yo
     <li><a href="https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app-install">Installing the Fabric Metrics app</a></li>
   <li><a href="https://erwindekreuk.com/microsoft-fabric-content-hub/">Microsoft Fabric Content Hub from Erwin de Kreuk</a></li>
 </ul>
+
+
 
 Congratulations! You have completed this Module. If you understand the concepts here and have completed all of the Activities, you can [proceed to the next Module](https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/02%20-%20Desktop%20Tools%20to%20use%20with%20Microsoft%20Fabric.md).
