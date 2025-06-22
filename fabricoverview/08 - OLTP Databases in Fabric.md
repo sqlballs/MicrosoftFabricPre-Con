@@ -6,7 +6,7 @@
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png"> <h2> 07 - Copilots & AI Skills </h2>
+<img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png"> <h2> 08 - OLTP Databases In Microsoft Fabric </h2>
 
 In this workshop you'll cover using The Microsoft Fabric Platform to implement a complete Analytics solution.
 
