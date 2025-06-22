@@ -77,10 +77,7 @@ In this activity you will follow  the Data warehouse tutorial introduction.
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png">
 
 - Open the following reference in another tab, [Tutorial: Analyze data with a notebook](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-analyze-data-notebook)
-- Follow Tutorial 10
-- Option 1 will walk you through using a notebook to access your Data Warehouse
-- Option 2 will walk you through creating a shortcut from a Data Warehouse into a Lakehouse
-- Follow both options
+- Follow Tutorial 10 Tutorial: Analyze data in a notebook
 - - In Step 10 Remember to use the Lakehouse we created in Module 2
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
@@ -114,7 +111,7 @@ In this activity we will be following with the Data warehouse tutorial introduct
 <b>Steps:</b>
 
 - Open the following reference in another tab, [Tutorial: Analyze data with a notebook](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-sql-cross-warehouse-query-editor)
-- Follow Steps 11 - 13
+
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
