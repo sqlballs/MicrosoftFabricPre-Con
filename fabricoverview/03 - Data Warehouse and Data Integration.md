@@ -241,11 +241,14 @@ In this activity, you will follow the data warehouse tutorial to create and load
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
 - Open the data warehouse created in section 3.1 then open the following reference in another tab, [Tutorial: Create tables in a data warehouse](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-create-tables)
-  - Follow steps 4 through 11.
+
 - Open the data warehouse created in section 3.1 then open the following reference in another tab, [Tutorial: Load data using T-SQL](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-load-data)
-  - Follow steps 1 through 8.
+
 - Open the data warehouse created in section 3.1 then open the following reference in another tab, [Tutorial: Transform data using a stored procedure](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-transform-data)
-  - Follow steps 1 through 16.
+ 
+  
+- Open the data warehouse created in section 3.1 then open the following reference in another tab, [Tutorial: Create a query with the visual query builder in a Warehouse](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-visual-query)
+
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 
