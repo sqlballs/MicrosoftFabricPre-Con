@@ -110,6 +110,10 @@ This is a modular workshop, and in each section, you'll learn concepts, technolo
   
   <tr><td style="background-color: AliceBlue; color: black;"><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/07%20-%20CoPilots%20%26%20AI%20Skills.md" >07 - Copilots & AI Skills</a> </td><td td style="background-color: AliceBlue; color: black;"> Microsoft Fabric integrates AI and LLM capabilities to assist you in creating your data workloads.  Additionally you can use AI Skills to create RAG patterns off of your data to produce additional insights.</td></tr>
 
+  <tr><td style="background-color: AliceBlue; color: black;"><a href="https://github.com/sqlballs/MicrosoftFabricPre-Con/blob/main/fabricoverview/08%20-%20OLTP%20Databases%20in%20Fabric.md" >08 - OLTP Databases In Microsoft Fabric</a> </td><td td style="background-color: AliceBlue; color: black;"> Microsoft Fabric integrates SQL database and Cosmos DB into your Fabric environment to provide a full end to end development OLTP to Analytics driven scenarios.</td></tr>
+
+
+
 </table>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
